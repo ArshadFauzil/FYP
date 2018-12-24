@@ -1,0 +1,6 @@
+import os
+
+
+PROJECT_ID = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+
+print(PROJECT_ID)
