@@ -5,31 +5,40 @@
 
 {% block body %}
 
-<h1>Find My Phone</h1>
+<h1>Just Enter a Pseudo Code</h1>
 
 <div class="container">
-  <form action="query1" method="POST">
+{#  <form action="pc" method="POST">#}
+{##}
+{##}
+{#    <label for="bname">Brand Name</label>#}
+{#    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">#}
+{##}
+{#    <label for="os">Operating System</label>#}
+{#    <select id="os" name="os">#}
+{##}
+{#        <option value="Lollipop">Android Lollipop</option>#}
+{#        <option value="Marshmallow">Android Marshmallow</option>#}
+{#        <option value="Nougat">Android Nougat</option>#}
+{#        <option value="Oreo">Android Oreo</option>#}
+{##}
+{##}
+{#         <option value="Ios10">IOS 10</option>#}
+{#         <option value="Ios11">IOS 11</option>#}
+{##}
+{#      <option value="windows">Windows 10</option>#}
+{#    </select>#}
+{#      <br/><br/>#}
+{#    <input type="submit" value="Submit">#}
+{#  </form>#}
 
+  <form action="pc" method="POST">
+{#    <label for="price">Pseudo Code :</label>#}
+{#    <input type="text" id="price" name="price" placeholder="Pseudo Code">#}
+      <textarea rows="25" cols="50" placeholder="Enter the Pseudo Code"></textarea>
 
-    <label for="bname">Brand Name</label>
-    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
-
-    <label for="os">Operating System</label>
-    <select id="os" name="os">
-
-        <option value="Lollipop">Android Lollipop</option>
-        <option value="Marshmallow">Android Marshmallow</option>
-        <option value="Nougat">Android Nougat</option>
-        <option value="Oreo">Android Oreo</option>
-
-
-         <option value="Ios10">IOS 10</option>
-         <option value="Ios11">IOS 11</option>
-
-      <option value="windows">Windows 10</option>
-    </select>
       <br/><br/>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit Pseudo code">
   </form>
 </div>
 

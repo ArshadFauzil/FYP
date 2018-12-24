@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classify>
+	<TwoDarray>
+		<TwoDarray_name>dataSet</TwoDarray_name>
+		<TwoDarray_type>Object</TwoDarray_type>
+	</TwoDarray>
+		
+	<Array>
+		<Array_name>dropColumns</Array_name>
+		<Array_type>String</Array_type>
+		<values>
+            <value>Restaurant ID</value>
+            <value>Restaurant Name</value>
+            <value>Country Code</value>
+            <value>City</value>
+		</values>
+	</Array>
+		
+	<var>
+		<var_name>splitPercentage</var_name>
+		<dataType>Double</dataType>
+        <value>0.7</value>
+	</var>
+		
+	<var>
+		<var_name>targetClass</var_name>
+		<dataType>String</dataType>
+        <value>Restaurant Name</value>
+ 	</var>
+
+	<var>
+		<var_name>classfierType</var_name>
+		<dataType>String</dataType>
+        <value>svm</value>
+	</var>
+		
+	<input>READ dataSet</input>
+		
+	<var>
+		<var_name>count</var_name>
+		<dataType>integer</dataType>
+	</var>
+		
+	<cl>count eq 0</cl>
+		
+	<while>count lt dropColumns.size</while>
+	<do>
+		<cl>DROP dropColumns[C] from dataSet</cl>
+		<cl>count++</cl>
+	</do>
+		
+	<for>EACH column IN dataSet.columns</for>
+	<do>
+		<if>column.dataType eq Object</if>
+		<then>ENCODE column</then>
+	</do>
+
+	<X>dataSet(HIDE class targetClass)</X>
+	<Y>dataSet(targetClass)</Y>
+		
+	<cl>SPLIT(splitPercentage) X, Y TO TRAIN, TEST</cl>
+		
+	<classifier>classfierType.train(TRAIN)</classifier>
+	<cl>classfierType.validate(TEST)</cl>
+			
+</classify>

@@ -97,19 +97,19 @@ def hello(name):
     return render_template('found_wim_phone.html', name=name)
 
 
-@app.route('/find_users', methods=['GET'])
+@app.route('/home', methods=['GET'])
 def search():
     try:
         phone_price = request.form['price']
 
         users = findUsersByPrice(phone_price)
-        return render_template('found_wim_phone.html', ph_price=phone_price, users_list=users)
+        return render_template('home.html', ph_price=phone_price, users_list=users)
     except:
-        return render_template('wim_phone.html')
+        return render_template('home.html')
 
 
-@app.route('/query1', methods=['GET'])
-def search1():
+@app.route('/pc', methods=['GET'])
+def receive_pseudo_code():
     try:
         brand_name = request.form['brandname']
         os = request.form['os']
@@ -119,8 +119,8 @@ def search1():
         return render_template('input_form1.html')
 
 
-@app.route('/query2', methods=['GET'])
-def search2():
+@app.route('/sc', methods=['GET'])
+def generate_source_code():
     try:
         user_name = request.form['username']
         chipset = request.form['cs']
@@ -132,8 +132,8 @@ def search2():
         return render_template('input_form2.html')
 
 
-@app.route('/query3', methods=['GET'])
-def search3():
+@app.route('/evl', methods=['GET'])
+def evaluate_results():
     try:
         user_name = request.form['username']
         agegroup = request.form['age']
@@ -145,8 +145,8 @@ def search3():
         return render_template('input_form3.html')
 
 
-@app.route('/query4', methods=['GET'])
-def search4():
+@app.route('/about', methods=['GET'])
+def about():
     try:
         user_name = request.form['username']
         brand_name = request.form['brandname']
@@ -157,10 +157,10 @@ def search4():
         return render_template('input_form4.html')
 
 
-app.add_url_rule('/find_users', 'search', search, methods=['GET', 'POST'])
-app.add_url_rule('/query2', 'search2', search2, methods=['GET', 'POST'])
-app.add_url_rule('/query3', 'search3', search3, methods=['GET', 'POST'])
-app.add_url_rule('/query4', 'search4', search4, methods=['GET', 'POST'])
+app.add_url_rule('/pc', 'pc', receive_pseudo_code, methods=['GET', 'POST'])
+app.add_url_rule('/sc', 'sc', generate_source_code, methods=['GET', 'POST'])
+app.add_url_rule('/eval', 'eval', evaluate_results, methods=['GET', 'POST'])
+app.add_url_rule('/about', 'about', about, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
     app.run(host='localhost', port=3550)

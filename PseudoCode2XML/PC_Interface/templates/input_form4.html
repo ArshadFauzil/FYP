@@ -5,25 +5,28 @@
 
 {% block body %}
 
-<h1>Find My Phone</h1>
+<h1>About Us</h1>
 
 <div class="container">
-  <form action="query4" method="POST">
-    <label for="fname">Name</label>
-    <input type="text" id="username" name="username" placeholder="Your name..">
-
-    <label for="bname">Brand Name</label>
-    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">
-
-    <label for="os">Operating System</label>
-    <select id="os" name="os">
-      <option value="android">Android</option>
-      <option value="ios">IOS</option>
-      <option value="windows">Windows</option>
-    </select>
-      <br/><br/>
-    <input type="submit" value="Submit">
-  </form>
+<img src="{{ url_for('static', filename='images/Arshad.jpg') }}">
+<img src="{{ url_for('static', filename='images/Dinusha.jpeg') }}">
+<img src="{{ url_for('static', filename='images/Madusha.jpeg') }}">
+{#  <form action="about" method="POST">#}
+{#    <label for="fname">Name</label>#}
+{#    <input type="text" id="username" name="username" placeholder="Your name..">#}
+{##}
+{#    <label for="bname">Brand Name</label>#}
+{#    <input type="text" id="brandname" name="brandname" placeholder="Your preferred brand">#}
+{##}
+{#    <label for="os">Operating System</label>#}
+{#    <select id="os" name="os">#}
+{#      <option value="android">Android</option>#}
+{#      <option value="ios">IOS</option>#}
+{#      <option value="windows">Windows</option>#}
+{#    </select>#}
+{#      <br/><br/>#}
+{#    <input type="submit" value="Submit">#}
+{#  </form>#}
 </div>
 
 
