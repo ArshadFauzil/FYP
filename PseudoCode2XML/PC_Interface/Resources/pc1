@@ -1,6 +1,6 @@
 use data manipulation library
 using multidimensional array operator
-use decision tree classification 
+use Random Forrest 
 loading dataset ds1
 test size = 0.3
 class = play_golf

@@ -32,10 +32,16 @@
 {#    <input type="submit" value="Submit">#}
 {#  </form>#}
 
+    <form action="ds" method=post enctype=multipart/form-data>
+      <label for="file">Upload the Dataset :</label>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
   <form action="pc" method="POST">
 {#    <label for="price">Pseudo Code :</label>#}
 {#    <input type="text" id="price" name="price" placeholder="Pseudo Code">#}
-      <textarea rows="25" cols="50" placeholder="Enter the Pseudo Code"></textarea>
+      <textarea rows="25" cols="50" name="pcode" placeholder="Enter the Pseudo Code"></textarea>
 
       <br/><br/>
     <input type="submit" value="Submit Pseudo code">
@@ -44,6 +50,18 @@
 
 
 <br/><br/>
+
+<!-- Create a simple CodeMirror instance -->
+<link rel="stylesheet" href="/static/lib/codemirror-5.42.2/lib/codemirror.css" type="text/css">
+<script src="/static/lib/codemirror-5.42.2/lib/codemirror.js"></script>
+<script>
+  var editor = CodeMirror.fromTextArea(pcode, {
+    lineNumbers: true
+  });
+</script>
+
+
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript">
     $(function(){

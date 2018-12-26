@@ -29,35 +29,34 @@ tr:nth-child(even) {
 </style>
 
 <div class="block1">
-<h1>Hello !</h1>
-  <h2>This is the phone for you: </h2>
+  <h2>Lines in the entered Pseudo Code</h2>
 <br>
 {#<img src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note9-1.jpg"/>#}
 {#<img src="https://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg"/>#}
-<img src="{{ url_for('static', filename='images/phone.jpeg') }}">
+{#<img src="{{ url_for('static', filename='images/phone.jpeg') }}">#}
 
  <table align="center">
    <thead>
       <tr>
         <th>No.</th>
-        <th>Phone</th>
+        <th>Statement</th>
       </tr>
    </thead>
 
   <tbody>
-    {% for phone in phone_list %}
+    {% for lines in statements %}
         <tr>
           <td class="counterCell"></td>
-          <td>{{phone}}</td>
+          <td>{{lines}}</td>
         </tr>
     {% endfor %}
   </tbody>
 
 </table>
 <br><br><br>
-  <p>
-"We hope you may like this phone."
-  </p>
+  <p><a>
+Click here to view the intermediate XML model
+  </a></p>
 <br><br><br><br>
 </div>
 

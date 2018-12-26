@@ -1,11 +1,19 @@
 from __future__ import absolute_import
 from pprint import pprint
 import os
-from flask import Flask, render_template, request, session, abort
+from flask import Flask, render_template, request, session, abort, flash, url_for
+from detect_intent_texts import detect_intent_texts
+from werkzeug.utils import secure_filename, redirect
 
 app = Flask(__name__)
 
 app.secret_key = "AS9UjjJI0J0JS9j"
+
+PROJECT_ID = os.getenv('GCLOUD_PROJECT')
+SESSION_ID = 'fake_session_for_testing'
+UPLOAD_FOLDER = '/home/madusha/'
+ALLOWED_EXTENSIONS = set(['csv', 'txt'])
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 @app.route('/payload', methods=['POST'])
@@ -61,6 +69,7 @@ def test_detect_intent_texts(capsys):
 
     assert 'Fulfillment text: All set!' in out
 
+
 # [END dialogflow_detect_intent_text]
 
 # @app.route('/detect_intent_texts', methods=['GET', 'POST'])
@@ -89,7 +98,7 @@ def send_message():
 
 @app.route('/')
 def home():
-    return render_template('wim_phone.html')
+    return render_template('home.html')
 
 
 @app.route("/find/<string:name>/")
@@ -111,22 +120,52 @@ def search():
 @app.route('/pc', methods=['GET'])
 def receive_pseudo_code():
     try:
-        brand_name = request.form['brandname']
-        os = request.form['os']
-        phones = recommendPhone(brand_name, os)
-        return render_template('result1.html', phone_list=set(phones))
+        pseudocode = request.form['pcode']
+        lines = pseudocode.split('\n')
+        print(lines)
+
+        detect_intent_texts(PROJECT_ID, SESSION_ID, lines, 'en-US')
+
+        # return render_template('result1.html')
+        return render_template('result1.html', statements=lines)
     except:
         return render_template('input_form1.html')
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+@app.route('/ds', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            # return redirect(url_for('uploaded_file',
+            #                         filename=filename))
+    return render_template('input_form1.html')
 
 
 @app.route('/sc', methods=['GET'])
 def generate_source_code():
     try:
-        user_name = request.form['username']
-        chipset = request.form['cs']
+        pseudocode = request.form['pcode']
+        # chipset = request.form['cs']
 
-        phones = RecommendOnChipset(chipset)
-        print(phones)
+        # phones = RecommendOnChipset(chipset)
+        print(pseudocode)
         return render_template('result2.html', name=user_name, phone_cs_list=set(phones))
     except:
         return render_template('input_form2.html')
@@ -158,9 +197,10 @@ def about():
 
 
 app.add_url_rule('/pc', 'pc', receive_pseudo_code, methods=['GET', 'POST'])
+app.add_url_rule('/ds', 'ds', upload_file, methods=['GET', 'POST'])
 app.add_url_rule('/sc', 'sc', generate_source_code, methods=['GET', 'POST'])
 app.add_url_rule('/eval', 'eval', evaluate_results, methods=['GET', 'POST'])
 app.add_url_rule('/about', 'about', about, methods=['GET', 'POST'])
 
 if __name__ == "__main__":
-    app.run(host='localhost', port=3550)
+    app.run(host='localhost', port=3550, debug=True)
