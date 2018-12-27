@@ -33,13 +33,15 @@
 {#  </form>#}
 
     <form action="ds" method=post enctype=multipart/form-data>
-      <label for="file">Step 1 - Upload the Dataset</label>
-      <input type=file name=file>
-      <input type=submit value=Upload>
+    <fieldset disabled>
+      <label for="file">Step 1 - Upload the Dataset (Completed)</label>
+{#      <input type=file name=file>#}
+{#      <input type=submit value=Upload>#}
+        <h3>{{ filename }}</h3>
+    </fieldset>
     </form>
 
   <form action="pc" method="POST">
-      <fieldset disabled>
 {#    <label for="price">Pseudo Code :</label>#}
 {#    <input type="text" id="price" name="price" placeholder="Pseudo Code">#}
       <label for="pcode">Step 2 - Enter the Natural Language Pseudo Code</label>
@@ -47,7 +49,7 @@
 
       <br/><br/>
     <input type="submit" value="Submit Pseudo code">
-      </fieldset>
+
   </form>
 </div>
 

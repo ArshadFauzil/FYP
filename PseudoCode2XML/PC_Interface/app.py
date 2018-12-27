@@ -3,7 +3,9 @@ from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for
 from detect_intent_texts import detect_intent_texts
+from read_attributes import get_columns
 from werkzeug.utils import secure_filename, redirect
+from API_manager import enter_new_entity
 
 app = Flask(__name__)
 
@@ -11,7 +13,8 @@ app.secret_key = "AS9UjjJI0J0JS9j"
 
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 SESSION_ID = 'fake_session_for_testing'
-UPLOAD_FOLDER = '/home/madusha/'
+# UPLOAD_FOLDER = '/home/madusha/'
+UPLOAD_FOLDER = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources'
 ALLOWED_EXTENSIONS = set(['csv', 'txt'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -153,6 +156,10 @@ def upload_file():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            columns = get_columns(UPLOAD_FOLDER+'/'+filename)
+            print(columns)
+            enter_new_entity(columns)
+            return render_template('pseudocode_input.html', filename=filename)
             # return redirect(url_for('uploaded_file',
             #                         filename=filename))
     return render_template('input_form1.html')
