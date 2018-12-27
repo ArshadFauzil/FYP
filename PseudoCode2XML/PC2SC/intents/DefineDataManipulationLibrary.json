@@ -1,0 +1,28 @@
+{
+  "id": "514765f9-e011-4f89-8ceb-93d7e7ef213e",
+  "name": "DefineDataManipulationLibrary",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "DataManipulationLibrary"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545728621,
+  "fallbackIntent": false,
+  "events": []
+}

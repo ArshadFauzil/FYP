@@ -1,0 +1,36 @@
+{
+  "id": "67d55cbe-bf54-4623-b9c8-dada30b03af1",
+  "name": "LoadDataset",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "aae70973-bcfe-4445-840f-adb6951785f5",
+          "dataType": "@Algorithms",
+          "name": "Algorithms",
+          "value": "$Algorithms",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "DatasetLoaded"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545737766,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2f86eeb9-36c8-4492-934f-7abaf37fbd15",
+    "data": [
+      {
+        "text": "display words",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827710
+  },
+  {
+    "id": "de9befb2-05dc-45b5-81ec-43ea4a2d5ee0",
+    "data": [
+      {
+        "text": "print line text",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827710
+  },
+  {
+    "id": "c98145da-6919-4e4b-a4e9-c6fe67b94999",
+    "data": [
+      {
+        "text": "println(some word pharse)",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827710
+  },
+  {
+    "id": "436ea142-a99a-44c6-aaec-c2abe5864382",
+    "data": [
+      {
+        "text": "print()",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827710
+  },
+  {
+    "id": "89c4a60a-85a2-4852-a266-972b771c7142",
+    "data": [
+      {
+        "text": "print something",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827710
+  },
+  {
+    "id": "4c72a181-7461-4116-9d2b-e7bc519d1e19",
+    "data": [
+      {
+        "text": "print",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545827038
+  }
+]

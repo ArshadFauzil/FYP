@@ -1,0 +1,28 @@
+{
+  "id": "6f4f45d7-3e35-4d60-91d7-5cbc0dce05ec",
+  "name": "Print",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "printIdentified"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545827710,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "5c152040-a02f-47c1-b52f-a8f9e655a91b",
+  "name": "DefineClass",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "70b993f8-af13-4ede-a591-e810ee9197cf",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Observed Class \u003d $ds_attributes"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545937129,
+  "fallbackIntent": false,
+  "events": []
+}

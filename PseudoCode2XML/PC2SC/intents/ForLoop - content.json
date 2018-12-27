@@ -1,0 +1,33 @@
+{
+  "id": "1261c17e-876e-41ff-aebc-197dcfaa4b0d",
+  "parentId": "252d8009-854a-44e8-9ed2-d2c7bac729a5",
+  "rootParentId": "252d8009-854a-44e8-9ed2-d2c7bac729a5",
+  "name": "ForLoop - content",
+  "auto": true,
+  "contexts": [
+    "ForLoop-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ForLoop.ForLoop-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "content_under_FOR"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545828602,
+  "fallbackIntent": false,
+  "events": []
+}

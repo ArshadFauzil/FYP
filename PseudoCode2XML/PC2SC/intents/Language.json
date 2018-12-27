@@ -1,0 +1,48 @@
+{
+  "id": "f4e2e8a1-f0b7-4149-a430-7d86acb83589",
+  "name": "Language",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6fff30ee-c5eb-42eb-8aa8-41f644272ede",
+          "required": false,
+          "dataType": "@sys.language",
+          "name": "language",
+          "value": "$language",
+          "isList": false
+        },
+        {
+          "id": "d59d7939-681a-40c2-b424-b375d028083a",
+          "required": false,
+          "dataType": "@ProgrammingLanguage",
+          "name": "ProgrammingLanguage",
+          "value": "$ProgrammingLanguage",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Wow ! I didn\u0027t know you know $language..",
+            "$ProgrammingLanguage is cool"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545936955,
+  "fallbackIntent": false,
+  "events": []
+}

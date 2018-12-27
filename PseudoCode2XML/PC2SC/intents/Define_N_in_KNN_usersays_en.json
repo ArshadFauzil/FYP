@@ -1,0 +1,60 @@
+[
+  {
+    "id": "1fd48d55-91b5-47e4-a598-b0b2c34437b4",
+    "data": [
+      {
+        "text": "N \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  },
+  {
+    "id": "b7937a8a-a598-4197-8383-0dd684b131cd",
+    "data": [
+      {
+        "text": "consider ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " neighbors",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  },
+  {
+    "id": "b333bc13-5e9f-410b-a7ce-9449cfb78802",
+    "data": [
+      {
+        "text": "No of neighbors \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  }
+]

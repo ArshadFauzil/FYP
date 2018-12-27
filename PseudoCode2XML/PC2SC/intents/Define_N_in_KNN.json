@@ -1,0 +1,36 @@
+{
+  "id": "614c0cc2-b834-4cc2-b3a5-9e1022322735",
+  "name": "Define_N_in_KNN",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "64630cc6-761b-46b0-b8ad-7ce601f88dba",
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "N \u003d $number"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545738968,
+  "fallbackIntent": false,
+  "events": []
+}

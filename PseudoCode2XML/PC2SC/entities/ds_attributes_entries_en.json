@@ -1,0 +1,128 @@
+[
+  {
+    "value": "9999",
+    "synonyms": [
+      "9999"
+    ]
+  },
+  {
+    "value": "4444",
+    "synonyms": [
+      "4444"
+    ]
+  },
+  {
+    "value": "restaurant_id",
+    "synonyms": [
+      "restaurant_id"
+    ]
+  },
+  {
+    "value": "restaurant_name",
+    "synonyms": [
+      "restaurant_name"
+    ]
+  },
+  {
+    "value": "country_code",
+    "synonyms": [
+      "country_code"
+    ]
+  },
+  {
+    "value": "city",
+    "synonyms": [
+      "city"
+    ]
+  },
+  {
+    "value": "longitude",
+    "synonyms": [
+      "longitude"
+    ]
+  },
+  {
+    "value": "latitude",
+    "synonyms": [
+      "latitude"
+    ]
+  },
+  {
+    "value": "average_cost_for_two",
+    "synonyms": [
+      "average_cost_for_two"
+    ]
+  },
+  {
+    "value": "currency",
+    "synonyms": [
+      "currency"
+    ]
+  },
+  {
+    "value": "has_table_booking",
+    "synonyms": [
+      "has_table_booking"
+    ]
+  },
+  {
+    "value": "has_online_delivery",
+    "synonyms": [
+      "has_online_delivery"
+    ]
+  },
+  {
+    "value": "is_delivering_now",
+    "synonyms": [
+      "is_delivering_now"
+    ]
+  },
+  {
+    "value": "switch_to_order_menu",
+    "synonyms": [
+      "switch_to_order_menu"
+    ]
+  },
+  {
+    "value": "price_range",
+    "synonyms": [
+      "price_range"
+    ]
+  },
+  {
+    "value": "aggregate_rating",
+    "synonyms": [
+      "aggregate_rating"
+    ]
+  },
+  {
+    "value": "rating_color",
+    "synonyms": [
+      "rating_color"
+    ]
+  },
+  {
+    "value": "rating_text",
+    "synonyms": [
+      "rating_text"
+    ]
+  },
+  {
+    "value": "votes",
+    "synonyms": [
+      "votes"
+    ]
+  },
+  {
+    "value": "cuisines",
+    "synonyms": [
+      "cuisines"
+    ]
+  },
+  {
+    "value": "pass",
+    "synonyms": [
+      "pass"
+    ]
+  }
+]

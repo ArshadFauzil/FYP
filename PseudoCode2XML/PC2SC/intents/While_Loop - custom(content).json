@@ -1,0 +1,33 @@
+{
+  "id": "cdf60055-dafd-4b18-9d47-541674d0ecea",
+  "parentId": "b9eed1cb-c360-48ed-9448-d98ebca083e5",
+  "rootParentId": "b9eed1cb-c360-48ed-9448-d98ebca083e5",
+  "name": "While_Loop - custom(content)",
+  "auto": true,
+  "contexts": [
+    "While_Loop-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "While_Loop.While_Loop-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "content_under_while_loop"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545828322,
+  "fallbackIntent": false,
+  "events": []
+}

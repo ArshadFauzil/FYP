@@ -1,0 +1,42 @@
+{
+  "id": "72aff6d2-baab-45a0-80e9-e98ed6ce842c",
+  "name": "IF_Condition",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "IF_Condition-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0683d89e-6c4b-455d-99bb-8cad6bd1c2b8",
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "If_condition_identified"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1545827970,
+  "fallbackIntent": false,
+  "events": []
+}

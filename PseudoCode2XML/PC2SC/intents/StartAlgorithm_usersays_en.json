@@ -1,0 +1,50 @@
+[
+  {
+    "id": "4ee58761-2cd6-4777-8aff-7be3dbf144b7",
+    "data": [
+      {
+        "text": "Begin clustering",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739278
+  },
+  {
+    "id": "7e85237f-6c1d-4de1-a2e4-00ea97ceb71b",
+    "data": [
+      {
+        "text": "implement algorithm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739278
+  },
+  {
+    "id": "3af36373-e503-4b75-8aca-01dae2abb603",
+    "data": [
+      {
+        "text": "Apply algorithm",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739278
+  },
+  {
+    "id": "3bfbf4ff-0c78-46b4-be6e-51ba148c25f8",
+    "data": [
+      {
+        "text": "Start classification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739278
+  }
+]
