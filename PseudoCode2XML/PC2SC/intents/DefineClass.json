@@ -21,7 +21,10 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "Observed Class \u003d $ds_attributes"
+          "speech": [
+            "define TARGET_CLASS",
+            "TARGET_CLASS \u003d $ds_attributes"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +34,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545937129,
+  "lastUpdate": 1546086730,
   "fallbackIntent": false,
   "events": []
 }

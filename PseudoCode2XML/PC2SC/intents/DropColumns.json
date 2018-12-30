@@ -1,6 +1,6 @@
 {
-  "id": "614c0cc2-b834-4cc2-b3a5-9e1022322735",
-  "name": "Define_N_in_KNN",
+  "id": "2ece5882-aad8-4c32-80fb-2d712b7650ac",
+  "name": "DropColumns",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -9,11 +9,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "64630cc6-761b-46b0-b8ad-7ce601f88dba",
+          "id": "9174687d-98c9-4edb-b8b4-e6ac47ca23f5",
           "required": false,
-          "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
           "isList": false
         }
       ],
@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "N_in_KNN is integer $number"
+          "speech": "drop attributes \u003d $ds_attributes"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1546084932,
+  "lastUpdate": 1546086849,
   "fallbackIntent": false,
   "events": []
 }

@@ -58,5 +58,30 @@
       "RF",
       "RF classification"
     ]
+  },
+  {
+    "value": "MultinomialNB",
+    "synonyms": [
+      "MultinomialNB",
+      "multinomial nb",
+      "MultiNB"
+    ]
+  },
+  {
+    "value": "Logistic Regression",
+    "synonyms": [
+      "Logistic Regression",
+      "logistic regression",
+      "LogisticRegression",
+      "logistic_regression"
+    ]
+  },
+  {
+    "value": "LinearSVC",
+    "synonyms": [
+      "LinearSVC",
+      "Linear SVC",
+      "linear svc"
+    ]
   }
 ]

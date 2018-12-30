@@ -1,31 +1,57 @@
 [
   {
-    "id": "b6fb1748-23dc-4cb3-8da8-ee3aa60f2838",
+    "id": "06984cb4-e12c-4d6d-b6aa-d1726bd421d7",
     "data": [
       {
-        "text": "Build the model by using the dataset",
+        "text": "read dataset",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545737766
+    "updated": 1546111693
   },
   {
-    "id": "5c8c2b69-9a13-450c-8a42-fa09a979336e",
+    "id": "230b4b09-13ee-48a9-921e-789e2707d833",
     "data": [
       {
-        "text": "Apply ",
+        "text": "dataset \u003d ",
         "userDefined": false
       },
       {
-        "text": "KNN",
-        "alias": "Algorithms",
-        "meta": "@Algorithms",
+        "text": "dataset_name",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545972269
+  },
+  {
+    "id": "a96c2009-d0ac-4a5e-a28d-da00173cd319",
+    "data": [
+      {
+        "text": "loading dataset ",
         "userDefined": false
       },
       {
-        "text": " to the dataset",
+        "text": "ds1",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545972269
+  },
+  {
+    "id": "b6fb1748-23dc-4cb3-8da8-ee3aa60f2838",
+    "data": [
+      {
+        "text": "Build the model by using the dataset",
         "userDefined": false
       }
     ],

@@ -23,7 +23,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "else_identified"
+          "speech": "content under ELSE, end ELSE."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -33,7 +33,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545828108,
+  "lastUpdate": 1546104529,
   "fallbackIntent": false,
   "events": []
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "value": "FuzzyWuzzy",
+    "synonyms": [
+      "FuzzyWuzzy"
+    ]
+  },
+  {
+    "value": "Flask",
+    "synonyms": [
+      "Flask"
+    ]
+  },
+  {
+    "value": "os",
+    "synonyms": [
+      "os"
+    ]
+  },
+  {
+    "value": "module_name",
+    "synonyms": [
+      "module_name"
+    ]
+  },
+  {
+    "value": "module",
+    "synonyms": [
+      "module"
+    ]
+  }
+]

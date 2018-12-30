@@ -9,10 +9,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "aae70973-bcfe-4445-840f-adb6951785f5",
-          "dataType": "@Algorithms",
-          "name": "Algorithms",
-          "value": "$Algorithms",
+          "id": "b7d13af8-fa06-40aa-84bf-eccd11fb39d0",
+          "required": false,
+          "dataType": "@Dataset_Name",
+          "name": "Dataset_Name",
+          "value": "$Dataset_Name",
           "isList": false
         }
       ],
@@ -20,7 +21,10 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "DatasetLoaded"
+          "speech": [
+            "read csv file $Dataset_Name",
+            "read csv file"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -30,7 +34,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545737766,
+  "lastUpdate": 1546111693,
   "fallbackIntent": false,
   "events": []
 }

@@ -1,0 +1,31 @@
+[
+  {
+    "value": "Pandas",
+    "synonyms": [
+      "Pandas",
+      "pd"
+    ]
+  },
+  {
+    "value": "Data Manipulation Library",
+    "synonyms": [
+      "Data Manipulation Library",
+      "Data Frame Library"
+    ]
+  },
+  {
+    "value": "data_manipulation_library",
+    "synonyms": [
+      "data_manipulation_library"
+    ]
+  },
+  {
+    "value": "data frame",
+    "synonyms": [
+      "data frame",
+      "data_frame",
+      "Data Frame",
+      "data frame generator"
+    ]
+  }
+]

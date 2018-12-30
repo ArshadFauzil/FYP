@@ -7,7 +7,15 @@
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "253aba42-ab23-41e8-8103-70139e2e82e4",
+          "dataType": "@Algorithms",
+          "name": "Algorithms",
+          "value": "$Algorithms",
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 0,
@@ -22,7 +30,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545739278,
+  "lastUpdate": 1545972140,
   "fallbackIntent": false,
   "events": []
 }

@@ -1,0 +1,116 @@
+[
+  {
+    "value": "x",
+    "synonyms": [
+      "x"
+    ]
+  },
+  {
+    "value": "y",
+    "synonyms": [
+      "y"
+    ]
+  },
+  {
+    "value": "x",
+    "synonyms": [
+      "x"
+    ]
+  },
+  {
+    "value": "p",
+    "synonyms": [
+      "p"
+    ]
+  },
+  {
+    "value": "q",
+    "synonyms": [
+      "q"
+    ]
+  },
+  {
+    "value": "temp",
+    "synonyms": [
+      "temp"
+    ]
+  },
+  {
+    "value": "e",
+    "synonyms": [
+      "e"
+    ]
+  },
+  {
+    "value": "item",
+    "synonyms": [
+      "item"
+    ]
+  },
+  {
+    "value": "k",
+    "synonyms": [
+      "k"
+    ]
+  },
+  {
+    "value": "test1",
+    "synonyms": [
+      "test1"
+    ]
+  },
+  {
+    "value": "test2",
+    "synonyms": [
+      "test2"
+    ]
+  },
+  {
+    "value": "age",
+    "synonyms": [
+      "age"
+    ]
+  },
+  {
+    "value": "accuracy",
+    "synonyms": [
+      "accuracy"
+    ]
+  },
+  {
+    "value": "number1",
+    "synonyms": [
+      "number1"
+    ]
+  },
+  {
+    "value": "number2",
+    "synonyms": [
+      "number2"
+    ]
+  },
+  {
+    "value": "something",
+    "synonyms": [
+      "something"
+    ]
+  },
+  {
+    "value": "words",
+    "synonyms": [
+      "words"
+    ]
+  },
+  {
+    "value": "some word pharse",
+    "synonyms": [
+      "some word pharse"
+    ]
+  },
+  {
+    "value": "text",
+    "synonyms": [
+      "text"
+    ]
+  }
+]

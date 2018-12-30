@@ -17,7 +17,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "content_under_FOR"
+          "speech": "content under for loop, end of for loop."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -27,7 +27,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545828602,
+  "lastUpdate": 1546088568,
   "fallbackIntent": false,
   "events": []
 }

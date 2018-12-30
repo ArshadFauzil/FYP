@@ -3,37 +3,59 @@
     "id": "2f86eeb9-36c8-4492-934f-7abaf37fbd15",
     "data": [
       {
-        "text": "display words",
+        "text": "display ",
         "userDefined": false
+      },
+      {
+        "text": "words",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545827710
+    "updated": 1546111543
   },
   {
     "id": "de9befb2-05dc-45b5-81ec-43ea4a2d5ee0",
     "data": [
       {
-        "text": "print line text",
+        "text": "print line ",
         "userDefined": false
+      },
+      {
+        "text": "text",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545827710
+    "updated": 1546111543
   },
   {
     "id": "c98145da-6919-4e4b-a4e9-c6fe67b94999",
     "data": [
       {
-        "text": "println(some word pharse)",
+        "text": "println(",
+        "userDefined": false
+      },
+      {
+        "text": "some word pharse",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": true
+      },
+      {
+        "text": ")",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545827710
+    "updated": 1546111543
   },
   {
     "id": "436ea142-a99a-44c6-aaec-c2abe5864382",
@@ -51,13 +73,19 @@
     "id": "89c4a60a-85a2-4852-a266-972b771c7142",
     "data": [
       {
-        "text": "print something",
+        "text": "print ",
         "userDefined": false
+      },
+      {
+        "text": "something",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545827710
+    "updated": 1546111543
   },
   {
     "id": "4c72a181-7461-4116-9d2b-e7bc519d1e19",

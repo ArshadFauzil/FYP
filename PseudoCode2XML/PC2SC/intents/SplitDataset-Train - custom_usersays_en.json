@@ -1,25 +1,13 @@
 [
   {
-    "id": "1dbe28f2-3d0c-4437-b4c9-898ca45ef89c",
+    "id": "0a846954-7f77-4103-885f-4f6aaa928a72",
     "data": [
       {
-        "text": "assign 0.15 for the double variable",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1545991410
-  },
-  {
-    "id": "276ef0bf-ad7b-4ffd-a43e-f8ca13e4e652",
-    "data": [
-      {
-        "text": "test size \u003d ",
+        "text": "value of train is ",
         "userDefined": false
       },
       {
-        "text": "0.25",
+        "text": "0.75",
         "alias": "number",
         "meta": "@sys.number",
         "userDefined": false
@@ -27,17 +15,17 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545738785
+    "updated": 1545991903
   },
   {
-    "id": "923b0e51-9911-4978-a24a-c2fc47260e75",
+    "id": "84b63dd2-1577-4360-bf9e-c5866ca3b783",
     "data": [
       {
-        "text": "test \u003d ",
+        "text": "train \u003d ",
         "userDefined": false
       },
       {
-        "text": "0.5",
+        "text": "0.67",
         "alias": "number",
         "meta": "@sys.number",
         "userDefined": false
@@ -45,28 +33,28 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545738785
+    "updated": 1545991903
   },
   {
-    "id": "602d2c3b-3299-4945-b36d-5ffac3d42138",
+    "id": "854d98ff-312c-44de-8a93-00c66efc4406",
     "data": [
       {
         "text": "assign ",
         "userDefined": false
       },
       {
-        "text": "0.4",
+        "text": "0.9",
         "alias": "number",
         "meta": "@sys.number",
         "userDefined": false
       },
       {
-        "text": " to variable test",
+        "text": " to double variable x",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545738785
+    "updated": 1545991761
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "id": "252d8009-854a-44e8-9ed2-d2c7bac729a5",
-  "name": "ForLoop",
+  "id": "82bf2fed-5d0d-4ffe-9423-850b614797e0",
+  "name": "SplitDataset-Train",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -8,18 +8,26 @@
       "resetContexts": false,
       "affectedContexts": [
         {
-          "name": "ForLoop-followup",
+          "name": "SplitDataset-Train-followup",
           "parameters": {},
           "lifespan": 2
         }
       ],
       "parameters": [
         {
-          "id": "9826513c-5f2b-42f2-bdad-1d2587ac6afc",
+          "id": "95314d48-98aa-4f02-9755-b8faf0a27d5e",
           "required": false,
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "c0325caf-deb5-4030-81af-dbb95c8a18f2",
+          "required": false,
+          "dataType": "@sys.percentage",
+          "name": "percentage",
+          "value": "$percentage",
           "isList": false
         }
       ],
@@ -27,7 +35,10 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "forloopIdentified"
+          "speech": [
+            "train split ratio \u003d $number",
+            "train split ratio \u003d $percentage"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -37,7 +48,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545828537,
+  "lastUpdate": 1546111917,
   "fallbackIntent": false,
   "events": []
 }

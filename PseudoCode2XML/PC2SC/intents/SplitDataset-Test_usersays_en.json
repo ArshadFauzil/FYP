@@ -1,5 +1,69 @@
 [
   {
+    "id": "c75956ef-b94f-4b91-908a-10ff79e30b3e",
+    "data": [
+      {
+        "text": "split dataset in to test and train",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "0c1bcac8-9edf-4114-b0d3-4ceb37334e23",
+    "data": [
+      {
+        "text": "split dataset",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "fd9d0980-3bc3-4098-adc5-b7d6af31971e",
+    "data": [
+      {
+        "text": "test,train ration \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.24",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "f8a94231-f0bc-434d-8a39-b1daabd47705",
+    "data": [
+      {
+        "text": "allocate ",
+        "userDefined": false
+      },
+      {
+        "text": "35%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": false
+      },
+      {
+        "text": " for testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
     "id": "a08f4ddc-072a-44c5-adc1-9a432a889a9b",
     "data": [
       {

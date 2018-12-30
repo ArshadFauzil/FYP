@@ -23,7 +23,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "content_under_IF"
+          "speech": "content under IF condition, End IF"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -33,7 +33,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545828408,
+  "lastUpdate": 1546104475,
   "fallbackIntent": false,
   "events": []
 }

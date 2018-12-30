@@ -1,0 +1,160 @@
+[
+  {
+    "id": "2ab88445-252d-419e-a9de-f622c89aa648",
+    "data": [
+      {
+        "text": "train/test ratio \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.48",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991832
+  },
+  {
+    "id": "c165e58c-1acb-4fcc-81d4-dcd5357c0e45",
+    "data": [
+      {
+        "text": "allocate ",
+        "userDefined": false
+      },
+      {
+        "text": "60%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": false
+      },
+      {
+        "text": " for training",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "40b015c1-06ea-45f6-b7a7-80cf58612ebf",
+    "data": [
+      {
+        "text": "train ",
+        "userDefined": false
+      },
+      {
+        "text": "80%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "2126ab42-f230-42cb-aff2-76c1d0d19520",
+    "data": [
+      {
+        "text": "define a floating point variable x",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "44d1b959-077a-4ba6-916f-abb21beff75f",
+    "data": [
+      {
+        "text": "define double variable called train",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "a93ce921-f373-4456-adac-9a1afd68fb8f",
+    "data": [
+      {
+        "text": "train ratio is ",
+        "userDefined": false
+      },
+      {
+        "text": "0.5",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "cde28483-7794-4a00-8d04-ddd83a1c3513",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "0.8",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " to train the model",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "c23c73ca-4adc-4703-abf8-4a184d0a6ea1",
+    "data": [
+      {
+        "text": "0.75",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " for training",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  },
+  {
+    "id": "12f65d7f-8ecc-45c7-b87b-c5888976b4f9",
+    "data": [
+      {
+        "text": "train size \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.7",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991698
+  }
+]

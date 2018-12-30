@@ -16,9 +16,41 @@
       "parameters": [
         {
           "id": "0683d89e-6c4b-455d-99bb-8cad6bd1c2b8",
+          "required": false,
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "2323f13f-db42-4bc3-9394-aea7356356dc",
+          "required": false,
+          "dataType": "@temp_variable",
+          "name": "temp_variable",
+          "value": "$temp_variable",
+          "isList": true
+        },
+        {
+          "id": "231a2fac-9c97-400a-a750-3ef30e0ce122",
+          "required": false,
+          "dataType": "@temp_variable",
+          "name": "temp_variable1",
+          "value": "$temp_variable1",
+          "isList": false
+        },
+        {
+          "id": "bd11be02-8c2a-43c1-a196-770fe57bc4b6",
+          "required": false,
+          "dataType": "@bool_variable",
+          "name": "bool_variable",
+          "value": "$bool_variable",
+          "isList": false
+        },
+        {
+          "id": "807bd511-ee4f-4777-96a4-68ccf6bfd0dd",
+          "dataType": "@operator_symbols",
+          "name": "operator_symbols",
+          "value": "$operator_symbols",
           "isList": false
         }
       ],
@@ -26,7 +58,10 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "If_condition_identified"
+          "speech": [
+            "if $temp_variable is $operator_symbols $temp_variable,",
+            "if $temp_variable,"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -36,7 +71,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545827970,
+  "lastUpdate": 1546094972,
   "fallbackIntent": false,
   "events": []
 }

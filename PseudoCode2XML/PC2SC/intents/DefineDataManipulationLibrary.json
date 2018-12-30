@@ -7,12 +7,21 @@
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "3d503f39-d024-46a2-a049-66d9a1c47c37",
+          "required": false,
+          "dataType": "@DataManipulationLibrary",
+          "name": "DataManipulationLibrary",
+          "value": "$DataManipulationLibrary",
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "DataManipulationLibrary"
+          "speech": "import module $DataManipulationLibrary"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545728621,
+  "lastUpdate": 1546084147,
   "fallbackIntent": false,
   "events": []
 }

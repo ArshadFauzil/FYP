@@ -1,0 +1,49 @@
+{
+  "id": "48fcd48c-bd11-4ff4-8f8f-e6cc0eb9cce8",
+  "name": "ForEach_Loop",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "ForEach_Loop-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "41d3a88b-e6a7-49c2-9640-02619287579c",
+          "dataType": "@temp_variable",
+          "name": "temp_variable",
+          "value": "$temp_variable",
+          "isList": false
+        },
+        {
+          "id": "41e9294f-ff00-404c-9cef-0cb0136fce07",
+          "dataType": "@list_variable",
+          "name": "list_variable",
+          "value": "$list_variable",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "for every $temp_variable in $list_variable,"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1546088137,
+  "fallbackIntent": false,
+  "events": []
+}

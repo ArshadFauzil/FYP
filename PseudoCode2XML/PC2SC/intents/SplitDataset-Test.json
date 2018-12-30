@@ -35,7 +35,10 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "ObservedTestSize"
+          "speech": [
+            "test split ratio \u003d $number",
+            "test split ratio \u003d $percentage"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -45,7 +48,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545738222,
+  "lastUpdate": 1546111865,
   "fallbackIntent": false,
   "events": []
 }

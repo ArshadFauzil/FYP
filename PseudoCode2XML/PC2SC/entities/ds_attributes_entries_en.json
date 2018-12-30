@@ -12,21 +12,33 @@
     ]
   },
   {
-    "value": "restaurant_id",
+    "value": "transaction_date",
     "synonyms": [
-      "restaurant_id"
+      "transaction_date"
     ]
   },
   {
-    "value": "restaurant_name",
+    "value": "product",
     "synonyms": [
-      "restaurant_name"
+      "product"
     ]
   },
   {
-    "value": "country_code",
+    "value": "price",
     "synonyms": [
-      "country_code"
+      "price"
+    ]
+  },
+  {
+    "value": "payment_type",
+    "synonyms": [
+      "payment_type"
+    ]
+  },
+  {
+    "value": "name",
+    "synonyms": [
+      "name"
     ]
   },
   {
@@ -36,9 +48,27 @@
     ]
   },
   {
-    "value": "longitude",
+    "value": "state",
     "synonyms": [
-      "longitude"
+      "state"
+    ]
+  },
+  {
+    "value": "country",
+    "synonyms": [
+      "country"
+    ]
+  },
+  {
+    "value": "account_created",
+    "synonyms": [
+      "account_created"
+    ]
+  },
+  {
+    "value": "last_login",
+    "synonyms": [
+      "last_login"
     ]
   },
   {
@@ -48,81 +78,9 @@
     ]
   },
   {
-    "value": "average_cost_for_two",
+    "value": "longitude",
     "synonyms": [
-      "average_cost_for_two"
-    ]
-  },
-  {
-    "value": "currency",
-    "synonyms": [
-      "currency"
-    ]
-  },
-  {
-    "value": "has_table_booking",
-    "synonyms": [
-      "has_table_booking"
-    ]
-  },
-  {
-    "value": "has_online_delivery",
-    "synonyms": [
-      "has_online_delivery"
-    ]
-  },
-  {
-    "value": "is_delivering_now",
-    "synonyms": [
-      "is_delivering_now"
-    ]
-  },
-  {
-    "value": "switch_to_order_menu",
-    "synonyms": [
-      "switch_to_order_menu"
-    ]
-  },
-  {
-    "value": "price_range",
-    "synonyms": [
-      "price_range"
-    ]
-  },
-  {
-    "value": "aggregate_rating",
-    "synonyms": [
-      "aggregate_rating"
-    ]
-  },
-  {
-    "value": "rating_color",
-    "synonyms": [
-      "rating_color"
-    ]
-  },
-  {
-    "value": "rating_text",
-    "synonyms": [
-      "rating_text"
-    ]
-  },
-  {
-    "value": "votes",
-    "synonyms": [
-      "votes"
-    ]
-  },
-  {
-    "value": "cuisines",
-    "synonyms": [
-      "cuisines"
-    ]
-  },
-  {
-    "value": "pass",
-    "synonyms": [
-      "pass"
+      "longitude"
     ]
   }
 ]

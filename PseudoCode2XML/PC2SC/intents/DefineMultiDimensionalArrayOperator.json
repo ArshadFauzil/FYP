@@ -7,12 +7,20 @@
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "dfe59efe-810f-48d1-8edc-132175e3a4b5",
+          "dataType": "@MDA_Operator",
+          "name": "MDA_Operator",
+          "value": "$MDA_Operator",
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "MultiDimensionalArrayOperator"
+          "speech": "import module $MDA_Operator"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +30,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545728916,
+  "lastUpdate": 1546084684,
   "fallbackIntent": false,
   "events": []
 }

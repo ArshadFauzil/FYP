@@ -7,12 +7,20 @@
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "562e23fa-5dbe-46b4-90ab-e9aa7652b653",
+          "dataType": "@temp_variable",
+          "name": "temp_variable",
+          "value": "$temp_variable",
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "printIdentified"
+          "speech": "print $temp_variable"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +30,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545827710,
+  "lastUpdate": 1546111543,
   "fallbackIntent": false,
   "events": []
 }

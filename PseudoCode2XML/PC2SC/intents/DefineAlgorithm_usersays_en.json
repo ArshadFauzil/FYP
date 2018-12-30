@@ -1,5 +1,59 @@
 [
   {
+    "id": "d1c7fe52-bd59-4d9a-b5c2-74445913601f",
+    "data": [
+      {
+        "text": "classifier is ",
+        "userDefined": false
+      },
+      {
+        "text": "LinearSVC",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
+    "id": "3d861743-4043-4602-9cd0-ded9472aa028",
+    "data": [
+      {
+        "text": "clf \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "Logistic Regression",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
+    "id": "feb27aa6-f143-42bb-81f4-9dff3be84eef",
+    "data": [
+      {
+        "text": "classify data frame using ",
+        "userDefined": false
+      },
+      {
+        "text": "MultinomialNB",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
     "id": "4acd1b44-95f3-4b70-a9cf-4cb65365d5b7",
     "data": [
       {

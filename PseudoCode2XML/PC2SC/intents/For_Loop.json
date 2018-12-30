@@ -1,20 +1,21 @@
 {
-  "id": "57826435-dcf1-4e27-9f18-06cafb5c0bed",
-  "parentId": "80abcade-e122-4212-a46a-4b6424f6e227",
-  "rootParentId": "80abcade-e122-4212-a46a-4b6424f6e227",
-  "name": "SplitDataset-Test - custom",
+  "id": "252d8009-854a-44e8-9ed2-d2c7bac729a5",
+  "name": "For_Loop",
   "auto": true,
-  "contexts": [
-    "SplitDataset-Test-followup"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "SplitDataset-Test.SplitDataset-Test-custom",
-      "affectedContexts": [],
+      "affectedContexts": [
+        {
+          "name": "ForLoop-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
       "parameters": [
         {
-          "id": "ab209c91-ab57-4aa6-aa1c-1f6a2990400c",
+          "id": "9826513c-5f2b-42f2-bdad-1d2587ac6afc",
           "required": false,
           "dataType": "@sys.number",
           "name": "number",
@@ -26,7 +27,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "test split ratio \u003d $number"
+          "speech": "iterate for $number times"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -36,7 +37,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1546111886,
+  "lastUpdate": 1546087865,
   "fallbackIntent": false,
   "events": []
 }
