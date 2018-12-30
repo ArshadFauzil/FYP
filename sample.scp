@@ -1,0 +1,42 @@
+import pandas as pd
+import numpy as np
+import matplotlib as plt
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+df = pd.read_csv('dataset.csv')
+df = pd.read_csv('dataset.txt', sep=" ", header=None)
+df = pd.read_csv('dataset.tsv', sep='\t')
+features = FEATURE_SET
+split = SPLIT_RATIO
+target_class = TARGET_CLASS
+df = df[FEATURE_SET.append(target_class)]
+df = df[pd.notnull(df[target_class])]
+X_train, X_test, y_train, y_test = train_test_split(df[FEATURE_SET], df[TARGET_CLASS], random_state = 0)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+clf = MultinomialNB().fit(X_train, y_train)
+clf = LinearSVC().fit(X_train, y_train)
+clf = RandomForestClassifier().fit(X_train, y_train)
+clf = LogisticRegression().fit(X_train, y_train)
+predictions = clf.predict(x_test)
+cm = sklearn.metrics.confusion_matrix(y_test,predictions)
+new_datapoint = scaler.fit_transform(NEW_DATAPOINT)
+clf.predict(new_datapoint)
+le = LabelEncoder()
+for column in df:
+	if(column.dtype == "object"):
+		df[column] = le.fit_transform(df[column])
+text_feature = TEXT_FEATURE
+count_vect = CountVectorizer()
+df_counts_TEXT_FEATURE = count_vect.fit_transform(df[text_feature])
+tfidf_transformer = TfidfTransformer()
+df_tfidf_TEXT_FEATURE = tfidf_transformer.fit_transform(df_counts)

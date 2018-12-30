@@ -1,0 +1,42 @@
+library dataframe.
+library multidimentional array.
+library DataVisualization.
+library MLlibrary Multinomial Naive Bayes.
+library MLlibrary Gaussian Naive Bayes.
+library MLlibrary Random Forest.
+library MLlibrary Logisitic Regression.
+library MLlibrary SVM.
+Library MLlibrary TrainTestSplit.
+library MLlibrary Preprocessing Scaler.
+library MLlibrary Confusion Matrix.
+library MLlibrary Label Encoder.
+library MLlibrary CountVectorizer.
+library MLlibrary tfidf feature extractor.
+read csv file.
+read text file.
+read tsv file.
+define FEATURE_SET.
+define SPLIT_RATIO.
+define TARGET_CLASS.
+define final dataframe.
+remove null datapoints from the dataframe.
+generate X_train X_test y_train y_test by splitting dataframe by SPLIT_RATIO ratio.
+define standard scaler.
+normalize the features of the dataframe.
+classify dataframe using MultinomialNB.
+classify dataframe using LinearSVC.
+classify dataframe using Random Forest Classifier.
+classify dataframe using Logistic Regression.
+define predictions for X_test.
+generate confusion matrix for the predictions.
+define a new datapoint.
+generate prediction for new datapoint.
+define label encoder.
+iterate for each column in the dataframe,
+check if each column datatype is of object type,
+label encode column values.
+define text feature.
+define count vectorizer.
+get counts of tokens from the text feature.
+define tfidf transformer.
+get the tfidf scores for the text feature.
