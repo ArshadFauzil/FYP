@@ -9,15 +9,23 @@ def get_columns(fname):
     df = pd.read_csv(fname, nrows=0, sep='\t', delimiter=None, header='infer', names=None,
                      index_col=None, encoding="ISO-8859-1")
 
-    attributes = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
+    attributes_real = df.columns.str.split(',')
 
-    # attributes = df.columns.values.tolist()
+    attr_list = []
+    count = 1
 
-    # print(len(list(df)))
+    for col in attributes_real[0]:
+        col_mod = str(col).strip().lower().replace(' ', '_').replace('(', '').replace(')', '')
+        pair = [col_mod, col, 'column'+str(count)]
+        attr_list.append(pair)
+        count += 1
 
-    for col in attributes:
-        attr = col.split(',')
+    return attr_list
 
-    print(len(attr))
-    # print(attr)
-    return attr
+
+def get_file_name(fn):
+    fn_mod = fn.strip().lower().replace(' ', '_').replace('(', '').replace(')', '')
+    file_name = [[fn_mod, fn, 'dataset']]
+
+    return file_name
+

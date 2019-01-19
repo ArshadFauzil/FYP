@@ -1,9 +1,7 @@
 
-classify dataframe using Logistic Regression.
 read csv file
-test split ratio = 30%
-TARGET_CLASS = payment_type
-
-RequestingAccuracy
-read csv file
-End of the Pseudocode
+read csv file salesjan2009.csv
+classify dataframe using Decision Tree Classification
+target class = transaction_date
+create model
+print accuracy

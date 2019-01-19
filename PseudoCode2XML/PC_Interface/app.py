@@ -3,7 +3,7 @@ from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for, send_file
 from detect_intent_texts import detect_intent_texts
-from read_attributes import get_columns
+from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
 from API_manager import enter_new_entity, enter_filename_entity
 import DB_Manager
@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = "AS9UjjJI0J0JS9j"
 
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
-SESSION_ID = 'fake_session_for_testing'
+SESSION_ID = 'session_pc'
 # UPLOAD_FOLDER = '/home/madusha/'
 UPLOAD_FOLDER = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources'
 ALLOWED_EXTENSIONS = set(['csv', 'txt'])
@@ -115,9 +115,9 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             columns = get_columns(UPLOAD_FOLDER + '/' + filename)
-            print(columns)
-            enter_filename_entity([filename], url_ds_name)
-            enter_new_entity(columns, url_ds_attributes)
+            file_names = get_file_name(filename)
+            enter_new_entity(file_names, url_ds_name, 'Dataset_Name')
+            enter_new_entity(columns, url_ds_attributes, 'ds_attributes')
             return render_template('pseudocode_input.html', filename=filename)
             # return redirect(url_for('uploaded_file',
             #                         filename=filename))
@@ -128,6 +128,23 @@ def upload_file():
 def generate_intermediate_code():
     lines = DB_Manager.get_pseudocode_from_db()[0]
     full_pc = ""
+    # try:
+    #     for line in lines:
+    #         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, [line], 'en-US')
+    #         full_pc = full_pc + '\n' + pc
+    #
+    #     print(full_pc)
+    #     # f = open(os.path.join(app.config['DOWNLOAD_FOLDER']) + '/ipc.txt', "w+")
+    #     f = open("ipc.txt", "w+")
+    #     f.write(full_pc)
+    #     DB_Manager.delete_all_documents("pseudocodes_temp")
+    #     # path = "ipc.txt"
+    #     # return send_file(path, as_attachment=True)
+    #     return render_template('result1.html', statements=lines)
+    # except:
+    #     print("An Exception occurred")
+    #     return render_template('result1.html', statements=lines)
+
     for line in lines:
         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, [line], 'en-US')
         full_pc = full_pc + '\n' + pc

@@ -7,3 +7,27 @@ class = play_golf
 classify ds1
 calculate accuracy
 end
+
+
+
+
+
+use given dataset
+dataset = fz
+classifier = decision tree
+class = has_online_booking
+apply classification to fz
+view accuracy
+
+
+
+use array operator
+use numpy
+use sklearn
+use svm
+apply regression
+class is Machine_learning
+train = 0.7
+test = 30%
+apply cross validation
+delete model
