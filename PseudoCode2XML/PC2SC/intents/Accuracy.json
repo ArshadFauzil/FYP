@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "RequestingAccuracy"
+          "speech": "requesting accuracy"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545992046,
+  "lastUpdate": 1547463326,
   "fallbackIntent": false,
   "events": []
 }

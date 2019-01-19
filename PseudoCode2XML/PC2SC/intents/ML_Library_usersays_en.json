@@ -1,0 +1,138 @@
+[
+  {
+    "id": "e7e10488-3a06-42da-b5c4-8fe4cca1cddb",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "scikit",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "c9941ec6-a064-4956-a857-fef1b7cdce4f",
+    "data": [
+      {
+        "text": "using ",
+        "userDefined": false
+      },
+      {
+        "text": "E1070",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "cc7bbfeb-a5ba-49c8-bf9e-792742fbd292",
+    "data": [
+      {
+        "text": "e 1070",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "ac753285-1532-41a4-88fd-54fb8034b6e2",
+    "data": [
+      {
+        "text": "scikit learn",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "cd7fc3a2-b2da-403c-a19e-e5df89281b71",
+    "data": [
+      {
+        "text": "by using ",
+        "userDefined": false
+      },
+      {
+        "text": "SKLEARN",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "4ec54a48-ec4a-4c1b-a1b2-c496cdfbbf2f",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "scikit learn",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "2abaa5f5-5a27-4803-b7f7-851a096a5b0a",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "e1070",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  },
+  {
+    "id": "47ab109e-a823-48bf-9f56-60ea1da0e16e",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "sklearn",
+        "alias": "mlearning_library",
+        "meta": "@mlearning_library",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445089
+  }
+]

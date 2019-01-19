@@ -1,5 +1,23 @@
 [
   {
+    "id": "bc59b997-4b98-4e1d-900f-325bc9791238",
+    "data": [
+      {
+        "text": "classify using ",
+        "userDefined": false
+      },
+      {
+        "text": "regression",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445192
+  },
+  {
     "id": "d1c7fe52-bd59-4d9a-b5c2-74445913601f",
     "data": [
       {

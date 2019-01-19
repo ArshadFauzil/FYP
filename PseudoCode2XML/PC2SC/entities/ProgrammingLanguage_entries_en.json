@@ -19,5 +19,11 @@
       "Python",
       "Py"
     ]
+  },
+  {
+    "value": "R",
+    "synonyms": [
+      "R"
+    ]
   }
 ]

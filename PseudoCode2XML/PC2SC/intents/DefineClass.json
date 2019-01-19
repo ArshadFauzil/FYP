@@ -22,8 +22,8 @@
           "type": 0,
           "lang": "en",
           "speech": [
-            "define TARGET_CLASS",
-            "TARGET_CLASS \u003d $ds_attributes"
+            "define target class",
+            "target class \u003d $ds_attributes"
           ]
         }
       ],
@@ -34,7 +34,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1546086730,
+  "lastUpdate": 1547463668,
   "fallbackIntent": false,
   "events": []
 }

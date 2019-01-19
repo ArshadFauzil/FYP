@@ -2,85 +2,91 @@
   {
     "value": "9999",
     "synonyms": [
-      "9999"
-    ]
-  },
-  {
-    "value": "4444",
-    "synonyms": [
       "4444"
     ]
   },
   {
     "value": "transaction_date",
     "synonyms": [
-      "transaction_date"
+      "Transaction_date",
+      "column1"
     ]
   },
   {
     "value": "product",
     "synonyms": [
-      "product"
+      "Product",
+      "column2"
     ]
   },
   {
     "value": "price",
     "synonyms": [
-      "price"
+      "Price",
+      "column3"
     ]
   },
   {
     "value": "payment_type",
     "synonyms": [
-      "payment_type"
+      "Payment_Type",
+      "column4"
     ]
   },
   {
     "value": "name",
     "synonyms": [
-      "name"
+      "Name",
+      "column5"
     ]
   },
   {
     "value": "city",
     "synonyms": [
-      "city"
+      "City",
+      "column6"
     ]
   },
   {
     "value": "state",
     "synonyms": [
-      "state"
+      "State",
+      "column7"
     ]
   },
   {
     "value": "country",
     "synonyms": [
-      "country"
+      "Country",
+      "column8"
     ]
   },
   {
     "value": "account_created",
     "synonyms": [
-      "account_created"
+      "Account_Created",
+      "column9"
     ]
   },
   {
     "value": "last_login",
     "synonyms": [
-      "last_login"
+      "Last_Login",
+      "column10"
     ]
   },
   {
     "value": "latitude",
     "synonyms": [
-      "latitude"
+      "Latitude",
+      "column11"
     ]
   },
   {
     "value": "longitude",
     "synonyms": [
-      "longitude"
+      "Longitude",
+      "column12"
     ]
   }
 ]

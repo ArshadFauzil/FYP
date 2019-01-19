@@ -10,6 +10,7 @@
       "parameters": [
         {
           "id": "253aba42-ab23-41e8-8103-70139e2e82e4",
+          "required": false,
           "dataType": "@Algorithms",
           "name": "Algorithms",
           "value": "$Algorithms",
@@ -20,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "StartCommand"
+          "speech": "create model"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -30,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545972140,
+  "lastUpdate": 1547464309,
   "fallbackIntent": false,
   "events": []
 }

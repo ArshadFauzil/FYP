@@ -1,6 +1,6 @@
 {
-  "id": "f4e2e8a1-f0b7-4149-a430-7d86acb83589",
-  "name": "Language",
+  "id": "25a50b13-07e6-40c7-90b7-f5e423c6130a",
+  "name": "ML_Library",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -9,10 +9,10 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "74befdec-a6bf-4e20-8ce2-374d8fff9ba9",
-          "dataType": "@ProgrammingLanguage",
-          "name": "ProgrammingLanguage",
-          "value": "$ProgrammingLanguage",
+          "id": "59b0611b-9bf0-4af1-b1fb-7de3e0e25d67",
+          "dataType": "@mlearning_library",
+          "name": "mlearning_library",
+          "value": "$mlearning_library",
           "isList": false
         }
       ],
@@ -20,7 +20,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "requested language \u003d $ProgrammingLanguage"
+          "speech": "import module ML_Library"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -30,7 +30,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1547463963,
+  "lastUpdate": 1547445089,
   "fallbackIntent": false,
   "events": []
 }

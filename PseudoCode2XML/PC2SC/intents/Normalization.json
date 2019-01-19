@@ -1,6 +1,6 @@
 {
-  "id": "614c0cc2-b834-4cc2-b3a5-9e1022322735",
-  "name": "Define_N_in_KNN",
+  "id": "4e4920d0-b5d2-4125-b043-2b5f39323df0",
+  "name": "Normalization",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -9,11 +9,17 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "64630cc6-761b-46b0-b8ad-7ce601f88dba",
-          "required": false,
+          "id": "de918a24-d4e8-4341-b329-def30991db7d",
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "cafc1a7f-ceea-4861-b404-c5abe001c429",
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
           "isList": false
         }
       ],
@@ -21,7 +27,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "N_in_KNN is integer $number"
+          "speech": "normalize dataset"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +37,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1546084932,
+  "lastUpdate": 1547625592,
   "fallbackIntent": false,
   "events": []
 }

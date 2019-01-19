@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "classify dataframe using $Algorithms."
+          "speech": "classify dataframe using $Algorithms"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1546086608,
+  "lastUpdate": 1547463546,
   "fallbackIntent": false,
   "events": []
 }

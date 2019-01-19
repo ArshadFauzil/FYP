@@ -83,5 +83,12 @@
       "Linear SVC",
       "linear svc"
     ]
+  },
+  {
+    "value": "regression",
+    "synonyms": [
+      "regression",
+      "Regression"
+    ]
   }
 ]
