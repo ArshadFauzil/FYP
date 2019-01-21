@@ -1,43 +1,38 @@
-# import spacy
-# nlp = spacy.load('en')
-# doc = nlp('Hello     World!')
-# for token in doc:
-#     print('"' + token.text + '"', token.idx)
-
+# from test_spaCy_model import Spacy
 import spacy
+import csv
 
-nlp = spacy.load('en_core_web_lg')
-nlp_en = spacy.load('en')
+UPLOAD_FOLDER = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources/'
 
-intents = ['requesting accuracy',
-           'K is integer $number',
-           'classify data frame using Algorithm',
-           'define target class',
-           'import Data Manipulation Library',
-           'import multidimensional array operator',
-           'drop attributes',
-           'terminate classification',
-           'use programming language',
-           'read csv file',
-           'import machine learning library',
-           'test ratio is',
-           'train ratio is',
-           'create model',
-           'apply cross validation',
-           'delete model'
-           ]
 
-max_similarity = 0
-index = 0
-max_index = 0
+class Spacy:
+    nlp = spacy.load('en_core_web_lg')
+    with open(UPLOAD_FOLDER + 'intents.csv', 'r') as f:
+        reader = csv.reader(f)
+        intents = list(reader)
 
-for s in intents:
-    similarity = nlp('apply svm').similarity(nlp(s))
-    if similarity > max_similarity:
-        max_similarity = similarity
-        max_index = index
 
-    index += 1
-    print(similarity)
+c = Spacy()
 
-print('Max similarity : ' + intents[max_index] + '(' + str(max_similarity) + ')')
+
+def find_similar_intent(statement):
+    index = 0
+
+    for t in statement:
+        max_similarity = 0
+        for i in c.intents:
+            similarity = c.nlp(t).similarity(c.nlp(i[1]))
+            if similarity > max_similarity:
+                max_similarity = similarity
+                index = int(i[0])
+
+            print(str(similarity) + "\t" + i[1])
+
+        print('Max similarity : ' + c.intents[index][1] + '(' + str(max_similarity) + ')')
+
+        return c.intents[index][1]
+
+
+if __name__ == '__main__':
+    text = ['apply svm', 'repeat until 10']
+    find_similar_intent(text)

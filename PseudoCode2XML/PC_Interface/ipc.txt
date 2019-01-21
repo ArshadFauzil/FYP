@@ -1,7 +1,10 @@
 
 read csv file
-read csv file salesjan2009.csv
-classify dataframe using Decision Tree Classification
+read csv file
+classify dataframe using KNN
 target class = transaction_date
+drop attributes = transaction_date
+apply cross validation
 create model
-print accuracy
+use programming language
+requesting accuracy

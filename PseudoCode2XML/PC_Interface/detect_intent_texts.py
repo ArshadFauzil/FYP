@@ -1,6 +1,7 @@
 import os
 from google.oauth2 import service_account
-from DB_Manager import insert_intents_into_db
+# from DB_Manager import insert_intents_into_db
+from test_spaCy import find_similar_intent
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
@@ -39,6 +40,10 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
         print('Detected intent: {} (confidence: {})\n'.format(intent, confidence))
         print('Fulfillment text: {}\n'.format(fulfillment))
         print('Parameter Entity : {}'.format(parameters))
+
+        if fulfillment == 'unknown':
+            fulfillment = find_similar_intent([str(query_text)])
+            print('Fulfillment text (by SE): {}\n'.format(fulfillment))
 
         # record = response.query_result
         # record = {"Query Text": query_text, "Intent": intent, "Confidence": confidence, "Fulfillment": fulfillment, "Parameters": parameters}

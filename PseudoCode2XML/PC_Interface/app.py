@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, session, abort, flash, url_fo
 from detect_intent_texts import detect_intent_texts
 from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
-from API_manager import enter_new_entity, enter_filename_entity
+from API_manager import enter_new_entity
 import DB_Manager
 
 app = Flask(__name__)
