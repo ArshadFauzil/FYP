@@ -3,6 +3,7 @@ import requests
 import lxml
 import pandas as pd
 import regex
+import pymongo
 
 #Varible and arrays
 argument_array = []
@@ -13,7 +14,7 @@ values_in_brackets = []
 arg_and_def_values = []
 
 #get gata from web
-res = requests.get('https://www.rdocumentation.org/packages/kknn/versions/1.3.1/topics/kknn')
+res = requests.get('https://www.rdocumentation.org/packages/e1071/versions/1.7-0/topics/svm')
 soup = bs4.BeautifulSoup(res.text, 'lxml')
 argument = soup.find(class_='topic--arguments')
 default_parm = soup.find('pre').text.replace('\n',' ').replace('#','\n').replace('\xa0', ' ').replace('\t', '')
@@ -74,5 +75,10 @@ for i, val in enumerate(argument_array):
 
 #save data
 df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp})
-df.to_csv("R_output.csv", index=False)
+df.to_csv("R_output.csv", index=False, encoding="utf-8")
 
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["FYP"]
+mycol = mydb["R_Param"]
+mycol.remove({})
+mycol.insert_many(df.to_dict('records'))

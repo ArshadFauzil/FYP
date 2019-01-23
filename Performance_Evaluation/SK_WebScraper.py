@@ -5,6 +5,7 @@ import html5lib
 import pandas as pd
 import re
 import csv
+import pymongo
 
 #Varible and arrays
 argument_array = []
@@ -41,4 +42,10 @@ for i, val in enumerate(value):
 
 #save data
 df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value})
-df.to_csv("SK_output.csv", index=False )
+df.to_csv("SK_output.csv", index=False, encoding="utf-8" )
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["FYP"]
+mycol = mydb["SK_Param"]
+mycol.remove({})
+mycol.insert_many(df.to_dict('records'))
