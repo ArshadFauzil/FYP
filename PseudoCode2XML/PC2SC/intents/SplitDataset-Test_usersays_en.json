@@ -1,5 +1,89 @@
 [
   {
+    "id": "0dec81a3-4ddb-48a0-b7fd-911d6537ac60",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "60%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": true
+      },
+      {
+        "text": " data for testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037715
+  },
+  {
+    "id": "68e15254-5cca-489a-aa28-b7e5b14f3212",
+    "data": [
+      {
+        "text": "test set is ",
+        "userDefined": false
+      },
+      {
+        "text": "0.6",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " of data set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037715
+  },
+  {
+    "id": "ce70a8dd-2c82-426e-bdc0-5627b181eeb5",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "0.1",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " from the data set for validation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548777043
+  },
+  {
+    "id": "7d18827f-5956-491c-9a8f-397fcc06662f",
+    "data": [
+      {
+        "text": "validation \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.256",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548777043
+  },
+  {
     "id": "c75956ef-b94f-4b91-908a-10ff79e30b3e",
     "data": [
       {
@@ -27,7 +111,7 @@
     "id": "fd9d0980-3bc3-4098-adc5-b7d6af31971e",
     "data": [
       {
-        "text": "test,train ration \u003d ",
+        "text": "test,train ratio \u003d ",
         "userDefined": false
       },
       {
@@ -39,7 +123,7 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545991347
+    "updated": 1549037625
   },
   {
     "id": "f8a94231-f0bc-434d-8a39-b1daabd47705",
@@ -67,13 +151,23 @@
     "id": "a08f4ddc-072a-44c5-adc1-9a432a889a9b",
     "data": [
       {
-        "text": "define a variable called test",
+        "text": "define a variable called test and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "0.78",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1545738222
+    "updated": 1549037625
   },
   {
     "id": "a0ee9235-83b0-48f3-8593-3ea2cb1efc59",

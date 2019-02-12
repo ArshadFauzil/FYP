@@ -27,5 +27,11 @@
       "Data Frame",
       "data frame generator"
     ]
+  },
+  {
+    "value": "dataframe",
+    "synonyms": [
+      "dataframe"
+    ]
   }
 ]

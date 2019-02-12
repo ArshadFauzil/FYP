@@ -1,0 +1,28 @@
+{
+  "id": "1d31a1f6-a610-4e87-853f-e26a5bf1e523",
+  "name": "SplitDataset",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "split dataframe feature set and target class by SPLIT_RATIO ratio and assign to X_train X_test y_train y_test"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549824523,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -5,14 +5,16 @@
       "KNN",
       "k-nearest neighbors",
       "knn classification",
-      "K-Nearest_Neighbor"
+      "K-Nearest_Neighbor",
+      "knn"
     ]
   },
   {
     "value": "k-means",
     "synonyms": [
       "K-Means Clustering",
-      "K-Means"
+      "K-Means",
+      "k means cluster"
     ]
   },
   {
@@ -27,7 +29,8 @@
     "value": "SVM",
     "synonyms": [
       "SVM",
-      "Support Vector Machine"
+      "Support Vector Machine",
+      "support vector"
     ]
   },
   {
@@ -41,7 +44,8 @@
     "value": "naive bayes",
     "synonyms": [
       "naive bayes",
-      "naive bayes classification"
+      "naive bayes classification",
+      "Naive Bayes classifier"
     ]
   },
   {
@@ -81,7 +85,8 @@
     "synonyms": [
       "LinearSVC",
       "Linear SVC",
-      "linear svc"
+      "linear svc",
+      "LinearSVC"
     ]
   },
   {
@@ -89,6 +94,42 @@
     "synonyms": [
       "regression",
       "Regression"
+    ]
+  },
+  {
+    "value": "Neural Network",
+    "synonyms": [
+      "Neural Network",
+      "NN"
+    ]
+  },
+  {
+    "value": "Gaussian Naive Bayes",
+    "synonyms": [
+      "Gaussian Naive Bayes"
+    ]
+  },
+  {
+    "value": "Random Forest",
+    "synonyms": [
+      "Random Forest",
+      "RF",
+      "random forest"
+    ]
+  },
+  {
+    "value": "Multinomial Naive Bayes",
+    "synonyms": [
+      "Multinomial Naive Bayes",
+      "MNB",
+      "MultinomialNB"
+    ]
+  },
+  {
+    "value": "Logisitic Regression",
+    "synonyms": [
+      "Logisitic Regression",
+      "LR"
     ]
   }
 ]

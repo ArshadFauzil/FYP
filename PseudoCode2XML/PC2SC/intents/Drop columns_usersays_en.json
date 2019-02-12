@@ -1,0 +1,388 @@
+[
+  {
+    "id": "96504ada-e4b1-4071-a760-7924a95873f0",
+    "data": [
+      {
+        "text": "hide ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " , ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 4",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and  ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 5",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " from learning",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302519
+  },
+  {
+    "id": "fb217090-826d-4be1-bbd4-9dcb394cc468",
+    "data": [
+      {
+        "text": "not use ",
+        "userDefined": false
+      },
+      {
+        "text": "distance",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "velocity",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " for train the model",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302519
+  },
+  {
+    "id": "c87c17e9-f3e2-4941-96d8-7ecf546671d1",
+    "data": [
+      {
+        "text": "eliminate ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " from data set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302519
+  },
+  {
+    "id": "0f4b0f65-a31e-4dd8-8048-074cd08138dc",
+    "data": [
+      {
+        "text": "features to be ignored \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "height",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "length",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549005521
+  },
+  {
+    "id": "79fbbe5f-bb9c-468e-a1d0-828b0482fdca",
+    "data": [
+      {
+        "text": "not consider ",
+        "userDefined": false
+      },
+      {
+        "text": "price",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "sales",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549005202
+  },
+  {
+    "id": "dd884bd3-623f-43b0-a7f4-183708dc9880",
+    "data": [
+      {
+        "text": "delete ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "column4",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column6",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549005202
+  },
+  {
+    "id": "f96dc295-2b65-4b70-bd5f-83b9b719d19c",
+    "data": [
+      {
+        "text": "columns to be dropped \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "findex2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "findex9",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992416
+  },
+  {
+    "id": "591fd315-3f15-4684-b06e-3ad3bef9c49b",
+    "data": [
+      {
+        "text": "drop ",
+        "userDefined": false
+      },
+      {
+        "text": "findex2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992416
+  },
+  {
+    "id": "a8b6f3fd-a776-40f2-886a-b460b245cbc0",
+    "data": [
+      {
+        "text": "ignore ",
+        "userDefined": false
+      },
+      {
+        "text": "4444",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "findex1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "findex2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "findex9",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": "  columns",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992416
+  },
+  {
+    "id": "cc6ca0bd-b5b7-4f09-beeb-57fd625f2798",
+    "data": [
+      {
+        "text": "remove ",
+        "userDefined": false
+      },
+      {
+        "text": "9999",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      },
+      {
+        "text": " column",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992416
+  },
+  {
+    "id": "ce99dd1a-8cce-456a-8934-8bae658afdb3",
+    "data": [
+      {
+        "text": "drop columns ",
+        "userDefined": false
+      },
+      {
+        "text": "9999, 4444",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992416
+  },
+  {
+    "id": "617d008a-1cbc-492e-bbc0-fe83e36deeb1",
+    "data": [
+      {
+        "text": "drop column ",
+        "userDefined": false
+      },
+      {
+        "text": "9999dr",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549004751
+  }
+]

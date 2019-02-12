@@ -16,6 +16,7 @@
       "parameters": [
         {
           "id": "08c59df3-9f01-461b-85fa-1023aa4fdffc",
+          "required": false,
           "dataType": "@sys.color",
           "name": "color",
           "value": "$color",
@@ -23,6 +24,7 @@
         },
         {
           "id": "0f859497-feb1-48cc-953d-d58454ba9484",
+          "required": false,
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
@@ -33,7 +35,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "while_loop_identified"
+          "speech": "while loop"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -43,7 +45,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1545828230,
+  "lastUpdate": 1549038738,
   "fallbackIntent": false,
   "events": []
 }

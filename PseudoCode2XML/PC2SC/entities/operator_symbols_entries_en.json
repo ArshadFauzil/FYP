@@ -79,5 +79,12 @@
     "synonyms": [
       "greater than"
     ]
+  },
+  {
+    "value": "!",
+    "synonyms": [
+      "!",
+      "not"
+    ]
   }
 ]

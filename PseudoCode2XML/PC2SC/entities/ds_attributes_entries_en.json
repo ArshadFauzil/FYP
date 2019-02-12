@@ -88,5 +88,137 @@
       "Longitude",
       "column12"
     ]
+  },
+  {
+    "value": "TARGET_CLASS",
+    "synonyms": [
+      "TARGET_CLASS"
+    ]
+  },
+  {
+    "value": "sales",
+    "synonyms": [
+      "sales"
+    ]
+  },
+  {
+    "value": "runs",
+    "synonyms": [
+      "runs"
+    ]
+  },
+  {
+    "value": "wickets",
+    "synonyms": [
+      "wickets"
+    ]
+  },
+  {
+    "value": "no_of_100\u0027s",
+    "synonyms": [
+      "no_of_100\u0027s"
+    ]
+  },
+  {
+    "value": "average",
+    "synonyms": [
+      "average"
+    ]
+  },
+  {
+    "value": "strke_rates",
+    "synonyms": [
+      "strke_rates"
+    ]
+  },
+  {
+    "value": "column 1",
+    "synonyms": [
+      "column 1"
+    ]
+  },
+  {
+    "value": "column 2",
+    "synonyms": [
+      "column 2"
+    ]
+  },
+  {
+    "value": "column 6",
+    "synonyms": [
+      "column 6"
+    ]
+  },
+  {
+    "value": "findex2",
+    "synonyms": [
+      "findex2"
+    ]
+  },
+  {
+    "value": "findex9",
+    "synonyms": [
+      "findex9"
+    ]
+  },
+  {
+    "value": "9999",
+    "synonyms": [
+      "9999"
+    ]
+  },
+  {
+    "value": "findex1",
+    "synonyms": [
+      "findex1"
+    ]
+  },
+  {
+    "value": "weight",
+    "synonyms": [
+      "weight"
+    ]
+  },
+  {
+    "value": "height",
+    "synonyms": [
+      "height"
+    ]
+  },
+  {
+    "value": "length",
+    "synonyms": [
+      "length"
+    ]
+  },
+  {
+    "value": "attribute 1",
+    "synonyms": [
+      "attribute 1"
+    ]
+  },
+  {
+    "value": "attribute 2",
+    "synonyms": [
+      "attribute 2"
+    ]
+  },
+  {
+    "value": "attribute 3",
+    "synonyms": [
+      "attribute 3"
+    ]
+  },
+  {
+    "value": "attribute 4",
+    "synonyms": [
+      "attribute 4"
+    ]
+  },
+  {
+    "value": "attribute 5",
+    "synonyms": [
+      "attribute 5"
+    ]
   }
 ]

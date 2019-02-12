@@ -1,0 +1,45 @@
+{
+  "id": "0a93e818-2871-4035-94ae-45dceb8bcf84",
+  "name": "IF condition - statement (!\u003d)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6327d0d2-b245-4f91-8173-7d1a13425116",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        },
+        {
+          "id": "445e956d-5e17-470a-9b54-6a3bdf3436fe",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any1",
+          "value": "$any1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "if $any1 is not equals to $any"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549031763,
+  "fallbackIntent": false,
+  "events": []
+}

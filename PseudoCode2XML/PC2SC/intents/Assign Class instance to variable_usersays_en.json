@@ -1,0 +1,210 @@
+[
+  {
+    "id": "b8410b55-d251-4d71-91b9-7f8b1aaaebd1",
+    "data": [
+      {
+        "text": "instantiate ",
+        "userDefined": false
+      },
+      {
+        "text": "preprocessing",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": " library and assign to variable ps",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549824713
+  },
+  {
+    "id": "9cfdb744-428b-4fb5-8295-2f2a70dd0254",
+    "data": [
+      {
+        "text": "goodness is a variable with class instance ",
+        "userDefined": false
+      },
+      {
+        "text": "goody",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "0f3a33f0-c9c7-4f1c-bed7-a66002e1b405",
+    "data": [
+      {
+        "text": "create variable named rainfall and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "rain",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "08aacf9c-fa3d-47b4-ab5a-a69b484f81fa",
+    "data": [
+      {
+        "text": "lemmatizer is ",
+        "userDefined": false
+      },
+      {
+        "text": "lemmatizer",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": " () in NLTK",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "c389ae83-5b9e-46bd-9e82-fffec68b7302",
+    "data": [
+      {
+        "text": "depth \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "depthclass",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": "()",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "91dd2c3b-6ebd-47e4-af58-636aa860fc62",
+    "data": [
+      {
+        "text": "define a variable called burnable and initiate ",
+        "userDefined": false
+      },
+      {
+        "text": "burn class",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": " as value",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "b591e97f-dbb3-4c5c-8069-5e6119f73ae2",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "some_class",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": " instance  to variable def",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "606a2f3c-5afa-4062-b4e2-d55eb5ebf596",
+    "data": [
+      {
+        "text": "declare a variable named tfidf_transformer, and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "tfidf transformer",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      },
+      {
+        "text": "()",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "3de9bb91-5d1a-4116-883c-1f2c9b3b117b",
+    "data": [
+      {
+        "text": "define variable le and instantiate ",
+        "userDefined": false
+      },
+      {
+        "text": "label encoder",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549695235
+  },
+  {
+    "id": "5c23ff98-be8a-4449-abfd-555b63898136",
+    "data": [
+      {
+        "text": "define variable scaler and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "standard scaler class",
+        "alias": "class_instances",
+        "meta": "@class_instances",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693789
+  }
+]

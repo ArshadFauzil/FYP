@@ -1,0 +1,44 @@
+{
+  "id": "796e7309-6e78-4fa7-8b9f-867570be9e26",
+  "name": "Replace NaN values",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d1f2aab3-d846-4b32-9d9f-15b21de33af6",
+          "required": false,
+          "dataType": "@NaN_Filling",
+          "name": "NaN_Filling",
+          "value": "$NaN_Filling",
+          "isList": false
+        },
+        {
+          "id": "3b426c15-9338-48ec-af9a-7e033d9fc439",
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "replace NaN values with the $NaN_Filling and reassign dataframe"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549692846,
+  "fallbackIntent": false,
+  "events": []
+}

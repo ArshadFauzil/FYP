@@ -1,0 +1,280 @@
+[
+  {
+    "id": "2340a143-b538-4e8f-b852-1aae9e8879c8",
+    "data": [
+      {
+        "text": "define variable clf and classify X_train y_train using ",
+        "userDefined": false
+      },
+      {
+        "text": "NN",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549722853
+  },
+  {
+    "id": "6b0526b7-d514-4a10-951f-74f87accec5c",
+    "data": [
+      {
+        "text": "apply classification by using ",
+        "userDefined": false
+      },
+      {
+        "text": "LR",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549647538
+  },
+  {
+    "id": "a14202fa-3fd1-463e-b015-2f83f0d7a41b",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "Naive Bayes classifier",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      },
+      {
+        "text": " to learn the model",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549301400
+  },
+  {
+    "id": "6a087328-c61f-416c-88fb-7ac66a6ddc75",
+    "data": [
+      {
+        "text": "clustering algorithm is ",
+        "userDefined": false
+      },
+      {
+        "text": "K-means",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548956951
+  },
+  {
+    "id": "116754f3-8db5-4132-ab71-50e3c09730d9",
+    "data": [
+      {
+        "text": "build model by applying ",
+        "userDefined": false
+      },
+      {
+        "text": "Random Forrest",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548956951
+  },
+  {
+    "id": "e2f682ae-3548-4ef3-a8c2-3fdeb47c092a",
+    "data": [
+      {
+        "text": "train the model using ",
+        "userDefined": false
+      },
+      {
+        "text": "Neural Network",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548956951
+  },
+  {
+    "id": "bc59b997-4b98-4e1d-900f-325bc9791238",
+    "data": [
+      {
+        "text": "classify using ",
+        "userDefined": false
+      },
+      {
+        "text": "regression",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547445192
+  },
+  {
+    "id": "d1c7fe52-bd59-4d9a-b5c2-74445913601f",
+    "data": [
+      {
+        "text": "classifier is ",
+        "userDefined": false
+      },
+      {
+        "text": "LinearSVC",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
+    "id": "3d861743-4043-4602-9cd0-ded9472aa028",
+    "data": [
+      {
+        "text": "clf \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "Logistic Regression",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
+    "id": "feb27aa6-f143-42bb-81f4-9dff3be84eef",
+    "data": [
+      {
+        "text": "classify data frame using ",
+        "userDefined": false
+      },
+      {
+        "text": "MultinomialNB",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546086608
+  },
+  {
+    "id": "73cc52cf-3c9e-4e93-967b-f30c2a68d366",
+    "data": [
+      {
+        "text": "Algorithm \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "DTC",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545737548
+  },
+  {
+    "id": "aa99c4c2-e3cf-49a3-9750-531d330b69eb",
+    "data": [
+      {
+        "text": "Apply ",
+        "userDefined": false
+      },
+      {
+        "text": "K-Means",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545737334
+  },
+  {
+    "id": "cefa52cf-1115-4228-8b76-6c3f8e37780e",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "KNN",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": false
+      },
+      {
+        "text": " classifiction",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545737202
+  },
+  {
+    "id": "cc993a88-c275-47dd-98bd-cfb041eada62",
+    "data": [
+      {
+        "text": "By applying ",
+        "userDefined": false
+      },
+      {
+        "text": "support vector machine",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545737202
+  },
+  {
+    "id": "8db3eb10-5749-4145-ac58-8282f5f4c432",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "ANN",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545737202
+  }
+]

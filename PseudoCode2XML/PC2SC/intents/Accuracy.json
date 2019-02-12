@@ -7,12 +7,21 @@
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "9aad8f92-0f62-4b34-9da1-4c0574237130",
+          "required": false,
+          "dataType": "@temp_variable",
+          "name": "temp_variable",
+          "value": "$temp_variable",
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "requesting accuracy"
+          "speech": "define variable predictions and predict clf for X_test"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1547463326,
+  "lastUpdate": 1549720827,
   "fallbackIntent": false,
   "events": []
 }

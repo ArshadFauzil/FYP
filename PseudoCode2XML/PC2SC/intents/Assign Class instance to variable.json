@@ -1,0 +1,37 @@
+{
+  "id": "d71f5c2f-8cbc-4165-ac25-7c84e5c4bf33",
+  "name": "Assign Class instance to variable",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "40fe7505-583c-4c1a-ab8f-bef13b7b5a34",
+          "required": false,
+          "dataType": "@class_instances",
+          "name": "class_instances",
+          "value": "$class_instances",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define variable ci and assign $class_instances"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549824713,
+  "fallbackIntent": false,
+  "events": []
+}

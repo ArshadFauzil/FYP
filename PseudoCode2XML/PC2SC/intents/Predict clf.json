@@ -1,0 +1,37 @@
+{
+  "id": "6060cc76-ca29-44d2-a718-f96a4ef4d88a",
+  "name": "Predict clf",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "6b97a28b-437f-490f-bd6b-096758d78551",
+          "required": false,
+          "dataType": "@list_variable",
+          "name": "list_variable",
+          "value": "$list_variable",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "predict clf for $list_variable."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549724487,
+  "fallbackIntent": false,
+  "events": []
+}

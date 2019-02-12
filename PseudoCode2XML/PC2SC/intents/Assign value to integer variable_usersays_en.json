@@ -1,0 +1,324 @@
+[
+  {
+    "id": "984ebe0a-d0d1-44e7-b0e9-cb71dc72fe16",
+    "data": [
+      {
+        "text": "declare Integer variable named as my_val, ",
+        "userDefined": false
+      },
+      {
+        "text": "294,549,560",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " as value of the variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549300227
+  },
+  {
+    "id": "43358449-08df-494f-b46b-2ea74f3ad2ab",
+    "data": [
+      {
+        "text": "no_of_wins",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a int variable which has value ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548938665
+  },
+  {
+    "id": "4b6db486-17aa-4d14-bf28-20bed303edd1",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "545",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "def",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548694826
+  },
+  {
+    "id": "b62b2dee-987b-42af-a122-045c4201c481",
+    "data": [
+      {
+        "text": "define an integer variable called ",
+        "userDefined": false
+      },
+      {
+        "text": "burnable",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "88",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " as value",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548509879
+  },
+  {
+    "id": "42b91d6c-68ac-42ef-a301-03cc91d89d06",
+    "data": [
+      {
+        "text": "define variable ",
+        "userDefined": false
+      },
+      {
+        "text": "T",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "48",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548509935
+  },
+  {
+    "id": "d755bdcb-089d-4fe1-acfd-1fd50e691c35",
+    "data": [
+      {
+        "text": "resolution",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "487",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507409
+  },
+  {
+    "id": "95d87bc9-580a-4d52-9afd-0ffe618185f1",
+    "data": [
+      {
+        "text": "equity",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is equals to ",
+        "userDefined": false
+      },
+      {
+        "text": "67",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507409
+  },
+  {
+    "id": "f96279ab-3c71-49d6-b5ef-b61c2b1b547e",
+    "data": [
+      {
+        "text": "create an int variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "rainfall",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "64",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507171
+  },
+  {
+    "id": "8921d73f-f0da-419d-b2a1-fef6b5ac3d99",
+    "data": [
+      {
+        "text": "goodness",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a variable with value ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548418481
+  },
+  {
+    "id": "ad4139b2-bf91-4420-adda-4b34001126e2",
+    "data": [
+      {
+        "text": "value of ",
+        "userDefined": false
+      },
+      {
+        "text": "tip",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "8",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548418481
+  },
+  {
+    "id": "ea175ff6-259b-4917-8ca4-825e9d831007",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to integer variable ",
+        "userDefined": false
+      },
+      {
+        "text": "happiness",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548418481
+  },
+  {
+    "id": "eb6d2d1c-5b9b-4c40-bf8e-4d265bb4d253",
+    "data": [
+      {
+        "text": "substitute integer ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "count",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548351919
+  }
+]

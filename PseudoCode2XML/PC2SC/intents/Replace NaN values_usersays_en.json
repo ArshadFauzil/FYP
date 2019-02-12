@@ -1,0 +1,124 @@
+[
+  {
+    "id": "a9b5536e-6050-4775-bc3a-45c0ce4cfaf0",
+    "data": [
+      {
+        "text": "fill incomplete values by using ",
+        "userDefined": false
+      },
+      {
+        "text": "lbcf",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692846
+  },
+  {
+    "id": "227eb991-9526-4ace-85da-2cf4ad5cd1f5",
+    "data": [
+      {
+        "text": "replace values for unfilled cells from ",
+        "userDefined": false
+      },
+      {
+        "text": "nocf",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692846
+  },
+  {
+    "id": "ae4f84b8-7926-43ac-8e0f-0973c6fa690f",
+    "data": [
+      {
+        "text": "remove null values in ",
+        "userDefined": false
+      },
+      {
+        "text": "column4",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " by using ",
+        "userDefined": false
+      },
+      {
+        "text": "column average",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692846
+  },
+  {
+    "id": "4e5176c8-519b-4785-901f-dab12c7c2732",
+    "data": [
+      {
+        "text": "replace NaN values with ",
+        "userDefined": false
+      },
+      {
+        "text": "next observation carried forawrd",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692467
+  },
+  {
+    "id": "66709c6c-2a38-4c6f-99f5-2deb34866ee6",
+    "data": [
+      {
+        "text": "replace Null values with ",
+        "userDefined": false
+      },
+      {
+        "text": "last observation carried forawrd",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692846
+  },
+  {
+    "id": "4948cd3d-e293-4156-86d0-3a51f3d95d8a",
+    "data": [
+      {
+        "text": "replace empty values with the ",
+        "userDefined": false
+      },
+      {
+        "text": "column mean",
+        "alias": "NaN_Filling",
+        "meta": "@NaN_Filling",
+        "userDefined": true
+      },
+      {
+        "text": " and reassign dataframe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549692846
+  }
+]

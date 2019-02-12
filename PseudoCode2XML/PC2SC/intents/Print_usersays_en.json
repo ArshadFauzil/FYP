@@ -1,5 +1,45 @@
 [
   {
+    "id": "17f9eb42-acd1-4bcd-9435-198a0e974dc1",
+    "data": [
+      {
+        "text": "show (",
+        "userDefined": false
+      },
+      {
+        "text": "result",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ")",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037175
+  },
+  {
+    "id": "7aa73667-f93a-42e1-bc11-72a3ecc93e90",
+    "data": [
+      {
+        "text": "print ",
+        "userDefined": false
+      },
+      {
+        "text": "anything",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037175
+  },
+  {
     "id": "2f86eeb9-36c8-4492-934f-7abaf37fbd15",
     "data": [
       {

@@ -112,5 +112,41 @@
     "synonyms": [
       "text"
     ]
+  },
+  {
+    "value": "any statement",
+    "synonyms": [
+      "any statement"
+    ]
+  },
+  {
+    "value": "some condition",
+    "synonyms": [
+      "some condition"
+    ]
+  },
+  {
+    "value": "anything",
+    "synonyms": [
+      "anything"
+    ]
+  },
+  {
+    "value": "member",
+    "synonyms": [
+      "member"
+    ]
+  },
+  {
+    "value": "element",
+    "synonyms": [
+      "element"
+    ]
+  },
+  {
+    "value": "column",
+    "synonyms": [
+      "column"
+    ]
   }
 ]

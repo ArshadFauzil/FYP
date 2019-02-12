@@ -10,6 +10,7 @@
       "parameters": [
         {
           "id": "de918a24-d4e8-4341-b329-def30991db7d",
+          "required": false,
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
@@ -17,17 +18,26 @@
         },
         {
           "id": "cafc1a7f-ceea-4861-b404-c5abe001c429",
+          "required": false,
           "dataType": "@sys.number",
           "name": "number1",
           "value": "$number1",
           "isList": false
+        },
+        {
+          "id": "3cbe6c09-fe7a-4f96-ba85-92b96b28d391",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": true
         }
       ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "normalize dataset"
+          "speech": "normalize X_train using scaler and reassign X_train."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -37,7 +47,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1547625592,
+  "lastUpdate": 1549693584,
   "fallbackIntent": false,
   "events": []
 }

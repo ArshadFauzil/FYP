@@ -13,7 +13,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "intent is unclear"
+          "speech": "unknown"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -23,7 +23,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1547463441,
+  "lastUpdate": 1547981153,
   "fallbackIntent": true,
   "events": []
 }
