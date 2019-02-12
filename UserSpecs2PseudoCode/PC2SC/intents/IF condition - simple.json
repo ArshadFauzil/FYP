@@ -1,0 +1,37 @@
+{
+  "id": "72aff6d2-baab-45a0-80e9-e98ed6ce842c",
+  "name": "IF condition - simple",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "964d3b8b-493e-4ac1-be1e-53989b287ece",
+          "required": false,
+          "dataType": "@Test",
+          "name": "Test",
+          "value": "$Test",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "if $Test is true,"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549031417,
+  "fallbackIntent": false,
+  "events": []
+}

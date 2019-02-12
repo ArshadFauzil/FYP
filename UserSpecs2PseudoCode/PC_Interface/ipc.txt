@@ -1,0 +1,10 @@
+
+read csv file
+read csv file
+classify dataframe using KNN
+target class = transaction_date
+drop attributes = transaction_date
+apply cross validation
+create model
+use programming language
+requesting accuracy

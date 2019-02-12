@@ -1,0 +1,135 @@
+[
+  {
+    "value": "KNN",
+    "synonyms": [
+      "KNN",
+      "k-nearest neighbors",
+      "knn classification",
+      "K-Nearest_Neighbor",
+      "knn"
+    ]
+  },
+  {
+    "value": "k-means",
+    "synonyms": [
+      "K-Means Clustering",
+      "K-Means",
+      "k means cluster"
+    ]
+  },
+  {
+    "value": "Decision Tree Classification",
+    "synonyms": [
+      "Decision Tree Classification",
+      "DTC",
+      "Decision Tree"
+    ]
+  },
+  {
+    "value": "SVM",
+    "synonyms": [
+      "SVM",
+      "Support Vector Machine",
+      "support vector"
+    ]
+  },
+  {
+    "value": "ANN",
+    "synonyms": [
+      "ANN",
+      "Artificial Neural Network"
+    ]
+  },
+  {
+    "value": "naive bayes",
+    "synonyms": [
+      "naive bayes",
+      "naive bayes classification",
+      "Naive Bayes classifier"
+    ]
+  },
+  {
+    "value": "DBSCAN",
+    "synonyms": [
+      "DBSCAN",
+      "dbscan clustering"
+    ]
+  },
+  {
+    "value": "Random Forrest",
+    "synonyms": [
+      "Random Forrest",
+      "RF",
+      "RF classification"
+    ]
+  },
+  {
+    "value": "MultinomialNB",
+    "synonyms": [
+      "MultinomialNB",
+      "multinomial nb",
+      "MultiNB"
+    ]
+  },
+  {
+    "value": "Logistic Regression",
+    "synonyms": [
+      "Logistic Regression",
+      "logistic regression",
+      "LogisticRegression",
+      "logistic_regression"
+    ]
+  },
+  {
+    "value": "LinearSVC",
+    "synonyms": [
+      "LinearSVC",
+      "Linear SVC",
+      "linear svc",
+      "LinearSVC"
+    ]
+  },
+  {
+    "value": "regression",
+    "synonyms": [
+      "regression",
+      "Regression"
+    ]
+  },
+  {
+    "value": "Neural Network",
+    "synonyms": [
+      "Neural Network",
+      "NN"
+    ]
+  },
+  {
+    "value": "Gaussian Naive Bayes",
+    "synonyms": [
+      "Gaussian Naive Bayes"
+    ]
+  },
+  {
+    "value": "Random Forest",
+    "synonyms": [
+      "Random Forest",
+      "RF",
+      "random forest"
+    ]
+  },
+  {
+    "value": "Multinomial Naive Bayes",
+    "synonyms": [
+      "Multinomial Naive Bayes",
+      "MNB",
+      "MultinomialNB"
+    ]
+  },
+  {
+    "value": "Logisitic Regression",
+    "synonyms": [
+      "Logisitic Regression",
+      "LR"
+    ]
+  }
+]

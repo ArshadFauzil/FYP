@@ -1,0 +1,37 @@
+{
+  "id": "b85fc753-e862-42c0-a13a-051c62009cd2",
+  "name": "Accuracy",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "9aad8f92-0f62-4b34-9da1-4c0574237130",
+          "required": false,
+          "dataType": "@temp_variable",
+          "name": "temp_variable",
+          "value": "$temp_variable",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define variable predictions and predict clf for X_test"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549720827,
+  "fallbackIntent": false,
+  "events": []
+}

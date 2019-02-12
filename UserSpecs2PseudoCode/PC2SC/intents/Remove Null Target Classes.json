@@ -1,0 +1,28 @@
+{
+  "id": "4d9a78e3-3378-404c-816d-88241766bd8e",
+  "name": "Remove Null Target Classes",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "remove datapoints that have NULL target_class from the dataframe and reassign dataframe"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549724637,
+  "fallbackIntent": false,
+  "events": []
+}

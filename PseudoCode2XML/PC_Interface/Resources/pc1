@@ -1,9 +1,0 @@
-use data manipulation library
-using multidimensional array operator
-use Random Forrest 
-loading dataset ds1
-test size = 0.3
-class = play_golf
-classify ds1
-calculate accuracy
-end

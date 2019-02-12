@@ -1,0 +1,92 @@
+[
+  {
+    "value": "sample_list",
+    "synonyms": [
+      "sample_list"
+    ]
+  },
+  {
+    "value": "li",
+    "synonyms": [
+      "li"
+    ]
+  },
+  {
+    "value": "elements",
+    "synonyms": [
+      "elements"
+    ]
+  },
+  {
+    "value": "item_list",
+    "synonyms": [
+      "item_list"
+    ]
+  },
+  {
+    "value": "keys",
+    "synonyms": [
+      "keys"
+    ]
+  },
+  {
+    "value": "given_list",
+    "synonyms": [
+      "given_list"
+    ]
+  },
+  {
+    "value": "my_list",
+    "synonyms": [
+      "my_list"
+    ]
+  },
+  {
+    "value": "array",
+    "synonyms": [
+      "array"
+    ]
+  },
+  {
+    "value": "my_array",
+    "synonyms": [
+      "my_array"
+    ]
+  },
+  {
+    "value": "sample data",
+    "synonyms": [
+      "sample data"
+    ]
+  },
+  {
+    "value": "given data point",
+    "synonyms": [
+      "given data point"
+    ]
+  },
+  {
+    "value": "dp",
+    "synonyms": [
+      "dp"
+    ]
+  },
+  {
+    "value": "new_datapoint",
+    "synonyms": [
+      "new_datapoint"
+    ]
+  },
+  {
+    "value": "dataset",
+    "synonyms": [
+      "dataset"
+    ]
+  },
+  {
+    "value": "list_values",
+    "synonyms": [
+      "list_values"
+    ]
+  }
+]

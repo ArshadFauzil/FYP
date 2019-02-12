@@ -1,0 +1,116 @@
+[
+  {
+    "id": "e394e1d3-98c1-46a2-904d-5f3a3628e909",
+    "data": [
+      {
+        "text": "remove null data points in train set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549724637
+  },
+  {
+    "id": "a7cd0731-0c94-4853-9c9b-bd23a0a81ce4",
+    "data": [
+      {
+        "text": "drop data points which do not contain value for class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549689482
+  },
+  {
+    "id": "3b52fbb3-07f3-4a57-939b-c1efbc496eef",
+    "data": [
+      {
+        "text": "do not consider data points with empty cell in target class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549689482
+  },
+  {
+    "id": "f825f8f8-a7a6-48a5-8f29-925425153258",
+    "data": [
+      {
+        "text": "ignore rows with no data in class feature",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549689482
+  },
+  {
+    "id": "ef8c113c-b415-4bb0-b74f-54f5dd4d7c5a",
+    "data": [
+      {
+        "text": "take only values ",
+        "userDefined": false
+      },
+      {
+        "text": "not",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " empty in class atribute",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549689482
+  },
+  {
+    "id": "07d3bda5-d859-4445-9221-f58ccbc357e5",
+    "data": [
+      {
+        "text": "delete cells with null value in class column",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549689482
+  },
+  {
+    "id": "76086b0e-6213-43f3-a1db-d719bbe72808",
+    "data": [
+      {
+        "text": "remove null cells in target class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549689482
+  },
+  {
+    "id": "b5bfe81d-8934-4666-b6d3-0702833ccde2",
+    "data": [
+      {
+        "text": "remove datapoints that have NULL ",
+        "userDefined": false
+      },
+      {
+        "text": "target_class",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " from the dataframe and reassign dataframe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549724637
+  }
+]

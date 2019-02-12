@@ -1,9 +1,0 @@
-
-classify dataframe using Logistic Regression.
-read csv file
-test split ratio = 30%
-TARGET_CLASS = payment_type
-
-RequestingAccuracy
-read csv file
-End of the Pseudocode

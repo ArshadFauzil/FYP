@@ -1,0 +1,77 @@
+[
+  {
+    "value": "standard scaler class",
+    "synonyms": [
+      "standard scaler class",
+      "standard_scaler_class",
+      "standard scaler"
+    ]
+  },
+  {
+    "value": "label encoder class",
+    "synonyms": [
+      "label encoder class",
+      "label_encoder_class"
+    ]
+  },
+  {
+    "value": "label encoder class",
+    "synonyms": [
+      "label encoder"
+    ]
+  },
+  {
+    "value": "tfidf transformer class",
+    "synonyms": [
+      "tfidf transformer class"
+    ]
+  },
+  {
+    "value": "some_class",
+    "synonyms": [
+      "some_class"
+    ]
+  },
+  {
+    "value": "burn class",
+    "synonyms": [
+      "burn class"
+    ]
+  },
+  {
+    "value": "depthclass",
+    "synonyms": [
+      "depthclass"
+    ]
+  },
+  {
+    "value": "tfidf transformer",
+    "synonyms": [
+      "tfidf transformer"
+    ]
+  },
+  {
+    "value": "lemmatizer",
+    "synonyms": [
+      "lemmatizer"
+    ]
+  },
+  {
+    "value": "goody",
+    "synonyms": [
+      "goody"
+    ]
+  },
+  {
+    "value": "rain",
+    "synonyms": [
+      "rain"
+    ]
+  },
+  {
+    "value": "preprocessing",
+    "synonyms": [
+      "preprocessing"
+    ]
+  }
+]

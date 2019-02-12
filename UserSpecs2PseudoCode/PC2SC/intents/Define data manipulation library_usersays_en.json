@@ -1,0 +1,212 @@
+[
+  {
+    "id": "defa64cd-f2ae-47ec-8a38-0a6571fd7f41",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "dataframe",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549529098
+  },
+  {
+    "id": "82cddd30-ad98-4b6f-94de-39dd43e11899",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "Pandas",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      },
+      {
+        "text": " or similar library",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549301876
+  },
+  {
+    "id": "e6b44981-8f9e-461a-a197-4d94008ce34d",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "data frame handler",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548997031
+  },
+  {
+    "id": "8513fa2c-c759-40d0-8844-280059ea884e",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "Pandas",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      },
+      {
+        "text": " as pd",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548997031
+  },
+  {
+    "id": "170b3fab-3efb-4242-9f58-6574c62eca95",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "data frame generator",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548997031
+  },
+  {
+    "id": "f51babe0-1f1e-437b-be9b-b88b126b9b3a",
+    "data": [
+      {
+        "text": "from ",
+        "userDefined": false
+      },
+      {
+        "text": "data_frame_library",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  },
+  {
+    "id": "bd6680a0-3682-44bb-a057-30e9731c131b",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "Pandas",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  },
+  {
+    "id": "86bf6e76-ba61-40a4-b0ae-ab1245b3c78a",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "data manipulation library",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  },
+  {
+    "id": "f9db87c0-40a7-45e8-92f7-280f8ce6478f",
+    "data": [
+      {
+        "text": "By using ",
+        "userDefined": false
+      },
+      {
+        "text": "Pandas",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  },
+  {
+    "id": "8d7f7cb1-2e54-4f67-b4f2-cf7068669ff2",
+    "data": [
+      {
+        "text": "I want to use a ",
+        "userDefined": false
+      },
+      {
+        "text": "data manipulation library",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  },
+  {
+    "id": "c7459720-0697-4baf-b0da-cce5abefa89c",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "data manipulation library",
+        "alias": "DataManipulationLibrary",
+        "meta": "@DataManipulationLibrary",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546064169
+  }
+]

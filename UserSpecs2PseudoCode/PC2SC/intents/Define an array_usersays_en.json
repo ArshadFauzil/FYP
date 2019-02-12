@@ -1,0 +1,326 @@
+[
+  {
+    "id": "1dc1273b-3eb9-4254-a66d-0c90f67875ec",
+    "data": [
+      {
+        "text": "declare an empty array with the name ",
+        "userDefined": false
+      },
+      {
+        "text": "my_array",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549301627
+  },
+  {
+    "id": "15d08678-24bf-42d8-ae7a-b5e8146d0780",
+    "data": [
+      {
+        "text": "create list ",
+        "userDefined": false
+      },
+      {
+        "text": "e",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "8e71947b-7178-4666-bd59-bc2431fb1be6",
+    "data": [
+      {
+        "text": "create an array named ",
+        "userDefined": false
+      },
+      {
+        "text": "tizzle",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549301627
+  },
+  {
+    "id": "2c29e083-6f29-46e2-b309-f75109def8d1",
+    "data": [
+      {
+        "text": "my_height",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a empty list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "5d3dc971-1219-4347-a756-18950c140662",
+    "data": [
+      {
+        "text": "initialize a list as ",
+        "userDefined": false
+      },
+      {
+        "text": "any_name",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "74e1b587-a5a1-46a6-8085-09d6f4dc7b98",
+    "data": [
+      {
+        "text": "define a string list named ",
+        "userDefined": false
+      },
+      {
+        "text": "weights",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "c66ddc33-1cd6-43b7-a831-4a74fc120ad8",
+    "data": [
+      {
+        "text": "define a floating point array named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549301627
+  },
+  {
+    "id": "1c602901-0ff2-4801-ba89-0de16fdc2bda",
+    "data": [
+      {
+        "text": "define an integer list named ",
+        "userDefined": false
+      },
+      {
+        "text": "weights",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "cb9c6a16-3201-4d36-abff-c2b50f48e5cc",
+    "data": [
+      {
+        "text": "define a list named ",
+        "userDefined": false
+      },
+      {
+        "text": "uft",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "f6099494-2254-49c5-8cb7-3aa08042673e",
+    "data": [
+      {
+        "text": "allocate memory to list ",
+        "userDefined": false
+      },
+      {
+        "text": "fruits",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "1865f935-659a-42fc-9755-24bc2f13c1f3",
+    "data": [
+      {
+        "text": "define list ",
+        "userDefined": false
+      },
+      {
+        "text": "pepper",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "e7a0c7e7-5498-4102-a909-97cfe2490415",
+    "data": [
+      {
+        "text": "create array ",
+        "userDefined": false
+      },
+      {
+        "text": "basic_array",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "29c69a35-26a2-46b8-923f-c5b80a18be65",
+    "data": [
+      {
+        "text": "my_height",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a null array",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1548946632
+  },
+  {
+    "id": "a9080809-90dd-4da3-a51b-c85dd33f886f",
+    "data": [
+      {
+        "text": "define a string array named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "5c58cedf-8cd9-4696-bd87-7b28c76aea24",
+    "data": [
+      {
+        "text": "define an integer array named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight_list",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "1aae152a-1094-4db6-b134-89b75bdc483b",
+    "data": [
+      {
+        "text": "define an empty array named ",
+        "userDefined": false
+      },
+      {
+        "text": "uft",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "b07a06ef-03a2-4dc4-b2b2-415b2089366f",
+    "data": [
+      {
+        "text": "allocate memory to array ",
+        "userDefined": false
+      },
+      {
+        "text": "my_array",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548946632
+  },
+  {
+    "id": "530b9cff-1afb-4a34-9451-19dc7111e423",
+    "data": [
+      {
+        "text": "define array ",
+        "userDefined": false
+      },
+      {
+        "text": "pep",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1548946632
+  }
+]

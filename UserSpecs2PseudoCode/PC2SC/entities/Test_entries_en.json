@@ -1,0 +1,68 @@
+[
+  {
+    "value": "@sys.given-name:given-name",
+    "synonyms": [
+      "@sys.given-name:given-name"
+    ]
+  },
+  {
+    "value": "expected",
+    "synonyms": [
+      "expected"
+    ]
+  },
+  {
+    "value": "your_name",
+    "synonyms": [
+      "your_name"
+    ]
+  },
+  {
+    "value": "num2",
+    "synonyms": [
+      "num2"
+    ]
+  },
+  {
+    "value": "any2",
+    "synonyms": [
+      "any2"
+    ]
+  },
+  {
+    "value": "any",
+    "synonyms": [
+      "any"
+    ]
+  },
+  {
+    "value": "any statement",
+    "synonyms": [
+      "any statement"
+    ]
+  },
+  {
+    "value": "some condition",
+    "synonyms": [
+      "some condition"
+    ]
+  },
+  {
+    "value": "BOOL variable",
+    "synonyms": [
+      "BOOL variable"
+    ]
+  },
+  {
+    "value": "anything",
+    "synonyms": [
+      "anything"
+    ]
+  },
+  {
+    "value": "using_sysrandom",
+    "synonyms": [
+      "using_sysrandom"
+    ]
+  }
+]

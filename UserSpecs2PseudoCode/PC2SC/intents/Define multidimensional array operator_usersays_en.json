@@ -1,0 +1,150 @@
+[
+  {
+    "id": "6c9cd0e4-8dff-4431-9fcb-3aaaba2fff3d",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "multidimentional array",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549529129
+  },
+  {
+    "id": "b374a2ad-3675-493b-a476-7b717f1518a4",
+    "data": [
+      {
+        "text": "refer to array handler such as ",
+        "userDefined": false
+      },
+      {
+        "text": "Numpy",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302142
+  },
+  {
+    "id": "e27f20b1-e592-4586-8b16-568331be19b1",
+    "data": [
+      {
+        "text": "import similar library to ",
+        "userDefined": false
+      },
+      {
+        "text": "Numpy",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548997562
+  },
+  {
+    "id": "469c31c8-64ef-4531-9b4f-2c7b7bb81216",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "array organizer",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548997562
+  },
+  {
+    "id": "9256ef0c-b659-4903-a8f3-7cc8194df1fb",
+    "data": [
+      {
+        "text": "Use inbuilt ",
+        "userDefined": false
+      },
+      {
+        "text": "array operator",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545728916
+  },
+  {
+    "id": "7baf744f-7c52-4eb7-8f31-f84770674e54",
+    "data": [
+      {
+        "text": "By using ",
+        "userDefined": false
+      },
+      {
+        "text": "multidimensional array",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545728916
+  },
+  {
+    "id": "4bf0c17a-b389-4865-838e-dd05753df6ca",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "Numpy",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545728916
+  },
+  {
+    "id": "84808158-43f2-4e60-991f-83cfd1142018",
+    "data": [
+      {
+        "text": "using ",
+        "userDefined": false
+      },
+      {
+        "text": "multidimensional array operator",
+        "alias": "MDA_Operator",
+        "meta": "@MDA_Operator",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545728916
+  }
+]

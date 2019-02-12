@@ -1,0 +1,203 @@
+[
+  {
+    "id": "530f4c9f-8d2b-483c-9f48-ea50123d9f64",
+    "data": [
+      {
+        "text": "learn by using ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " neighbors",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549301948
+  },
+  {
+    "id": "d094c948-2f6d-4c74-86dd-b2c35e5e333a",
+    "data": [
+      {
+        "text": "k value in KNN is ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548953859
+  },
+  {
+    "id": "9735c0e2-f39f-430e-8e96-00748f00f11f",
+    "data": [
+      {
+        "text": "value of k \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548953859
+  },
+  {
+    "id": "d2c60a3a-bd30-4d83-9695-fee081935274",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to K",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547462721
+  },
+  {
+    "id": "6416f39a-5883-45c0-8fa1-7c5e63188479",
+    "data": [
+      {
+        "text": "K \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "2",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547462721
+  },
+  {
+    "id": "f36528d3-e56d-4bb8-9c4a-637ce723c80f",
+    "data": [
+      {
+        "text": "k ",
+        "userDefined": false
+      },
+      {
+        "text": "is",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548395613
+  },
+  {
+    "id": "6c884654-136f-4d16-823e-dba8867eac0a",
+    "data": [
+      {
+        "text": "N is ",
+        "userDefined": false
+      },
+      {
+        "text": "7",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546084932
+  },
+  {
+    "id": "1fd48d55-91b5-47e4-a598-b0b2c34437b4",
+    "data": [
+      {
+        "text": "N \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  },
+  {
+    "id": "b7937a8a-a598-4197-8383-0dd684b131cd",
+    "data": [
+      {
+        "text": "consider ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " neighbors",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  },
+  {
+    "id": "b333bc13-5e9f-410b-a7ce-9449cfb78802",
+    "data": [
+      {
+        "text": "No of neighbors \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738968
+  }
+]

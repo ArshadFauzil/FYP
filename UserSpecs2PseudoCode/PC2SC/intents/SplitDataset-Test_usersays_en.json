@@ -1,0 +1,208 @@
+[
+  {
+    "id": "0dec81a3-4ddb-48a0-b7fd-911d6537ac60",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "60%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": true
+      },
+      {
+        "text": " data for testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037715
+  },
+  {
+    "id": "68e15254-5cca-489a-aa28-b7e5b14f3212",
+    "data": [
+      {
+        "text": "test set is ",
+        "userDefined": false
+      },
+      {
+        "text": "0.6",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " of data set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037715
+  },
+  {
+    "id": "ce70a8dd-2c82-426e-bdc0-5627b181eeb5",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "0.1",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": " from the data set for validation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548777043
+  },
+  {
+    "id": "7d18827f-5956-491c-9a8f-397fcc06662f",
+    "data": [
+      {
+        "text": "validation \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.256",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548777043
+  },
+  {
+    "id": "c75956ef-b94f-4b91-908a-10ff79e30b3e",
+    "data": [
+      {
+        "text": "split dataset in to test and train",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "0c1bcac8-9edf-4114-b0d3-4ceb37334e23",
+    "data": [
+      {
+        "text": "split dataset",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "fd9d0980-3bc3-4098-adc5-b7d6af31971e",
+    "data": [
+      {
+        "text": "test,train ratio \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.24",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037625
+  },
+  {
+    "id": "f8a94231-f0bc-434d-8a39-b1daabd47705",
+    "data": [
+      {
+        "text": "allocate ",
+        "userDefined": false
+      },
+      {
+        "text": "35%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": false
+      },
+      {
+        "text": " for testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545991347
+  },
+  {
+    "id": "a08f4ddc-072a-44c5-adc1-9a432a889a9b",
+    "data": [
+      {
+        "text": "define a variable called test and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "0.78",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549037625
+  },
+  {
+    "id": "a0ee9235-83b0-48f3-8593-3ea2cb1efc59",
+    "data": [
+      {
+        "text": "35%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": false
+      },
+      {
+        "text": " for testing",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738039
+  },
+  {
+    "id": "894a6d00-7a83-4966-a0a8-7e48873e1796",
+    "data": [
+      {
+        "text": "test size \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.3",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545738039
+  }
+]

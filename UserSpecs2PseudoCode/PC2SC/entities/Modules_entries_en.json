@@ -1,0 +1,134 @@
+[
+  {
+    "value": "FuzzyWuzzy",
+    "synonyms": [
+      "FuzzyWuzzy"
+    ]
+  },
+  {
+    "value": "Flask",
+    "synonyms": [
+      "Flask",
+      "flask"
+    ]
+  },
+  {
+    "value": "os",
+    "synonyms": [
+      "os"
+    ]
+  },
+  {
+    "value": "module_name",
+    "synonyms": [
+      "module_name"
+    ]
+  },
+  {
+    "value": "module",
+    "synonyms": [
+      "module"
+    ]
+  },
+  {
+    "value": "given_module_name",
+    "synonyms": [
+      "given_module_name"
+    ]
+  },
+  {
+    "value": "given_package",
+    "synonyms": [
+      "given_package"
+    ]
+  },
+  {
+    "value": "package_name",
+    "synonyms": [
+      "package_name"
+    ]
+  },
+  {
+    "value": "DataVisualization",
+    "synonyms": [
+      "DataVisualization",
+      "data visualization library",
+      "DataVisualization Library",
+      "matplotlib",
+      "Seaborn",
+      "ggplot",
+      "Bokeh",
+      "pygal",
+      "Plotly",
+      "geoplotlib",
+      "Gleam",
+      "missingno",
+      "Leather"
+    ]
+  },
+  {
+    "value": "TrainTestSplit",
+    "synonyms": [
+      "TrainTestSplit",
+      "Train Test Split",
+      "Train-Test Split",
+      "train_test split",
+      "train_test_split"
+    ]
+  },
+  {
+    "value": "Preprocessing Scaler",
+    "synonyms": [
+      "Preprocessing Scaler",
+      "PreprocessingScaler",
+      "preprocessing_scaler",
+      "preprocessing.scale",
+      "preprocessing.Scale"
+    ]
+  },
+  {
+    "value": "preprocessing",
+    "synonyms": [
+      "preprocessing",
+      "preprocessing library"
+    ]
+  },
+  {
+    "value": "Confusion Matrix",
+    "synonyms": [
+      "Confusion Matrix",
+      "ConfusionMatrix",
+      "confusion matrix",
+      "confusion_matrix"
+    ]
+  },
+  {
+    "value": "Label Encoder",
+    "synonyms": [
+      "Label Encoder",
+      "label encoder",
+      "Label_Encoder",
+      "labelencoder",
+      "label_encoder",
+      "LE",
+      "le"
+    ]
+  },
+  {
+    "value": "CountVectorizer",
+    "synonyms": [
+      "CountVectorizer",
+      "Count Vectorizer",
+      "count_vectorizer",
+      "count vectorizer"
+    ]
+  },
+  {
+    "value": "tfidf feature extractor",
+    "synonyms": [
+      "tfidf feature extractor",
+      "TFIDF Feature Extractor",
+      "TFIDF_Feature_Extractor"
+    ]
+  }
+]

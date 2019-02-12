@@ -1,0 +1,37 @@
+{
+  "id": "03d01551-fdf2-489b-a647-143861649093",
+  "name": "IF condition - not",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2804cb0b-d0b5-4b25-a426-5b117c216a6c",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "if $any false,"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549359838,
+  "fallbackIntent": false,
+  "events": []
+}

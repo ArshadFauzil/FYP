@@ -1,0 +1,188 @@
+[
+  {
+    "id": "66716fd0-26fc-4923-bebe-973fe6d66df2",
+    "data": [
+      {
+        "text": "use X_test to find ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720827
+  },
+  {
+    "id": "84c85155-525c-47ed-a25b-1d3a42fc5af4",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " and assign it in to variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549702154
+  },
+  {
+    "id": "c726bcc9-1579-49ac-af3e-2b7dc9712c87",
+    "data": [
+      {
+        "text": "predict class for test data and return ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549702154
+  },
+  {
+    "id": "cf2dc6b9-5c69-40c0-bad5-a51b938f8c20",
+    "data": [
+      {
+        "text": "predict class for validation set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549702154
+  },
+  {
+    "id": "1e3ddfc0-327f-4dc0-8c40-b9592715ff0b",
+    "data": [
+      {
+        "text": "define variable predictions and predict clf for X_test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549702154
+  },
+  {
+    "id": "3ea30649-f946-4179-a1de-3e24bc9948ba",
+    "data": [
+      {
+        "text": "print ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548937957
+  },
+  {
+    "id": "0c5b36d6-72bc-4a21-b175-b0de5ff5adbe",
+    "data": [
+      {
+        "text": "use test data to find ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548937957
+  },
+  {
+    "id": "4733ee12-51e7-47d3-9aec-ec965952530e",
+    "data": [
+      {
+        "text": "apply test set to model and obtain the ",
+        "userDefined": false
+      },
+      {
+        "text": "accuracy",
+        "alias": "temp_variable",
+        "meta": "@temp_variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548937957
+  },
+  {
+    "id": "13f20fdd-202e-4730-942e-91fc10401bc7",
+    "data": [
+      {
+        "text": "apply cross validation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547463326
+  },
+  {
+    "id": "d984b45b-e059-4567-9d9c-90e1be251157",
+    "data": [
+      {
+        "text": "return accuracy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545992046
+  },
+  {
+    "id": "4417d02e-c7a2-4c0b-8f23-4a46a9d59fac",
+    "data": [
+      {
+        "text": "show accuracy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739348
+  },
+  {
+    "id": "86e6af2f-c3fc-4f48-8812-ffb01554a0ee",
+    "data": [
+      {
+        "text": "calculate accuracy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545739348
+  }
+]

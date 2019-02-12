@@ -1,0 +1,228 @@
+[
+  {
+    "id": "42a4524b-7520-495e-897c-541db0736cdf",
+    "data": [
+      {
+        "text": "declare variable named as my_choice, \u0027",
+        "userDefined": false
+      },
+      {
+        "text": "Random",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "\u0027  as value of the variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549300329
+  },
+  {
+    "id": "fe57461d-d518-4b64-be2d-9b6677806f2e",
+    "data": [
+      {
+        "text": "substitute string ",
+        "userDefined": false
+      },
+      {
+        "text": "nice",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to variable str",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "f2f4034c-f450-4e31-a93c-d12216838ce8",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "hello df",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to string variable hello",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "72cdd08f-eeb8-4035-b069-a80215b775d7",
+    "data": [
+      {
+        "text": "goodness is a variable with value ",
+        "userDefined": false
+      },
+      {
+        "text": "any string",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "9d44876b-f29c-4956-b4c6-a7f48a19c756",
+    "data": [
+      {
+        "text": "equity name is equals to ",
+        "userDefined": false
+      },
+      {
+        "text": "some name",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "4e875dc8-bc08-4716-afeb-08ac659f5a85",
+    "data": [
+      {
+        "text": "define variable phase and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "hello world",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "6cefd881-909f-4142-b2b0-f1d2733e3cdd",
+    "data": [
+      {
+        "text": "define a string variable called some string and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027your name\u0027",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " as value",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510923
+  },
+  {
+    "id": "61f99456-ce7c-410f-bf93-b8104a2650d7",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "Usha",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to string variable long_string",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507904
+  },
+  {
+    "id": "05ff9fa7-48bf-4264-a73c-4faf5715b253",
+    "data": [
+      {
+        "text": "value of string variable name is ",
+        "userDefined": false
+      },
+      {
+        "text": "Yilokyr",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507904
+  },
+  {
+    "id": "dbef17b4-62f9-4231-9907-a6541a99ff33",
+    "data": [
+      {
+        "text": "create a string variable named str and append ",
+        "userDefined": false
+      },
+      {
+        "text": "\"My Name\"",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " to str",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507904
+  },
+  {
+    "id": "5116e413-2483-4cb8-baa8-79aeb7b159c6",
+    "data": [
+      {
+        "text": "my_string \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "my name is R",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507904
+  }
+]

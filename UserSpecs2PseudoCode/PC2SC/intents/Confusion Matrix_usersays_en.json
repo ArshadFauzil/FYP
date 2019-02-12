@@ -1,0 +1,121 @@
+[
+  {
+    "id": "b7ef9ce8-85fa-4ab3-b888-7540ecb2ae44",
+    "data": [
+      {
+        "text": "show ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719748
+  },
+  {
+    "id": "17c6d90e-9aeb-4632-8aa8-08131b77e13d",
+    "data": [
+      {
+        "text": "obtain the ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " by using predictions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719748
+  },
+  {
+    "id": "bfcc32c1-39a7-47cc-b174-f445a5eac7a9",
+    "data": [
+      {
+        "text": "find ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719748
+  },
+  {
+    "id": "06202886-4398-47ee-a856-1aecdc7f9b39",
+    "data": [
+      {
+        "text": "define variable cm and generate ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " for predictions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719630
+  },
+  {
+    "id": "cb469a1e-93bd-40c6-9f44-0d53e4b96daf",
+    "data": [
+      {
+        "text": "return ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " as ",
+        "userDefined": false
+      },
+      {
+        "text": "ca",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719630
+  },
+  {
+    "id": "133d531b-aa0c-416c-874a-1cfd474e2d35",
+    "data": [
+      {
+        "text": "apply ",
+        "userDefined": false
+      },
+      {
+        "text": "confusion matrix",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549719630
+  }
+]

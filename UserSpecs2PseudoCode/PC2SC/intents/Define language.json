@@ -1,0 +1,37 @@
+{
+  "id": "f4e2e8a1-f0b7-4149-a430-7d86acb83589",
+  "name": "Define language",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "74befdec-a6bf-4e20-8ce2-374d8fff9ba9",
+          "required": false,
+          "dataType": "@ProgrammingLanguage",
+          "name": "ProgrammingLanguage",
+          "value": "$ProgrammingLanguage",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "requested language \u003d $ProgrammingLanguage"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549302048,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "b3e8cea1-f69e-4806-9223-12f0d78a1472",
+  "name": "Define an array",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f10f7102-3a12-4a27-b7ce-43eddbaf0c9a",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define array $any"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549301627,
+  "fallbackIntent": false,
+  "events": []
+}

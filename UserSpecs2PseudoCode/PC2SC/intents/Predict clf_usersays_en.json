@@ -1,0 +1,118 @@
+[
+  {
+    "id": "ae49806e-0216-42ab-a638-ca675e573baa",
+    "data": [
+      {
+        "text": "parse ",
+        "userDefined": false
+      },
+      {
+        "text": "list_values",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " to model and obtain predicted classes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549724487
+  },
+  {
+    "id": "2772de4a-4788-4356-8794-871d012338cb",
+    "data": [
+      {
+        "text": "use learned model to predict feature for ",
+        "userDefined": false
+      },
+      {
+        "text": "my_list",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720163
+  },
+  {
+    "id": "15c915d4-0227-443f-8f36-30a8f8e8c7c3",
+    "data": [
+      {
+        "text": "predict relevant class for ",
+        "userDefined": false
+      },
+      {
+        "text": "dp",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720163
+  },
+  {
+    "id": "ea999251-894c-4bd3-a573-836e1cb32c14",
+    "data": [
+      {
+        "text": "apply ",
+        "userDefined": false
+      },
+      {
+        "text": "sample data",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " to the model and obtain class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720163
+  },
+  {
+    "id": "88556d83-c990-4c68-b343-b375b5733706",
+    "data": [
+      {
+        "text": "find class for ",
+        "userDefined": false
+      },
+      {
+        "text": "given data point",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720163
+  },
+  {
+    "id": "8d9f3fed-114a-4355-88d1-fbeec3b791a5",
+    "data": [
+      {
+        "text": "predict clf for ",
+        "userDefined": false
+      },
+      {
+        "text": "new_datapoint",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549720163
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "44bc8347-a09c-4af0-bff9-f352cc877a5a",
+    "data": [
+      {
+        "text": "use scaler to normalize attribute values",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693584
+  },
+  {
+    "id": "32c748b8-c79b-4909-9e40-2a7f58f2870f",
+    "data": [
+      {
+        "text": "normalize by using scaler",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693584
+  },
+  {
+    "id": "4feedbbb-6bb7-4cf3-81d9-c38070d1c08a",
+    "data": [
+      {
+        "text": "normalize feature set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693584
+  },
+  {
+    "id": "0cffd244-21bd-451e-bac6-2185ca6e6660",
+    "data": [
+      {
+        "text": "normalize ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 5",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549036854
+  },
+  {
+    "id": "5b1d1dfb-c10d-4fcb-a1a6-bc37241e55f4",
+    "data": [
+      {
+        "text": "features to be normalized \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "place",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549036854
+  },
+  {
+    "id": "d1ee51d9-1745-4a25-90a5-c4a0f229f414",
+    "data": [
+      {
+        "text": "apply normalization to ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549036854
+  },
+  {
+    "id": "a815ba23-35a4-49d4-a138-3a30473bb602",
+    "data": [
+      {
+        "text": "normalize if necessary",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "c46edb21-f183-437a-bc83-da6238bf11a8",
+    "data": [
+      {
+        "text": "columns to be normalized \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number1",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "e245136a-5b99-4d14-a918-9758ad128661",
+    "data": [
+      {
+        "text": "normalize column1 to column ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "3f5179a6-c025-42b1-a29a-aa2931e2c20a",
+    "data": [
+      {
+        "text": "apply normalization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "1b3f3070-6d9e-4cdb-a227-db1ad077b6c6",
+    "data": [
+      {
+        "text": "normalize dataset",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  }
+]

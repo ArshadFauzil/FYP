@@ -1,0 +1,24 @@
+[
+  {
+    "value": "True",
+    "synonyms": [
+      "True",
+      "true",
+      "1"
+    ]
+  },
+  {
+    "value": "False",
+    "synonyms": [
+      "False",
+      "false",
+      "0"
+    ]
+  },
+  {
+    "value": "BOOL variable",
+    "synonyms": [
+      "BOOL variable"
+    ]
+  }
+]

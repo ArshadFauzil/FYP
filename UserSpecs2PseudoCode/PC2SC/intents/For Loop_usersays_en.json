@@ -1,0 +1,292 @@
+[
+  {
+    "id": "e118fbae-57cf-434d-bee9-3db2bc9a3d86",
+    "data": [
+      {
+        "text": "repeat the process for ",
+        "userDefined": false
+      },
+      {
+        "text": "40",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " iterations",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302981
+  },
+  {
+    "id": "40c98ee6-736a-433e-9ac9-fb246aa8b891",
+    "data": [
+      {
+        "text": "for temp in range(",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "number-integer1",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "8",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": ")",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549011519
+  },
+  {
+    "id": "42c377c5-488f-4738-bdd5-023a1df8ba46",
+    "data": [
+      {
+        "text": "for ",
+        "userDefined": false
+      },
+      {
+        "text": "x",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in range(",
+        "userDefined": false
+      },
+      {
+        "text": "7",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": ")",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549011519
+  },
+  {
+    "id": "4659f823-1c37-45d4-af04-2229c981d3f4",
+    "data": [
+      {
+        "text": "for the range of ",
+        "userDefined": false
+      },
+      {
+        "text": "6",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "34",
+        "alias": "number-integer1",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": ",",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549010585
+  },
+  {
+    "id": "16b77f0c-9165-48ff-bf38-f6232a85a85a",
+    "data": [
+      {
+        "text": "for (x \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": ", x\u003d0, x--){",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549010585
+  },
+  {
+    "id": "a96bb316-8371-4a57-aff4-fe60ec867fd0",
+    "data": [
+      {
+        "text": "repeat until ",
+        "userDefined": false
+      },
+      {
+        "text": "15",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546057069
+  },
+  {
+    "id": "30dca8e0-facc-4986-b6d7-cf1490ad3d67",
+    "data": [
+      {
+        "text": "repeat for ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " times",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546057069
+  },
+  {
+    "id": "acd0676c-4285-4964-ad08-9c4b3fdfca06",
+    "data": [
+      {
+        "text": "for ",
+        "userDefined": false
+      },
+      {
+        "text": "30",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " times",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545826890
+  },
+  {
+    "id": "2814713f-dd9b-41ee-ab2a-dc5c7d013d5a",
+    "data": [
+      {
+        "text": "do ",
+        "userDefined": false
+      },
+      {
+        "text": "7",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " number of iterations",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545826890
+  },
+  {
+    "id": "95cbfa94-882c-4bf9-8a10-e3e9bb6427ab",
+    "data": [
+      {
+        "text": "for(int i\u003d0; i\u003c",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": "; i++)",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1546087865
+  },
+  {
+    "id": "5d046481-2191-480c-8ec9-ad9a5e6e4b2c",
+    "data": [
+      {
+        "text": "run for loop for ",
+        "userDefined": false
+      },
+      {
+        "text": "10",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " times",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545826890
+  },
+  {
+    "id": "5a7b3863-54a7-48e8-928d-8a64ce6ea012",
+    "data": [
+      {
+        "text": "iterate ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " times",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1545826890
+  }
+]
