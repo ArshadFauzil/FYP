@@ -3,10 +3,16 @@ import os
 
 arg = sys.argv
 
+language = arg[2]
+
 f = open(arg[1], 'r')
 lines = f.readlines()
 
-c = open('sample.pcp', 'r')
+if arg[2] == 'Python':
+    c = open('sample.pcp', 'r')
+elif arg[2] == 'R':
+    c = open('sample.pcr', 'r')
+
 statements = c.readlines()
 
 outputFName = arg[1].split('.')
