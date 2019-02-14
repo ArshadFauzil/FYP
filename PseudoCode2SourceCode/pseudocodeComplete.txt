@@ -8,6 +8,17 @@ read dataset tsv file.
 define variable features and assign FEATURE_SET.
 define variable split and assign SPLIT_RATIO.
 define variable target_class and assign TARGET_CLASS.
+define variable count_vect and assign count vectorizer class.
+define variable df_counts_TEXT_FEATURE and assign counts of tokens from the dataframe text feature using count vectorizer.
+define variable tfidf_transformer and assign tfidf transformer class.
+get the tfidf scores for the dataframe text feature using tfidf transformer and reassign df_counts_TEXT_FEATURE.
+iterate for each column in the dataframe,
+if each column datatype is equal to object type,
+numerize dataframe column and reassign dataframe column.
+define variable count_vect and assign count vectorizer class.
+define variable df_counts_TEXT_FEATURE and assign counts of tokens from the dataframe text feature using count vectorizer.
+define variable tfidf_transformer and assign tfidf transformer class.
+get the tfidf scores for the dataframe text feature using tfidf transformer and reassign df_counts_TEXT_FEATURE.
 define variable final dataframe and reassign dataframe.
 remove datapoints that have NULL target_class from the dataframe and reassign dataframe.
 replace NaN values with the column mean and reassign dataframe.
@@ -15,4 +26,3 @@ replace NaN values with last observation carried forawrd.
 replace NaN values with next observation carried forawrd.
 split dataframe feature set and target class by SPLIT_RATIO ratio and assign to X_train X_test y_train y_test.
 define variable scaler and assign standard scaler class.
-define variable df_counts_TEXT_FEATURE and assign counts of tokens from the dataframe text feature using count vectorizer.
