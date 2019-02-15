@@ -30,7 +30,8 @@ def train(data, config_file, model_dir):
 def run(line):
     interpreter = Interpreter.load('./models/nlu/default/chat')
     print(line + "\n")
-    pprint(interpreter.parse(line)["intent_ranking"][:2])
+    pprint(interpreter.parse(line))
+    # pprint(interpreter.parse(line)["intent_ranking"][:2])
     # pprint(interpreter.parse('use data manipulation library'))
     # pprint(interpreter.parse('using multidimensional array operator'))
     # pprint(interpreter.parse('use Random Forrest '))
@@ -47,7 +48,7 @@ def get_pseudocode_from_db():
 
 
 if __name__ == '__main__':
-    pc_lines = get_pseudocode_from_db()[0]
+    pc_lines = get_pseudocode_from_db()[120]
     # train('./training_data.json', './config.yml', './models/nlu')
     # run()
     for line in pc_lines:
