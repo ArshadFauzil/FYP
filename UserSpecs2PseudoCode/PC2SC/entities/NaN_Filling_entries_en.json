@@ -6,7 +6,9 @@
       "mean",
       "Mean",
       "Average",
-      "sum/count"
+      "sum/count",
+      "column average",
+      "avg"
     ]
   },
   {
@@ -24,18 +26,6 @@
       "last observation carried forawrd",
       "locf",
       "last observation"
-    ]
-  },
-  {
-    "value": "lbcf",
-    "synonyms": [
-      "lbcf"
-    ]
-  },
-  {
-    "value": "column average",
-    "synonyms": [
-      "column average"
     ]
   }
 ]

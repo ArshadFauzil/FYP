@@ -90,15 +90,15 @@
     ]
   },
   {
-    "value": "TARGET_CLASS",
+    "value": "account",
     "synonyms": [
-      "TARGET_CLASS"
+      "account"
     ]
   },
   {
-    "value": "sales",
+    "value": "created",
     "synonyms": [
-      "sales"
+      "created"
     ]
   },
   {
@@ -114,69 +114,27 @@
     ]
   },
   {
-    "value": "no_of_100\u0027s",
+    "value": "total",
     "synonyms": [
-      "no_of_100\u0027s"
+      "total"
     ]
   },
   {
-    "value": "average",
+    "value": "strike_rate",
     "synonyms": [
-      "average"
+      "strike_rate"
     ]
   },
   {
-    "value": "strke_rates",
+    "value": "element1",
     "synonyms": [
-      "strke_rates"
+      "element1"
     ]
   },
   {
-    "value": "column 1",
+    "value": "age",
     "synonyms": [
-      "column 1"
-    ]
-  },
-  {
-    "value": "column 2",
-    "synonyms": [
-      "column 2"
-    ]
-  },
-  {
-    "value": "column 6",
-    "synonyms": [
-      "column 6"
-    ]
-  },
-  {
-    "value": "findex2",
-    "synonyms": [
-      "findex2"
-    ]
-  },
-  {
-    "value": "findex9",
-    "synonyms": [
-      "findex9"
-    ]
-  },
-  {
-    "value": "9999",
-    "synonyms": [
-      "9999"
-    ]
-  },
-  {
-    "value": "findex1",
-    "synonyms": [
-      "findex1"
-    ]
-  },
-  {
-    "value": "weight",
-    "synonyms": [
-      "weight"
+      "age"
     ]
   },
   {
@@ -186,39 +144,99 @@
     ]
   },
   {
-    "value": "length",
+    "value": "skills",
     "synonyms": [
-      "length"
+      "skills"
     ]
   },
   {
-    "value": "attribute 1",
+    "value": "\u0027Milan\u0027",
     "synonyms": [
-      "attribute 1"
+      "\u0027Milan\u0027"
     ]
   },
   {
-    "value": "attribute 2",
+    "value": "\u0027Madusha\u0027",
     "synonyms": [
-      "attribute 2"
+      "\u0027Madusha\u0027"
     ]
   },
   {
-    "value": "attribute 3",
+    "value": "\u0027Dinusha\u0027",
     "synonyms": [
-      "attribute 3"
+      "\u0027Dinusha\u0027"
     ]
   },
   {
-    "value": "attribute 4",
+    "value": "\u0027Arshad\u0027",
     "synonyms": [
-      "attribute 4"
+      "\u0027Arshad\u0027"
     ]
   },
   {
-    "value": "attribute 5",
+    "value": "\u0027Ruchira\u0027",
     "synonyms": [
-      "attribute 5"
+      "\u0027Ruchira\u0027"
+    ]
+  },
+  {
+    "value": "flowers",
+    "synonyms": [
+      "flowers"
+    ]
+  },
+  {
+    "value": "guitars",
+    "synonyms": [
+      "guitars"
+    ]
+  },
+  {
+    "value": "elephants",
+    "synonyms": [
+      "elephants"
+    ]
+  },
+  {
+    "value": "drums",
+    "synonyms": [
+      "drums"
+    ]
+  },
+  {
+    "value": "computer",
+    "synonyms": [
+      "computer"
+    ]
+  },
+  {
+    "value": "phone",
+    "synonyms": [
+      "phone"
+    ]
+  },
+  {
+    "value": "book",
+    "synonyms": [
+      "book"
+    ]
+  },
+  {
+    "value": "465",
+    "synonyms": [
+      "465"
+    ]
+  },
+  {
+    "value": "244.43",
+    "synonyms": [
+      "244.43"
+    ]
+  },
+  {
+    "value": "weight",
+    "synonyms": [
+      "weight"
     ]
   }
 ]

@@ -53,13 +53,13 @@
     "id": "80433c0d-d8de-423d-b87d-28153b6be469",
     "data": [
       {
-        "text": "define train and validate sets ans classes",
+        "text": "define train and validate sets and classes",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549698306
+    "updated": 1550226089
   },
   {
     "id": "0d48eab3-24ed-41dd-95cc-59c31725b166",

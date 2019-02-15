@@ -88,5 +88,41 @@
     "synonyms": [
       "list_values"
     ]
+  },
+  {
+    "value": "number_array",
+    "synonyms": [
+      "number_array"
+    ]
+  },
+  {
+    "value": "temp_list",
+    "synonyms": [
+      "temp_list"
+    ]
+  },
+  {
+    "value": "str_array",
+    "synonyms": [
+      "str_array"
+    ]
+  },
+  {
+    "value": "ruplef",
+    "synonyms": [
+      "ruplef"
+    ]
+  },
+  {
+    "value": "temp",
+    "synonyms": [
+      "temp"
+    ]
+  },
+  {
+    "value": "iop",
+    "synonyms": [
+      "iop"
+    ]
   }
 ]

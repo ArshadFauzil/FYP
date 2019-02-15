@@ -92,7 +92,7 @@
         "userDefined": false
       },
       {
-        "text": "0.48e",
+        "text": "0.48",
         "alias": "number",
         "meta": "@sys.number",
         "userDefined": false
@@ -100,7 +100,7 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1548776902
+    "updated": 1550226297
   },
   {
     "id": "c165e58c-1acb-4fcc-81d4-dcd5357c0e45",

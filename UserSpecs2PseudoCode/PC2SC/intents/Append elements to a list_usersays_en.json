@@ -1,0 +1,572 @@
+[
+  {
+    "id": "5d55d720-d92d-4c3d-a8fb-d14be0bec269",
+    "data": [
+      {
+        "text": "fill empty ",
+        "userDefined": false
+      },
+      {
+        "text": "array",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "temp",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550236028
+  },
+  {
+    "id": "f6efb127-ebb3-45e2-bdd6-93df36cea997",
+    "data": [
+      {
+        "text": "add ",
+        "userDefined": false
+      },
+      {
+        "text": "49",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "array",
+        "alias": "syn_list1",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "iop",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550236028
+  },
+  {
+    "id": "4a170463-9589-40ae-a235-f805763d73ba",
+    "data": [
+      {
+        "text": "ruplef",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " is a ",
+        "userDefined": false
+      },
+      {
+        "text": "list",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " with values ",
+        "userDefined": false
+      },
+      {
+        "text": "computer",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "phone",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "book",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "465",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", and ",
+        "userDefined": false
+      },
+      {
+        "text": "244.43",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550236028
+  },
+  {
+    "id": "20335bce-3796-4faa-8034-655cdbcf4ac2",
+    "data": [
+      {
+        "text": "define a ",
+        "userDefined": false
+      },
+      {
+        "text": "string array",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " called ",
+        "userDefined": false
+      },
+      {
+        "text": "str_array",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " and put ",
+        "userDefined": false
+      },
+      {
+        "text": "flowers",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "guitars",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "elephants",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "drums",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550236028
+  },
+  {
+    "id": "e65d960a-b4cf-41aa-a2b5-2affd8835d67",
+    "data": [
+      {
+        "text": "num_array \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "Arshad",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "Milan",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550236028
+  },
+  {
+    "id": "0f46407a-876c-4cb1-bac3-56cff7115dce",
+    "data": [
+      {
+        "text": "create a ",
+        "userDefined": false
+      },
+      {
+        "text": "list",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " named ",
+        "userDefined": false
+      },
+      {
+        "text": "temp_list",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": " and add ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027Milan\u0027",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027Madusha\u0027",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027Dinusha\u0027",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027Arshad\u0027",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027Ruchira\u0027",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550235444
+  },
+  {
+    "id": "5ffc665b-67a6-4288-8132-aa41af8d0cd4",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "89",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " ,",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " ,",
+        "userDefined": false
+      },
+      {
+        "text": "12",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "44",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "number_array",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550235444
+  },
+  {
+    "id": "e594a395-9670-4dcb-8a65-b5fffb50c9d0",
+    "data": [
+      {
+        "text": "my_list",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      },
+      {
+        "text": ".append(",
+        "userDefined": false
+      },
+      {
+        "text": "runs",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "wickets",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "total",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "strike_rate",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ")",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550232336
+  },
+  {
+    "id": "98b3ff90-84dc-4b0f-938c-39e0a0c96ca5",
+    "data": [
+      {
+        "text": "add ",
+        "userDefined": false
+      },
+      {
+        "text": "element1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "element_list",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550232336
+  },
+  {
+    "id": "3496c828-4596-4bf9-8f79-c70597c7bbab",
+    "data": [
+      {
+        "text": "append ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "height",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "skills",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to the ",
+        "userDefined": false
+      },
+      {
+        "text": "list",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " named ",
+        "userDefined": false
+      },
+      {
+        "text": "my_list",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550232336
+  }
+]
