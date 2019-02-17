@@ -1,6 +1,7 @@
 import difflib
 import re
 from nltk import RegexpParser
+from entities import entity_extraction_app
 from stanford_pos_tagger.stanfordapi import StanfordAPI
 from pprint import pprint
 import os
@@ -18,6 +19,16 @@ pc_db = myclient[os.getenv('MONGO_DB')]
 
 class Extractor:
     pos_tag_obj = StanfordAPI()
+
+    entity_map = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/entity_map').read()
+    req_ent = {}
+
+    for i, line in enumerate(entity_map.split("\n")):
+        content = line.split(',')
+        try:
+            req_ent[content[0]] = (content[1:])
+        except:
+            print("Unable to locate entity map")
 
     """Used to extract entities based on POS tagging"""
 
@@ -172,52 +183,55 @@ if __name__ == "__main__":
     # pprint(list1)
     # print('*' * 20)
 
-    full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
-    lines = [line for line in full_corpus.readlines() if line.strip()]
-
-    entity_map = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/entity_map').read()
-    req_ent = {}
-
-    for i, line in enumerate(entity_map.split("\n")):
-        content = line.split(',')
-        try:
-            req_ent[content[0]] = (content[1:])
-        except:
-            print("Unable to locate entity map")
-
-    # pprint(req_ent['For each loop'])
     extract = Extractor()
-    regex_var = r"\b([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|=|([Ii]mport)|([Uu]se\b"
-    regex_num = r"\d+\.?\d*\b"
+    entity_extraction_app.generate_entities(extract, extract.req_ent)
 
-    for line in lines:
-        var_name = ''
-        val = ''
-        print(line)
-        intent = test_detect_intent.detect_intent_texts(PROJECT_ID, 'fake', [line], language_code='en')
-        print(intent)
-        print(req_ent[intent])
-        entities = list(extract.extract_entities(line))
-        pprint(entities)
-
-        for rent in req_ent[intent]:
-            if rent == 'var_name':
-                for entity in entities:
-                    if re.search(regex_var, entity):
-                        # print('The entity {} contain variable'.format(entity))
-                        for token in entity.split():
-                            if not re.search(regex_var, token):
-                                var_name = token
-                    elif not re.search(regex_num, entity):
-                        var_name = entity
-
-            elif rent == 'value':
-                for entity in entities:
-                    if re.search(regex_num, entity):
-                        # print('The entity {} contain number'.format(entity))
-                        e = entity.replace(',', '')
-                        val = e
-
-        print('var_name :' + var_name)
-        print('value :' + val)
-        print('*' * 20)
+    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
+    # lines = [line for line in full_corpus.readlines() if line.strip()]
+    #
+    # entity_map = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/entity_map').read()
+    # req_ent = {}
+    # #
+    # for i, line in enumerate(entity_map.split("\n")):
+    #     content = line.split(',')
+    #     try:
+    #         req_ent[content[0]] = (content[1:])
+    #     except:
+    #         print("Unable to locate entity map")
+    #
+    # pprint(req_ent['IF condition - not'])
+    # extract = Extractor()
+    # regex_var = r"\b([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|=|([Ii]mport)|([Uu]se\b"
+    # regex_num = r"\d+\.?\d*\b"
+    #
+    # for line in lines:
+    #     var_name = ''
+    #     val = ''
+    #     print(line)
+    #     intent = test_detect_intent.detect_intent_texts(PROJECT_ID, 'fake', [line], language_code='en')
+    #     print(intent)
+    #     print(req_ent[intent])
+    #     entities = list(extract.extract_entities(line))
+    #     pprint(entities)
+    #
+    #     for rent in req_ent[intent]:
+    #         if rent == 'var_name':
+    #             for entity in entities:
+    #                 if re.search(regex_var, entity):
+    #                     # print('The entity {} contain variable'.format(entity))
+    #                     for token in entity.split():
+    #                         if not re.search(regex_var, token):
+    #                             var_name = token
+    #                 elif not re.search(regex_num, entity):
+    #                     var_name = entity
+    #
+    #         elif rent == 'value':
+    #             for entity in entities:
+    #                 if re.search(regex_num, entity):
+    #                     # print('The entity {} contain number'.format(entity))
+    #                     e = entity.replace(',', '')
+    #                     val = e
+    #
+    #     print('var_name :' + var_name)
+    #     print('value :' + val)
+    #     print('*' * 20)

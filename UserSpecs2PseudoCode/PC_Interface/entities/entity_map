@@ -15,22 +15,22 @@ Drop columns - Range,value(s)
 Else condition,N
 End,N
 For Loop,N
-For each loop,var_name,item
-IF condition – Not,N
-IF condition – Simple,N
-IF condition – Statement (!=),N
-IF condition – Statement (<),N
-IF condition – Statement (=),N
-IF condition – Statement (>),N
+ForEach Loop,var_name,item
+IF condition - not,N
+IF condition - simple,N
+IF condition - statement (!=),N
+IF condition - statement (<),N
+IF condition - statement (=),N
+IF condition - statement (>),N
 import ML Library,def_value
-Import specific modules,value
-Load Dataset,N
+Import Specific Modules,value
+Load dataset,N
 Normalization,value(s)
 Print,value
-Split Dataset – Test,value
-Split Dataset – Train,value
+SplitDataset-Test,value
+SplitDataset-Train,value
 Start Algorithm,N
-While loop,N
+While_Loop,N
 Assign Class instance to variable,var_name,value
 Confusion Matrix,N
 Define features,value(s)

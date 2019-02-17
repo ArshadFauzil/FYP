@@ -9,14 +9,14 @@ class StanfordAPI:
     """Used to initialize the Stanford POS tagger in servlet mode and then connect to it using a socket"""
 
     def __init__(self, path_to_model='stanford_pos_tagger/english-bidirectional-distsim.tagger',
-                 path_to_jar='stanford_pos_tagger/stanford-postagger.jar', port=5000, buffer_size=4096):
+                 path_to_jar='stanford_pos_tagger/stanford-postagger.jar', port=5001, buffer_size=4096):
         """Used to initialize the StanfordAPI object with the host, port and buffer"""
         self.host = socket.gethostname()
         self.port = port
         self.buffer = buffer_size
         self.process = Popen(
             ['java', '-mx2g', '-cp', path_to_jar, 'edu.stanford.nlp.tagger.maxent.MaxentTaggerServer',
-             '-model', path_to_model, '-port', '5000', '-sentenceDeLimiter', 'newline'])
+             '-model', path_to_model, '-port', '5001', '-sentenceDeLimiter', 'newline'])
         time.sleep(5)
 
     def pos_tag(self, message):
