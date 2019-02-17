@@ -1,5 +1,33 @@
 [
   {
+    "id": "e98885ac-254c-4562-ba5f-6f563d3890a7",
+    "data": [
+      {
+        "text": "define a float variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "786.00",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550391402
+  },
+  {
     "id": "7139fa84-6bf6-4212-b690-cc87b8efed3e",
     "data": [
       {

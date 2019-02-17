@@ -238,5 +238,11 @@
     "synonyms": [
       "weight"
     ]
+  },
+  {
+    "value": "my_class",
+    "synonyms": [
+      "my_class"
+    ]
   }
 ]

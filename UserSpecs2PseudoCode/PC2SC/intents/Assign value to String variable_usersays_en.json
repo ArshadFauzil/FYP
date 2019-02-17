@@ -1,5 +1,23 @@
 [
   {
+    "id": "d73bc163-9f24-4a00-889f-3ebd380bb4d6",
+    "data": [
+      {
+        "text": "define a string variable named weight and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "\u0027786\u0027",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550391438
+  },
+  {
     "id": "42a4524b-7520-495e-897c-541db0736cdf",
     "data": [
       {

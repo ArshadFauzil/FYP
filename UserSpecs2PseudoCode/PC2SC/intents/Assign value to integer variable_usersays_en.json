@@ -1,5 +1,33 @@
 [
   {
+    "id": "e274ab73-7f44-43b5-a214-4fe21a37ddde",
+    "data": [
+      {
+        "text": "define an integer variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "786",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550391368
+  },
+  {
     "id": "984ebe0a-d0d1-44e7-b0e9-cb71dc72fe16",
     "data": [
       {

@@ -1,5 +1,23 @@
 [
   {
+    "id": "a75ef89a-8de7-4747-b2c2-34cb18b27a6d",
+    "data": [
+      {
+        "text": "feature is ",
+        "userDefined": false
+      },
+      {
+        "text": "my_class",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550419721
+  },
+  {
     "id": "04489c40-ffd9-455c-b11b-818b528ab54e",
     "data": [
       {

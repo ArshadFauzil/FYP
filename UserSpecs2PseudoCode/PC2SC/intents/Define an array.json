@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "define array $any"
+          "speech": "define empty array $any"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549301627,
+  "lastUpdate": 1550419761,
   "fallbackIntent": false,
   "events": []
 }

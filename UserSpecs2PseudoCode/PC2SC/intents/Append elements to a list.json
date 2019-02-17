@@ -34,6 +34,7 @@
         },
         {
           "id": "1ea0b47e-6c3a-4bce-b209-adfd75942118",
+          "required": false,
           "dataType": "@syn_list",
           "name": "syn_list",
           "value": "$syn_list",
@@ -41,6 +42,7 @@
         },
         {
           "id": "c827630a-f979-49e3-81e9-45758f903768",
+          "required": false,
           "dataType": "@syn_list",
           "name": "syn_list1",
           "value": "$syn_list1",
@@ -51,7 +53,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "assign $ds_attributes to list $list_variable"
+          "speech": "define array $list_variable with values $ds_attributes"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -61,7 +63,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550236028,
+  "lastUpdate": 1550419882,
   "fallbackIntent": false,
   "events": []
 }
