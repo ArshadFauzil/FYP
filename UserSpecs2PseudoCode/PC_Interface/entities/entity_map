@@ -1,10 +1,10 @@
 Accuracy,var_name
 Assign value to float variable,var_name,value
 Assign value to integer variable,var_name,value
-Assign value to string variable,var_name,value
+Assign value to String variable,var_name,value
 Define a variable,var_name
 Define an array,var_name
-Define Language,def_value
+Define language,def_value
 Define K in KNN,var_name,value
 Define Algorithm,def_value
 Define Class,var_name
@@ -14,7 +14,7 @@ Drop columns,value(s)
 Drop columns - Range,value(s)
 Else condition,N
 End,N
-For loop,N
+For Loop,N
 For each loop,var_name,item
 IF condition – Not,N
 IF condition – Simple,N

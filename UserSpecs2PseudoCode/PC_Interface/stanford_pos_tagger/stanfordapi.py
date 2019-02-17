@@ -41,18 +41,3 @@ def to_ascii(message):
         return ''
     return (unidecode(message) + '\n').encode('ascii', errors='ignore')
 
-
-def test():
-    """Test method for the Stanford API class"""
-    stanford_api = StanfordAPI()
-    text = u'''moçambique I'm attempting to produce a stream of comments from a Facebook page. 
-    Ultimately I'd like a response from WSO2 like this: I'm using the API module for WSO2 ESB to provide an 
-    abstraction layer over a Facebook page to get a simple stream of all the comments on a page after a given 
-    timestamp. The logic I'm working on right now is taking all the posts on a given Facebook page (using the WSO2 
-    Facebook Connector), iterating over all the posts (using an iterate mediator), checking if the post has comments 
-    (using the filter mediator), if there are comments I'm then iterating over the '''
-    # print(stanford_api.pos_tag(unidecode(text).decode('ascii', 'ignore')))
-    print (stanford_api.pos_tag (text))
-
-if __name__ == "__main__":
-    test()
