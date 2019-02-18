@@ -1,6 +1,6 @@
-req_ent_int = ['value', 'df_value', 'var_name']
+req_ent_int = ['var_name']
 
-if 'value' in req_ent_int and 'var_name' in req_ent_int:
-    print('both value and var_name are available')
+if 'var_name' in req_ent_int and len(req_ent_int) == 1:
+    print('var_name is available')
 else:
     print('condition is not satisfied')

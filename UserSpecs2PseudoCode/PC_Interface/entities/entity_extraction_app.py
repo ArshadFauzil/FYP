@@ -26,13 +26,23 @@ def generate_entities(extract, req_ent):
             entities = list(extract.extract_entities(line))
             pprint(entities)
             params = entities_for_varname_value(entities, req_ent_int)
-        # entities = list(extract.extract_entities(line))
-        # pprint(entities)
-        try:
-            print('var name : {}'.format(params[0]))
-            print('value : {}'.format(params[1]))
-        except:
-            print('var_name and value not received')
+            try:
+                print('var name : {}'.format(params[0]))
+                print('value : {}'.format(params[1]))
+            except:
+                print('var_name and value not received')
+
+        elif 'N' in req_ent_int:
+            print('No need of entity')
+
+        elif 'var_name' in req_ent_int and len(req_ent_int) == 1:
+            entities = list(extract.extract_entities(line))
+            pprint(entities)
+            param = entities_for_varname_value(entities, req_ent_int)
+            try:
+                print('var name : {}'.format(param))
+            except:
+                print('var_name is not received')
 
 
 def entities_for_varname_value(entities, required_entities):
@@ -57,4 +67,20 @@ def entities_for_varname_value(entities, required_entities):
                     val = e
 
     return [var_name, val]
+
+
+def entities_varname(entities, required_entities):
+    var_name = ''
+    for rent in required_entities:
+        if rent == 'var_name':
+            for entity in entities:
+                if re.search(regex_var, entity):
+                    # print('The entity {} contain variable'.format(entity))
+                    for token in entity.split():
+                        if not re.search(regex_var, token):
+                            var_name = token
+                elif not re.search(regex_num, entity):
+                    var_name = entity
+
+    return var_name
 
