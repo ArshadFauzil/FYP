@@ -1,0 +1,37 @@
+{
+  "id": "8b679e66-03b8-45b5-ad20-198a1044727d",
+  "name": "Define multidimensional array operator",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "dfe59efe-810f-48d1-8edc-132175e3a4b5",
+          "required": false,
+          "dataType": "@MDA_Operator",
+          "name": "MDA_Operator",
+          "value": "$MDA_Operator",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "import library multidimentional array."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549529129,
+  "fallbackIntent": false,
+  "events": []
+}

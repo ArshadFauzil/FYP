@@ -1,0 +1,418 @@
+[
+  {
+    "id": "e98885ac-254c-4562-ba5f-6f563d3890a7",
+    "data": [
+      {
+        "text": "define a float variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "786.00",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550391402
+  },
+  {
+    "id": "7139fa84-6bf6-4212-b690-cc87b8efed3e",
+    "data": [
+      {
+        "text": "declare floating point variable ",
+        "userDefined": false
+      },
+      {
+        "text": "friendship",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "35.3290",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " as value",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549300012
+  },
+  {
+    "id": "2a4604d0-e993-474a-80e6-d87f0c6ffaba",
+    "data": [
+      {
+        "text": "winning_rate",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a double variable which has value ",
+        "userDefined": false
+      },
+      {
+        "text": "4.00564",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548938246
+  },
+  {
+    "id": "67aafd77-63db-4aa5-80a8-36e3a9254c26",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "567.045",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "def",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548694793
+  },
+  {
+    "id": "f9f590c0-9498-4280-b806-fe2c6b2e0f45",
+    "data": [
+      {
+        "text": "define variable ",
+        "userDefined": false
+      },
+      {
+        "text": "T",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "0.84",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510070
+  },
+  {
+    "id": "fe031942-7ea3-43be-b5d6-112da7d4f40d",
+    "data": [
+      {
+        "text": "define a float variable called ",
+        "userDefined": false
+      },
+      {
+        "text": "burnable",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "56.89",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " as value",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548510070
+  },
+  {
+    "id": "91376bce-5415-4e4d-97ca-75947cd244f0",
+    "data": [
+      {
+        "text": "depth",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "27.245",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507485
+  },
+  {
+    "id": "84402476-dcf7-470a-9832-9181c58c987a",
+    "data": [
+      {
+        "text": "average",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "45.68",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548507485
+  },
+  {
+    "id": "29f9389d-050b-4cee-ab6f-67db5f855380",
+    "data": [
+      {
+        "text": "create a float variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "rainfall",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "5.64",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548506890
+  },
+  {
+    "id": "151f85a2-a4f6-4305-8c99-c9850905d464",
+    "data": [
+      {
+        "text": "goodness",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a variable with value ",
+        "userDefined": false
+      },
+      {
+        "text": "4.4852",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421846
+  },
+  {
+    "id": "c2d7c2f5-fb87-4164-81cc-6fc02d058b81",
+    "data": [
+      {
+        "text": "value of ",
+        "userDefined": false
+      },
+      {
+        "text": "rain",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "78.2",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421846
+  },
+  {
+    "id": "9db394c8-9ae1-4806-85c6-2db1514b4306",
+    "data": [
+      {
+        "text": "substitute decimal ",
+        "userDefined": false
+      },
+      {
+        "text": "5.5648",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "count",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421846
+  },
+  {
+    "id": "81a66192-6418-4d7a-85b1-0031db8bc998",
+    "data": [
+      {
+        "text": "assign value ",
+        "userDefined": false
+      },
+      {
+        "text": "8.95",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to double variable ",
+        "userDefined": false
+      },
+      {
+        "text": "my_val",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421846
+  },
+  {
+    "id": "cc4fc1be-145b-4519-ae04-8151800c2ade",
+    "data": [
+      {
+        "text": "assign ",
+        "userDefined": false
+      },
+      {
+        "text": "6.34517234227",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "opacity",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421434
+  },
+  {
+    "id": "966a2bf6-f384-495d-88e4-25a5a2e23d4c",
+    "data": [
+      {
+        "text": "value of variable ",
+        "userDefined": false
+      },
+      {
+        "text": "width",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "5.78",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548421434
+  }
+]

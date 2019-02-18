@@ -1,0 +1,37 @@
+{
+  "id": "919901a7-a18a-4111-b4e8-2e5f14f84924",
+  "name": "Assign value to String variable",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "38f1d6c3-2acc-4bf3-80cf-8d75a0e01c4e",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "str is a string variable with value $any"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550391438,
+  "fallbackIntent": false,
+  "events": []
+}

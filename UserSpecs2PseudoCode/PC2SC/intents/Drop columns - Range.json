@@ -1,0 +1,45 @@
+{
+  "id": "0150ee0f-32a3-463c-88a3-9bc0984cef24",
+  "name": "Drop columns - Range",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3340a58a-612c-4d5e-8954-4ad5448324fc",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": true
+        },
+        {
+          "id": "4a0e407f-7241-4981-afef-ec8bff6cff0d",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes1",
+          "value": "$ds_attributes1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "drop attributes \u003d $ds_attributes to $ds_attributes1"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549302767,
+  "fallbackIntent": false,
+  "events": []
+}

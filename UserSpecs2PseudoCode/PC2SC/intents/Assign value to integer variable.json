@@ -1,0 +1,45 @@
+{
+  "id": "26772e34-2d5d-4f27-9eb9-624c3ad1ea25",
+  "name": "Assign value to integer variable",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f27855c0-bdb2-4f33-b850-866b1fd85310",
+          "required": false,
+          "dataType": "@sys.number-integer",
+          "name": "number-integer",
+          "value": "$number-integer",
+          "isList": false
+        },
+        {
+          "id": "70753527-4bbd-4a28-9180-d001540b9166",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "$any is an integer variable with value $number-integer"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550391368,
+  "fallbackIntent": false,
+  "events": []
+}

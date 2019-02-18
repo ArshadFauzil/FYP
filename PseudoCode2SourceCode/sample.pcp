@@ -1,0 +1,48 @@
+import library dataframe.
+import library multidimentional array.
+import library DataVisualization.
+import library MLlibrary Multinomial Naive Bayes.
+import library MLlibrary Gaussian Naive Bayes.
+import library MLlibrary Random Forest.
+import library MLlibrary Logisitic Regression.
+import library MLlibrary SVM.
+import Library MLlibrary TrainTestSplit.
+import library MLlibrary Preprocessing Scaler.
+import library MLlibrary Confusion Matrix.
+import library MLlibrary Label Encoder.
+import library MLlibrary CountVectorizer.
+import library MLlibrary tfidf feature extractor.
+read dataset csv file.
+read dataset text file seperated by space.
+read dataset text file seperated by comma.
+read dataset text file seperated by tab.
+read dataset tsv file.
+define variable features and assign FEATURE_SET.
+define variable split and assign SPLIT_RATIO.
+define variable target_class and assign TARGET_CLASS.
+define variable final dataframe and reassign dataframe.
+remove datapoints that have NULL target_class from the dataframe and reassign dataframe.
+replace NaN values with the column mean and reassign dataframe.
+replace NaN values with last observation carried forawrd.
+replace NaN values with next observation carried forawrd.
+split dataframe feature set and target class by SPLIT_RATIO ratio and assign to X_train X_test y_train y_test.
+define variable scaler and assign standard scaler class.
+normalize X_train using scaler and reassign X_train.
+define variable clf and classify X_train y_train using MultinomialNB.
+define variable clf classify X_train y_train using LinearSVC.
+define variable clf classify X_train y_train using Random Forest Classifier.
+define variable clf classify X_train y_train using Logistic Regression.
+define variable predictions and predict clf for X_test.
+define variable cm and generate confusion matrix for predictions.
+define variable new_datapoint and normalize NEW_DATAPOINT using scaler.
+predict clf for new_datapoint.
+define variable le and assign label encoder class.
+# iterate for each column in the dataframe,
+# if each column datatype is equal to object type,
+# numerize dataframe column and reassign dataframe column.
+define variable text_feature and assign TEXT_FEATURE.
+$ define variable count_vect and assign count vectorizer class.
+$ define variable df_counts_TEXT_FEATURE and assign counts of tokens from the dataframe text feature using count vectorizer.
+# define variable tfidf_transformer and assign tfidf transformer class.
+# get the tfidf scores for the dataframe text feature using tfidf transformer and reassign df_counts_TEXT_FEATURE.
+define variable cm and assign confusion matrix for y_test and predictions.

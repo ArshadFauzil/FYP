@@ -1,0 +1,38 @@
+{
+  "id": "913fd6f7-d855-4da8-8d74-46c75a061453",
+  "name": "Define Algorithm",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "43553888-92ad-4001-bace-6938e8518ffc",
+          "required": false,
+          "dataType": "@Algorithms",
+          "name": "Algorithms",
+          "value": "$Algorithms",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define variable clf and classify X_train y_train using $Algorithms"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549722853,
+  "fallbackIntent": false,
+  "events": []
+}

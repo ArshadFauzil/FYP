@@ -1,0 +1,54 @@
+{
+  "id": "80abcade-e122-4212-a46a-4b6424f6e227",
+  "name": "SplitDataset-Test",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "SplitDataset-Test-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f7817317-0fe8-4e52-a45b-da99cbc985e1",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "5d0901ca-582d-478b-8201-d69e0688618c",
+          "required": false,
+          "dataType": "@sys.percentage",
+          "name": "percentage",
+          "value": "$percentage",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "test split ratio \u003d $number",
+            "test split ratio \u003d $percentage"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549037715,
+  "fallbackIntent": false,
+  "events": []
+}

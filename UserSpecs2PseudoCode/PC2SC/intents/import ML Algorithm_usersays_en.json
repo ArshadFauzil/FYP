@@ -1,0 +1,176 @@
+[
+  {
+    "id": "22b9fefa-7663-4dcd-8378-06064f483e97",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "knn",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      },
+      {
+        "text": " from the machine learning package",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549647679
+  },
+  {
+    "id": "3e7a2d78-c618-4298-a468-de0f1329e507",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "k-means",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      },
+      {
+        "text": " from ML library",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549647679
+  },
+  {
+    "id": "58a7b222-18e4-45e7-b1cd-1d3bd84c6540",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "KNN",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549647679
+  },
+  {
+    "id": "5c47687a-1f1e-4d45-bdcb-12c602db52e3",
+    "data": [
+      {
+        "text": "import ",
+        "userDefined": false
+      },
+      {
+        "text": "NN",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      },
+      {
+        "text": " from Machine Learning library",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549531613
+  },
+  {
+    "id": "7922f720-6466-4d18-a909-5e2fa40b44d6",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "SVM",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549531613
+  },
+  {
+    "id": "886e5f62-6ae7-4064-b59b-0522a8567205",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "Logisitic Regression",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549531201
+  },
+  {
+    "id": "3cb68625-3299-4ddd-971c-e377042aba02",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "Random Forest",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549531201
+  },
+  {
+    "id": "0f44a4f0-081b-4dea-b3d1-089577df24e0",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "Gaussian Naive Bayes",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549531201
+  },
+  {
+    "id": "071d7a12-7eff-476b-a501-0b18b9125b25",
+    "data": [
+      {
+        "text": "import library ",
+        "userDefined": false
+      },
+      {
+        "text": "Multinomial Naive Bayes",
+        "alias": "Algorithms",
+        "meta": "@Algorithms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549531201
+  }
+]

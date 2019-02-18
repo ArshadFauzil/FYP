@@ -1,0 +1,28 @@
+{
+  "id": "33aeb5a0-ca22-4386-9a28-1ea36b5d594f",
+  "name": "Confusion Matrix",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define variable cm and generate confusion matrix for predictions."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549721819,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "f150c66f-f52f-4b07-9ebb-25e4728e7aec",
+  "name": "Append elements to a list",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ce2ec04e-a13d-4ed1-87b3-2b929e6df2c1",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": true
+        },
+        {
+          "id": "5544206a-7d9c-4a91-939b-8e9366aa895a",
+          "required": false,
+          "dataType": "@list_variable",
+          "name": "list_variable",
+          "value": "$list_variable",
+          "isList": false
+        },
+        {
+          "id": "2e80d887-cca5-4e36-a009-9915ead6b980",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": true
+        },
+        {
+          "id": "1ea0b47e-6c3a-4bce-b209-adfd75942118",
+          "required": false,
+          "dataType": "@syn_list",
+          "name": "syn_list",
+          "value": "$syn_list",
+          "isList": false
+        },
+        {
+          "id": "c827630a-f979-49e3-81e9-45758f903768",
+          "required": false,
+          "dataType": "@syn_list",
+          "name": "syn_list1",
+          "value": "$syn_list1",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define array $list_variable with values $ds_attributes"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550419882,
+  "fallbackIntent": false,
+  "events": []
+}

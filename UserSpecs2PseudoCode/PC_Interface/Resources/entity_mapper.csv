@@ -1,0 +1,51 @@
+Accuracy,var_name,2,,,,,,Assign value to float variable
+Assign value to float variable,"var_name, value",1,,,,,,Assign value to integer variable
+Assign value to integer variable,"var_name, value",1,,,,,,Define Class
+Assign value to string variable,"var_name, s_value",9,,,,,,Define K in KNN
+Define a variable,var_name,2,,,,,,
+Define an array,var_name,2,,,,,,Accuracy
+Define Language,def_value,3,,,,,,Define a variable
+Define K in KNN,"var_name, value",1,,,,,,Define an array
+Define Algorithm,def_value,3,,,,,,
+Define Class,"var_name, value",1,op,,,,,Define Language
+Define data manipulation library,def_value,3,,,,,,Define Algorithm
+Define multidimensional array operator,def_value,3,,,,,,Define data manipulation library
+Drop columns,value(s),4,,,,,,Define multidimensional array operator
+Drop columns - Range,value(s),4,,,,,,import ML Library
+Else condition,N,5,,,,,,import ML Algorithm
+End,N,5,,,,,,
+For loop,N,5,,,,,,Drop columns
+For each loop,"var_name, item",6,,,,,,Drop columns - Range
+IF condition – Not,N,5,,,,,,Normalization
+IF condition – Simple,N,5,,,,,,Define features
+IF condition – Statement (!=),N,5,,,,,,Numerization
+IF condition – Statement (<),N,5,,,,,,Predict clf
+IF condition – Statement (=),N,5,,,,,,Replace NaN values
+IF condition – Statement (>),N,5,,,,,,
+import ML Library,def_value,3,,,,,,Else condition
+Import specific modules,value,7,,,,,,End
+Load Dataset,N,5,,,,,,Else condition
+Normalization,value(s),4,,,,,,End
+Print,value,7,,,,,,For loop
+Split Dataset – Test,value,7,,,,,,IF condition – Not
+Split Dataset – Train,value,7,,,,,,IF condition – Simple
+Start Algorithm,N,5,,,,,,IF condition – Statement (!=)
+While loop,N,5,,,,,,IF condition – Statement (<)
+Assign Class instance to variable,"var_name, s_value",9,,,,,,IF condition – Statement (=)
+Confusion Matrix,N,5,,,,,,IF condition – Statement (>)
+Define features,value(s),4,,,,,,Load Dataset
+import ML Algorithm,def_value,3,,,,,,Start Algorithm
+Numerization,value(s),4,,,,,,While loop
+Predict clf,value(s),4,,,,,,Confusion Matrix
+Remove Null Target Classes,N,5,,,,,,Remove Null Target Classes
+Replace NaN values,value(s),4,,,,,,SplitDataset
+SplitDataset,N,5,,,,,,
+Append elements to a list,"var_name, value(s)",8,,,,,,Print
+,,,,,,,,Import specific modules
+,,,,,,,,Split Dataset – Test
+,,,,,,,,Split Dataset – Train
+,,,,,,,,
+,,,,,,,,Append elements to a list
+,,,,,,,,
+,,,,,,,,Assign value to string variable
+,,,,,,,,Assign Class instance to variable

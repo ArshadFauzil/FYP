@@ -1,0 +1,248 @@
+[
+  {
+    "value": "9999",
+    "synonyms": [
+      "4444"
+    ]
+  },
+  {
+    "value": "transaction_date",
+    "synonyms": [
+      "Transaction_date",
+      "column1"
+    ]
+  },
+  {
+    "value": "product",
+    "synonyms": [
+      "Product",
+      "column2"
+    ]
+  },
+  {
+    "value": "price",
+    "synonyms": [
+      "Price",
+      "column3"
+    ]
+  },
+  {
+    "value": "payment_type",
+    "synonyms": [
+      "Payment_Type",
+      "column4"
+    ]
+  },
+  {
+    "value": "name",
+    "synonyms": [
+      "Name",
+      "column5"
+    ]
+  },
+  {
+    "value": "city",
+    "synonyms": [
+      "City",
+      "column6"
+    ]
+  },
+  {
+    "value": "state",
+    "synonyms": [
+      "State",
+      "column7"
+    ]
+  },
+  {
+    "value": "country",
+    "synonyms": [
+      "Country",
+      "column8"
+    ]
+  },
+  {
+    "value": "account_created",
+    "synonyms": [
+      "Account_Created",
+      "column9"
+    ]
+  },
+  {
+    "value": "last_login",
+    "synonyms": [
+      "Last_Login",
+      "column10"
+    ]
+  },
+  {
+    "value": "latitude",
+    "synonyms": [
+      "Latitude",
+      "column11"
+    ]
+  },
+  {
+    "value": "longitude",
+    "synonyms": [
+      "Longitude",
+      "column12"
+    ]
+  },
+  {
+    "value": "account",
+    "synonyms": [
+      "account"
+    ]
+  },
+  {
+    "value": "created",
+    "synonyms": [
+      "created"
+    ]
+  },
+  {
+    "value": "runs",
+    "synonyms": [
+      "runs"
+    ]
+  },
+  {
+    "value": "wickets",
+    "synonyms": [
+      "wickets"
+    ]
+  },
+  {
+    "value": "total",
+    "synonyms": [
+      "total"
+    ]
+  },
+  {
+    "value": "strike_rate",
+    "synonyms": [
+      "strike_rate"
+    ]
+  },
+  {
+    "value": "element1",
+    "synonyms": [
+      "element1"
+    ]
+  },
+  {
+    "value": "age",
+    "synonyms": [
+      "age"
+    ]
+  },
+  {
+    "value": "height",
+    "synonyms": [
+      "height"
+    ]
+  },
+  {
+    "value": "skills",
+    "synonyms": [
+      "skills"
+    ]
+  },
+  {
+    "value": "\u0027Milan\u0027",
+    "synonyms": [
+      "\u0027Milan\u0027"
+    ]
+  },
+  {
+    "value": "\u0027Madusha\u0027",
+    "synonyms": [
+      "\u0027Madusha\u0027"
+    ]
+  },
+  {
+    "value": "\u0027Dinusha\u0027",
+    "synonyms": [
+      "\u0027Dinusha\u0027"
+    ]
+  },
+  {
+    "value": "\u0027Arshad\u0027",
+    "synonyms": [
+      "\u0027Arshad\u0027"
+    ]
+  },
+  {
+    "value": "\u0027Ruchira\u0027",
+    "synonyms": [
+      "\u0027Ruchira\u0027"
+    ]
+  },
+  {
+    "value": "flowers",
+    "synonyms": [
+      "flowers"
+    ]
+  },
+  {
+    "value": "guitars",
+    "synonyms": [
+      "guitars"
+    ]
+  },
+  {
+    "value": "elephants",
+    "synonyms": [
+      "elephants"
+    ]
+  },
+  {
+    "value": "drums",
+    "synonyms": [
+      "drums"
+    ]
+  },
+  {
+    "value": "computer",
+    "synonyms": [
+      "computer"
+    ]
+  },
+  {
+    "value": "phone",
+    "synonyms": [
+      "phone"
+    ]
+  },
+  {
+    "value": "book",
+    "synonyms": [
+      "book"
+    ]
+  },
+  {
+    "value": "465",
+    "synonyms": [
+      "465"
+    ]
+  },
+  {
+    "value": "244.43",
+    "synonyms": [
+      "244.43"
+    ]
+  },
+  {
+    "value": "weight",
+    "synonyms": [
+      "weight"
+    ]
+  },
+  {
+    "value": "my_class",
+    "synonyms": [
+      "my_class"
+    ]
+  }
+]

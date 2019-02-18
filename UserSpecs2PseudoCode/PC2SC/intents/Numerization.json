@@ -1,0 +1,28 @@
+{
+  "id": "79af917d-a27a-46d4-9e73-810bf46447ad",
+  "name": "Numerization",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "numerize dataframe column and reassign dataframe column"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549724226,
+  "fallbackIntent": false,
+  "events": []
+}

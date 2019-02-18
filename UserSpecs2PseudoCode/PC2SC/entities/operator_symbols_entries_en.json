@@ -1,0 +1,90 @@
+[
+  {
+    "value": "+",
+    "synonyms": [
+      "+",
+      "plus",
+      "add",
+      "increase"
+    ]
+  },
+  {
+    "value": "-",
+    "synonyms": [
+      "-",
+      "minus",
+      "subtract",
+      "decrease"
+    ]
+  },
+  {
+    "value": "×",
+    "synonyms": [
+      "×",
+      "multiply"
+    ]
+  },
+  {
+    "value": "/",
+    "synonyms": [
+      "/",
+      "divide",
+      "÷"
+    ]
+  },
+  {
+    "value": "++",
+    "synonyms": [
+      "++",
+      "increment by one",
+      "+1"
+    ]
+  },
+  {
+    "value": "--",
+    "synonyms": [
+      "--",
+      "subtract by 1",
+      "-1"
+    ]
+  },
+  {
+    "value": "\u003d",
+    "synonyms": [
+      "\u003d",
+      "equal",
+      "is",
+      "\u003d\u003d",
+      "equals",
+      "equal to"
+    ]
+  },
+  {
+    "value": "!\u003d",
+    "synonyms": [
+      "!\u003d",
+      "not equal",
+      "!\u003d\u003d",
+      "not equals"
+    ]
+  },
+  {
+    "value": "less than",
+    "synonyms": [
+      "less than"
+    ]
+  },
+  {
+    "value": "greater than",
+    "synonyms": [
+      "greater than"
+    ]
+  },
+  {
+    "value": "!",
+    "synonyms": [
+      "!",
+      "not"
+    ]
+  }
+]

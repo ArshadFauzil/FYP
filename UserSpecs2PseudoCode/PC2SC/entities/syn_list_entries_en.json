@@ -1,0 +1,23 @@
+[
+  {
+    "value": "list",
+    "synonyms": [
+      "list",
+      "array",
+      "int array",
+      "integer array",
+      "double array",
+      "float array",
+      "string array",
+      "String array",
+      "queue",
+      "int list",
+      "integer list",
+      "float list",
+      "String list",
+      "set",
+      "array list",
+      "numbers array"
+    ]
+  }
+]

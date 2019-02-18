@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ad1c3f93-9ad2-4c44-8b3a-90f3989f55bd",
+    "data": [
+      {
+        "text": "declare an empty variable with the name ",
+        "userDefined": false
+      },
+      {
+        "text": "lolly",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549300465
+  },
+  {
+    "id": "3d41a499-22c4-477c-9b77-c658cc694bed",
+    "data": [
+      {
+        "text": "create variable ",
+        "userDefined": false
+      },
+      {
+        "text": "d",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548944867
+  },
+  {
+    "id": "19cfb3b5-ea56-40c4-b226-0963832f4c68",
+    "data": [
+      {
+        "text": "create a variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "tizzle",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548944867
+  },
+  {
+    "id": "4b2c95e3-ba8b-453d-8078-841626d11980",
+    "data": [
+      {
+        "text": "my_height",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " is a null variable",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548939534
+  },
+  {
+    "id": "a37aa83e-36fa-4230-9dea-f24cf460b3fc",
+    "data": [
+      {
+        "text": "initialize a variable as ",
+        "userDefined": false
+      },
+      {
+        "text": "any_name",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548939534
+  },
+  {
+    "id": "d606f1b9-fb1e-44f6-9528-c2d6f941a2b7",
+    "data": [
+      {
+        "text": "define a string variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548939534
+  },
+  {
+    "id": "e8c5c8c3-1d1c-4e11-adfb-28d283824cfa",
+    "data": [
+      {
+        "text": "define a floating point variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548939534
+  },
+  {
+    "id": "70f0c2ec-9822-43fc-93cd-cc486fb7b2b9",
+    "data": [
+      {
+        "text": "define variable ",
+        "userDefined": false
+      },
+      {
+        "text": "pepper",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548351312
+  },
+  {
+    "id": "d8bd6924-76b8-44d5-ad5e-9ab3838f1b1f",
+    "data": [
+      {
+        "text": "allocate memory to variable ",
+        "userDefined": false
+      },
+      {
+        "text": "length",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548351312
+  },
+  {
+    "id": "350998f3-415e-456c-af15-b03d4d974c7a",
+    "data": [
+      {
+        "text": "define a variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "uft",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548351312
+  },
+  {
+    "id": "416a5a80-1aac-42eb-b264-d74a6f559daa",
+    "data": [
+      {
+        "text": "define an integer variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1548346997
+  }
+]

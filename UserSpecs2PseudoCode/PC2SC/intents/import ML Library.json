@@ -1,0 +1,37 @@
+{
+  "id": "25a50b13-07e6-40c7-90b7-f5e423c6130a",
+  "name": "import ML Library",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "59b0611b-9bf0-4af1-b1fb-7de3e0e25d67",
+          "required": false,
+          "dataType": "@mlearning_library",
+          "name": "mlearning_library",
+          "value": "$mlearning_library",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "import module ML_Library"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549638232,
+  "fallbackIntent": false,
+  "events": []
+}

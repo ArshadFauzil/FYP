@@ -1,0 +1,31 @@
+[
+  {
+    "value": "column mean",
+    "synonyms": [
+      "column mean",
+      "mean",
+      "Mean",
+      "Average",
+      "sum/count",
+      "column average",
+      "avg"
+    ]
+  },
+  {
+    "value": "next observation carried forawrd",
+    "synonyms": [
+      "next observation carried forawrd",
+      "NOCF",
+      "nocf",
+      "next observation"
+    ]
+  },
+  {
+    "value": "last observation carried forawrd",
+    "synonyms": [
+      "last observation carried forawrd",
+      "locf",
+      "last observation"
+    ]
+  }
+]

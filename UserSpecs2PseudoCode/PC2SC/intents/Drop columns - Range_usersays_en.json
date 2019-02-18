@@ -1,0 +1,350 @@
+[
+  {
+    "id": "a55690c2-1569-45b3-8405-1ec1c64ea913",
+    "data": [
+      {
+        "text": "hide ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 5",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " from learning",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302767
+  },
+  {
+    "id": "a34e1ae4-69ac-4713-ac16-e90ef9a5b731",
+    "data": [
+      {
+        "text": "not use attributes ",
+        "userDefined": false
+      },
+      {
+        "text": "distance",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": "  to ",
+        "userDefined": false
+      },
+      {
+        "text": "velocity",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " for train the model",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302767
+  },
+  {
+    "id": "00a40faa-56f5-4e87-b915-d8b7dc67d5a7",
+    "data": [
+      {
+        "text": "eliminate ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "column2",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " from data set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549302767
+  },
+  {
+    "id": "8ccfb98d-e83a-4fbe-8ac6-fe79461a75e1",
+    "data": [
+      {
+        "text": "features to be ignored \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "weight",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " - ",
+        "userDefined": false
+      },
+      {
+        "text": "length",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "5309b4a8-bdc4-4b66-97cd-178d079b7400",
+    "data": [
+      {
+        "text": "not consider ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "feature 10",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "bcb65f32-8c4c-4d18-ac82-65d59f3b7988",
+    "data": [
+      {
+        "text": "delete all attributes between ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column5",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "668fe9a5-bd0f-4ade-b4a5-123b111afe6a",
+    "data": [
+      {
+        "text": "drop columns in between ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "sales",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "e210a1a2-faa9-4446-b4bf-f6ee3132af46",
+    "data": [
+      {
+        "text": "drop columns, ",
+        "userDefined": false
+      },
+      {
+        "text": "9999",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "4444",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "439a16fa-b1ac-4baf-96d3-73f2a84bb2f5",
+    "data": [
+      {
+        "text": "remove ",
+        "userDefined": false
+      },
+      {
+        "text": "column 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "column 7",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "469ffc4d-da3f-4141-9160-825cae33de89",
+    "data": [
+      {
+        "text": "ignore attributes from ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute7",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549007748
+  },
+  {
+    "id": "1a99649e-986d-4867-9978-cce7737acafd",
+    "data": [
+      {
+        "text": "drop features in range of ",
+        "userDefined": false
+      },
+      {
+        "text": "column3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column5",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549005469
+  },
+  {
+    "id": "349bd19d-2cc9-4cb4-9738-736ba0b51612",
+    "data": [
+      {
+        "text": "columns to be dropped \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "findex2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "findex9",
+        "alias": "ds_attributes1",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549005469
+  }
+]

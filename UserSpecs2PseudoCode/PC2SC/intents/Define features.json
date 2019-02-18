@@ -1,0 +1,37 @@
+{
+  "id": "7f6620cf-0b0b-40db-badd-aae6b6da428a",
+  "name": "Define features",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0dcd23a1-8bea-498b-974f-721522ac4bfe",
+          "required": false,
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "define variable features and assign FEATURE_SET"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550127948,
+  "fallbackIntent": false,
+  "events": []
+}

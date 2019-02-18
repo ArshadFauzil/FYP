@@ -1,0 +1,159 @@
+[
+  {
+    "id": "add0bca5-0d27-4dba-96c6-dff0795f3082",
+    "data": [
+      {
+        "text": "put train and test sets in to separate ",
+        "userDefined": false
+      },
+      {
+        "text": "data frames",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549824523
+  },
+  {
+    "id": "1af3b2c5-82c5-4b64-8d23-070ffa0769fb",
+    "data": [
+      {
+        "text": "separate training and testing sets",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549698306
+  },
+  {
+    "id": "c2cac8a1-42b3-42d7-bfbc-2a177b995dff",
+    "data": [
+      {
+        "text": "split ",
+        "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " by split_ratio",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1549698306
+  },
+  {
+    "id": "80433c0d-d8de-423d-b87d-28153b6be469",
+    "data": [
+      {
+        "text": "define train and validate sets and classes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550226089
+  },
+  {
+    "id": "0d48eab3-24ed-41dd-95cc-59c31725b166",
+    "data": [
+      {
+        "text": "assign train set to X_train, y_train and test set to X_test, y_test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  },
+  {
+    "id": "b45f618b-eef6-4910-853c-124478c58b32",
+    "data": [
+      {
+        "text": "assign test set to X_test and test class to y_test",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  },
+  {
+    "id": "25ed280e-9167-4b27-b6c6-444023b211f2",
+    "data": [
+      {
+        "text": "assign train set to X_train and train class to y_train",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  },
+  {
+    "id": "8cda1d06-052c-499d-8e3a-f4b6beee661a",
+    "data": [
+      {
+        "text": "separate data set for training and validation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  },
+  {
+    "id": "0b645120-31a9-48ed-843c-ec54fa1cb8dd",
+    "data": [
+      {
+        "text": "divide",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " in to training and testing sets",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  },
+  {
+    "id": "3c6859f8-616c-46f3-8dc7-377fd54bc05b",
+    "data": [
+      {
+        "text": "split ",
+        "userDefined": false
+      },
+      {
+        "text": "dataframe",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " feature set and target class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549697801
+  }
+]

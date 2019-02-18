@@ -1,0 +1,45 @@
+{
+  "id": "fda952ef-2ce5-4d3d-b6fd-04b884378c5e",
+  "name": "Assign value to float variable",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "abfecaa4-65e2-4f00-80b7-7e7a0ed9d09c",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "isList": false
+        },
+        {
+          "id": "6bc4cf0e-b4b2-4715-aef4-f61bf3b97daf",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "$any is a float variable with value $number"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550391402,
+  "fallbackIntent": false,
+  "events": []
+}
