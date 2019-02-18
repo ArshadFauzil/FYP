@@ -1,42 +1,27 @@
 [
   {
-    "value": "Numpy",
-    "synonyms": [
-      "Numpy",
-      "numpy"
-    ]
-  },
-  {
     "value": "MultiDimensional Array Operator",
     "synonyms": [
-      "MultiDimensional Array Operator",
+      "Multi Dimensional Array Operator",
       "MDA operator",
-      "Array Manager"
-    ]
-  },
-  {
-    "value": "Array Operator",
-    "synonyms": [
+      "Array Manager",
+      "array handler",
+      "Array Manipulator",
       "Array Operator",
-      "array handler"
+      "Array Handler",
+      "array organizer",
+      "Multi Dimentional Array",
+      "multidimentional array",
+      "Numpy",
+      "numpy",
+      "np",
+      "multidimensional array operator"
     ]
   },
   {
     "value": "multidimensional array",
     "synonyms": [
       "multidimensional array"
-    ]
-  },
-  {
-    "value": "array organizer",
-    "synonyms": [
-      "array organizer"
-    ]
-  },
-  {
-    "value": "multidimentional array",
-    "synonyms": [
-      "multidimentional array"
     ]
   }
 ]

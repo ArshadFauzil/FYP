@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "define variable predictions and predict clf for X_test"
+          "speech": "define variable predictions and predict clf for X_test\nuse predictions to obtain accuracy"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550208602,
+  "lastUpdate": 1550468488,
   "fallbackIntent": false,
   "events": []
 }

@@ -45,7 +45,8 @@
     "synonyms": [
       "naive bayes",
       "naive bayes classification",
-      "Naive Bayes classifier"
+      "Naive Bayes classifier",
+      "Naive Bayes"
     ]
   },
   {
@@ -58,9 +59,10 @@
   {
     "value": "Random Forrest",
     "synonyms": [
-      "Random Forrest",
+      "random forrest",
       "RF",
-      "RF classification"
+      "RF classification",
+      "Random Forrest Classification"
     ]
   },
   {
@@ -77,7 +79,9 @@
       "Logistic Regression",
       "logistic regression",
       "LogisticRegression",
-      "logistic_regression"
+      "logistic_regression",
+      "Linear Classifier",
+      "LR"
     ]
   },
   {
@@ -86,7 +90,7 @@
       "LinearSVC",
       "Linear SVC",
       "linear svc",
-      "LinearSVC"
+      "Linear_SVC"
     ]
   },
   {
@@ -99,22 +103,17 @@
   {
     "value": "Neural Network",
     "synonyms": [
-      "Neural Network",
+      "neural network",
       "NN"
     ]
   },
   {
     "value": "Gaussian Naive Bayes",
     "synonyms": [
-      "Gaussian Naive Bayes"
-    ]
-  },
-  {
-    "value": "Random Forest",
-    "synonyms": [
-      "Random Forest",
-      "RF",
-      "random forest"
+      "gaussian naive bayes",
+      "GNB",
+      "Gausian NB",
+      "GausianNB"
     ]
   },
   {
@@ -126,18 +125,12 @@
     ]
   },
   {
-    "value": "Logisitic Regression",
-    "synonyms": [
-      "Logisitic Regression",
-      "LR"
-    ]
-  },
-  {
     "value": "Radial SVC",
     "synonyms": [
       "Radial SVC",
       "RadialSVC",
-      "radial svc"
+      "radial svc",
+      "RSVC"
     ]
   }
 ]

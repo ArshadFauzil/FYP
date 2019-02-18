@@ -10,13 +10,14 @@
   {
     "value": "Java",
     "synonyms": [
-      "JA"
+      "JA",
+      "java"
     ]
   },
   {
     "value": "Python",
     "synonyms": [
-      "Python",
+      "python",
       "Py"
     ]
   },
@@ -24,12 +25,6 @@
     "value": "R",
     "synonyms": [
       "R"
-    ]
-  },
-  {
-    "value": "Java",
-    "synonyms": [
-      "Java"
     ]
   }
 ]
