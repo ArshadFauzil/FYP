@@ -7,7 +7,7 @@ import difflib
 from collections import Counter
 
 # pd.set_option('display.max_columns', -1)
-# pd.set_option('display.max_colwidth', -1)
+pd.set_option('display.max_colwidth', -1)
 
 r_match_element = []
 sk_match_element = []
@@ -15,8 +15,8 @@ unique_parm_match_element = []
 matched = []
 
 #Spacy model load
-# nlp = spacy.load('C:/Users/Dinusha/PycharmProjects/FYP/customModel')
-nlp = spacy.load('en_vectors_web_lg')
+nlp = spacy.load('C:/Users/Dinusha/PycharmProjects/FYP/customModel')
+# nlp = spacy.load('en_vectors_web_lg')
 # nlp = spacy.load('en_core_web_lg')
 nlp_en = spacy.load('en')
 
@@ -33,10 +33,16 @@ sk_parm_df = sk_parm_df.drop(['_id'], axis=1)
 unique_parm_df = pd.DataFrame(list(Parm_col.find()))
 unique_parm_df = pd.DataFrame({"Argument" : unique_parm_df['Parameters'][3], "Description" : unique_parm_df['Description'][3]})
 
+#Remove unwanted characters
+def RUC(string):
+    x = re.sub("[^A-Za-z0-9\s]+", "", string).lower()
+    return x
+
 #Select Match parmeters by argument name
 for i, val1 in enumerate(r_parm_df['Argument']):
     for j, val2 in enumerate(sk_parm_df['Argument']):
-        if(val1.lower()==val2.lower()):
+        # if(val1.lower()==val2.lower()):
+        if (RUC(val1) == RUC(val2)):
             r_match_element.append(i)
             sk_match_element.append(j)
             # print(val1)
@@ -58,22 +64,26 @@ sk_parm_df = sk_parm_df.reset_index(drop=True)
 unique_parm_df = unique_parm_df.drop(unique_parm_match_element)
 unique_parm_df = unique_parm_df.reset_index(drop=True)
 
-
 #Find smallest tupled dataframe
 parm_df1=''
 parm_df2=''
 if(len(sk_parm_df)<=len(r_parm_df)):
     parm_df1 = sk_parm_df
     parm_df2 = r_parm_df
+    libary1 = "SKLearn"
+    libary2 = "R"
     perfcMatch_df = pd.DataFrame({"Argument_1" : perfcMatch_SK_df['Argument'], "Description_1" : perfcMatch_SK_df['Description'], "Default_value_1" : perfcMatch_SK_df['Default_value'], "Argument_2" : perfcMatch_R_df['Argument'], "Description_2" : perfcMatch_R_df['Description'], "Default_value_2" : perfcMatch_R_df['Default_value']})
 else:
     parm_df1 = r_parm_df
     parm_df2 = sk_parm_df
+    libary1 = "R"
+    libary2 = "SKLearn"
     perfcMatch_df = pd.DataFrame({"Argument_1" : perfcMatch_R_df['Argument'], "Description_1" : perfcMatch_R_df['Description'], "Default_value_1" : perfcMatch_R_df['Default_value'], "Argument_2" : perfcMatch_SK_df['Argument'], "Description_2" : perfcMatch_SK_df['Description'], "Default_value_2" : perfcMatch_SK_df['Default_value']})
 
+perfcMatch_df["score_arg"] = 'NaN'
 perfcMatch_df["score_desc"] = 'NaN'
 perfcMatch_df["total_score"] = 'NaN'
-
+line1 = len(perfcMatch_df["Argument_1"])
 
 #Sequence matiching
 def similar(a,b):
@@ -123,15 +133,18 @@ def match():
             total_score = score_desc + score_arg
             if(score_desc_max<score_desc):
                 score_desc_max = score_desc
+            if (score_arg_max < score_arg):
+                score_arg_max = score_arg
             if(total_score_max<total_score):
                 total_score_max = total_score
                 similar_arg_no = j
             # print(str(parm_df1['Argument'][i])+' '+str(score_desc)+' '+str(score_arg)+' '+str(parm_df2['Argument'][j])+' '+str(total_score))
-        if(score_desc_max>=0.75):
+        if(score_desc_max>=0.83 and total_score_max>=1.25):
+        # if (score_desc_max >= 0.73 and total_score_max >= 1.15):
             # print(str(parm_df1['Argument'][i])+' '+str(total_score_max)+' '+str(parm_df2['Argument'][similar_arg_no]))
-            matched.append([parm_df1['Argument'][i],parm_df1['Description'][i],parm_df1['Default_value'][i],parm_df2['Argument'][similar_arg_no],parm_df2['Description'][similar_arg_no],parm_df2['Default_value'][similar_arg_no],score_desc_max,total_score_max])
+            matched.append([parm_df1['Argument'][i],parm_df1['Description'][i],parm_df1['Default_value'][i],parm_df2['Argument'][similar_arg_no],parm_df2['Description'][similar_arg_no],parm_df2['Default_value'][similar_arg_no],score_arg_max,score_desc_max,total_score_max])
 
-    matched_df = pd.DataFrame(matched,columns=['Argument_1','Description_1','Default_value_1','Argument_2','Description_2','Default_value_2','score_desc','total_score'])
+    matched_df = pd.DataFrame(matched,columns=['Argument_1','Description_1','Default_value_1','Argument_2','Description_2','Default_value_2','score_arg','score_desc','total_score'])
     c = Counter(matched_df['Argument_2'])
 
     #Remove duplicate matche by higher total score
@@ -142,9 +155,13 @@ def match():
             select = select.drop(max)
             matched_df = matched_df.drop(select.index.values)
 
+    #sort according to 'total_score' column
+    matched_df= matched_df.sort_values('total_score',ascending=False)
+
     #Select perfectMatch and Match arguments
     allMatch_df = pd.concat([perfcMatch_df,matched_df])
     allMatch_df = allMatch_df.reset_index(drop=True)
+    line2 = len(allMatch_df["Argument_1"])
 
     #Select not matched arguments
     notMatchTemp_df1 = parm_df1.copy()
@@ -161,14 +178,19 @@ def match():
     notMatch_df2 = pd.DataFrame({"Argument_2" : notMatchTemp_df2['Argument'], "Description_2" : notMatchTemp_df2['Description'], "Default_value_2" : notMatchTemp_df2['Default_value']})
     notMatch_df2 = notMatch_df2.reset_index(drop=True)
     notMatch_df = pd.concat([notMatch_df1,notMatch_df2], axis=1)
+    notMatch_df["score_arg"] = 'NaN'
     notMatch_df["score_desc"] = 'NaN'
     notMatch_df["total_score"] = 'NaN'
 
     #Final Result
     result = pd.concat([allMatch_df,notMatch_df])
     result = result.reset_index(drop=True)
+    result.columns = ['Argument', 'Description', 'Default_value','Argument', 'Description', 'Default_value','Arg_Similarity','Desc_Similarity','Total_Similarity']
 
-    return result
+    # result = result.style.set_table_styles(style.styles)
+    # result = result.render()
+
+    return result,line2
 
 # print(match())
 
@@ -186,3 +208,4 @@ def match():
 
 # for val in r_parm_df['Default_value']:
 #     print(val)
+

@@ -43,22 +43,11 @@ def payload():
 
 @app.route('/')
 def home():
-    match_df = Similarity.match()
-    return render_template('result3.html', match_df=match_df.to_html())
-
-def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-@app.route('/about', methods=['GET'])
-def about():
-    try:
-        user_name = request.form['username']
-        brand_name = request.form['brandname']
-        os = request.form['os']
-        return render_template('result4.html', name=user_name)
-    except:
-        return render_template('input_form4.html')
+    libary1 = Similarity.libary1
+    libary2 = Similarity.libary2
+    line1 = Similarity.line1
+    match_df,line2 = Similarity.match()
+    return render_template('result3.html', match_df=match_df.to_html(),line1 = line1,line2=line2,libary1=libary1,libary2=libary2)
 
 @app.route('/evl', methods=['GET'])
 def evaluate_results():
@@ -72,7 +61,7 @@ def match():
 
 
 app.add_url_rule('/match', 'match', match, methods=['GET', 'POST'])
-app.add_url_rule('/about', 'about', about, methods=['GET', 'POST'])
+
 
 if __name__ == "__main__":
     app.run(host='localhost', port=3550, debug=True)

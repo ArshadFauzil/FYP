@@ -4,23 +4,78 @@ h1, h2          { margin: 0; }
 h1              { border-bottom: 2px solid #eee; }
 h2              { font-size: 1.2em; }
 
+/*.dataframe tbody tr:first-child td:nth-child(3) {*/
+   /*color: red;*/
+/*}*/
+
+/*.dataframe tbody td:nth-child(3) {*/
+   /*color: red;*/
+/*}*/
+
+table.dataframe{
+    table-layout:fixed;
+    /*width: 1350px;*/
+    width:100%;
+}
+
+.dataframe td:nth-child(3){
+    width: 25%;
+}
+
+.dataframe td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width: 1400px;
+}
+
 table.dataframe, .dataframe th, .dataframe td {
-    border: none;
+    border: 1px solid #ddd;
     border-bottom: 1px solid #C8C8C8;
     border-collapse: collapse;
-    text-align:left;
+    text-align:center;
     padding: 10px;
     margin-bottom: 40px;
     font-size: 0.9em;
 
 }
 
-.dataframe th {
+.dataframe tr:first-child th:nth-child(2),th:nth-child(3),th:nth-child(4) {
     background-color: #77dd77;
     color: white;
 }
 
-tr:nth-child(odd)		{ background-color:#eee; }
-tr:nth-child(even)	{ background-color:#fff; }
+.dataframe tr:first-child th:nth-child(5),th:nth-child(6),th:nth-child(7) {
+    background-color: #0065dd;
+    color: white;
+}
 
-tr:hover            { background-color: #ffff99;}
+.dataframe tr:first-child th:nth-child(8),th:nth-child(9),th:nth-child(10) {
+    background-color: #dd1a00;
+    color: white;
+}
+
+.dataframe td:nth-child(2),.dataframe td:nth-child(3),.dataframe td:nth-child(4) {background-color: #d3dbd4;}
+.dataframe td:nth-child(5),.dataframe td:nth-child(6),.dataframe td:nth-child(7) {background-color: #cecfdb;}
+.dataframe td:nth-child(8),.dataframe td:nth-child(9),.dataframe td:nth-child(10) {background-color: #dbd2ca;}
+
+/*tr:nth-child(odd)		{ background-color:#eee; }*/
+/*tr:nth-child(even)	{ background-color:#fff; }*/
+
+/*tr:hover            { background-color: #ffff99;}*/
+table.dataframe tr:hover td {background-color: #ffff99;}
+
+/*.dataframe tr:nth-child(3) td  {border-bottom: 3px solid #090300;}*/
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

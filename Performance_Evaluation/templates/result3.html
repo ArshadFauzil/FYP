@@ -5,17 +5,85 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
+
 <div>
-    <!--<form action="match" method="post">-->
-        <!--<button type="submit" >Find Matched Parameters!</button>-->
-    <!--</form>-->
+    <table style="width: 100%">
+        <col style="width: 45%">
+        <col style="width: 30%">
+        <col style="width: 25%">
+        <thead style="text-align: center">
+            <td><h3>{{libary1}}</h3></td>
+            <td><h3>{{libary2}}</h3></td>
+            <td><h3>Score</h3></td>
+        </thead>
+    </table>
 
     {{match_df | safe}}
 
 </div>
 
 
+<script>
+    // document.querySelector(".dataframe").addEventListener("click", function(event) {
+    //     // console.log(event)
+    //     var text = $(event.target).text();
+    //     console.log(event)
+    // });
+    // document.getElementsByClassName("dataframe")[0].onclick = function(){
+    //     console.log('work');
+    //     document.getElementsByClassName("dataframe")[0].rows[1].cells[2].style.whiteSpace = ''
+    // }
+    // document.getElementsByClassName("dataframe")[0].rows[1].cells[2].title = document.getElementsByClassName("dataframe")[0].rows[1].cells[2].textContent
+    var table = document.getElementsByClassName("dataframe")[0]
+    for (i=1;i<table.rows.length;i++){
+        table.rows[i].cells[2].title = table.rows[i].cells[2].textContent;
+        table.rows[i].cells[5].title = table.rows[i].cells[5].textContent;
+    }
 
+
+
+
+    var col1 = document.createElement("COL");
+    var col2 = document.createElement("COL");
+    var col3 = document.createElement("COL");
+    var col4 = document.createElement("COL");
+    var col5 = document.createElement("COL");
+    var col6 = document.createElement("COL");
+    var col7 = document.createElement("COL");
+    var col8 = document.createElement("COL");
+    var col9 = document.createElement("COL");
+    var col10 = document.createElement("COL");
+
+    col1.style.width = '4%'
+    col2.style.width = '8%'
+    col3.style.width = '20%'
+    col4.style.width = '8%'
+    col5.style.width = '8%'
+    col6.style.width = '20%'
+    col7.style.width = '8%'
+    col8.style.width = '8%'
+    col9.style.width = '8%'
+    col10.style.width ='8%'
+
+    table.appendChild(col1)
+    table.appendChild(col2)
+    table.appendChild(col3)
+    table.appendChild(col4)
+    table.appendChild(col5)
+    table.appendChild(col6)
+    table.appendChild(col7)
+    table.appendChild(col8)
+    table.appendChild(col9)
+    table.appendChild(col10)
+
+
+    if({{line1}}!=0)
+        table.rows[{{line1}}].style.borderBottom = "3px solid #090300"
+    if({{line2}}!=0)
+        table.rows[{{line2}}].style.borderBottom = "3px solid #090300"
+
+
+</script>
 
 
 {% endblock %}
