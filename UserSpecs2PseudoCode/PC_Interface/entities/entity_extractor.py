@@ -3,11 +3,10 @@ import re
 from nltk import RegexpParser
 from entities import entity_extraction_app
 from stanford_pos_tagger.stanfordapi import StanfordAPI
-from pprint import pprint
 import os
 import pymongo
-import test_detect_intent
 from google.oauth2 import service_account
+import pandas as pd
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
@@ -29,6 +28,14 @@ class Extractor:
             req_ent[content[0]] = (content[1:])
         except:
             print("Unable to locate entity map")
+
+    def_entities_list = pd.read_csv('/media/madusha/DA0838CA0838A781/PC_Interface/entities/defined_entities.csv',
+                                    usecols=['entity', 'defined_name'])
+    def_entities = {}
+    index = 0
+    for i in def_entities_list['entity']:
+        def_entities[i] = def_entities_list['defined_name'][index]
+        index += 1
 
     """Used to extract entities based on POS tagging"""
 
@@ -97,7 +104,7 @@ class Extractor:
         # This list should be given in simple case.
         unimp_tokens = ['stop', 'end']
         ignorable = ['class', 'value', 'values', 'set', 'classes', 'attributes', 'int', 'integer', 'Integer variable', 'float',
-                     'floating point', 'double', 'validation', 'return', 'show', 'null variable', 'floating point array', 'array']
+                     'floating point', 'double', 'validation', 'return', 'show', 'null variable', 'floating point array']
 
         # Traversing through the tree
         whole_entity = []
@@ -130,12 +137,9 @@ class Extractor:
         """Used to extract entities based on part of speech tagging
         :type text: str
         """
-        # regex = r"\d+\.?\d*\b"
-        # matches = re.findall(regex, text)
 
         input_sentences = self.sentence_phrases_separation(text)
         entities = []
-        # entities = [matches]
         for sentence in input_sentences:
 
             # If sentence is not None
@@ -157,7 +161,6 @@ def comparator(entity_list1, entity_list2, threshold=0.99):
             seq = difflib.SequenceMatcher(a=str(entity1).lower(), b=str(entity2).lower())
             if seq.ratio() > threshold:
                 equal_entities.append(entity2)
-    # return len(set(equal_entities))
     return set(equal_entities)
 
 
@@ -171,67 +174,6 @@ def get_pseudocode_from_db():
     return lines
 
 
-# def extractor_app():
-#     extract = Extractor()
-
-
 if __name__ == "__main__":
-    # pc_lines = get_pseudocode_from_db()[18]
-    # # print(pc_lines)
-    # line = 'winning_rate is a double variable which has value 4.00564'
-    # list1 = list(extract.extract_entities(line))
-    # pprint(list1)
-    # print('*' * 20)
-
     extract = Extractor()
-    entity_extraction_app.generate_entities(extract, extract.req_ent)
-
-    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
-    # lines = [line for line in full_corpus.readlines() if line.strip()]
-    #
-    # entity_map = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/entity_map').read()
-    # req_ent = {}
-    # #
-    # for i, line in enumerate(entity_map.split("\n")):
-    #     content = line.split(',')
-    #     try:
-    #         req_ent[content[0]] = (content[1:])
-    #     except:
-    #         print("Unable to locate entity map")
-    #
-    # pprint(req_ent['IF condition - not'])
-    # extract = Extractor()
-    # regex_var = r"\b([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|=|([Ii]mport)|([Uu]se\b"
-    # regex_num = r"\d+\.?\d*\b"
-    #
-    # for line in lines:
-    #     var_name = ''
-    #     val = ''
-    #     print(line)
-    #     intent = test_detect_intent.detect_intent_texts(PROJECT_ID, 'fake', [line], language_code='en')
-    #     print(intent)
-    #     print(req_ent[intent])
-    #     entities = list(extract.extract_entities(line))
-    #     pprint(entities)
-    #
-    #     for rent in req_ent[intent]:
-    #         if rent == 'var_name':
-    #             for entity in entities:
-    #                 if re.search(regex_var, entity):
-    #                     # print('The entity {} contain variable'.format(entity))
-    #                     for token in entity.split():
-    #                         if not re.search(regex_var, token):
-    #                             var_name = token
-    #                 elif not re.search(regex_num, entity):
-    #                     var_name = entity
-    #
-    #         elif rent == 'value':
-    #             for entity in entities:
-    #                 if re.search(regex_num, entity):
-    #                     # print('The entity {} contain number'.format(entity))
-    #                     e = entity.replace(',', '')
-    #                     val = e
-    #
-    #     print('var_name :' + var_name)
-    #     print('value :' + val)
-    #     print('*' * 20)
+    entity_extraction_app.generate_entities(extract, extract.req_ent, extract.def_entities)

@@ -1,4 +1,4 @@
-Accuracy,var_name
+Accuracy,N
 Assign value to float variable,var_name,value
 Assign value to integer variable,var_name,value
 Assign value to String variable,var_name,value
