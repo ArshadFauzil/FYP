@@ -13,12 +13,12 @@ PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/temp')
 lines = [line for line in full_corpus.readlines() if line.strip()]
 
-regex_var = r"\b([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|\=|([Ii]mport)|([Uu]se)|([Ii]nstance)\b"
+regex_var = r"\b((([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|([Ii]mport)|([Uu]se)|([Ii]nstance))\b)|="
 regex_num = r"\d+\.?\d*\b"
-regex_import = r"\b([Ii]mport)|([Uu]se)|([Ii]nbuilt)|([Ss]uitable)|([Aa]ppropriate)\b"
-regex_features = r"\b([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eature)|([Aa]ttribute)|([" \
-                 r"Nn]ormalization)|([Nn]umerize)|([Uu]se)|([Nn]umerization)\b "
-regex_svalues = r"\b([Ii]mport)|([Ll]ibrary)|([Dd]isplay)|([Pp]rint)|([Pp]rintln)\b"
+regex_import = r"\b(([Ii]mport)|([Uu]se)|([Ii]nbuilt)|([Ss]uitable)|([Aa]ppropriate))\b"
+regex_features = r"\b(([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eature)|([Aa]ttribute)|([" \
+                 r"Nn]ormalization)|([Nn]umerize)|([Uu]se)|([Nn]umerization))\b "
+regex_svalues = r"\b(([Ii]mport)|([Ll]ibrary)|([Dd]isplay)|([Pp]rint)|([Pp]rintln))\b"
 
 
 def generate_entities(extractor, req_ent, defined_entities):
@@ -137,17 +137,35 @@ def generate_entities(extractor, req_ent, defined_entities):
             print('*' * 40)
 
         elif 'var_name' in req_ent_int and 'values' in req_ent_int:
-            entities_vn = list(extractor.extract_entities(line, wc='namevalues'))
-            entities_val = list(extractor.extract_entities(line))
-            pprint(entities_vn)
-            pprint(entities_val)
-            params = entities_varname_vals(entities_vn, entities_val)
+            print('pass')
+            # entities_vn = list(extractor.extract_entities(line, wc='namevalues'))
+            # entities_val = list(extractor.extract_entities(line))
+            # pprint(entities_vn)
+            # pprint(entities_val)
+            # params = entities_varname_vals(entities_vn, entities_val)
+            # try:
+            #     print('var name : {}'.format(params[0][0]))
+            #     for p in params[1]:
+            #         print('value : {}'.format(p))
+            # except:
+            #     print('var_name and values are not received')
+            print('*' * 40)
+
+        elif 'c_value' in req_ent_int and len(req_ent_int) == 1:
+            # print('pass')
+            attributes = create_attribute_dict.create_dict()
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+
+            params = entities_mul_values(entities, attributes)
             try:
-                print('var name : {}'.format(params[0][0]))
-                for p in params[1]:
-                    print('value : {}'.format(p))
+                for att in params[0]:
+                    print('value : {}'.format(att))
+
+                for att in params[1]:
+                    print('value other : {}'.format(att))
             except:
-                print('var_name and values are not received')
+                print('class value is not received')
             print('*' * 40)
 
 
