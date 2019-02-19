@@ -10,35 +10,37 @@ Define Algorithm,def_value,3,,,,,,Define Algorithm
 Define Class,"var_name, value",1,op,,,,,Define data manipulation library
 Define data manipulation library,def_value,3,,,,,,Define multidimensional array operator
 Define multidimensional array operator,def_value,3,,,,,,import ML Library
-Drop columns,value(s),4,,,,,,import ML Algorithm
-Drop columns - Range,value(s),4,,,,,,
-Else condition,N,5,,,,,,Drop columns
-End,N,5,,,,,,Drop columns - Range
-For loop,N,5,,,,,,Normalization
+Drop columns,mul_values,4,,,,,,Replace NaN values
+Drop columns - Range,mul_values,4,,,,,,import ML Algorithm
+Else condition,N,5,,,,,,
+End,N,5,,,,,,Drop columns
+For loop,N,5,,,,,,Split Dataset – Test
 For each loop,"var_name, item",6,,,,,,Define features
-IF condition – Not,N,5,,,,,,Numerization
-IF condition – Simple,N,5,,,,,,Predict clf
-IF condition – Statement (!=),N,5,,,,,,Replace NaN values
-IF condition – Statement (<),N,5,,,,,,
-IF condition – Statement (=),N,5,,,,,,Else condition
-IF condition – Statement (>),N,5,,,,,,End
-import ML Library,def_value,3,,,,,,Else condition
-Import specific modules,value,7,,,,,,End
-Load Dataset,N,5,,,,,,For loop
-Normalization,value(s),4,,,,,,IF condition – Not
-Print,value,7,,,,,,IF condition – Simple
-Split Dataset – Test,value,7,,,,,,IF condition – Statement (!=)
-Split Dataset – Train,value,7,,,,,,IF condition – Statement (<)
-Start Algorithm,N,5,,,,,,IF condition – Statement (=)
-While loop,N,5,,,,,,IF condition – Statement (>)
-Assign Class instance to variable,"var_name, s_value",9,,,,,,Load Dataset
-Confusion Matrix,N,5,,,,,,Start Algorithm
-Define features,value(s),4,,,,,,While loop
-import ML Algorithm,def_value,3,,,,,,Confusion Matrix
-Numerization,value(s),4,,,,,,Remove Null Target Classes
-Predict clf,value(s),4,,,,,,Accuracy
+IF condition – Not,N,5,,,,,,Numerization-Specific
+IF condition – Simple,N,5,,,,,,
+IF condition – Statement (!=),N,5,,,,,,
+IF condition – Statement (<),N,5,,,,,,Else condition
+IF condition – Statement (=),N,5,,,,,,End
+IF condition – Statement (>),N,5,,,,,,Else condition
+import ML Library,def_value,3,,,,,,End
+Import specific modules,value,7,,,,,,For loop
+Load Dataset,N,5,,,,,,IF condition – Not
+Normalization-General,N,5,,,,,,IF condition – Not
+Normalization-Specific,mul_values,4,,,,,,IF condition – Simple
+Print,value,7,,,,,,IF condition – Statement (!=)
+Split Dataset – Test,value,7,,,,,,IF condition – Statement (<)
+Split Dataset – Train,value,7,,,,,,IF condition – Statement (=)
+Start Algorithm,N,5,,,,,,IF condition – Statement (>)
+While loop,N,5,,,,,,Load Dataset
+Assign Class instance to variable,"var_name, s_value",9,,,,,,Start Algorithm
+Confusion Matrix,N,5,,,,,,While loop
+Define features,mul_values,4,,,,,,Confusion Matrix
+import ML Algorithm,def_value,3,,,,,,Remove Null Target Classes
+Numerization,N,5,,,,,,Numerization-General
+Numerization-Specific,mul_values,4,,,,,,Normalization-General
+Predict clf,mul_values,4,,,,,,Accuracy
 Remove Null Target Classes,N,5,,,,,,SplitDataset
-Replace NaN values,value(s),4,,,,,,
+Replace NaN values,def_value,3,,,,,,
 SplitDataset,N,5,,,,,,Print
 Append elements to a list,"var_name, value(s)",8,,,,,,Import specific modules
 ,,,,,,,,Split Dataset – Test
@@ -50,3 +52,7 @@ Append elements to a list,"var_name, value(s)",8,,,,,,Import specific modules
 ,,,,,,,,Assign Class instance to variable
 ,,,,,,,,
 ,,,,,,,,Define Class
+,,,,,,,,
+,,,,,,,,Predict clf
+,,,,,,,,
+,,,,,,,,Drop columns - Range

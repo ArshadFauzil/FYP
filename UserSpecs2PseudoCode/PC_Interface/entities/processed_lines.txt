@@ -290,17 +290,22 @@ source file = dataset
 by using the given CSV file as the data set
 refer to the uploaded data set
 put the given data set in to a data frame
+apply normalization for required columns
+normalize uploaded dataset
+use scaler to normalize attribute values
+normalize by using scale
+normalize feature set
 normalize if necessary
-columns to be normalized = 3, 4
-normalize column1 to column 5
 apply normalization
 normalize dataset
+normalize 4444 and 9999 in data set
+apply normalization to col1, col2 by using scaler
+normalize feature 1, feature 2 and feature 3 by using scale of 0 to 10
+normalize column1 and column 5 in uploaded dataset
+columns to be normalized = 3, 4
 apply normalization to column1 and column2
 features to be normalized = name, age, place
 normalize attribute 1, attribute 2, attribute 3 and attribute 5
-use scaler to normalize attribute values
-normalize by using scaler
-normalize feature set
 display words
 print line text
 println(some word pharse)
@@ -378,22 +383,26 @@ import KNN
 import NN from Machine Learning library
 import library SVM
 import library Logistic Regression
-
 import library Random Forest
 import library Gaussian Naive Bayes
 import library Multinomial Naive Bayes
 import k-nearest neghbour library
+apply numerization for required columns
+numerize uploaded dataset
+encode object type attributes as numeric
 to encode object type columns as numeric
 numerize dataframe column and reassign dataframe column
 numerize feature set
+numerize dataset
+numerize if necessary
+apply numerization
+numerize 4444 and 9999 in data set
+numerize column1 and column 5 in uploaded dataset
 numerize attribute 1, attribute 2, attribute 3 and attribute 5
 features to be numerized = name, age, place
 apply numerization to column1 and column2
-numerize dataset
 numerize column1 to column 5
 columns to be numerized = 3, 4
-numerize if necessary
-apply numerization
 use learned model to predict feature for my_list
 predict relevant class for dp
 apply sample data to the model and obtain class
@@ -408,7 +417,7 @@ delete cells with null value in class column
 remove null cells in target class
 remove datapoints that have NULL target_class from the dataframe and reassign dataframe
 remove null data points in train set
-fill incomplete values by using lbcf
+fill incomplete values by using locf
 replace values for unfilled cells from nocf
 remove null values in column4 by using column average
 replace NaN values with next observation carried forawrd
@@ -434,3 +443,49 @@ assign 45, 89 ,45 ,12 and 44 to number_array
 my_list.append(runs, wickets, total, strike_rate)
 add element1 to element_list
 append age, height, skills to the list named my_list
+
+
+columns to be dropped = findex2 to findex9
+drop features in range of column3 and column5
+ignore attributes from attribute1 to attribute7
+remove column 1 to column 7
+drop columns, 9999 to 4444
+drop columns in between name and sales
+delete all attributes between column1 and column5
+not consider feature 1 to feature 10
+features to be ignored = weight - length
+hide feature 1 to feature 5 from model learning
+
+drop findex2
+ignore 4444, findex1, findex2, findex9 columns
+remove 9999 column
+drop columns 9999, 4444
+drop column 9999dr
+delete column1, column4 and column6
+not consider price, sales
+features to be ignored = weight, height, length
+not use distance and velocity for train the model
+eliminate column1 and column2 from data set
+hide attribute 1, attribute 2, attribute 3 , attribute 4 and attribute 5 from learning
+normalize 4444 and 9999 in data set
+apply normalization to col1, col2 by using scaler
+normalize feature 1, feature 2 and feature 3 by using scale of 0 to 10
+normalize column1 and column 5 in uploaded dataset
+columns to be normalized = 3, 4
+apply normalization to column1 and column2
+features to be normalized = name, age, place
+normalize attribute 1, attribute 2, attribute 3 and attribute 5
+use attribute 1, attribute 2, attribute 3 , attribute 4 and attribute 5 for learning
+features to be used to learn = weight, height, length
+selected features = 9999, 4444
+use 4444, findex1, findex2, findex9 columns
+columns to be considered = findex2, findex9
+attributes are column 1 , column 2 and column 6
+features = runs, wickets, no_of_100's, average, strke_rates
+numerize 4444 and 9999 in data set
+numerize column1 and column 5 in uploaded dataset
+numerize attribute 1, attribute 2, attribute 3 and attribute 5
+features to be numerized = name, age, place
+apply numerization to column1 and column2
+numerize column1 to column 5
+columns to be numerized = 3, 4

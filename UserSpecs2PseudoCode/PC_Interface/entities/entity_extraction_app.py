@@ -3,6 +3,7 @@ from pprint import pprint
 import os
 from google.oauth2 import service_account
 import test_detect_intent
+from entities import create_attribute_dict
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
@@ -52,14 +53,28 @@ def generate_entities(extract, req_ent, defined_entities):
             print('*' * 40)
 
         elif 'def_value' in req_ent_int and len(req_ent_int) == 1:
-            entities = list(extract.extract_entities(line))
-            pprint(entities)
-            param = entities_def_value(entities, defined_entities)
-            try:
-                print('var name : {}'.format(param))
-            except:
-                print('var_name is not received')
+            print('pass')
+            # entities = list(extract.extract_entities(line))
+            # pprint(entities)
+            # param = entities_def_value(entities, defined_entities)
+            # try:
+            #     print('var name : {}'.format(param))
+            # except:
+            #     print('var_name is not received')
             print('*' * 40)
+
+        elif 'mul_values' in req_ent_int and len(req_ent_int) == 1:
+            attributes = create_attribute_dict.create_dict()
+            pprint(attributes)
+            # entities = list(extract.extract_entities(line))
+            # pprint(entities)
+
+            # param = entities_def_value(entities, defined_entities)
+            # try:
+            #     print('var name : {}'.format(param))
+            # except:
+            #     print('var_name is not received')
+            # print('*' * 40)
 
 
 def entities_varname_value(entities, required_entities):
