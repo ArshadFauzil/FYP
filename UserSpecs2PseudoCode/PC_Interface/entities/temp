@@ -1,9 +1,10 @@
-for element in given_list
-for every k in keys
-for e in elements :
-for item in item_list
-apply for every member in the given_list
-do to each item in the my_list
-iterate through each member in the array
-iterate for each column in the dataset,
-initialize a for each loop for items in the list my_array
+fill empty array temp with name, age and weight
+add 49, 45 to array iop
+ruplef is a list with values computer, phone, book, 465, and 244.43
+define a string array called str_array and put flowers, guitars, elephants and drums to it
+num_array = Arshad, Milan
+create a list named temp_list and add 'Milan', 'Madusha', 'Dinusha', 'Arshad', 'Ruchira'
+assign 45, 89 ,45 ,12 and 44 to number_array
+my_list.append(runs, wickets, total, strike_rate)
+add element1 to element_list
+append age, height, skills to the list named my_list

@@ -124,15 +124,30 @@ def generate_entities(extractor, req_ent, defined_entities):
             #     print('value is not received')
             print('*' * 40)
 
-        if 'var_name' in req_ent_int and 'item' in req_ent_int:
-            entities = list(extractor.extract_entities(line, wc='Mad'))
-            pprint(entities)
-            params = entities_item_varname(entities)
+        elif 'var_name' in req_ent_int and 'item' in req_ent_int:
+            print('pass')
+            # entities = list(extractor.extract_entities(line, wc='foreach'))
+            # pprint(entities)
+            # params = entities_item_varname(entities)
+            # try:
+            #     print('item : {}'.format(params[0]))
+            #     print('var name : {}'.format(params[1]))
+            # except:
+            #     print('var_name and item are not received')
+            print('*' * 40)
+
+        elif 'var_name' in req_ent_int and 'values' in req_ent_int:
+            entities_vn = list(extractor.extract_entities(line, wc='namevalues'))
+            entities_val = list(extractor.extract_entities(line))
+            pprint(entities_vn)
+            pprint(entities_val)
+            params = entities_varname_vals(entities_vn, entities_val)
             try:
-                print('item : {}'.format(params[0]))
-                print('var name : {}'.format(params[1]))
+                print('var name : {}'.format(params[0][0]))
+                for p in params[1]:
+                    print('value : {}'.format(p))
             except:
-                print('var_name and item are not received')
+                print('var_name and values are not received')
             print('*' * 40)
 
 
@@ -315,6 +330,38 @@ def entities_item_varname(entities):
                 result.append(entity)
         except:
             print('Unable to find item or var_name')
+
+    return result
+
+
+def entities_varname_vals(vn, val):
+    result = [[], []]
+    is_varname = False
+    regex_vn = r"(\b(([Aa]rray)|([Ii]s)|([Aa])|([Ll]ist)|([Cc]alled)|([Nn]amed)|[Tt]o|\.|([Aa]ppend)|([Ss]tring))\b)|="
+    ignore = ['list', 'append']
+
+    for entity in vn:
+        try:
+            if re.search(regex_vn, entity):
+                for token in entity.split():
+                    if not re.search(regex_vn, token):
+                        result[0].append(token)
+
+        except:
+            print('Unable to find var_name')
+
+    for entity in val:
+        entity = entity.replace('=', '').strip()
+        try:
+            for e in entity.split():
+                if e in result[0][0] or e in ignore:
+                    is_varname = True
+            if is_varname is False:
+                result[1].append(entity)
+            else:
+                is_varname = False
+        except:
+            print('Unable to retrieve values')
 
     return result
 

@@ -42,4 +42,4 @@ Predict clf,N
 Remove Null Target Classes,var_name
 Replace NaN values,def_value
 SplitDataset,N
-Append elements to a list,var_name,value(s)
+Append elements to a list,var_name,values

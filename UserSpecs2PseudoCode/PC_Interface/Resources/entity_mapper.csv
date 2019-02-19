@@ -42,7 +42,7 @@ Predict clf,mul_values,4,,,,,,SplitDataset
 Remove Null Target Classes,N,5,,,,,,
 Replace NaN values,def_value,3,,,,,,For each loop
 SplitDataset,N,5,,,,,,
-Append elements to a list,"var_name, value(s)",8,,,,,,Print
+Append elements to a list,"var_name, values",8,,,,,,Print
 ,,,,,,,,Import specific modules
 ,,,,,,,,
 ,,,,,,,,Split Dataset – Test

@@ -96,11 +96,23 @@ class Extractor:
             grammar = r"""
             EN: {<IN.*>*<NN.*|LS>+|<IN|TO><DT><NN.*>}
             """
-        elif tag_set == 'universal':
-            # Entity grammar used for the Universal Tagset
+
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
+    def word_combination_namevalues(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for, for each"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
             grammar = r"""
-            EN: {<ADJ>*<NOUN>+}
+            EN: {<NN><VBZ><DT>?<NN>|<VBN|VBZ><NN|NNP>|<NN><JJ>|<TO><NN>+|<NN><.>?<NN>|<IN.*>*<NN.*>+}
             """
+
         else:
             raise SyntaxError
 
@@ -170,11 +182,13 @@ class Extractor:
                 tokens = self.tokenize_words(sentence)
                 # POS tagging using the Stanford POS tagger
                 pos_tagged_sentence = self.pos_tag_obj.pos_tag(' '.join(tokens))
-                print(pos_tagged_sentence)
+                # print(pos_tagged_sentence)
                 if wc is None:
                     result = self.word_combination(pos_tagged_sentence)
-                else:
+                elif wc is 'foreach':
                     result = self.word_combination_foreach(pos_tagged_sentence)
+                elif wc is 'namevalues':
+                    result = self.word_combination_namevalues(pos_tagged_sentence)
                 entities += [en for en in list(self.entity_generation(result))]
         return iter(entities)
 
