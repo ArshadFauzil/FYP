@@ -1,7 +1,11 @@
-use learned model to predict feature for my_list
-predict relevant class for dp
-apply sample_data to the model and obtain class
-find class for given data points in temp_list
-predict clf for new_datapoint
-parse list_values to model and obtain predicted classes
-predict class for my_array
+substitute string 'nice' to variable str
+assign 'hello df' to string variable heloo
+goodness is a variable with value 'any string'
+equity_name is equals to 'some name'
+define variable phase and assign 'hello world.'
+define a string variable called some_string and assign 'your name' as value
+assign 'Usha' to string variable long_string
+value of string variable str_name is 'Yilokyr'
+create a string variable named str and append 'My Name' to str
+my_string = 'my name is R'
+

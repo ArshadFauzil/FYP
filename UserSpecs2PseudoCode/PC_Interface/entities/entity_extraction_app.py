@@ -46,13 +46,13 @@ def generate_entities(extractor, req_ent, defined_entities):
 
         elif 'var_name' in req_ent_int and len(req_ent_int) == 1:
             print('pass')
-            entities = list(extractor.extract_entities(line))
-            pprint(entities)
-            param = entities_varname(entities)
-            try:
-                print('var name : {}'.format(param))
-            except:
-                print('var_name is not received')
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            # param = entities_varname(entities)
+            # try:
+            #     print('var name : {}'.format(param))
+            # except:
+            #     print('var_name is not received')
             print('*' * 40)
 
         elif 'def_value' in req_ent_int and len(req_ent_int) == 1:
@@ -168,6 +168,32 @@ def generate_entities(extractor, req_ent, defined_entities):
             #     print('class value is not received')
             print('*' * 40)
 
+        if 'var_name' in req_ent_int and 'instance' in req_ent_int:
+            print('pass')
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            # params = entities_varname_instance(entities, req_ent_int)
+            # try:
+            #     print('var name : {}'.format(params[0]))
+            #     print('value : {}'.format(params[1]))
+            # except:
+            #     print('var_name and value not received')
+            print('*' * 40)
+
+        if 'var_name' in req_ent_int and 's_value' in req_ent_int:
+            # print('pass')
+            regex_string = r"\'.*\'"
+            string = re.findall(regex_string, line)
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            params = entities_varname(entities)
+            try:
+                print('var name : {}'.format(params))
+                print('value : {}'.format(string))
+            except:
+                print('var_name is not received')
+            print('*' * 40)
+
 
 def entities_varname_value(entities, required_entities):
     var_name = ''
@@ -176,7 +202,6 @@ def entities_varname_value(entities, required_entities):
         if rent == 'var_name':
             for entity in entities:
                 if re.search(regex_var, entity):
-                    # print('The entity {} contain variable'.format(entity))
                     for token in entity.split():
                         if not re.search(regex_var, token):
                             var_name = token
@@ -186,7 +211,6 @@ def entities_varname_value(entities, required_entities):
         elif rent == 'value':
             for entity in entities:
                 if re.search(regex_num, entity):
-                    # print('The entity {} contain number'.format(entity))
                     e = entity.replace(',', '')
                     val = e
 
@@ -203,7 +227,8 @@ def entities_varname(entities):
                 if not re.search(regex_var, token) and token not in ignore:
                     var_name = token
         elif not re.search(regex_num, entity) and len(entity.split()) == 1 and entity not in ignore:
-            var_name = entity
+            if var_name is '':
+                var_name = entity
 
     return var_name
 
@@ -382,6 +407,36 @@ def entities_varname_vals(vn, val):
             print('Unable to retrieve values')
 
     return result
+
+
+def entities_varname_instance(entities, required_entities):
+    var_name = ''
+    inst = ''
+    temp = []
+    regex_inst = r"\b((([Ii]nstantiate)|([Vv]ariable)|([Ii]nstance))\b)"
+    for rent in required_entities:
+        if rent == 'var_name':
+            for entity in entities:
+                if re.search(regex_var, entity):
+                    for token in entity.split():
+                        if not re.search(regex_var, token):
+                            var_name = token
+                            temp.append(entity)
+                # elif not re.search(regex_num, entity):
+                #     var_name = entity
+
+        elif rent == 'instance':
+            for entity in entities:
+                if re.search(regex_inst, entity) and entity not in temp:
+                    # inst = ''
+                    for token in entity.split():
+                        if not re.search(regex_inst, token):
+                            inst += ' ' + token
+
+                elif not re.search(regex_inst, entity) and entity not in temp:
+                    inst = entity
+
+    return [var_name, inst]
 
 
 if __name__ == "__main__":

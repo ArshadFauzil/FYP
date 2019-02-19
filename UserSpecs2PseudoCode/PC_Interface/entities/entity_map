@@ -1,7 +1,7 @@
 Accuracy,N
 Assign value to float variable,var_name,value
 Assign value to integer variable,var_name,value
-Assign value to String variable,var_name,value
+Assign value to String variable,var_name,s_value
 Define a variable,var_name
 Define an array,var_name
 Define language,def_value
@@ -32,7 +32,7 @@ SplitDataset-Test,value_n
 SplitDataset-Train,value_n
 Start Algorithm,N
 While_Loop,N
-Assign Class instance to variable,var_name,value
+Assign Class instance to variable,var_name,instance
 Confusion Matrix,N
 Define features,mul_values
 import ML Algorithm,def_value
