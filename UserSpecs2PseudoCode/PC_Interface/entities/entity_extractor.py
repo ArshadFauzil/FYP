@@ -174,6 +174,6 @@ def get_pseudocode_from_db():
     return lines
 
 
-if __name__ == "__main__":
-    extract = Extractor()
-    entity_extraction_app.generate_entities(extract, extract.req_ent, extract.def_entities)
+# if __name__ == "__main__":
+#     extract = Extractor()
+#     entity_extraction_app.generate_entities(extract, extract.req_ent, extract.def_entities)
