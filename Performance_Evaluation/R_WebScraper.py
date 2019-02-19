@@ -14,7 +14,15 @@ values_in_brackets = []
 arg_and_def_values = []
 
 #get gata from web
-res = requests.get('https://www.rdocumentation.org/packages/e1071/versions/1.7-0/topics/svm')
+algoName = "svm (MachineShop)"
+# res = requests.get('https://www.rdocumentation.org/packages/e1071/versions/1.7-0/topics/svm')
+# res = requests.get('https://www.rdocumentation.org/packages/kknn/versions/1.3.1/topics/kknn')
+# res = requests.get('https://www.rdocumentation.org/packages/neuralnet/versions/1.33/topics/neuralnet')
+# res = requests.get('https://www.rdocumentation.org/packages/tree/versions/1.0-39/topics/tree')
+# res = requests.get('https://www.rdocumentation.org/packages/svmplus/versions/1.0.1/topics/SVMP')
+# res = requests.get('https://www.rdocumentation.org/packages/RSSL/versions/0.7/topics/SVM')
+# res = requests.get('https://www.rdocumentation.org/packages/gmum.r/versions/0.2.1/topics/SVM')
+res = requests.get('https://www.rdocumentation.org/packages/MachineShop/versions/1.2.0/topics/SVMModel')
 soup = bs4.BeautifulSoup(res.text, 'lxml')
 argument = soup.find(class_='topic--arguments')
 default_parm = soup.find('pre').text.replace('\n',' ').replace('#','\n').replace('\xa0', ' ').replace('\t', '')
@@ -59,6 +67,7 @@ for match in arg_and_def_values:
 for match in arg_and_def_values:
     if(regex.search(after_equal_regex, match) != None):
         select = regex.search(after_equal_regex, match).group()
+        select = select.replace('"','')
         default_value.append(select)
 
 #Clean unwanted characters from argument names
@@ -74,11 +83,15 @@ for i, val in enumerate(argument_array):
             default_value_temp[i] = default_value[j]
 
 #save data
-df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp})
-df.to_csv("R_output.csv", index=False, encoding="utf-8")
+# df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp})
+df = [{"algorithm" :algoName, "data" : {"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp}}]
+obj = df[0]
+# df.to_csv("R_output.csv", index=False, encoding="utf-8")
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["FYP"]
-mycol = mydb["R_Param"]
-mycol.remove({})
-mycol.insert_many(df.to_dict('records'))
+mycol = mydb["R"]
+# mycol.remove({})
+# mycol.insert_many(df.to_dict('records'))
+mycol.delete_one(obj)
+mycol.insert_many(df)

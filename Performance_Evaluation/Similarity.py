@@ -10,85 +10,11 @@ from collections import Counter
 pd.set_option('display.max_colwidth', -1)
 # pd.set_option('display.max_columns', None)
 
-r_match_element = []
-sk_match_element = []
-unique_parm_match_element = []
-matched = []
-
 #Spacy model load
 nlp = spacy.load('C:/Users/Dinusha/PycharmProjects/FYP/customModel')
 # nlp = spacy.load('en_vectors_web_lg')
 # nlp = spacy.load('en_core_web_lg')
 nlp_en = spacy.load('en')
-
-#MongoDB Connection
-algoName1 = "svm"  #(svm, knn, ann, decision tree)
-algoName2 = "svm"  #(svm, knn, ann, decision tree)
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["FYP"]
-R_col = mydb["R"]
-SK_col = mydb["SK"]
-Parm_col = mydb["ML_Parameters"]
-r_parm_ori_df = pd.DataFrame(list(R_col.find()))
-r_parm_df = pd.DataFrame.from_dict(r_parm_ori_df['data'][r_parm_ori_df.loc[r_parm_ori_df['algorithm']==algoName1].index[0]])
-# r_parm_df = r_parm_df.drop(['_id'], axis=1)
-sk_parm_ori_df = pd.DataFrame(list(SK_col.find()))
-sk_parm_df = pd.DataFrame.from_dict(sk_parm_ori_df['data'][sk_parm_ori_df.loc[sk_parm_ori_df['algorithm']==algoName2].index[0]])
-# sk_parm_df = sk_parm_df.drop(['_id'], axis=1)
-unique_parm_df = pd.DataFrame(list(Parm_col.find()))
-unique_parm_df = pd.DataFrame({"Argument" : unique_parm_df['Parameters'][3], "Description" : unique_parm_df['Description'][3]})
-
-#Remove unwanted characters
-def RUC(string):
-    x = re.sub("[^A-Za-z0-9\s]+", "", string).lower()
-    return x
-
-#Select Match parmeters by argument name
-for i, val1 in enumerate(r_parm_df['Argument']):
-    for j, val2 in enumerate(sk_parm_df['Argument']):
-        # if(val1.lower()==val2.lower()):
-        if (RUC(val1) == RUC(val2)):
-            r_match_element.append(i)
-            sk_match_element.append(j)
-            # print(val1)
-            for k,val3 in enumerate(unique_parm_df['Argument']):
-                if (val1.lower() == val3.lower()):
-                    unique_parm_match_element.append(k)
-
-#Create dataframe for perfecly match parameters
-perfcMatch_R_df = r_parm_df.loc[r_match_element]
-perfcMatch_R_df = perfcMatch_R_df.reset_index(drop=True)
-perfcMatch_SK_df = sk_parm_df.loc[sk_match_element]
-perfcMatch_SK_df = perfcMatch_SK_df.reset_index(drop=True)
-
-#Remove match parameters from comparision
-r_parm_df = r_parm_df.drop(r_match_element)
-r_parm_df = r_parm_df.reset_index(drop=True)
-sk_parm_df = sk_parm_df.drop(sk_match_element)
-sk_parm_df = sk_parm_df.reset_index(drop=True)
-unique_parm_df = unique_parm_df.drop(unique_parm_match_element)
-unique_parm_df = unique_parm_df.reset_index(drop=True)
-
-#Find smallest tupled dataframe
-parm_df1=''
-parm_df2=''
-if(len(sk_parm_df)<=len(r_parm_df)):
-    parm_df1 = sk_parm_df
-    parm_df2 = r_parm_df
-    libary1 = "SKLearn"
-    libary2 = "R"
-    perfcMatch_df = pd.DataFrame({"Argument_1" : perfcMatch_SK_df['Argument'], "Description_1" : perfcMatch_SK_df['Description'], "Default_value_1" : perfcMatch_SK_df['Default_value'], "Argument_2" : perfcMatch_R_df['Argument'], "Description_2" : perfcMatch_R_df['Description'], "Default_value_2" : perfcMatch_R_df['Default_value']})
-else:
-    parm_df1 = r_parm_df
-    parm_df2 = sk_parm_df
-    libary1 = "R"
-    libary2 = "SKLearn"
-    perfcMatch_df = pd.DataFrame({"Argument_1" : perfcMatch_R_df['Argument'], "Description_1" : perfcMatch_R_df['Description'], "Default_value_1" : perfcMatch_R_df['Default_value'], "Argument_2" : perfcMatch_SK_df['Argument'], "Description_2" : perfcMatch_SK_df['Description'], "Default_value_2" : perfcMatch_SK_df['Default_value']})
-
-perfcMatch_df["score_arg"] = 'NaN'
-perfcMatch_df["score_desc"] = 'NaN'
-perfcMatch_df["total_score"] = 'NaN'
-line1 = len(perfcMatch_df["Argument_1"])
 
 #Sequence matiching
 def similar(a,b):
@@ -120,7 +46,117 @@ def RUW(string):
     # print(doc_POS_Tagged)
     return doc_POS_Tagged
 
+algoName1 = "svm (e1071)" # (svm, knn, ann, decision tree)
+algoName2 = "svm (sklearn)" # (svm, knn, ann, decision tree)
+lang1 = "R"
+lang2 = "Python"
+
 def match():
+    r_match_element = []
+    sk_match_element = []
+    unique_parm_match_element = []
+    matched = []
+
+    # MongoDB Connection
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb = myclient["FYP"]
+    if(lang1=="R"):
+        R_col = mydb["R"]
+    else:
+        R_col = mydb["SK"]
+    if(lang2=="R"):
+        SK_col = mydb["R"]
+    else:
+        SK_col = mydb["SK"]
+    Parm_col = mydb["ML_Parameters"]
+    r_parm_ori_df = pd.DataFrame(list(R_col.find()))
+    r_parm_df = pd.DataFrame.from_dict(r_parm_ori_df['data'][r_parm_ori_df.loc[r_parm_ori_df['algorithm'] == algoName1].index[0]])
+    # r_parm_df = r_parm_df.drop(['_id'], axis=1)
+    sk_parm_ori_df = pd.DataFrame(list(SK_col.find()))
+    sk_parm_df = pd.DataFrame.from_dict(sk_parm_ori_df['data'][sk_parm_ori_df.loc[sk_parm_ori_df['algorithm'] == algoName2].index[0]])
+    # sk_parm_df = sk_parm_df.drop(['_id'], axis=1)
+    unique_parm_df = pd.DataFrame(list(Parm_col.find()))
+    unique_parm_df = pd.DataFrame({"Argument": unique_parm_df['Parameters'][3], "Description": unique_parm_df['Description'][3]})
+    R_col_real = mydb["R"]
+    SK_col_real = mydb["SK"]
+    r_parm_ori_real_df = pd.DataFrame(list(R_col_real.find()))
+    sk_parm_ori_real_df = pd.DataFrame(list(SK_col_real.find()))
+
+
+    # Remove unwanted characters
+    def RUC(string):
+        x = re.sub("[^A-Za-z0-9\s]+", "", string).lower()
+        return x
+
+    # Select Match parmeters by argument name
+    for i, val1 in enumerate(r_parm_df['Argument']):
+        for j, val2 in enumerate(sk_parm_df['Argument']):
+            # if(val1.lower()==val2.lower()):
+            if (RUC(val1) == RUC(val2)):
+                r_match_element.append(i)
+                sk_match_element.append(j)
+                # print(val1)
+                for k, val3 in enumerate(unique_parm_df['Argument']):
+                    if (val1.lower() == val3.lower()):
+                        unique_parm_match_element.append(k)
+
+    # Create dataframe for perfecly match parameters
+    perfcMatch_R_df = r_parm_df.loc[r_match_element]
+    perfcMatch_R_df = perfcMatch_R_df.reset_index(drop=True)
+    perfcMatch_SK_df = sk_parm_df.loc[sk_match_element]
+    perfcMatch_SK_df = perfcMatch_SK_df.reset_index(drop=True)
+
+    # Remove match parameters from comparision
+    r_parm_df = r_parm_df.drop(r_match_element)
+    r_parm_df = r_parm_df.reset_index(drop=True)
+    sk_parm_df = sk_parm_df.drop(sk_match_element)
+    sk_parm_df = sk_parm_df.reset_index(drop=True)
+    unique_parm_df = unique_parm_df.drop(unique_parm_match_element)
+    unique_parm_df = unique_parm_df.reset_index(drop=True)
+
+    #identify parm_df1 & parm_df2 languge
+    if (lang1==lang2 and lang1=="R"):
+        libaryName1 = "R"
+        libaryName2 = "R"
+    elif(lang1==lang2 and lang1=="Python"):
+        libaryName1 = "Python"
+        libaryName2 = "Python"
+    elif(lang1=="R" and (len(sk_parm_df) <= len(r_parm_df))):
+        libaryName1 = "Python"
+        libaryName2 = "R"
+    elif(lang1=="R" and (len(sk_parm_df) >= len(r_parm_df))):
+        libaryName1 = "R"
+        libaryName2 = "Python"
+    elif(lang1=="Python" and (len(sk_parm_df) <= len(r_parm_df))):
+        libaryName1 = "R"
+        libaryName2 = "Python"
+    else:
+        libaryName1 = "Python"
+        libaryName2 = "R"
+
+    # Find smallest tupled dataframe
+    parm_df1 = ''
+    parm_df2 = ''
+    if (len(sk_parm_df) <= len(r_parm_df)):
+        parm_df1 = sk_parm_df
+        parm_df2 = r_parm_df
+        perfcMatch_df = pd.DataFrame(
+            {"Argument_1": perfcMatch_SK_df['Argument'], "Description_1": perfcMatch_SK_df['Description'],
+             "Default_value_1": perfcMatch_SK_df['Default_value'], "Argument_2": perfcMatch_R_df['Argument'],
+             "Description_2": perfcMatch_R_df['Description'], "Default_value_2": perfcMatch_R_df['Default_value']})
+    else:
+        parm_df1 = r_parm_df
+        parm_df2 = sk_parm_df
+        perfcMatch_df = pd.DataFrame(
+            {"Argument_1": perfcMatch_R_df['Argument'], "Description_1": perfcMatch_R_df['Description'],
+             "Default_value_1": perfcMatch_R_df['Default_value'], "Argument_2": perfcMatch_SK_df['Argument'],
+             "Description_2": perfcMatch_SK_df['Description'], "Default_value_2": perfcMatch_SK_df['Default_value']})
+
+    perfcMatch_df["score_arg"] = 'NaN'
+    perfcMatch_df["score_desc"] = 'NaN'
+    perfcMatch_df["total_score"] = 'NaN'
+    line1 = len(perfcMatch_df["Argument_1"])
+
     #Get similarity by differnt scores
     for i, val1 in enumerate(parm_df1['Description']):
         total_score_max = 0.0
@@ -195,22 +231,7 @@ def match():
     # result = result.style.set_table_styles(style.styles)
     # result = result.render()
 
-    return result,line2
+    return result,line1,line2,libaryName1,libaryName2,r_parm_ori_real_df,sk_parm_ori_real_df
 
-# print(match())
 
-# for i , val1 in enumerate(unique_parm_df['Description']):
-#     max = 0.0
-#     similar_arg_no = -2
-#     for j , val2 in enumerate(matched):
-#         score1 = RUW(val1).similarity(RUW(val2[3]))
-#         score2 = similar(str(PAL(unique_parm_df['Argument'][i])), str(PAL(matched[j][2])))
-#         total_score = score1 + score2
-#         if (max < total_score):
-#             max = total_score
-#             similar_arg_no = j
-#     print(str(matched[similar_arg_no][4])+' '+str(max)+' '+str(matched[similar_arg_no][2])) #need to edit
-
-# for val in r_parm_df['Default_value']:
-#     print(val)
 

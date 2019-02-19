@@ -13,7 +13,11 @@ argument_desc_array = []
 value = []
 
 #get gata from web
-res = requests.get('https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html')
+algoName = "decision tree (sklearn)"
+# res = requests.get('https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html')
+# res = requests.get('https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html')
+# res = requests.get('https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier')
+res = requests.get('https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier')
 soup = bs4.BeautifulSoup(res.text, 'html5lib')
 argument = soup.find('td',class_='field-body')
 
@@ -37,15 +41,19 @@ default_value = [None] * len(argument_array)
 for i, val in enumerate(value):
     if(val.count('default')==1):
         temp = re.search(regex, value[i]).group()
-        temp = temp.replace('default','').replace('=','').replace('(','').replace(')','').replace(':','')
+        temp = temp.replace('default','').replace('=','').replace('(','').replace(')','').replace(':','').replace("’",'').replace("‘",'')
         default_value[i] = temp
 
 #save data
-df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value})
-df.to_csv("SK_output.csv", index=False, encoding="utf-8" )
+# df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value})
+df = [{"algorithm" :algoName, "data" : {"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value}}]
+obj = df[0]
+# df.to_csv("SK_output.csv", index=False, encoding="utf-8" )
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["FYP"]
-mycol = mydb["SK_Param"]
-mycol.remove({})
-mycol.insert_many(df.to_dict('records'))
+mycol = mydb["SK"]
+mycol.delete_one(obj)
+mycol.insert_many(df)
+# mycol.remove({})
+# mycol.insert_many(df.to_dict('records'))

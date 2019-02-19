@@ -5,6 +5,36 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
+<div>
+    <table style="width: 100%">
+        <col style="width: 25%">
+        <col style="width: 25%">
+        <col style="width: 25%">
+        <col style="width: 25%">
+        <thead style="text-align: center">
+            <td><h4>Languege 1</h4></td>
+            <td><h4>Algorithm 1</h4></td>
+            <td><h4>Languege 2</h4></td>
+            <td><h4>Algorithm 2</h4></td>
+        </thead>
+    </table>
+
+    <form action="evl" method="POST">
+        <select id="selectLan1" name="selectLan1" onchange="fillAlgoArr1(this.value);">
+            <option>R</option>
+            <option>Python</option>
+        </select>
+        <select id="select1" name="select1">
+        </select>
+        <select id="selectLan2" name="selectLan2" onchange="fillAlgoArr2(this.value);">
+            <option>Python</option>
+            <option>R</option>
+        </select>
+        <select id="select2" name="select2">
+        </select>
+        <button class="button" type="submit" value="evaluate_results">Run</button>
+    </form>
+</div>
 
 <div>
     <table style="width: 100%">
@@ -12,12 +42,11 @@
         <col style="width: 30%">
         <col style="width: 25%">
         <thead style="text-align: center">
-            <td><h3>{{libary1}}</h3></td>
-            <td><h3>{{libary2}}</h3></td>
+            <td><h3>{{libaryName1}}</h3></td>
+            <td><h3>{{libaryName2}}</h3></td>
             <td><h3>Score</h3></td>
         </thead>
     </table>
-
     {{match_df | safe}}
 
 </div>
@@ -39,9 +68,6 @@
         table.rows[i].cells[2].title = table.rows[i].cells[2].textContent;
         table.rows[i].cells[5].title = table.rows[i].cells[5].textContent;
     }
-
-
-
 
     var col1 = document.createElement("COL");
     var col2 = document.createElement("COL");
@@ -82,6 +108,55 @@
     if({{line2}}!=0)
         table.rows[{{line2}}].style.borderBottom = "3px solid #090300"
 
+
+    function fillAlgoArr1(lan) {
+        var algoArr
+        if(lan=='R')
+            algoArr = {{RalgoArr | tojson}}
+        else
+            algoArr = {{SKalgoArr | tojson}}
+        console.log(lan)
+        console.log(algoArr)
+        document.getElementById("select1").options.length = 0;
+        var select1 = document.getElementById("select1");
+        var options1 = algoArr;
+        for(var i = 0; i < options1.length; i++) {
+            var opt = options1[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            select1.appendChild(el);
+        }
+    }
+
+    function fillAlgoArr2(lan) {
+        var algoArr
+        if(lan=='R')
+            algoArr = {{RalgoArr | tojson}}
+        else
+            algoArr = {{SKalgoArr | tojson}}
+        console.log(lan)
+        console.log(algoArr)
+        document.getElementById("select2").options.length = 0;
+        var select2 = document.getElementById("select2");
+        var options2 = algoArr;
+        for(var i = 0; i < options2.length; i++) {
+            var opt = options2[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            select2.appendChild(el);
+        }
+    }
+
+    fillAlgoArr1({{lang1|tojson}});
+    fillAlgoArr2({{lang2|tojson}});
+
+
+    document.getElementById("select1").value = {{algoName1|tojson}};
+    document.getElementById("select2").value = {{algoName2|tojson}};
+    document.getElementById("selectLan1").value = {{lang1|tojson}};
+    document.getElementById("selectLan2").value = {{lang2|tojson}};
 
 </script>
 
