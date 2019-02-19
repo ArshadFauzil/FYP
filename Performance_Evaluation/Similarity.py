@@ -8,6 +8,7 @@ from collections import Counter
 
 # pd.set_option('display.max_columns', -1)
 pd.set_option('display.max_colwidth', -1)
+# pd.set_option('display.max_columns', None)
 
 r_match_element = []
 sk_match_element = []
@@ -21,15 +22,19 @@ nlp = spacy.load('C:/Users/Dinusha/PycharmProjects/FYP/customModel')
 nlp_en = spacy.load('en')
 
 #MongoDB Connection
+algoName1 = "svm"  #(svm, knn, ann, decision tree)
+algoName2 = "svm"  #(svm, knn, ann, decision tree)
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["FYP"]
-R_col = mydb["R_Param"]
-SK_col = mydb["SK_Param"]
+R_col = mydb["R"]
+SK_col = mydb["SK"]
 Parm_col = mydb["ML_Parameters"]
-r_parm_df = pd.DataFrame(list(R_col.find()))
-r_parm_df = r_parm_df.drop(['_id'], axis=1)
-sk_parm_df = pd.DataFrame(list(SK_col.find()))
-sk_parm_df = sk_parm_df.drop(['_id'], axis=1)
+r_parm_ori_df = pd.DataFrame(list(R_col.find()))
+r_parm_df = pd.DataFrame.from_dict(r_parm_ori_df['data'][r_parm_ori_df.loc[r_parm_ori_df['algorithm']==algoName1].index[0]])
+# r_parm_df = r_parm_df.drop(['_id'], axis=1)
+sk_parm_ori_df = pd.DataFrame(list(SK_col.find()))
+sk_parm_df = pd.DataFrame.from_dict(sk_parm_ori_df['data'][sk_parm_ori_df.loc[sk_parm_ori_df['algorithm']==algoName2].index[0]])
+# sk_parm_df = sk_parm_df.drop(['_id'], axis=1)
 unique_parm_df = pd.DataFrame(list(Parm_col.find()))
 unique_parm_df = pd.DataFrame({"Argument" : unique_parm_df['Parameters'][3], "Description" : unique_parm_df['Description'][3]})
 
