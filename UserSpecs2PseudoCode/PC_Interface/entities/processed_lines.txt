@@ -189,6 +189,7 @@ for the range of 6 to 34,
 for temp in range(4, 8)
 for x in range(7)
 repeat the process for 96 iterations
+initialize a for each loop for items in the list my_array
 for element in given_list
 for every k in keys
 for e in elements :

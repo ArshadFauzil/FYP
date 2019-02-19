@@ -115,13 +115,24 @@ def generate_entities(extractor, req_ent, defined_entities):
 
         elif 'value_n' in req_ent_int and len(req_ent_int) == 1:
             print('pass')
-            entities = list(extractor.extract_entities(line))
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            # param = entities_value_n(entities)
+            # try:
+            #     print('value : {}'.format(param))
+            # except:
+            #     print('value is not received')
+            print('*' * 40)
+
+        if 'var_name' in req_ent_int and 'item' in req_ent_int:
+            entities = list(extractor.extract_entities(line, wc='Mad'))
             pprint(entities)
-            param = entities_value_n(entities)
+            params = entities_item_varname(entities)
             try:
-                print('value : {}'.format(param))
+                print('item : {}'.format(params[0]))
+                print('var name : {}'.format(params[1]))
             except:
-                print('value is not received')
+                print('var_name and item are not received')
             print('*' * 40)
 
 
@@ -279,9 +290,33 @@ def entities_value_n(entities):
             is_percent = True
 
     if is_percent:
-        return int(val)/100
+        return int(val) / 100
     else:
         return val
+
+
+def entities_item_varname(entities):
+    result = []
+    regex_for = r"\b(([Ff]or)|([Ee]very)|([Ee]ach)|([Tt]hrough)|([Ll]oop)|([Tt]o))\b"
+    regex_in = r"\b(([Ii]n)|([Tt]he)|([Ll]ist))\b"
+    for entity in entities:
+        try:
+            if re.search(regex_for, entity):
+                for token in entity.split():
+                    if not re.search(regex_for, token):
+                        result.append(token)
+
+            elif re.search(regex_in, entity):
+                for token in entity.split():
+                    if not re.search(regex_in, token):
+                        result.append(token)
+
+            else:
+                result.append(entity)
+        except:
+            print('Unable to find item or var_name')
+
+    return result
 
 
 if __name__ == "__main__":

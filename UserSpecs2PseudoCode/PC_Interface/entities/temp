@@ -1,43 +1,9 @@
-load FuzzyWuzzy
-by using os
-use module_name
-import module
-using a given_module_name
-import package_name
-import confusion_matrix from sklearn
-use a preprocessing library
-from sklearn import preprocessing
-import library DataVisualization
-display words
-print line text
-println(some word pharse)
-print()
-print something
-print
-print anything
-show (result)
-display the requested result on the screen
-use 0.1 from the data set for validation
-validation = 0.256
-split dataset in to test and train
-split dataset
-test,train ratio = 0.24
-allocate 35% for testing
-define a variable called test and assign 0.78 to it
-35% for testing
-test size = 0.3
-test set is 0.6 of data set
-use 60% data for testing
-use 78% of the source data to learning
-use 0.2 of data for build the model
-training set = 0.4
-train/test ratio = 0.48
-allocate 60% for training
-train 80%
-define a floating point variable train and assign 0.89
-define double variable called train with value 0.78
-train ratio is 0.5
-use 0.8 to train the model
-0.75 for training
-use 60% data for training
-declare a floating point variable called train_set and assign 0.078 to it
+for element in given_list
+for every k in keys
+for e in elements :
+for item in item_list
+apply for every member in the given_list
+do to each item in the my_list
+iterate through each member in the array
+iterate for each column in the dataset,
+initialize a for each loop for items in the list my_array
