@@ -38,7 +38,7 @@ Define features,mul_values
 import ML Algorithm,def_value
 Numerization-General,N
 Numerization-Specific,mul_values
-Predict clf,N
+Predict clf,var_name
 Remove Null Target Classes,var_name
 Replace NaN values,def_value
 SplitDataset,N

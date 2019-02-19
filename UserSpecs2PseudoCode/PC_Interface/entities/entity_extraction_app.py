@@ -13,7 +13,7 @@ PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/temp')
 lines = [line for line in full_corpus.readlines() if line.strip()]
 
-regex_var = r"\b((([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|([Ii]mport)|([Uu]se)|([Ii]nstance))\b)|="
+regex_var = r"\b((([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|([Ii]mport)|([Uu]se)|([Ii]nstance)|([Mm]odel))\b)|="
 regex_num = r"\d+\.?\d*\b"
 regex_import = r"\b(([Ii]mport)|([Uu]se)|([Ii]nbuilt)|([Ss]uitable)|([Aa]ppropriate))\b"
 regex_features = r"\b(([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eature)|([Aa]ttribute)|([" \
@@ -46,13 +46,13 @@ def generate_entities(extractor, req_ent, defined_entities):
 
         elif 'var_name' in req_ent_int and len(req_ent_int) == 1:
             print('pass')
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # param = entities_varname(entities)
-            # try:
-            #     print('var name : {}'.format(param))
-            # except:
-            #     print('var_name is not received')
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            param = entities_varname(entities)
+            try:
+                print('var name : {}'.format(param))
+            except:
+                print('var_name is not received')
             print('*' * 40)
 
         elif 'def_value' in req_ent_int and len(req_ent_int) == 1:
@@ -152,20 +152,20 @@ def generate_entities(extractor, req_ent, defined_entities):
             print('*' * 40)
 
         elif 'c_value' in req_ent_int and len(req_ent_int) == 1:
-            # print('pass')
-            attributes = create_attribute_dict.create_dict()
-            entities = list(extractor.extract_entities(line))
-            pprint(entities)
-
-            params = entities_mul_values(entities, attributes)
-            try:
-                for att in params[0]:
-                    print('value : {}'.format(att))
-
-                for att in params[1]:
-                    print('value other : {}'.format(att))
-            except:
-                print('class value is not received')
+            print('pass')
+            # attributes = create_attribute_dict.create_dict()
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            #
+            # params = entities_mul_values(entities, attributes)
+            # try:
+            #     for att in params[0]:
+            #         print('value : {}'.format(att))
+            #
+            #     for att in params[1]:
+            #         print('value other : {}'.format(att))
+            # except:
+            #     print('class value is not received')
             print('*' * 40)
 
 
@@ -197,8 +197,8 @@ def entities_varname(entities):
     var_name = ''
     ignore = ['list', 'array', 'memory', 'null', 'empty', 'null array', 'empty array', 'null list', 'empty list']
     for entity in entities:
-        if re.search(regex_var, entity) and len(entity.split()) > 1:
-            # print('The entity {} contain variable'.format(entity))
+        # if re.search(regex_var, entity) and len(entity.split()) > 1:
+        if re.search(regex_var, entity):
             for token in entity.split():
                 if not re.search(regex_var, token) and token not in ignore:
                     var_name = token
