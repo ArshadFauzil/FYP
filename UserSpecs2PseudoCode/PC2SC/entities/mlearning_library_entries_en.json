@@ -2,43 +2,37 @@
   {
     "value": "scikit",
     "synonyms": [
-      "scikit",
+      "Scikit",
       "sklearn",
       "SK-Learn",
       "sk learn",
       "scikit learn",
-      "Scikit Learn"
+      "Scikit Learn",
+      "scikit package",
+      "SKLearn",
+      "SKLearn Module"
     ]
   },
   {
     "value": "e1070",
     "synonyms": [
       "e1070",
-      "E 1070"
+      "E 1070",
+      "E1070",
+      "ML Library in R"
     ]
   },
   {
     "value": "machine learning module",
     "synonyms": [
-      "machine learning module"
-    ]
-  },
-  {
-    "value": "machine learning package",
-    "synonyms": [
-      "machine learning package"
-    ]
-  },
-  {
-    "value": "ML package",
-    "synonyms": [
-      "ML package"
-    ]
-  },
-  {
-    "value": "machine learning library",
-    "synonyms": [
-      "machine learning library"
+      "machine learning module",
+      "machine learning package",
+      "Machine Learning Package",
+      "ML package",
+      "ML Library",
+      "machine learning library",
+      "Machine Learning Library",
+      "Machine Learner"
     ]
   }
 ]

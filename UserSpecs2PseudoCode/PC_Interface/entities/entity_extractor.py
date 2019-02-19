@@ -89,6 +89,38 @@ class Extractor:
         return result
 
     @staticmethod
+    def word_combination_foreach(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for, for each"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""
+            EN: {<IN.*>*<NN.*|LS>+|<IN|TO><DT><NN.*>}
+            """
+
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
+    def word_combination_namevalues(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for, for each"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""
+            EN: {<NN><VBZ><DT>?<NN>|<VBN|VBZ><NN|NNP>|<NN><JJ>|<TO><NN>+|<NN><.>?<NN>|<IN.*>*<NN.*>+}
+            """
+
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
     def calculate_symbol_ratio(word):
         """Calculating the symbol ratio of an element"""
         symbol_ratio = float(len(re.findall(r'[^A-Za-z\s]', word))) / len(word)
@@ -103,8 +135,10 @@ class Extractor:
         sent_entities = []
         # This list should be given in simple case.
         unimp_tokens = ['stop', 'end']
-        ignorable = ['class', 'value', 'values', 'set', 'classes', 'attributes', 'int', 'integer', 'Integer variable', 'float',
-                     'floating point', 'double', 'validation', 'return', 'show', 'null variable', 'floating point array']
+        ignorable = ['class', 'value', 'values', 'set', 'classes', 'attributes', 'int', 'integer', 'Integer variable',
+                     'float',
+                     'floating point', 'double', 'validation', 'return', 'show', 'null variable',
+                     'floating point array']
 
         # Traversing through the tree
         whole_entity = []
@@ -133,8 +167,9 @@ class Extractor:
             if element:
                 yield element
 
-    def extract_entities(self, text):
+    def extract_entities(self, text, wc=None):
         """Used to extract entities based on part of speech tagging
+        :param wc:
         :type text: str
         """
 
@@ -148,7 +183,12 @@ class Extractor:
                 # POS tagging using the Stanford POS tagger
                 pos_tagged_sentence = self.pos_tag_obj.pos_tag(' '.join(tokens))
                 # print(pos_tagged_sentence)
-                result = self.word_combination(pos_tagged_sentence)
+                if wc is None:
+                    result = self.word_combination(pos_tagged_sentence)
+                elif wc is 'foreach':
+                    result = self.word_combination_foreach(pos_tagged_sentence)
+                elif wc is 'namevalues':
+                    result = self.word_combination_namevalues(pos_tagged_sentence)
                 entities += [en for en in list(self.entity_generation(result))]
         return iter(entities)
 
@@ -173,7 +213,6 @@ def get_pseudocode_from_db():
 
     return lines
 
-
-if __name__ == "__main__":
-    extract = Extractor()
-    entity_extraction_app.generate_entities(extract, extract.req_ent, extract.def_entities)
+# if __name__ == "__main__":
+#     extract = Extractor()
+#     entity_extraction_app.generate_entities(extract, extract.req_ent, extract.def_entities)

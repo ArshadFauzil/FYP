@@ -1,17 +1,17 @@
 Accuracy,N
 Assign value to float variable,var_name,value
 Assign value to integer variable,var_name,value
-Assign value to String variable,var_name,value
+Assign value to String variable,var_name,s_value
 Define a variable,var_name
 Define an array,var_name
 Define language,def_value
 Define K in KNN,var_name,value
 Define Algorithm,def_value
-Define Class,var_name
+Define Class,c_value
 Define data manipulation library,def_value
 Define multidimensional array operator,def_value
-Drop columns,value(s)
-Drop columns - Range,value(s)
+Drop columns,mul_values
+Drop columns - Range,range
 Else condition,N
 End,N
 For Loop,N
@@ -23,22 +23,23 @@ IF condition - statement (<),N
 IF condition - statement (=),N
 IF condition - statement (>),N
 import ML Library,def_value
-Import Specific Modules,value
+Import Specific Modules,value_s
 Load dataset,N
-Normalization,value(s)
-Print,value
-SplitDataset-Test,value
-SplitDataset-Train,value
+Normalization-General,N
+Normalization-Specific,mul_values
+Print,value_s
+SplitDataset-Test,value_n
+SplitDataset-Train,value_n
 Start Algorithm,N
 While_Loop,N
-Assign Class instance to variable,var_name,value
+Assign Class instance to variable,var_name,instance
 Confusion Matrix,N
-Define features,value(s)
+Define features,mul_values
 import ML Algorithm,def_value
-Numerization,value(s)
-Predict clf,N
+Numerization-General,N
+Numerization-Specific,mul_values
+Predict clf,var_name
 Remove Null Target Classes,var_name
-Replace NaN values,value(s)
+Replace NaN values,def_value
 SplitDataset,N
-Append elements to a list,var_name,value(s)
-
+Append elements to a list,var_name,values

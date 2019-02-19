@@ -189,6 +189,7 @@ for the range of 6 to 34,
 for temp in range(4, 8)
 for x in range(7)
 repeat the process for 96 iterations
+initialize a for each loop for items in the list my_array
 for element in given_list
 for every k in keys
 for e in elements :
@@ -290,17 +291,22 @@ source file = dataset
 by using the given CSV file as the data set
 refer to the uploaded data set
 put the given data set in to a data frame
+apply normalization for required columns
+normalize uploaded dataset
+use scaler to normalize attribute values
+normalize by using scale
+normalize feature set
 normalize if necessary
-columns to be normalized = 3, 4
-normalize column1 to column 5
 apply normalization
 normalize dataset
+normalize 4444 and 9999 in data set
+apply normalization to col1, col2 by using scaler
+normalize feature 1, feature 2 and feature 3 by using scale of 0 to 10
+normalize column1 and column 5 in uploaded dataset
+columns to be normalized = 3, 4
 apply normalization to column1 and column2
 features to be normalized = name, age, place
 normalize attribute 1, attribute 2, attribute 3 and attribute 5
-use scaler to normalize attribute values
-normalize by using scaler
-normalize feature set
 display words
 print line text
 println(some word pharse)
@@ -378,22 +384,26 @@ import KNN
 import NN from Machine Learning library
 import library SVM
 import library Logistic Regression
-
 import library Random Forest
 import library Gaussian Naive Bayes
 import library Multinomial Naive Bayes
 import k-nearest neghbour library
+apply numerization for required columns
+numerize uploaded dataset
+encode object type attributes as numeric
 to encode object type columns as numeric
 numerize dataframe column and reassign dataframe column
 numerize feature set
+numerize dataset
+numerize if necessary
+apply numerization
+numerize 4444 and 9999 in data set
+numerize column1 and column 5 in uploaded dataset
 numerize attribute 1, attribute 2, attribute 3 and attribute 5
 features to be numerized = name, age, place
 apply numerization to column1 and column2
-numerize dataset
 numerize column1 to column 5
 columns to be numerized = 3, 4
-numerize if necessary
-apply numerization
 use learned model to predict feature for my_list
 predict relevant class for dp
 apply sample data to the model and obtain class
@@ -408,7 +418,7 @@ delete cells with null value in class column
 remove null cells in target class
 remove datapoints that have NULL target_class from the dataframe and reassign dataframe
 remove null data points in train set
-fill incomplete values by using lbcf
+fill incomplete values by using locf
 replace values for unfilled cells from nocf
 remove null values in column4 by using column average
 replace NaN values with next observation carried forawrd

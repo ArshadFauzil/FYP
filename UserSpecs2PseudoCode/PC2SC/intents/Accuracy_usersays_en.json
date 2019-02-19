@@ -63,13 +63,13 @@
     "id": "cf2dc6b9-5c69-40c0-bad5-a51b938f8c20",
     "data": [
       {
-        "text": "predict class for validation set",
+        "text": "predict class for validation set and calculate accuracy",
         "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549702154
+    "updated": 1550464727
   },
   {
     "id": "1e3ddfc0-327f-4dc0-8c40-b9592715ff0b",

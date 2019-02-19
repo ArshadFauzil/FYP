@@ -7,7 +7,7 @@
         "userDefined": false
       },
       {
-        "text": "multidimentional array",
+        "text": "multidimensional array",
         "alias": "MDA_Operator",
         "meta": "@MDA_Operator",
         "userDefined": true
@@ -19,7 +19,7 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549529129
+    "updated": 1550484863
   },
   {
     "id": "b374a2ad-3675-493b-a476-7b717f1518a4",

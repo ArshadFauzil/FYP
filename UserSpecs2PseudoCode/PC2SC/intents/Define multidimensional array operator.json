@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "import library multidimentional array."
+          "speech": "import library multidimensional array."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549529129,
+  "lastUpdate": 1550484863,
   "fallbackIntent": false,
   "events": []
 }
