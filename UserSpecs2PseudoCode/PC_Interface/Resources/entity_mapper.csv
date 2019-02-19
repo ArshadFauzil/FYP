@@ -23,13 +23,13 @@ IF condition – Statement (<),N,5,,,,,,End
 IF condition – Statement (=),N,5,,,,,,Else condition
 IF condition – Statement (>),N,5,,,,,,End
 import ML Library,def_value,3,,,,,,For loop
-Import specific modules,value,7,,,,,,IF condition – Not
+Import specific modules,value_s,7,,,,,,IF condition – Not
 Load Dataset,N,5,,,,,,IF condition – Not
 Normalization-General,N,5,,,,,,IF condition – Simple
 Normalization-Specific,mul_values,4,,,,,,IF condition – Statement (!=)
-Print,value,7,,,,,,IF condition – Statement (<)
-Split Dataset – Test,value,7,,,,,,IF condition – Statement (=)
-Split Dataset – Train,value,7,,,,,,IF condition – Statement (>)
+Print,value_s,7,,,,,,IF condition – Statement (<)
+Split Dataset – Test,value_n,10,,,,,,IF condition – Statement (=)
+Split Dataset – Train,value_n,10,,,,,,IF condition – Statement (>)
 Start Algorithm,N,5,,,,,,Load Dataset
 While loop,N,5,,,,,,Start Algorithm
 Assign Class instance to variable,"var_name, s_value",9,,,,,,While loop
@@ -44,6 +44,7 @@ Replace NaN values,def_value,3,,,,,,For each loop
 SplitDataset,N,5,,,,,,
 Append elements to a list,"var_name, value(s)",8,,,,,,Print
 ,,,,,,,,Import specific modules
+,,,,,,,,
 ,,,,,,,,Split Dataset – Test
 ,,,,,,,,Split Dataset – Train
 ,,,,,,,,

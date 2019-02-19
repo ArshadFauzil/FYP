@@ -16,7 +16,9 @@ lines = [line for line in full_corpus.readlines() if line.strip()]
 regex_var = r"\b([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|\=|([Ii]mport)|([Uu]se)|([Ii]nstance)\b"
 regex_num = r"\d+\.?\d*\b"
 regex_import = r"\b([Ii]mport)|([Uu]se)|([Ii]nbuilt)|([Ss]uitable)|([Aa]ppropriate)\b"
-regex_features = r"\b([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eature)|([Aa]ttribute)|([Nn]ormalization)|([Nn]umerize)|([Uu]se)|([Nn]umerization)\b"
+regex_features = r"\b([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eature)|([Aa]ttribute)|([" \
+                 r"Nn]ormalization)|([Nn]umerize)|([Uu]se)|([Nn]umerization)\b "
+regex_svalues = r"\b([Ii]mport)|([Ll]ibrary)|([Dd]isplay)|([Pp]rint)|([Pp]rintln)\b"
 
 
 def generate_entities(extractor, req_ent, defined_entities):
@@ -83,20 +85,43 @@ def generate_entities(extractor, req_ent, defined_entities):
             print('*' * 40)
 
         elif 'range' in req_ent_int and len(req_ent_int) == 1:
-            ind_attributes = create_attribute_dict.create_indexed_dict()
-            attributes = create_attribute_dict.create_dict()
+            print('pass')
+            # ind_attributes = create_attribute_dict.create_indexed_dict()
+            # attributes = create_attribute_dict.create_dict()
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            #
+            # params = entities_range(entities, ind_attributes, attributes)
+            # try:
+            #     for att in params[0]:
+            #         print('value : {}'.format(att))
+            #
+            #     for att in params[1]:
+            #         print('value other : {}'.format(att))
+            # except:
+            #     print('values are not received')
+            print('*' * 40)
+
+        elif 'value_s' in req_ent_int and len(req_ent_int) == 1:
+            print('pass')
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            # param = entities_value_s(entities)
+            # try:
+            #     print('var name : {}'.format(param))
+            # except:
+            #     print('value_s is not received')
+            print('*' * 40)
+
+        elif 'value_n' in req_ent_int and len(req_ent_int) == 1:
+            print('pass')
             entities = list(extractor.extract_entities(line))
             pprint(entities)
-
-            params = entities_range(entities, ind_attributes, attributes)
+            param = entities_value_n(entities)
             try:
-                for att in params[0]:
-                    print('value : {}'.format(att))
-
-                for att in params[1]:
-                    print('value other : {}'.format(att))
+                print('value : {}'.format(param))
             except:
-                print('values are not received')
+                print('value is not received')
             print('*' * 40)
 
 
@@ -226,6 +251,37 @@ def entities_range(entities, indexed_attr, mul_attributes):
         print('Unable to find indexes')
 
     return values
+
+
+def entities_value_s(entities):
+    var_name = ''
+    ignore = ['import', 'sklearn', 'library', 'display', 'print', 'println']
+    for entity in entities:
+        if re.search(regex_svalues, entity) and len(entity.split()) > 1:
+            for token in entity.split():
+                if not re.search(regex_svalues, token) and token not in ignore:
+                    var_name = token
+        elif not re.search(regex_num, entity) and entity not in ignore:
+            var_name = entity
+
+    return var_name
+
+
+def entities_value_n(entities):
+    val = 0
+    is_percent = False
+    for entity in entities:
+        if re.search(regex_num, entity):
+            e = entity.replace(',', '')
+            val = e
+
+        if entity == '%':
+            is_percent = True
+
+    if is_percent:
+        return int(val)/100
+    else:
+        return val
 
 
 if __name__ == "__main__":

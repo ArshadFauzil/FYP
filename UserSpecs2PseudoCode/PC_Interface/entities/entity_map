@@ -23,13 +23,13 @@ IF condition - statement (<),N
 IF condition - statement (=),N
 IF condition - statement (>),N
 import ML Library,def_value
-Import Specific Modules,value
+Import Specific Modules,value_s
 Load dataset,N
 Normalization-General,N
 Normalization-Specific,mul_values
-Print,value
-SplitDataset-Test,value
-SplitDataset-Train,value
+Print,value_s
+SplitDataset-Test,value_n
+SplitDataset-Train,value_n
 Start Algorithm,N
 While_Loop,N
 Assign Class instance to variable,var_name,value
