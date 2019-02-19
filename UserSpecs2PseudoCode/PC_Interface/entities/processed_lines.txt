@@ -133,7 +133,7 @@ import Numpy
 using multidimensional array operator
 use array organizer
 import similar library to Numpy
-import library multidimentional array
+import library multidimensional array
 columns to be dropped = findex2, findex9
 drop findex2
 ignore 4444, findex1, findex2, findex9 columns
@@ -377,7 +377,8 @@ import k-means from ML library
 import KNN
 import NN from Machine Learning library
 import library SVM
-import library Logisitic Regression
+import library Logistic Regression
+
 import library Random Forest
 import library Gaussian Naive Bayes
 import library Multinomial Naive Bayes
