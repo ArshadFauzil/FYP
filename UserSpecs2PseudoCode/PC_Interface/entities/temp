@@ -1,35 +1,11 @@
-columns to be dropped = findex2, findex9
-drop findex2
-ignore 4444, findex1, findex2, findex9 columns
-remove 9999 column
-drop columns 9999, 4444
-drop column 9999dr
-delete column1, column4 and column6
-not consider price, sales
-features to be ignored = weight, height, length
-not use distance and velocity for train the model
-eliminate column1 and column2 from data set
-hide attribute 1, attribute 2, attribute 3 , attribute 4 and attribute 5 from learning
-normalize 4444 and 9999 in data set
-apply normalization to col1, col2 by using scaler
-normalize feature 1, feature 2 and feature 3 by using scale of 0 to 10
-normalize column1 and column 5 in uploaded dataset
-columns to be normalized = 3, 4
-apply normalization to column1 and column2
-features to be normalized = name, age, place
-normalize attribute 1, attribute 2, attribute 3 and attribute 5
-use attribute 1, attribute 2, attribute 3 , attribute 4 and attribute 5 for learning
-features to be used to learn = weight, height, length
-selected features = 9999, 4444
-use 4444, findex1, findex2, findex9 columns
-columns to be considered = findex2, findex9
-attributes are column 1 , column 2 and column 6
-features = runs, wickets, no_of_100's, average, strke_rates
-numerize 4444 and 9999 in data set
-numerize column1 and column 5 in uploaded dataset
-numerize attribute 1, attribute 2, attribute 3 and attribute 5
-features to be numerized = name, age, place
-apply numerization to column1 and column2
-numerize column1 to column 5
-columns to be numerized = 3, 4
+columns to be dropped = last_login to Price
+drop features in range of column3 and column5
+ignore attributes from attribute1 to attribute7
+remove column 1 to column 7
+drop columns, 9999 to 4444
+drop columns in between name and sales
+delete all attributes between column1 and column5
+not consider feature 1 to feature 10
+features to be ignored = weight - length
+hide feature 1 to feature 5 from model learning
 

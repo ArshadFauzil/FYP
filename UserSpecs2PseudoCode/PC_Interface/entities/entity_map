@@ -11,7 +11,7 @@ Define Class,var_name
 Define data manipulation library,def_value
 Define multidimensional array operator,def_value
 Drop columns,mul_values
-Drop columns - Range,value(s)
+Drop columns - Range,range
 Else condition,N
 End,N
 For Loop,N

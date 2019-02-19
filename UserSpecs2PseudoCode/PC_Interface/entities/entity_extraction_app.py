@@ -65,12 +65,30 @@ def generate_entities(extractor, req_ent, defined_entities):
             print('*' * 40)
 
         elif 'mul_values' in req_ent_int and len(req_ent_int) == 1:
+            print('pass')
+            # attributes = create_attribute_dict.create_dict()
+            # # pprint(attributes)
+            # entities = list(extractor.extract_entities(line))
+            # pprint(entities)
+            #
+            # params = entities_mul_values(entities, attributes)
+            # try:
+            #     for att in params[0]:
+            #         print('value : {}'.format(att))
+            #
+            #     for att in params[1]:
+            #         print('value other : {}'.format(att))
+            # except:
+            #     print('values are not received')
+            print('*' * 40)
+
+        elif 'range' in req_ent_int and len(req_ent_int) == 1:
+            ind_attributes = create_attribute_dict.create_indexed_dict()
             attributes = create_attribute_dict.create_dict()
-            # pprint(attributes)
             entities = list(extractor.extract_entities(line))
             pprint(entities)
 
-            params = entities_mul_values(entities, attributes)
+            params = entities_range(entities, ind_attributes, attributes)
             try:
                 for att in params[0]:
                     print('value : {}'.format(att))
@@ -169,6 +187,43 @@ def entities_mul_values(entities, mul_attributes):
                     values[1].append(temp)
         else:
             values[1].append(entity)
+
+    return values
+
+
+def entities_range(entities, indexed_attr, mul_attributes):
+    values = [[], []]
+    indexes = []
+    for entity in entities:
+        entity = entity.replace('=', '').strip()
+        if entity in indexed_attr or entity.lower() in indexed_attr:
+            indexes.append(indexed_attr[entity])
+
+        elif re.search(regex_features, entity):
+            temp = ''
+            for token in entity.split():
+                if not re.search(regex_features, token):
+                    temp += token + ' '
+            print(temp)
+
+            if temp.strip() in indexed_attr or temp.strip().lower() in indexed_attr:
+                indexes.append(indexed_attr[entity])
+
+            else:
+                if temp is not '':
+                    values[1].append(temp)
+        else:
+            values[1].append(entity)
+
+    try:
+        low = min(indexes)
+        high = max(indexes)
+        print('min : {}, max : {}'.format(low, high))
+
+        for ind in range(low, high + 1):
+            values[0].append(mul_attributes[str(ind)])
+    except:
+        print('Unable to find indexes')
 
     return values
 
