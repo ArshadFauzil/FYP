@@ -15,7 +15,7 @@ Drop columns - Range,range,9,,,,,,Replace NaN values
 Else condition,N,5,,,,,,import ML Algorithm
 End,N,5,,,,,,
 For loop,N,5,,,,,,Drop columns
-For each loop,"var_name, item",6,,,,,,Split Dataset – Test
+For each loop,"var_name, item",6,,,,,,Normalization-Specific
 IF condition – Not,N,5,,,,,,Define features
 IF condition – Simple,N,5,,,,,,Numerization-Specific
 IF condition – Statement (!=),N,5,,,,,,
@@ -32,7 +32,7 @@ Split Dataset – Test,value_n,10,,,,,,IF condition – Statement (<)
 Split Dataset – Train,value_n,10,,,,,,IF condition – Statement (=)
 Start Algorithm,N,5,,,,,,IF condition – Statement (>)
 While loop,N,5,,,,,,Load Dataset
-Assign Class instance to variable,"var_name, s_value",9,,,,,,Start Algorithm
+Assign Class instance to variable,"var_name, instance",12,,,,,,Start Algorithm
 Confusion Matrix,N,5,,,,,,While loop
 Define features,mul_values,4,,,,,,Confusion Matrix
 import ML Algorithm,def_value,3,,,,,,Remove Null Target Classes
@@ -52,10 +52,9 @@ Append elements to a list,"var_name, values",8,,,,,,
 ,,,,,,,,Append elements to a list
 ,,,,,,,,
 ,,,,,,,,Assign value to string variable
+,,,,,,,,
 ,,,,,,,,Assign Class instance to variable
 ,,,,,,,,
 ,,,,,,,,Define Class
-,,,,,,,,
-,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,Drop columns - Range

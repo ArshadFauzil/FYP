@@ -1,11 +1,97 @@
-substitute string 'nice' to variable str
-assign 'hello df' to string variable heloo
-goodness is a variable with value 'any string'
-equity_name is equals to 'some name'
-define variable phase and assign 'hello world.'
+use learned model to predict feature for my_list
+predict relevant class for dp
+apply sample_data to the model and obtain class
+find class for given data points in array employees
+predict clf for new_datapoint
+parse list_values to model and obtain predicted classes
+assign 567.045 to variable def
+define variable T and assign 0.84
+define a float variable called burnable and assign 56.89 as value
+depth = 27.245
+average is 45.68
+create a float variable named rainfall and assign 5.64 to it
+goodness is a variable with value 4.4852
+value of rain is 78.2
+substitute decimal 5.5648 to variable count
+assign value 8.95 to double variable my_val
+winning_rate is a double variable which has value 4.00564
+no_of_wins is a int variable which has value 4
+assign 545 to variable def
+define an integer variable called burnable and assign 88 as value
+define variable T and assign 48
+resolution = 487
+equity is equals to 67
+create an int variable named rainfall and assign 64 to it
+goodness is a variable with value 4
+value of tip is 8
+assign 3 to integer variable happiness
+declare Integer variable named as number, 294,549,560 as value of the variable
+substitute string nice to variable str
+assign hello df to string variable hello
+goodness is a variable with value any string
+equity_name is equals to some name
+define variable phase and assign hello world.
 define a string variable called some_string and assign 'your name' as value
-assign 'Usha' to string variable long_string
-value of string variable str_name is 'Yilokyr'
-create a string variable named str and append 'My Name' to str
-my_string = 'my name is R'
-
+assign Usha to string variable long_string
+value of string variable name is Yilokyr
+create a string variable named str and append "My Name" to str
+my_string = my name is R
+define variable pepper
+allocate memory to variable length
+define a variable named uft
+define an integer variable named weight
+define a floating point variable named weight
+define a string variable named weight
+initialize a variable as any_name
+my_height is a null variable
+create a variable named tizzle
+create variable d
+declare an empty variable with the name validity
+create list e
+create a list named tizzle
+my_height is a empty list
+initialize a list as any_name
+define a string list named weights
+define a floating point list named weight
+define an integer list named weights
+define a list named uft
+allocate memory to list fruits
+define list pepper
+create array basic_array
+create an array named tizzle
+create a list named tizzle
+my_height is a null array
+define a string array named weight
+define a floating point array named weight
+define an integer array named weight_list
+define an empty array named uft
+allocate memory to array my_array
+define array pep
+k value in KNN is 45
+value of k = 4
+assign 5 to K
+K = 2
+k is 3
+N is 7
+N = 4
+consider 10 neighbors
+No of neighbors = 5
+fill empty array temp with name, age and weight
+add 49, 45 to array iop
+ruplef is a list with values computer, phone, book, 465, and 244.43
+define a string array called str_array and put flowers, guitars, elephants and drums to it
+num_array = Arshad, Milan
+create a list named temp_list and add 'Milan', 'Madusha', 'Dinusha', 'Arshad', 'Ruchira'
+assign 45, 89 ,45 ,12 and 44 to number_array
+my_list.append(runs, wickets, total, strike_rate)
+add element1 to element_list
+append age, height, skills to the list named my_list
+goodness is a variable with class instance goody
+create variable named rainfall and assign rain to it
+lemmatizer is lemmatizer () in NLTK
+depth = depthclass()
+define a variable called burnable and initiate burn class as value
+assign some_class instance to variable def
+declare a variable named tfidf_transformer, and assign tfidf transformer()
+define variable le and instantiate label encoder
+define variable scaler and assign standard scaler class
