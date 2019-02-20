@@ -15,8 +15,6 @@ def home():
     match_df,line1,line2,libaryName1,libaryName2,RalgoArr,SKalgoArr = Similarity.match()
     RalgoArr = list(RalgoArr["algorithm"].values)
     SKalgoArr = list(SKalgoArr["algorithm"].values)
-    print(RalgoArr)
-    print(SKalgoArr)
     return render_template('result3.html', match_df=match_df.to_html(),line1 = line1,line2=line2,libaryName1=libaryName1,libaryName2=libaryName2,RalgoArr=RalgoArr,SKalgoArr=SKalgoArr,algoName1=Similarity.algoName1,algoName2=Similarity.algoName2,lang1=Similarity.lang1,lang2=Similarity.lang2)
 
 @app.route('/evl', methods=['GET'])

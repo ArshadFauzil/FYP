@@ -5,6 +5,7 @@ from spacy.lang.en.stop_words import STOP_WORDS
 import pymongo
 import difflib
 from collections import Counter
+import numpy as np
 
 # pd.set_option('display.max_columns', -1)
 pd.set_option('display.max_colwidth', -1)
@@ -88,7 +89,7 @@ def match():
         x = re.sub("[^A-Za-z0-9\s]+", "", string).lower()
         return x
 
-    # Select Match parmeters by argument name
+    # Select perfectly Match parmeters by argument name
     for i, val1 in enumerate(r_parm_df['Argument']):
         for j, val2 in enumerate(sk_parm_df['Argument']):
             # if(val1.lower()==val2.lower()):
@@ -106,13 +107,31 @@ def match():
     perfcMatch_SK_df = sk_parm_df.loc[sk_match_element]
     perfcMatch_SK_df = perfcMatch_SK_df.reset_index(drop=True)
 
-    # Remove match parameters from comparision
+    # Remove perfectly match parameters from comparision
     r_parm_df = r_parm_df.drop(r_match_element)
     r_parm_df = r_parm_df.reset_index(drop=True)
     sk_parm_df = sk_parm_df.drop(sk_match_element)
     sk_parm_df = sk_parm_df.reset_index(drop=True)
     unique_parm_df = unique_parm_df.drop(unique_parm_match_element)
     unique_parm_df = unique_parm_df.reset_index(drop=True)
+
+    # identify na.action, x, y,formula when R and sklearn comparision
+    if (lang1 != lang2):
+        if(lang1=="R"):
+            needToRemove = list(np.where(r_parm_df["Argument"] == 'na.action')[0]) + list(
+                np.where(r_parm_df["Argument"] == 'x')[0]) + list(np.where(r_parm_df["Argument"] == 'y')[0])
+            notCompare_R_df = r_parm_df.loc[needToRemove]
+            notCompare_R_df = notCompare_R_df.reset_index(drop=True)
+            r_parm_df = r_parm_df.drop(needToRemove)
+            r_parm_df = r_parm_df.reset_index(drop=True)
+        else:
+            needToRemove = list(np.where(sk_parm_df["Argument"] == 'na.action')[0]) + list(
+                np.where(sk_parm_df["Argument"] == 'x')[0]) + list(np.where(sk_parm_df["Argument"] == 'y')[0])
+            notCompare_R_df = sk_parm_df.loc[needToRemove]
+            notCompare_R_df = notCompare_R_df.reset_index(drop=True)
+            sk_parm_df = sk_parm_df.drop(needToRemove)
+            sk_parm_df = sk_parm_df.reset_index(drop=True)
+
 
     #identify parm_df1 & parm_df2 languge
     if (lang1==lang2 and lang1=="R"):
@@ -154,6 +173,7 @@ def match():
 
     perfcMatch_df["score_arg"] = 'NaN'
     perfcMatch_df["score_desc"] = 'NaN'
+    perfcMatch_df["score_val"] = 'NaN'
     perfcMatch_df["total_score"] = 'NaN'
     line1 = len(perfcMatch_df["Argument_1"])
 
@@ -162,31 +182,43 @@ def match():
         total_score_max = 0.0
         score_arg_max = 0.0
         score_desc_max= 0.0
+        score_val_max = 0.0
         similar_arg_no = -2
         for j, val2 in enumerate(parm_df2['Description']):
             # score_arg = 0.0
             score_arg = similar(str(PAL(parm_df1['Argument'][i])),str(PAL(parm_df2['Argument'][j])))
             score_desc = RUW(val1).similarity(RUW(val2))
-            # score_val = 0.0
+            score_val = 0.0
             if(parm_df1['Default_value'][i]!=None and parm_df2['Default_value'][j]!=None):
-                score_val = PAL(parm_df1['Default_value'][i]).similarity(PAL(parm_df2['Default_value'][j]))
+                if(type(parm_df1['Default_value'][i])==str and parm_df1['Default_value'][i]==parm_df2['Default_value'][j]):
+                    score_val = 1.0
+                elif(parm_df1['Default_value'][i]==parm_df2['Default_value'][j]):
+                    score_val = 0.7
+                elif(type(parm_df1['Default_value'][i])==type(parm_df2['Default_value'][j])):
+                    score_val = 0.3
+
+            #     score_val = PAL(parm_df1['Default_value'][i]).similarity(PAL(parm_df2['Default_value'][j]))
             # print(score_val)
-            total_score = score_desc + score_arg
+            total_score = score_desc*3 + score_arg*2 + score_val*1
             if(score_desc_max<score_desc):
                 score_desc_max = score_desc
             if (score_arg_max < score_arg):
                 score_arg_max = score_arg
+            if (score_val_max < score_val):
+                score_val_max = score_val
             if(total_score_max<total_score):
                 total_score_max = total_score
                 similar_arg_no = j
             # print(str(parm_df1['Argument'][i])+' '+str(score_desc)+' '+str(score_arg)+' '+str(parm_df2['Argument'][j])+' '+str(total_score))
-        if(score_desc_max>=0.83 and total_score_max>=1.25):
+        if (total_score_max >= 3.75):
+        # if(score_desc_max>=0.83 and total_score_max>=1.25):
         # if (score_desc_max >= 0.73 and total_score_max >= 1.15):
             # print(str(parm_df1['Argument'][i])+' '+str(total_score_max)+' '+str(parm_df2['Argument'][similar_arg_no]))
-            matched.append([parm_df1['Argument'][i],parm_df1['Description'][i],parm_df1['Default_value'][i],parm_df2['Argument'][similar_arg_no],parm_df2['Description'][similar_arg_no],parm_df2['Default_value'][similar_arg_no],score_arg_max,score_desc_max,total_score_max])
+            matched.append([parm_df1['Argument'][i],parm_df1['Description'][i],parm_df1['Default_value'][i],parm_df2['Argument'][similar_arg_no],parm_df2['Description'][similar_arg_no],parm_df2['Default_value'][similar_arg_no],score_arg_max,score_desc_max,score_val_max,total_score_max])
 
-    matched_df = pd.DataFrame(matched,columns=['Argument_1','Description_1','Default_value_1','Argument_2','Description_2','Default_value_2','score_arg','score_desc','total_score'])
+    matched_df = pd.DataFrame(matched,columns=['Argument_1','Description_1','Default_value_1','Argument_2','Description_2','Default_value_2','score_arg','score_desc','score_val','total_score'])
     c = Counter(matched_df['Argument_2'])
+
 
     #Remove duplicate matche by higher total score
     for val in set(matched_df['Argument_2']):
@@ -213,6 +245,13 @@ def match():
     for val in allMatch_df['Argument_2']:
         indexNames = notMatchTemp_df2[notMatchTemp_df2['Argument'] == val].index
         notMatchTemp_df2.drop(indexNames, inplace=True)
+    if(lang1!=lang2):
+        if(libaryName1=="R"):
+            notMatchTemp_df1 = pd.concat([notMatchTemp_df1,notCompare_R_df])
+            notMatchTemp_df1 = notMatchTemp_df1.reset_index(drop=True)
+        else:
+            notMatchTemp_df2 = pd.concat([notMatchTemp_df2, notCompare_R_df])
+            notMatchTemp_df2 = notMatchTemp_df2.reset_index(drop=True)
 
     notMatch_df1 = pd.DataFrame({"Argument_1" : notMatchTemp_df1['Argument'], "Description_1" : notMatchTemp_df1['Description'], "Default_value_1" : notMatchTemp_df1['Default_value']})
     notMatch_df1 = notMatch_df1.reset_index(drop=True)
@@ -221,12 +260,13 @@ def match():
     notMatch_df = pd.concat([notMatch_df1,notMatch_df2], axis=1)
     notMatch_df["score_arg"] = 'NaN'
     notMatch_df["score_desc"] = 'NaN'
+    notMatch_df["score_val"] = 'NaN'
     notMatch_df["total_score"] = 'NaN'
 
     #Final Result
     result = pd.concat([allMatch_df,notMatch_df])
     result = result.reset_index(drop=True)
-    result.columns = ['Argument', 'Description', 'Default_value','Argument', 'Description', 'Default_value','Arg_Similarity','Desc_Similarity','Total_Similarity']
+    result.columns = ['Argument', 'Description', 'Default_value','Argument', 'Description', 'Default_value','Arg_Similarity','Desc_Similarity','val_Similarity','Total_Similarity']
 
     # result = result.style.set_table_styles(style.styles)
     # result = result.render()
