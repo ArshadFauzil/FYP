@@ -63,11 +63,31 @@ for match in arg_and_def_values:
             select = regex.search(before_equal_regex, match).group()
             arg_name.append(select)
 
+#covert string to bool
+def str_to_bool(s):
+    if s == 'true':
+         return True
+    elif s == 'false':
+         return False
+    else:
+         raise ValueError
+
 #Extract default_value after appers in '='
 for match in arg_and_def_values:
     if(regex.search(after_equal_regex, match) != None):
         select = regex.search(after_equal_regex, match).group()
-        select = select.replace('"','')
+        select = select.replace('"','').replace(' ','').replace(',','')
+        select = select.lower()
+        try:
+            select = float(select)
+        except:
+            pass
+        try:
+            select = str_to_bool(select)
+        except:
+            pass
+        if(select=='null' or select=='none' or select==''):
+            select = None
         default_value.append(select)
 
 #Clean unwanted characters from argument names
@@ -82,12 +102,24 @@ for i, val in enumerate(argument_array):
         if(arg==val):
             default_value_temp[i] = default_value[j]
 
-#save data
+#Remove '...' from arrays
+delElement = None
+try:
+    delElement = argument_array.index('...')
+except:
+    pass
+if(delElement!=None):
+    del argument_array[delElement]
+    del argument_desc_array[delElement]
+    del default_value_temp[delElement]
+
+#Create dataframe
 # df = pd.DataFrame({"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp})
 df = [{"algorithm" :algoName, "data" : {"Argument" : argument_array, "Description" : argument_desc_array, "Default_value" : default_value_temp}}]
 obj = df[0]
 # df.to_csv("R_output.csv", index=False, encoding="utf-8")
 
+#save data
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["FYP"]
 mycol = mydb["R"]

@@ -37,11 +37,31 @@ regex = r"\(default=.*?\)|(default:.*)|(default=.*)|\(default =.*?\)|(default.*)
 
 default_value = [None] * len(argument_array)
 
+#covert string to bool
+def str_to_bool(s):
+    if s == 'true':
+         return True
+    elif s == 'false':
+         return False
+    else:
+         raise ValueError
+
 #Extract default values
 for i, val in enumerate(value):
     if(val.count('default')==1):
         temp = re.search(regex, value[i]).group()
-        temp = temp.replace('default','').replace('=','').replace('(','').replace(')','').replace(':','').replace("’",'').replace("‘",'')
+        temp = temp.replace('default','').replace('=','').replace('(','').replace(')','').replace(':','').replace("’",'').replace("‘",'').replace(' ','').replace(',','')
+        temp = temp.lower()
+        try:
+            temp = float(temp)
+        except:
+            pass
+        try:
+            temp = str_to_bool(temp)
+        except:
+            pass
+        if(temp=='null' or temp=='none' or temp==''):
+            temp = None
         default_value[i] = temp
 
 #save data
