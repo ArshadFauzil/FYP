@@ -406,7 +406,7 @@ numerize column1 to column 5
 columns to be numerized = 3, 4
 use learned model to predict feature for my_list
 predict relevant class for dp
-apply sample data to the model and obtain class
+apply sample_data to the model and obtain class
 find class for given data point
 predict clf for new_datapoint
 parse list_values to model and obtain predicted classes

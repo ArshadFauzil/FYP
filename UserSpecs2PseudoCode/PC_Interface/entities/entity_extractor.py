@@ -106,13 +106,42 @@ class Extractor:
 
     @staticmethod
     def word_combination_namevalues(pos_tagged_sentence, tag_set='ptb'):
-        """Chunking of a part of speech tagged sentence based on specific grammar for, for each"""
+        """Chunking of a part of speech tagged sentence based on specific grammar for, name values"""
         if tag_set == 'ptb':
             # Entity grammar used for the Penn Tree Bank Tagset
             grammar = r"""
             EN: {<NN><VBZ><DT>?<NN>|<VBN|VBZ><NN|NNP>|<NN><JJ>|<TO><NN>+|<NN><.>?<NN>|<IN.*>*<NN.*>+}
             """
 
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
+    def word_combination_varname(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for, variable names"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""EN: {<TO><JJ><NN|NNS|UH|FW|SYM|NNP>|<NN|NNS|UH|FW|SYM|NNP><JJ|VBZ>|<VBN|VBD><IN>?<NN|NNS|UH|FW|SYM|NNP>|<NN><IN>?<NN|NNS|UH|FW|SYM|NNP>|<JJ><NN|NNS|UH|FW|SYM|NNP>|<IN><DT><NN><NN|NNS|UH|FW|SYM|NNP>|<VB><NN><SYM>|<NN><.><NN>|<TO><VB>?<NN>?<NN|NNS|UH|FW|SYM|NNP>} """
+
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
+    def word_combination_numbers(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for numbers"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""
+                EN: {<CD>}
+                """
         else:
             raise SyntaxError
 
@@ -182,13 +211,17 @@ class Extractor:
                 tokens = self.tokenize_words(sentence)
                 # POS tagging using the Stanford POS tagger
                 pos_tagged_sentence = self.pos_tag_obj.pos_tag(' '.join(tokens))
-                # print(pos_tagged_sentence)
+                print(pos_tagged_sentence)
                 if wc is None:
                     result = self.word_combination(pos_tagged_sentence)
                 elif wc is 'foreach':
                     result = self.word_combination_foreach(pos_tagged_sentence)
                 elif wc is 'namevalues':
                     result = self.word_combination_namevalues(pos_tagged_sentence)
+                elif wc is 'varname':
+                    result = self.word_combination_varname(pos_tagged_sentence)
+                elif wc is 'numbers':
+                    result = self.word_combination_numbers(pos_tagged_sentence)
                 entities += [en for en in list(self.entity_generation(result))]
         return iter(entities)
 
