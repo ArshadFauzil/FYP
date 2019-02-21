@@ -1,8 +1,4 @@
-# from test_spaCy_model import Spacy
-from pprint import pprint
 import spacy
-import csv
-
 import time
 
 UPLOAD_FOLDER = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources/'
@@ -45,7 +41,7 @@ def find_similar_intent(statement):
 
     # print('Max similarity : ' + c.intentions[index] + '(' + str(max_similarity) + ')')
 
-    return c.intentions[index]
+    return [c.intentions[index], max_similarity]
 
 
 if __name__ == '__main__':

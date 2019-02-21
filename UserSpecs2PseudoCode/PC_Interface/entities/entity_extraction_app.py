@@ -10,8 +10,8 @@ credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 
-full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
-# full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/temp')
+# full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
+full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
 lines = [line for line in full_corpus.readlines() if line.strip()]
 
 regex_var = r"\b((([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|([Ii]mport)|([Uu]se)|([Ii]nstance)|([Mm]odel))\b)|="

@@ -1,17 +1,17 @@
 import re
 from pprint import pprint
 import os
+import time
 from google.oauth2 import service_account
 import test_detect_intent
 from entities import create_attribute_dict, entity_extractor
-import time
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 
 # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/processed_lines.txt')
-full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/temp')
+full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
 lines = [line for line in full_corpus.readlines() if line.strip()]
 
 regex_var = r"\b((([Vv]ariable)|([Nn]ame)|([Ll]ist)|([Aa]rray)|([Ii]mport)|([Uu]se)|([Ii]nstance)|([Mm]odel))\b)|="
@@ -22,7 +22,6 @@ regex_features = r"\b(([Cc]olumns)|([Dd]rop)|([Cc]olumn)|([Ff]eatures)|([Ff]eatu
 regex_svalues = r"\b(([Ii]mport)|([Ll]ibrary)|([Dd]isplay)|([Pp]rint)|([Pp]rintln))\b"
 
 
-# method for identifying required entities and call for relevant methods to find them
 def generate_entities(extractor, req_ent, defined_entities):
     start = time.time()
     print(start)
@@ -32,38 +31,22 @@ def generate_entities(extractor, req_ent, defined_entities):
         print(intention)
         req_ent_int = req_ent[intention]
         print(req_ent_int)
-
-        # Assign value to float variable, Assign value to integer variable, Define K in KNN
         if 'value' in req_ent_int and 'var_name' in req_ent_int:
-            entities_num = list(extractor.extract_entities(line, wc='numbers'))
-            entities_vn = list(extractor.extract_entities(line, wc='varname'))
-            param_vn = entities_varname_regxep(entities_vn)
-            param_value = entities_varname_value(entities_num)
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            params = entities_varname_value(entities, req_ent_int)
             try:
-                print('var name : {}'.format(param_vn[0]))
-                print('value : {}'.format(param_value))
+                print('var name : {}'.format(params[0]))
+                print('value : {}'.format(params[1]))
             except:
                 print('var_name and value not received')
             print('*' * 40)
 
-        # Intentions which are not required any entity
         elif 'N' in req_ent_int:
             print('No need of entity')
             print('*' * 40)
 
-        # Define a variable, Predict clf, Define an array
         elif 'var_name' in req_ent_int and len(req_ent_int) == 1:
-            entities_r = list(extractor.extract_entities(line, wc='varname'))
-            pprint(entities_r)
-            param = entities_varname_regxep(entities_r)
-            try:
-                print('var name : {}'.format(param))
-            except:
-                print('var_name is not received')
-            print('*' * 40)
-
-        # Predict clf
-        elif 'var_name_clf' in req_ent_int and len(req_ent_int) == 1:
             entities = list(extractor.extract_entities(line))
             pprint(entities)
             param = entities_varname(entities)
@@ -73,170 +56,161 @@ def generate_entities(extractor, req_ent, defined_entities):
                 print('var_name is not received')
             print('*' * 40)
 
-        # Define Language, Algo, DML, MDO, import ML Library, Replace NaN, import ML Algo
         elif 'def_value' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # param = entities_def_value(entities, defined_entities)
-            # try:
-            #     print('var name : {}'.format(param))
-            # except:
-            #     print('var_name is not received')
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            param = entities_def_value(entities, defined_entities)
+            try:
+                print('var name : {}'.format(param))
+            except:
+                print('var_name is not received')
             print('*' * 40)
 
-        # drop columns, define features, numerize/ normalize (specific)
         elif 'mul_values' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # attributes = create_attribute_dict.create_dict()
-            # # pprint(attributes)
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            #
-            # params = entities_mul_values(entities, attributes)
-            # try:
-            #     for att in params[0]:
-            #         print('value : {}'.format(att))
-            #
-            #     for att in params[1]:
-            #         print('value other : {}'.format(att))
-            # except:
-            #     print('values are not received')
+            attributes = create_attribute_dict.create_dict()
+            # pprint(attributes)
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+
+            params = entities_mul_values(entities, attributes)
+            try:
+                for att in params[0]:
+                    print('value : {}'.format(att))
+
+                for att in params[1]:
+                    print('value other : {}'.format(att))
+            except:
+                print('values are not received')
             print('*' * 40)
 
-        # Drop columns - Range
         elif 'range' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # ind_attributes = create_attribute_dict.create_indexed_dict()
-            # attributes = create_attribute_dict.create_dict()
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            #
-            # params = entities_range(entities, ind_attributes, attributes)
-            # try:
-            #     for att in params[0]:
-            #         print('value : {}'.format(att))
-            #
-            #     for att in params[1]:
-            #         print('value other : {}'.format(att))
-            # except:
-            #     print('values are not received')
+            ind_attributes = create_attribute_dict.create_indexed_dict()
+            attributes = create_attribute_dict.create_dict()
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+
+            params = entities_range(entities, ind_attributes, attributes)
+            try:
+                for att in params[0]:
+                    print('value : {}'.format(att))
+
+                for att in params[1]:
+                    print('value other : {}'.format(att))
+            except:
+                print('values are not received')
             print('*' * 40)
 
-        # Print, Import specific modules
         elif 'value_s' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # param = entities_value_s(entities)
-            # try:
-            #     print('var name : {}'.format(param))
-            # except:
-            #     print('value_s is not received')
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            param = entities_value_s(entities)
+            try:
+                print('var name : {}'.format(param))
+            except:
+                print('value_s is not received')
             print('*' * 40)
 
-        # Split Dataset – Test, Split Dataset – Train
         elif 'value_n' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # param = entities_value_n(entities)
-            # try:
-            #     print('value : {}'.format(param))
-            # except:
-            #     print('value is not received')
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            param = entities_value_n(entities)
+            try:
+                print('value : {}'.format(param))
+            except:
+                print('value is not received')
             print('*' * 40)
 
-        # For each loop
         elif 'var_name' in req_ent_int and 'item' in req_ent_int:
-            print('pass')
-            # entities = list(extractor.extract_entities(line, wc='foreach'))
-            # pprint(entities)
-            # params = entities_item_varname(entities)
-            # try:
-            #     print('item : {}'.format(params[0]))
-            #     print('var name : {}'.format(params[1]))
-            # except:
-            #     print('var_name and item are not received')
+            entities = list(extractor.extract_entities(line, wc='foreach'))
+            pprint(entities)
+            params = entities_item_varname(entities)
+            try:
+                print('item : {}'.format(params[0]))
+                print('var name : {}'.format(params[1]))
+            except:
+                print('var_name and item are not received')
             print('*' * 40)
 
-        # Append elements to a list
         elif 'var_name' in req_ent_int and 'values' in req_ent_int:
-            print('pass')
-            # entities_vn = list(extractor.extract_entities(line, wc='namevalues'))
-            # entities_val = list(extractor.extract_entities(line))
-            # pprint(entities_vn)
-            # pprint(entities_val)
-            # params = entities_varname_vals(entities_vn, entities_val)
-            # try:
-            #     print('var name : {}'.format(params[0][0]))
-            #     for p in params[1]:
-            #         print('value : {}'.format(p))
-            # except:
-            #     print('var_name and values are not received')
+            entities_vn = list(extractor.extract_entities(line, wc='namevalues'))
+            entities_val = list(extractor.extract_entities(line))
+            pprint(entities_vn)
+            pprint(entities_val)
+            params = entities_varname_vals(entities_vn, entities_val)
+            try:
+                print('var name : {}'.format(params[0][0]))
+                for p in params[1]:
+                    print('value : {}'.format(p))
+            except:
+                print('var_name and values are not received')
             print('*' * 40)
 
-        # Define Class
         elif 'c_value' in req_ent_int and len(req_ent_int) == 1:
-            print('pass')
-            # attributes = create_attribute_dict.create_dict()
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            #
-            # params = entities_mul_values(entities, attributes)
-            # try:
-            #     for att in params[0]:
-            #         print('value : {}'.format(att))
-            #
-            #     for att in params[1]:
-            #         print('value other : {}'.format(att))
-            # except:
-            #     print('class value is not received')
+            attributes = create_attribute_dict.create_dict()
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+
+            params = entities_mul_values(entities, attributes)
+            try:
+                for att in params[0]:
+                    print('value : {}'.format(att))
+
+                for att in params[1]:
+                    print('value other : {}'.format(att))
+            except:
+                print('class value is not received')
             print('*' * 40)
 
-        # Assign Class instance to variable
         if 'var_name' in req_ent_int and 'instance' in req_ent_int:
-            print('pass')
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # params = entities_varname_instance(entities, req_ent_int)
-            # try:
-            #     print('var name : {}'.format(params[0]))
-            #     print('value : {}'.format(params[1]))
-            # except:
-            #     print('var_name and value not received')
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            params = entities_varname_instance(entities, req_ent_int)
+            try:
+                print('var name : {}'.format(params[0]))
+                print('value : {}'.format(params[1]))
+            except:
+                print('var_name and value not received')
             print('*' * 40)
 
-        # Assign value to string variable
         if 'var_name' in req_ent_int and 's_value' in req_ent_int:
-            print('pass')
-            # regex_string = r"\'.*\'"
-            # string = re.findall(regex_string, line)
-            # entities = list(extractor.extract_entities(line))
-            # pprint(entities)
-            # params = entities_varname(entities)
-            # try:
-            #     print('var name : {}'.format(params))
-            #     print('value : {}'.format(string))
-            # except:
-            #     print('var_name is not received')
+            regex_string = r"\'.*\'"
+            string = re.findall(regex_string, line)
+            entities = list(extractor.extract_entities(line))
+            pprint(entities)
+            params = entities_varname(entities)
+            try:
+                print('var name : {}'.format(params))
+                print('value : {}'.format(string))
+            except:
+                print('var_name is not received')
             print('*' * 40)
     end = time.time()
     print(end)
     print(end-start)
 
 
-# Assign value to float variable, Assign value to integer variable, Define K in KNN
-def entities_varname_value(entities):
+def entities_varname_value(entities, required_entities):
+    var_name = ''
     val = ''
-    for entity in entities:
-        e = entity.replace(',', '')
-        val = e
+    for rent in required_entities:
+        if rent == 'var_name':
+            for entity in entities:
+                if re.search(regex_var, entity):
+                    for token in entity.split():
+                        if not re.search(regex_var, token):
+                            var_name = token
+                elif not re.search(regex_num, entity):
+                    var_name = entity
 
-    return val
+        elif rent == 'value':
+            for entity in entities:
+                if re.search(regex_num, entity):
+                    e = entity.replace(',', '')
+                    val = e
+
+    return [var_name, val]
 
 
-# Define a variable, Predict clf, Define an array
 def entities_varname(entities):
     var_name = ''
     ignore = ['list', 'array', 'memory', 'null', 'empty', 'null array', 'empty array', 'null list', 'empty list']
@@ -253,7 +227,6 @@ def entities_varname(entities):
     return var_name
 
 
-# Define Language, Algo, DML, MDO, import ML Library, Replace NaN, import ML Algo
 def entities_def_value(entities, def_entities):
     var_name = ''
     for entity in entities:
@@ -277,7 +250,6 @@ def entities_def_value(entities, def_entities):
     return var_name
 
 
-# drop columns, define features, numerize/ normalize (specific)
 def entities_mul_values(entities, mul_attributes):
     values = [[], []]
     for entity in entities:
@@ -307,7 +279,6 @@ def entities_mul_values(entities, mul_attributes):
     return values
 
 
-# Drop columns - Range
 def entities_range(entities, indexed_attr, mul_attributes):
     values = [[], []]
     indexes = []
@@ -345,7 +316,6 @@ def entities_range(entities, indexed_attr, mul_attributes):
     return values
 
 
-# Print, Import specific modules
 def entities_value_s(entities):
     var_name = ''
     ignore = ['import', 'sklearn', 'library', 'display', 'print', 'println']
@@ -360,7 +330,6 @@ def entities_value_s(entities):
     return var_name
 
 
-# Split Dataset – Test, Split Dataset – Train
 def entities_value_n(entities):
     val = 0
     is_percent = False
@@ -378,7 +347,6 @@ def entities_value_n(entities):
         return val
 
 
-# For each loop
 def entities_item_varname(entities):
     result = []
     regex_for = r"\b(([Ff]or)|([Ee]very)|([Ee]ach)|([Tt]hrough)|([Ll]oop)|([Tt]o))\b"
@@ -403,7 +371,6 @@ def entities_item_varname(entities):
     return result
 
 
-# Append elements to a list
 def entities_varname_vals(vn, val):
     result = [[], []]
     is_varname = False
@@ -436,7 +403,6 @@ def entities_varname_vals(vn, val):
     return result
 
 
-# Assign Class instance to variable
 def entities_varname_instance(entities, required_entities):
     var_name = ''
     inst = ''
@@ -465,31 +431,6 @@ def entities_varname_instance(entities, required_entities):
                     inst = entity
 
     return [var_name, inst]
-
-
-# var name by regexp
-def entities_varname_regxep(entities):
-    result = []
-    is_top = False
-    regex_vn_top = r"(\b(([Tt]o)|([Vv]ariable)|([Cc]alled)|([Ii]s)|([Nn]amed)|\.|([Oo]f)|([Aa]s)|([Ll]ist)|([Aa]rray)|([Aa]ppend))\b)|="
-    regex_vn_less = r"(\b(([Dd]efine)|([Nn]amed)|([Ss]tring)|([Nn]ull)|([Cc]reate)|([Ss]ubstitute)|([Ww]ith)|([Tt]he)|([Nn]ame)|([Ee]mpty))\b)"
-
-    for entity in entities:
-        try:
-            if re.search(regex_vn_top, entity):
-                for token in entity.split():
-                    if not re.search(regex_vn_top, token) and not re.search(regex_vn_less, token):
-                        result.append(token)
-                        is_top = True
-            elif re.search(regex_vn_less, entity) and is_top is False:
-                for token in entity.split():
-                    if not re.search(regex_vn_top, token) and not re.search(regex_vn_less, token):
-                        result.append(token)
-
-        except:
-            print('Unable to find var_name')
-
-    return result
 
 
 if __name__ == "__main__":

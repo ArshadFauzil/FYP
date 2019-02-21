@@ -1,4 +1,6 @@
 
-define variable features and assign FEATURE_SET
-define variable target_class and assign price
-define variable clf and classify X_train y_train using SVM
+define target class
+
+requesting accuracy
+requesting accuracy
+requesting accuracy
