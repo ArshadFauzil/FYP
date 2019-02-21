@@ -1,7 +1,7 @@
 import os
 from google.oauth2 import service_account
 # from DB_Manager import insert_intents_into_db
-from test_spaCy import find_similar_intent
+from Similarity_engine import find_similar_intent
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
