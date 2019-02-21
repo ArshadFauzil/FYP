@@ -1,6 +1,6 @@
 import os
 from google.oauth2 import service_account
-# from DB_Manager import insert_intents_into_db
+from pseudo_manager import get_response
 from Similarity_engine import find_similar_intent
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
@@ -34,19 +34,23 @@ def detect_intent_texts(project_id, session_id, text, language_code):
     parameters = response.query_result.parameters
 
     print('=' * 40)
-    print('Query text: {}'.format(query_text))
-    print('Detected intent: {} (confidence: {})\n'.format(intent, confidence))
-    print('Fulfillment text: {}\n'.format(fulfillment))
-    print('Parameter Entity : {}'.format(parameters))
+    # print('Query text: {}'.format(query_text))
+    # print('Detected intent: {} (confidence: {})\n'.format(intent, confidence))
+    # print('Fulfillment text: {}\n'.format(fulfillment))
+    # print('Parameter Entity : {}'.format(parameters))
 
     if fulfillment == 'unknown':
         fulfillment = find_similar_intent(str(query_text))
         print('Fulfillment text (by SE): {} (similarity: {})\n'.format(fulfillment[0], fulfillment[1]))
 
+    get_response(response)
     return fulfillment
 
 
 if __name__ == '__main__':
-    lines = ['any string to test']
+    lines = ['obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt']
+    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
+    # lines = [line for line in full_corpus.readlines() if line.strip()]
+
     for line in lines:
         detect_intent_texts(PROJECT_ID, 'df', line, language_code='en')

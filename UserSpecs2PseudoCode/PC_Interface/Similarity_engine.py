@@ -47,7 +47,7 @@ def find_similar_intent(statement):
 if __name__ == '__main__':
     start = time.time()
     print(start)
-    text = ['create a variable as y', 'assign value 10 for variable p']
+    text = ['ASSIGN 6 TO RT', 'assign value 10 for variable p']
     for t in text:
         print(t)
         print(find_similar_intent(t))

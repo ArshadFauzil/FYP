@@ -12,6 +12,7 @@ predict class for validation set,Accuracy
 define variable predictions and predict clf for X_test,Accuracy
 use X_test to find accuracy,Accuracy
 define variable predictions and predict clf for X_test,Accuracy
+assign 78.56 to pt,Assign value to float variable
 assign 567.045 to variable def,Assign value to float variable
 define variable T and assign 0.84,Assign value to float variable
 define a float variable called burnable and assign 56.89 as value,Assign value to float variable
@@ -23,6 +24,7 @@ value of rain is 78.2,Assign value to float variable
 substitute decimal 5.5648 to variable count,Assign value to float variable
 assign value 8.95 to double variable my_val,Assign value to float variable
 winning_rate is a double variable which has value 4.00564,Assign value to float variable
+assign 78 to pt,Assign value to integer variable
 no_of_wins is a int variable which has value 4,Assign value to integer variable
 assign 545 to variable def,Assign value to integer variable
 define an integer variable called burnable and assign 88 as value,Assign value to integer variable
