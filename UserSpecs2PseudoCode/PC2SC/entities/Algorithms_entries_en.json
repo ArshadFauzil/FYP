@@ -3,10 +3,12 @@
     "value": "KNN",
     "synonyms": [
       "KNN",
-      "k-nearest neighbors",
+      "k-nearest neghbors",
       "knn classification",
       "K-Nearest_Neighbor",
-      "knn"
+      "knn",
+      "k-nearest neighbor",
+      "k nearest neighbor"
     ]
   },
   {
@@ -22,7 +24,8 @@
     "synonyms": [
       "Decision Tree Classification",
       "DTC",
-      "Decision Tree"
+      "Decision Tree",
+      "Decision Tree Classifier"
     ]
   },
   {
@@ -57,12 +60,15 @@
     ]
   },
   {
-    "value": "Random Forrest",
+    "value": "Random Forest",
     "synonyms": [
       "random forrest",
       "RF",
       "RF classification",
-      "Random Forrest Classification"
+      "Random Forest Classification",
+      "random forrest",
+      "Random Forrest",
+      "random forest classifier"
     ]
   },
   {
@@ -131,6 +137,12 @@
       "RadialSVC",
       "radial svc",
       "RSVC"
+    ]
+  },
+  {
+    "value": "Random Forest",
+    "synonyms": [
+      "Random Forest"
     ]
   }
 ]

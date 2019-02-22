@@ -1,5 +1,23 @@
 [
   {
+    "id": "b9e9243b-4c4f-4462-a9f3-286f2cbb1336",
+    "data": [
+      {
+        "text": "predict class for ",
+        "userDefined": false
+      },
+      {
+        "text": "my_array",
+        "alias": "list_variable",
+        "meta": "@list_variable",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550591873
+  },
+  {
     "id": "ae49806e-0216-42ab-a638-ca675e573baa",
     "data": [
       {
@@ -87,7 +105,16 @@
         "userDefined": false
       },
       {
-        "text": "given data point",
+        "text": "given data points",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "temp_list",
         "alias": "list_variable",
         "meta": "@list_variable",
         "userDefined": true

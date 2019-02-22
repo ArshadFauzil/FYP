@@ -15,21 +15,13 @@
           "name": "ds_attributes",
           "value": "$ds_attributes",
           "isList": true
-        },
-        {
-          "id": "4a0e407f-7241-4981-afef-ec8bff6cff0d",
-          "required": false,
-          "dataType": "@ds_attributes",
-          "name": "ds_attributes1",
-          "value": "$ds_attributes1",
-          "isList": false
         }
       ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "drop attributes \u003d $ds_attributes to $ds_attributes1"
+          "speech": "drop attributes \u003d $ds_attributes to $ds_attributes"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -39,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549302767,
+  "lastUpdate": 1550828499,
   "fallbackIntent": false,
   "events": []
 }

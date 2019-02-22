@@ -130,5 +130,15 @@
       "TFIDF Feature Extractor",
       "TFIDF_Feature_Extractor"
     ]
+  },
+  {
+    "value": "Time Series",
+    "synonyms": [
+      "Time Series",
+      "time series",
+      "time_series",
+      "Time_Series",
+      "TS"
+    ]
   }
 ]

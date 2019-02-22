@@ -1,18 +1,26 @@
 {
-  "id": "d5615047-b1b1-490b-b359-fa85685d35f4",
-  "name": "Start Algorithm",
+  "id": "8b343819-8892-4ff8-b810-294344a579a5",
+  "name": "Numerization-Specific",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "847faba9-e88d-4ff4-a0b2-80107ef9d33f",
+          "dataType": "@ds_attributes",
+          "name": "ds_attributes",
+          "value": "$ds_attributes",
+          "isList": true
+        }
+      ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "define variable clf and classify X_train, y_train using ALGORITHM"
+          "speech": []
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +30,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550592234,
+  "lastUpdate": 1550496190,
   "fallbackIntent": false,
   "events": []
 }

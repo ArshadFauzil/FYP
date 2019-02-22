@@ -15,19 +15,17 @@
       ],
       "parameters": [
         {
-          "id": "08c59df3-9f01-461b-85fa-1023aa4fdffc",
-          "required": false,
-          "dataType": "@sys.color",
-          "name": "color",
-          "value": "$color",
+          "id": "a26477df-7037-4989-9ae2-f6d3ea079137",
+          "dataType": "@sys.number-integer",
+          "name": "number-integer",
+          "value": "$number-integer",
           "isList": false
         },
         {
-          "id": "0f859497-feb1-48cc-953d-d58454ba9484",
-          "required": false,
-          "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
+          "id": "fa512c77-7895-45a1-a8d5-6fa1a2220eec",
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
           "isList": false
         }
       ],
@@ -35,7 +33,11 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "while loop"
+          "speech": [
+            "while, $any is True",
+            "while, $number-integer is True",
+            "while,"
+          ]
         }
       ],
       "defaultResponsePlatforms": {},
@@ -45,7 +47,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549038738,
+  "lastUpdate": 1550836997,
   "fallbackIntent": false,
   "events": []
 }

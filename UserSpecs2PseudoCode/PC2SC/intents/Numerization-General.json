@@ -1,6 +1,6 @@
 {
-  "id": "d5615047-b1b1-490b-b359-fa85685d35f4",
-  "name": "Start Algorithm",
+  "id": "79af917d-a27a-46d4-9e73-810bf46447ad",
+  "name": "Numerization-General",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "define variable clf and classify X_train, y_train using ALGORITHM"
+          "speech": "numerize dataframe column and reassign dataframe column"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550592234,
+  "lastUpdate": 1550495546,
   "fallbackIntent": false,
   "events": []
 }

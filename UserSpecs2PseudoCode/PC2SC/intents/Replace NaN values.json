@@ -18,9 +18,17 @@
         },
         {
           "id": "3b426c15-9338-48ec-af9a-7e033d9fc439",
+          "required": false,
           "dataType": "@ds_attributes",
           "name": "ds_attributes",
           "value": "$ds_attributes",
+          "isList": false
+        },
+        {
+          "id": "a6e6947e-0a34-4a58-b763-1a937ee50522",
+          "dataType": "@DataManipulationLibrary",
+          "name": "DataManipulationLibrary",
+          "value": "$DataManipulationLibrary",
           "isList": false
         }
       ],
@@ -38,7 +46,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549692846,
+  "lastUpdate": 1550498219,
   "fallbackIntent": false,
   "events": []
 }

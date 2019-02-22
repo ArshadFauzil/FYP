@@ -1,6 +1,6 @@
 {
-  "id": "229362c7-b737-4af5-bd5e-7af432645f55",
-  "name": "Name",
+  "id": "f4b633b9-dc8b-4aa7-a8ed-16c5cdfee6de",
+  "name": "End of IF",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "My name is Pseudo Code Translator!"
+          "speech": "end of if"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -20,9 +20,9 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1548243615,
+  "lastUpdate": 1550840984,
   "fallbackIntent": false,
   "events": []
 }

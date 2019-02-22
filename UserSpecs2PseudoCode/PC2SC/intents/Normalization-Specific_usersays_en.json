@@ -1,226 +1,19 @@
 [
   {
-    "id": "a55690c2-1569-45b3-8405-1ec1c64ea913",
+    "id": "0d417914-cfcc-452c-8921-2c9cfd5de27f",
     "data": [
       {
-        "text": "hide ",
+        "text": "normalize ",
         "userDefined": false
       },
       {
-        "text": "feature 1",
+        "text": "4444",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " to ",
         "userDefined": false
-      },
-      {
-        "text": "feature 5",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " from learning",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549302767
-  },
-  {
-    "id": "a34e1ae4-69ac-4713-ac16-e90ef9a5b731",
-    "data": [
-      {
-        "text": "not use attributes ",
-        "userDefined": false
-      },
-      {
-        "text": "distance",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": "  to ",
-        "userDefined": false
-      },
-      {
-        "text": "velocity",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " for train the model",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549302767
-  },
-  {
-    "id": "00a40faa-56f5-4e87-b915-d8b7dc67d5a7",
-    "data": [
-      {
-        "text": "eliminate ",
-        "userDefined": false
-      },
-      {
-        "text": "column1",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " to ",
-        "userDefined": false
-      },
-      {
-        "text": "column2",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " ",
-        "userDefined": false
-      },
-      {
-        "text": "from",
-        "meta": "@sys.ignore",
-        "userDefined": true
-      },
-      {
-        "text": " data set",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549302767
-  },
-  {
-    "id": "8ccfb98d-e83a-4fbe-8ac6-fe79461a75e1",
-    "data": [
-      {
-        "text": "features to be ignored \u003d ",
-        "userDefined": false
-      },
-      {
-        "text": "weight",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " - ",
-        "userDefined": false
-      },
-      {
-        "text": "length",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549007748
-  },
-  {
-    "id": "5309b4a8-bdc4-4b66-97cd-178d079b7400",
-    "data": [
-      {
-        "text": "not consider ",
-        "userDefined": false
-      },
-      {
-        "text": "feature 1",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " to ",
-        "userDefined": false
-      },
-      {
-        "text": "feature 10",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549007748
-  },
-  {
-    "id": "bcb65f32-8c4c-4d18-ac82-65d59f3b7988",
-    "data": [
-      {
-        "text": "delete all attributes between ",
-        "userDefined": false
-      },
-      {
-        "text": "column1",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
       },
       {
         "text": " and ",
-        "userDefined": false
-      },
-      {
-        "text": "column5",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549007748
-  },
-  {
-    "id": "668fe9a5-bd0f-4ade-b4a5-123b111afe6a",
-    "data": [
-      {
-        "text": "drop columns in between ",
-        "userDefined": false
-      },
-      {
-        "text": "name",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      },
-      {
-        "text": " and ",
-        "userDefined": false
-      },
-      {
-        "text": "sales",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549007748
-  },
-  {
-    "id": "e210a1a2-faa9-4446-b4bf-f6ee3132af46",
-    "data": [
-      {
-        "text": "drop columns, ",
         "userDefined": false
       },
       {
@@ -230,85 +23,70 @@
         "userDefined": true
       },
       {
-        "text": " to ",
+        "text": " in data ",
         "userDefined": false
       },
       {
-        "text": "4444",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
+        "text": "set",
+        "meta": "@sys.ignore",
+        "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549007748
+    "updated": 1550493552
   },
   {
-    "id": "439a16fa-b1ac-4baf-96d3-73f2a84bb2f5",
+    "id": "5fd3fe70-10c8-4cb4-aed0-1516329d315e",
     "data": [
       {
-        "text": "remove ",
+        "text": "apply normalization to ",
         "userDefined": false
       },
       {
-        "text": "column 1",
+        "text": "col1",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
       {
-        "text": " to ",
+        "text": ", ",
         "userDefined": false
       },
       {
-        "text": "column 7",
+        "text": "col2",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
+      },
+      {
+        "text": " by using scaler",
+        "userDefined": false
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549007748
+    "updated": 1550492257
   },
   {
-    "id": "469ffc4d-da3f-4141-9160-825cae33de89",
+    "id": "483d61f4-2f08-4ec5-a864-49ca7029fa09",
     "data": [
       {
-        "text": "ignore attributes from ",
+        "text": "normalize ",
         "userDefined": false
       },
       {
-        "text": "attribute1",
+        "text": "feature 1",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
       {
-        "text": " to ",
+        "text": ", ",
         "userDefined": false
       },
       {
-        "text": "attribute7",
-        "alias": "ds_attributes",
-        "meta": "@ds_attributes",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549007748
-  },
-  {
-    "id": "1a99649e-986d-4867-9978-cce7737acafd",
-    "data": [
-      {
-        "text": "drop features in range of ",
-        "userDefined": false
-      },
-      {
-        "text": "column3",
+        "text": "feature 2",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
@@ -318,40 +96,202 @@
         "userDefined": false
       },
       {
-        "text": "column5",
-        "meta": "@sys.ignore",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549005469
-  },
-  {
-    "id": "349bd19d-2cc9-4cb4-9738-736ba0b51612",
-    "data": [
-      {
-        "text": "columns to be dropped \u003d ",
-        "userDefined": false
-      },
-      {
-        "text": "findex2",
+        "text": "feature 3",
         "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
       {
-        "text": " to ",
+        "text": " by using scale of 0 to ",
         "userDefined": false
       },
       {
-        "text": "findex9",
+        "text": "10",
         "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550492257
+  },
+  {
+    "id": "535c889a-7a50-458e-8850-1ee47291ed48",
+    "data": [
+      {
+        "text": "normalize ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column 5",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " in uploaded dataset",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491985
+  },
+  {
+    "id": "f0337552-ab73-421f-af13-440c8c3fa0aa",
+    "data": [
+      {
+        "text": "columns",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to be normalized \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
         "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1549005469
+    "updated": 1550491985
+  },
+  {
+    "id": "5d4ec582-a2d5-4731-8f11-0e46077154bb",
+    "data": [
+      {
+        "text": "apply normalization to ",
+        "userDefined": false
+      },
+      {
+        "text": "column1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "column2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1550491985
+  },
+  {
+    "id": "07558ca1-54d4-4636-bfd9-ece732c3b779",
+    "data": [
+      {
+        "text": "features to be normalized \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": false
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "age",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "place",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491985
+  },
+  {
+    "id": "1f416df6-c04e-4ee4-aa32-b53f03abeddc",
+    "data": [
+      {
+        "text": "normalize ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 1",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 2",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "attribute 5",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491985
   }
 ]

@@ -9,15 +9,8 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "562e23fa-5dbe-46b4-90ab-e9aa7652b653",
-          "required": false,
-          "dataType": "@temp_variable",
-          "name": "temp_variable",
-          "value": "$temp_variable",
-          "isList": false
-        },
-        {
           "id": "8e6cf6ae-3668-451f-87e3-cdb9a31a9846",
+          "required": false,
           "dataType": "@sys.any",
           "name": "any",
           "value": "$any",
@@ -28,10 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": [
-            "print $temp_variable",
-            "print $any"
-          ]
+          "speech": "print $any"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -41,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549037175,
+  "lastUpdate": 1550830744,
   "fallbackIntent": false,
   "events": []
 }

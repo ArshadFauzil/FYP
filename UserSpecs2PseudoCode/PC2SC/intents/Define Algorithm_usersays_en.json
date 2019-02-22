@@ -83,7 +83,7 @@
         "userDefined": false
       },
       {
-        "text": "Random Forrest",
+        "text": "Random Forest",
         "alias": "Algorithms",
         "meta": "@Algorithms",
         "userDefined": true
@@ -91,7 +91,7 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1548956951
+    "updated": 1550762545
   },
   {
     "id": "e2f682ae-3548-4ef3-a8c2-3fdeb47c092a",

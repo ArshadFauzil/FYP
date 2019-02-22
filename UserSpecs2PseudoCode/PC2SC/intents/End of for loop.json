@@ -1,6 +1,6 @@
 {
-  "id": "d5615047-b1b1-490b-b359-fa85685d35f4",
-  "name": "Start Algorithm",
+  "id": "a1908c98-bc66-475a-b3cb-660d53b095e0",
+  "name": "End of for loop",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "define variable clf and classify X_train, y_train using ALGORITHM"
+          "speech": "for loop ends"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550592234,
+  "lastUpdate": 1550840814,
   "fallbackIntent": false,
   "events": []
 }

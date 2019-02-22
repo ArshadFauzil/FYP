@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "K is integer $number"
+          "speech": "K is integer $number-integer"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549301948,
+  "lastUpdate": 1550748594,
   "fallbackIntent": false,
   "events": []
 }

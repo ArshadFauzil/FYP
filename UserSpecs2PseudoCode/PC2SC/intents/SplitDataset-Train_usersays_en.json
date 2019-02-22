@@ -1,5 +1,89 @@
 [
   {
+    "id": "41c1b441-4695-4e69-acbe-9e1b10f00ee9",
+    "data": [
+      {
+        "text": "declare a floating point variable called train_set and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "0.78",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550563009
+  },
+  {
+    "id": "54668e84-a6b0-4a97-bfdf-48f5b493338b",
+    "data": [
+      {
+        "text": "split dataset in to train and test with ratio ",
+        "userDefined": false
+      },
+      {
+        "text": "0.4",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550562931
+  },
+  {
+    "id": "2983eac1-cf6e-4515-b616-a341fa42f757",
+    "data": [
+      {
+        "text": "split dataset by allocating ",
+        "userDefined": false
+      },
+      {
+        "text": "55%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": true
+      },
+      {
+        "text": " for training",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550562931
+  },
+  {
+    "id": "eeefc05e-fbe3-466b-bbba-87b819f132e8",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "78%",
+        "alias": "percentage",
+        "meta": "@sys.percentage",
+        "userDefined": true
+      },
+      {
+        "text": " of the source data to learning",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550562673
+  },
+  {
     "id": "9ce3f232-4f27-4c6f-982e-d6e42d74e566",
     "data": [
       {

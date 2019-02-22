@@ -1,0 +1,188 @@
+[
+  {
+    "value": "name",
+    "synonyms": [
+      "name"
+    ]
+  },
+  {
+    "value": "height",
+    "synonyms": [
+      "height"
+    ]
+  },
+  {
+    "value": "car",
+    "synonyms": [
+      "car"
+    ]
+  },
+  {
+    "value": "tom",
+    "synonyms": [
+      "tom"
+    ]
+  },
+  {
+    "value": "mango",
+    "synonyms": [
+      "mango"
+    ]
+  },
+  {
+    "value": "age",
+    "synonyms": [
+      "age"
+    ]
+  },
+  {
+    "value": "weight",
+    "synonyms": [
+      "weight"
+    ]
+  },
+  {
+    "value": "runs",
+    "synonyms": [
+      "runs"
+    ]
+  },
+  {
+    "value": "wickets",
+    "synonyms": [
+      "wickets"
+    ]
+  },
+  {
+    "value": "total",
+    "synonyms": [
+      "total"
+    ]
+  },
+  {
+    "value": "strike_rate",
+    "synonyms": [
+      "strike_rate"
+    ]
+  },
+  {
+    "value": "Milan",
+    "synonyms": [
+      "Milan"
+    ]
+  },
+  {
+    "value": "Madusha",
+    "synonyms": [
+      "Madusha"
+    ]
+  },
+  {
+    "value": "Dinusha",
+    "synonyms": [
+      "Dinusha"
+    ]
+  },
+  {
+    "value": "Arshad",
+    "synonyms": [
+      "Arshad"
+    ]
+  },
+  {
+    "value": "Ruchira",
+    "synonyms": [
+      "Ruchira"
+    ]
+  },
+  {
+    "value": "flowers",
+    "synonyms": [
+      "flowers"
+    ]
+  },
+  {
+    "value": "guitars",
+    "synonyms": [
+      "guitars"
+    ]
+  },
+  {
+    "value": "elephants",
+    "synonyms": [
+      "elephants"
+    ]
+  },
+  {
+    "value": "drums",
+    "synonyms": [
+      "drums"
+    ]
+  },
+  {
+    "value": "skills",
+    "synonyms": [
+      "skills"
+    ]
+  },
+  {
+    "value": "49",
+    "synonyms": [
+      "49"
+    ]
+  },
+  {
+    "value": "45",
+    "synonyms": [
+      "45"
+    ]
+  },
+  {
+    "value": "element1",
+    "synonyms": [
+      "element1"
+    ]
+  },
+  {
+    "value": "89",
+    "synonyms": [
+      "89"
+    ]
+  },
+  {
+    "value": "12",
+    "synonyms": [
+      "12"
+    ]
+  },
+  {
+    "value": "computer",
+    "synonyms": [
+      "computer"
+    ]
+  },
+  {
+    "value": "phone",
+    "synonyms": [
+      "phone"
+    ]
+  },
+  {
+    "value": "book",
+    "synonyms": [
+      "book"
+    ]
+  },
+  {
+    "value": "465",
+    "synonyms": [
+      "465"
+    ]
+  },
+  {
+    "value": "244.43",
+    "synonyms": [
+      "244.43"
+    ]
+  }
+]
