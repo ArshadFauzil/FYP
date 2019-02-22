@@ -4,6 +4,7 @@ from collections import defaultdict
 
 data_dict = defaultdict(list)
 
+
 def create_dict():
     att = read_attributes.get_only_columns('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/SalesJan2009.csv')
 

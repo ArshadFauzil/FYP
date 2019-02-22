@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for, send_file
-from detect_intent_texts import detect_intent_texts
+from detect_intent_texts import detect_intent_texts, line_manipulator
 from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
 from API_manager import enter_new_entity
@@ -120,10 +120,11 @@ def upload_file():
 @app.route('/intermediate', methods=['GET', 'POST'])
 def generate_intermediate_code():
     lines = DB_Manager.get_pseudocode_from_db()[0]
-    full_pc = ""
-    for line in lines:
-        pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
-        full_pc = full_pc + '\n' + pc
+    # full_pc = ""
+    full_pc = line_manipulator(lines)
+    # for line in lines:
+    #     pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
+    #     full_pc = full_pc + '\n' + pc
 
     print(full_pc)
     f = open("ipc.txt", "w+")

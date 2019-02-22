@@ -1,6 +1,5 @@
 
-define target class
-
-requesting accuracy
-requesting accuracy
-requesting accuracy
+import library dataframe
+define variable df and read dataset DATASET csv file
+define variable target_class and assign Price
+define variable clf and classify X_train y_train using SVM

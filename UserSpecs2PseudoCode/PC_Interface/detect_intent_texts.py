@@ -7,6 +7,7 @@ from entities import entity_extractor
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
+SESSION_ID = 'session_pc'
 
 print('Credendtials from environ: {}'.format(credentials))
 
@@ -14,7 +15,10 @@ print('Credendtials from environ: {}'.format(credentials))
 class PseudoGen:
     extract = entity_extractor.Extractor()
     df_entity = open('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/df_entity').read()
+    identification = open('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/identification').read()
     parm_map = {}
+    idnt_map = {}
+    wildcard = {"NEIGHBORS": '', 'RANDOM_NUMBER': '', 'DATASET': ''}
 
     for i, line in enumerate(df_entity.split("\n")):
         try:
@@ -24,11 +28,25 @@ class PseudoGen:
         except:
             print("Unable to locate df_entity map")
 
+    for k, line in enumerate(identification.split("\n")):
+        try:
+            if line is not '':
+                content = line.split(',')
+            idnt_map[content[0]] = (content[1])
+        except:
+            print("Unable to locate identification map")
 
-pg = PseudoGen()
+
+def line_manipulator(pc_lines):
+    pg = PseudoGen()
+    full_pc = ''
+    for l in pc_lines:
+        pc = detect_intent_texts(PROJECT_ID, SESSION_ID, l, 'en-US', pg)
+        full_pc = full_pc + '\n' + pc
+    return full_pc
 
 
-def detect_intent_texts(project_id, session_id, text, language_code):
+def detect_intent_texts(project_id, session_id, text, language_code, pseudo_gen):
     """Returns the result of detect intent with texts as inputs.
     Using the same `session_id` between requests allows continuation
     of the conversation."""
@@ -61,14 +79,16 @@ def detect_intent_texts(project_id, session_id, text, language_code):
         fulfillment = find_similar_intent(str(query_text))
         print('Fulfillment text (by SE): {} (similarity: {})\n'.format(fulfillment[0], fulfillment[1]))
 
-    get_response(response, pg)
+    get_response(response, pseudo_gen)
     return fulfillment
 
 
 if __name__ == '__main__':
-    # lines = ['find confusion matrix', 'obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt']
-    full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
-    lines = [line for line in full_corpus.readlines() if line.strip()]
-
+    lines = ['initialize an empty integer variable named F',
+             'obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt',
+             'find accuracy of model']
+    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
+    # lines = [line for line in full_corpus.readlines() if line.strip()]
+    pg = PseudoGen()
     for line in lines:
-        detect_intent_texts(PROJECT_ID, 'df', line, language_code='en')
+        detect_intent_texts(PROJECT_ID, 'df', line, 'en-US', pg)
