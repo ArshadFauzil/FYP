@@ -121,23 +121,6 @@ def upload_file():
 def generate_intermediate_code():
     lines = DB_Manager.get_pseudocode_from_db()[0]
     full_pc = ""
-    # try:
-    #     for line in lines:
-    #         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, [line], 'en-US')
-    #         full_pc = full_pc + '\n' + pc
-    #
-    #     print(full_pc)
-    #     # f = open(os.path.join(app.config['DOWNLOAD_FOLDER']) + '/ipc.txt', "w+")
-    #     f = open("ipc.txt", "w+")
-    #     f.write(full_pc)
-    #     DB_Manager.delete_all_documents("pseudocodes_temp")
-    #     # path = "ipc.txt"
-    #     # return send_file(path, as_attachment=True)
-    #     return render_template('result1.html', statements=lines)
-    # except:
-    #     print("An Exception occurred")
-    #     return render_template('result1.html', statements=lines)
-
     for line in lines:
         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
         full_pc = full_pc + '\n' + pc

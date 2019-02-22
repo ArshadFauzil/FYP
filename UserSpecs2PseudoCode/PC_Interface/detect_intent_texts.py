@@ -2,12 +2,30 @@ import os
 from google.oauth2 import service_account
 from pseudo_manager import get_response
 from Similarity_engine import find_similar_intent
+from entities import entity_extractor
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 
 print('Credendtials from environ: {}'.format(credentials))
+
+
+class PseudoGen:
+    extract = entity_extractor.Extractor()
+    df_entity = open('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/df_entity').read()
+    parm_map = {}
+
+    for i, line in enumerate(df_entity.split("\n")):
+        try:
+            if line is not '':
+                content = line.split(',')
+            parm_map[content[0]] = (content[1])
+        except:
+            print("Unable to locate df_entity map")
+
+
+pg = PseudoGen()
 
 
 def detect_intent_texts(project_id, session_id, text, language_code):
@@ -43,14 +61,14 @@ def detect_intent_texts(project_id, session_id, text, language_code):
         fulfillment = find_similar_intent(str(query_text))
         print('Fulfillment text (by SE): {} (similarity: {})\n'.format(fulfillment[0], fulfillment[1]))
 
-    get_response(response)
+    get_response(response, pg)
     return fulfillment
 
 
 if __name__ == '__main__':
-    lines = ['obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt']
-    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
-    # lines = [line for line in full_corpus.readlines() if line.strip()]
+    # lines = ['find confusion matrix', 'obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt']
+    full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
+    lines = [line for line in full_corpus.readlines() if line.strip()]
 
     for line in lines:
         detect_intent_texts(PROJECT_ID, 'df', line, language_code='en')

@@ -40,9 +40,15 @@ def generate_entities(extractor, intent, line):
         param_value = entities_varname_value(entities_num)
         try:
             print('var name : {}'.format(param_vn[0]))
+        except:
+            param_vn.append('unknown')
+            print('var_name not received')
+
+        try:
             print('value : {}'.format(param_value))
         except:
-            print('var_name and value not received')
+            param_value.append('unknown')
+            print('value not received')
         print('*' * 40)
         return [param_vn[0], param_value]
 
@@ -59,6 +65,7 @@ def generate_entities(extractor, intent, line):
         try:
             print('var name : {}'.format(param[0]))
         except:
+            param.append('unknown')
             print('var_name is not received')
         print('*' * 40)
         return [param[0]]
@@ -71,6 +78,7 @@ def generate_entities(extractor, intent, line):
         try:
             print('var name : {}'.format(param[0]))
         except:
+            param.append('unknown')
             print('var_name is not received')
         print('*' * 40)
         return [param[0]]
@@ -83,6 +91,7 @@ def generate_entities(extractor, intent, line):
         try:
             print('var name : {}'.format(param))
         except:
+            param.append('unknown')
             print('var_name is not received')
         print('*' * 40)
         return [param]
@@ -101,9 +110,10 @@ def generate_entities(extractor, intent, line):
             for att in params[1]:
                 print('value other : {}'.format(att))
         except:
+            params.append('unknown')
             print('values are not received')
         print('*' * 40)
-        return params[0]
+        return [params[0]]
 
     # Drop columns - Range
     elif 'range' in req_ent_int and len(req_ent_int) == 1:
@@ -120,9 +130,10 @@ def generate_entities(extractor, intent, line):
             for att in params[1]:
                 print('value other : {}'.format(att))
         except:
+            params.append('unknown')
             print('values are not received')
         print('*' * 40)
-        return params[0]
+        return [params[0]]
 
     # Print, Import specific modules
     elif 'value_s' in req_ent_int and len(req_ent_int) == 1:
@@ -132,6 +143,7 @@ def generate_entities(extractor, intent, line):
         try:
             print('value : {}'.format(param))
         except:
+            param.append('unknown')
             print('value_s is not received')
         print('*' * 40)
         return [param]
@@ -145,6 +157,7 @@ def generate_entities(extractor, intent, line):
         try:
             print('value : {}'.format(param))
         except:
+            param.append('unknown')
             print('value is not received')
         print('*' * 40)
         return [param]
@@ -156,9 +169,15 @@ def generate_entities(extractor, intent, line):
         params = entities_item_varname(entities)
         try:
             print('item : {}'.format(params[0]))
+        except:
+            params.append('unknown')
+            print('var_name is not received')
+
+        try:
             print('var name : {}'.format(params[1]))
         except:
-            print('var_name and item are not received')
+            params.append('unknown')
+            print('item is not received')
         print('*' * 40)
         return [params[0], params[1]]
 
@@ -170,11 +189,17 @@ def generate_entities(extractor, intent, line):
         param_values = entities_vals(entities)
         try:
             print('var name : {}'.format(param_vn[0]))
+        except:
+            param_vn.append('unknown')
+            print('var_name and value not received')
+
+        try:
             for p in param_values:
                 if p not in param_vn[0]:
                     print('value : {}'.format(p))
         except:
-            print('var_name and value not received')
+            param_values.append('unknown')
+            print('values not received')
         print('*' * 40)
         return [param_vn[0], param_values]
 
@@ -192,9 +217,10 @@ def generate_entities(extractor, intent, line):
             for att in params[1]:
                 print('value other : {}'.format(att))
         except:
+            params.append('unknown')
             print('class value is not received')
         print('*' * 40)
-        return params[0]
+        return [params[0]]
 
     # Assign Class instance to variable
     if 'var_name' in req_ent_int and 'instance' in req_ent_int:
@@ -206,9 +232,15 @@ def generate_entities(extractor, intent, line):
         param_inst = entities_instance(entities)
         try:
             print('var name : {}'.format(param_vn[0]))
+        except:
+            param_vn.append('unknown')
+            print('var_name not received')
+
+        try:
             print('instance : {}'.format(param_inst))
         except:
-            print('var_name and instance not received')
+            param_inst.append('unknown')
+            print('instance not received')
         print('*' * 40)
         return [param_vn[0], param_inst]
 
@@ -221,9 +253,15 @@ def generate_entities(extractor, intent, line):
         params = entities_varname_regxep(entities)
         try:
             print('var name : {}'.format(params[0]))
+        except:
+            params.append('unknown')
+            print('var_name is not received')
+
+        try:
             print('value : {}'.format(string[0]))
         except:
-            print('var_name is not received')
+            string.append('unknown')
+            print('string is not received')
         print('*' * 40)
         return [params[0], string[0]]
 
