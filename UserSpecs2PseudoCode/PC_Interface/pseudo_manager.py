@@ -127,6 +127,17 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'iterate for each ELEMENT in RANDOM_LIST'))
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'iterate for each ELEMENT in '
+                                                                                        'RANDOM_LIST'))
 
+    if intent == 'Assign Class instance to variable':
+        vn = entities_from_er[0]
+        ins = entities_from_er[1]
 
+        replacements = {'VAR': vn, 'INSTANCE': ins}
+
+        def replace(match):
+            return replacements[match.group(0)]
+
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
+                                                                                        'assign INSTANCE class'))
