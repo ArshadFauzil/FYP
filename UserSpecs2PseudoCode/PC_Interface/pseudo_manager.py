@@ -141,3 +141,12 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
 
         print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
                                                                                         'assign INSTANCE class'))
+
+    if intent == 'Normalization-Specific':
+        wild_cd['NORMALIZE'] = entities_from_er[0]
+
+    if intent == 'Numerization-Specific':
+        wild_cd['NUMERIZE'] = entities_from_er[0]
+
+    if intent == 'Predict clf':
+        wild_cd['PREDICT'] = entities_from_er[0]
