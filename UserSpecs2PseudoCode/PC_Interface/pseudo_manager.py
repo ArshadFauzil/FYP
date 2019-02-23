@@ -28,14 +28,14 @@ def get_response(response, pseudo_gen):
         print('Entities handle by ER')
         process_er(query_text, intent, parameters, pseudo_gen, wc)
 
-    print(wc)
+    pprint(wc)
 
 
 def process_er(query, intent, parameters, pseudo_gen, wild_cd):
     extract = pseudo_gen.extract
     entities_from_er = entity_extraction_app.generate_entities(extract, intent, query)
-    
-    if intent == 'Assign value to float variable' or intent == 'Assign value to integer variable':
+
+    if intent == 'Assign value to float variable' or intent == 'Assign value to integer variable' or intent == 'Assign value to String variable':
         var_name = 'VAR' + str(len(pseudo_gen.varn))
         var_val = 'VAR_VALUE' + str(len(pseudo_gen.var_value))
         pseudo_gen.varn.append(var_name)
@@ -51,35 +51,82 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
                                                                                         'assign VAR_VALUE'))
 
+    if intent == 'Define a variable':
+        var_name = 'VAR' + str(len(pseudo_gen.varn))
+        var_val = 'VAR_VALUE' + str(len(pseudo_gen.var_value))
+        pseudo_gen.varn.append(var_name)
+        pseudo_gen.var_value.append(var_val)
+        wild_cd[var_name] = entities_from_er[0]
+        wild_cd[var_val] = 'None'
+
+        replacements = {'VAR': var_name, 'VAR_VALUE': var_val}
+
+        def replace(match):
+            return replacements[match.group(0)]
+
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
+                                                                                        'assign VAR_VALUE'))
+    if intent == 'Define an array':
+        st_arr = 'STRING_ARRAY' + str(len(pseudo_gen.st_array))
+        pseudo_gen.st_array.append(st_arr)
+        pseudo_gen.st_values.append('STRING_VALUES' + str(len(pseudo_gen.st_values)))
+        wild_cd[st_arr] = entities_from_er[0]
+
+        replacements = {'STRING_ARRAY': st_arr}
+
+        def replace(match):
+            return replacements[match.group(0)]
+
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define empty array '
+                                                                                        'STRING_ARRAY'))
+    if intent == 'Append elements to a list':
+        st_arr = 'STRING_ARRAY' + str(len(pseudo_gen.st_array))
+        st_val = 'STRING_VALUES' + str(len(pseudo_gen.st_values))
+        pseudo_gen.st_array.append(st_arr)
+        pseudo_gen.st_values.append(st_val)
+        wild_cd[st_arr] = entities_from_er[0]
+        wild_cd[st_val] = entities_from_er[1]
+
+        replacements = {'STRING_ARRAY': st_arr, 'STRING_VALUES': st_val}
+
+        def replace(match):
+            return replacements[match.group(0)]
+
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define array STRING_ARRAY '
+                                                                                        'with values STRING_VALUES'))
+
+    if intent == 'Define Class':
+        wild_cd['TARGET_CLASS'] = entities_from_er[0]
+        print('define variable target_class and assign TARGET_CLASS')
+
+    if intent == 'Define features':
+        wild_cd['FEATURE_SET'] = entities_from_er[0]
+        print('define array features and assign FEATURE_SET')
+
+    if intent == 'Drop columns' or intent == 'Drop columns - Range':
+        wild_cd['ATTRIBUTES'] = entities_from_er[0]
+        print('drop attributes ATTRIBUTES from dataframe')
+
+    if intent == 'SplitDataset-Test' or intent == 'SplitDataset-Train':
+        if intent == 'SplitDataset-Test':
+            wild_cd['SPLIT_RATIO'] = 1-float(entities_from_er[0])
+        else:
+            wild_cd['SPLIT_RATIO'] = entities_from_er[0]
+        print('define variable split and assign SPLIT_RATIO')
+
+    if intent == 'ForEach Loop':
+        ele = 'ELEMENT' + str(len(pseudo_gen.element))
+        rn_arr = 'RANDOM_LIST' + str(len(pseudo_gen.rn_array))
+        pseudo_gen.element.append(ele)
+        pseudo_gen.rn_array.append(rn_arr)
+        wild_cd[ele] = entities_from_er[0]
+        wild_cd[rn_arr] = entities_from_er[1]
+
+        replacements = {'ELEMENT': ele, 'RANDOM_LIST': rn_arr}
+
+        def replace(match):
+            return replacements[match.group(0)]
+
+        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'iterate for each ELEMENT in RANDOM_LIST'))
 
 
-    # if intent == 'Append elements to a list':
-    #     standard_pc = 'define array STRING_ARRAY with values STRING_VALUES'
-    #
-    #     for r in (("STRING_ARRAY", "red"), ("STRING_VALUES", "quick")):
-    #         standard_pc = standard_pc.replace(*r)
-
-    # len_param = len(parameters)
-    # print(len_param)
-    #
-    # if len_param == 1:
-    #     entities_from_er = entity_extraction_app.generate_entities(extract, intent, query_text)
-    #     try:
-    #         print(list(parameters.keys())[0] + ":" + entities_from_er[0])
-    #     except:
-    #         print(list(parameters.keys())[0] + ":" + str(len(entities_from_er[0])))
-    #
-    # if len_param > 1:
-    #     entities_from_er = entity_extraction_app.generate_entities(extract, intent, query_text)
-    #     entity_name = list(parameters.keys())
-    #     for en in entity_name:
-    #         try:
-    #             er_name = parm_map[en]
-    #         except:
-    #             er_name = 'None'
-    #         if er_name == 'var_name':
-    #             print(en + ":" + entities_from_er[0])
-    #         elif er_name == 'percentage':
-    #             print(en + ":" + entities_from_er[0])
-    #         elif er_name is not 'none':
-    #             print(en + ":" + entities_from_er[1])

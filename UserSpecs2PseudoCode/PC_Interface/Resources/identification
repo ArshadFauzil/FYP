@@ -21,8 +21,8 @@ End,N
 End of for loop,N
 End of IF,N
 End of while loop,N
-For Loop ,DF
-ForEach Loop ,ER
+For Loop,DF
+ForEach Loop,ER
 IF condition - not,DF
 IF condition - simple,DF
 IF condition - statement (!=),DF
@@ -42,7 +42,7 @@ Print,ER
 Remove Null Target Classes,N
 Replace NaN values,DF
 SplitDataset,N
-SplitDataset-Test ,ER
-SplitDataset-Train ,ER
+SplitDataset-Test,ER
+SplitDataset-Train,ER
 Start Algorithm,N
-While_Loop ,DF
+While_Loop,DF

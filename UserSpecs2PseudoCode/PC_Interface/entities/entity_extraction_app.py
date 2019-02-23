@@ -195,7 +195,9 @@ def generate_entities(extractor, intent, line):
 
         try:
             for p in param_values:
-                if p not in param_vn[0]:
+                if p in param_vn[0]:
+                    param_values.remove(p)
+                else:
                     print('value : {}'.format(p))
         except:
             param_values.append('unknown')
