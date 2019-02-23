@@ -3,7 +3,6 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-# from rasa_nlu.converters import load_data
 from pprint import pprint
 
 import os
@@ -11,7 +10,6 @@ import pymongo
 from rasa_nlu.training_data import load_data
 
 from rasa_nlu.config import RasaNLUModelConfig
-# from rasa_nlu.config import RasaNLUConfig
 from rasa_nlu.model import Trainer, Metadata, Interpreter
 from rasa_nlu import config
 
@@ -31,10 +29,6 @@ def run(line):
     interpreter = Interpreter.load('./models/nlu/default/chat')
     print(line + "\n")
     pprint(interpreter.parse(line))
-    # pprint(interpreter.parse(line)["intent_ranking"][:2])
-    # pprint(interpreter.parse('use data manipulation library'))
-    # pprint(interpreter.parse('using multidimensional array operator'))
-    # pprint(interpreter.parse('use Random Forrest '))
 
 
 def get_pseudocode_from_db():
@@ -48,7 +42,10 @@ def get_pseudocode_from_db():
 
 
 if __name__ == '__main__':
-    pc_lines = get_pseudocode_from_db()[147]
+    # pc_lines = get_pseudocode_from_db()[147]
+    full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
+    pc_lines = [line for line in full_corpus.readlines() if line.strip()]
+
     # train('./training_data.json', './config.yml', './models/nlu')
     # run()
     for line in pc_lines:
