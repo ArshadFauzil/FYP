@@ -1,8 +1,5 @@
-TARGET_CLASS,
-VAR_VALUE0,90
-VAR2,rt
-VAR1,mal
-DATASET,filtered_zomato.csv
-VAR_VALUE1,'They are competetive'
-VAR0,F
-VAR_VALUE2,89.6
+TARGET_CLASS,type
+ATTRIBUTES,['sq__ft', 'sale_date']
+SPLIT_RATIO,0.76
+DATASET,Sacramentorealestatetransactions.csv
+FEATURE_SET,['zip', 'beds', 'baths', 'price', 'latitude', 'longitude', 'state']

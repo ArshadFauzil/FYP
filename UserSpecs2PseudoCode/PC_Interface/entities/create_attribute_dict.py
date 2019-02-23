@@ -1,14 +1,20 @@
 from pprint import pprint
 import read_attributes
 from collections import defaultdict
-import app
+
 
 data_dict = defaultdict(list)
 file_path = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources/'
+file_name = ''
+
+
+def find_filename(fn):
+    global file_name
+    file_name = fn
 
 
 def create_dict():
-    att = read_attributes.get_only_columns(file_path+app.data_set_name)
+    att = read_attributes.get_only_columns(file_path+file_name)
 
     att_dict = {}
 
@@ -26,7 +32,7 @@ def create_dict():
 
 
 def create_indexed_dict():
-    att = read_attributes.get_only_columns(file_path+app.data_set_name)
+    att = read_attributes.get_only_columns(file_path+file_name)
 
     att_dict = {}
 

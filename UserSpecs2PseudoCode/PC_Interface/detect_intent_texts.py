@@ -3,7 +3,7 @@ from google.oauth2 import service_account
 from pseudo_manager import generate_pseudo_code
 from Similarity_engine import find_similar_intent
 from entities import entity_extractor
-import csv
+import json
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
@@ -33,15 +33,18 @@ def line_manipulator(pc_lines, ds_name):
     pg = PseudoGen()
     pg.wildcard['DATASET'] = ds_name
     full_pc = ''
+    spc_lines = []
     for l in pc_lines:
         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, l, 'en-US', pg)
         full_pc = full_pc + '\n' + str(pc)
+        spc_lines.append(pc)
 
-    with open('wildcard.csv', 'w') as f:
-        for key in pg.wildcard.keys():
-            f.write("%s,%s\n" % (key, pg.wildcard[key]))
+    json_dump = json.dumps(pg.wildcard)
+    f = open("wildcard.json", "w")
+    f.write(json_dump)
+    f.close()
 
-    return full_pc
+    return [full_pc, spc_lines]
 
 
 def detect_intent_texts(project_id, session_id, text, language_code, pseudo_gen):

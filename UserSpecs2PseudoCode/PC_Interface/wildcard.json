@@ -1,0 +1,1 @@
+{"VAR1": "proteus", "VAR0": "x", "DATASET": "Sacramentorealestatetransactions.csv", "STRING_ARRAY0": "stu_records", "VAR2": "student_name", "VAR_VALUE1": "745.23", "STRING_ARRAY1": "use", "TARGET_CLASS": "baths", "VAR_VALUE2": "None", "SPLIT_RATIO": 0.84, "ATTRIBUTES": ["street", "city", "zip", "state", "beds"], "VAR_VALUE0": "None"}

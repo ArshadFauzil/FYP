@@ -24,11 +24,14 @@ def generate_pseudo_code(response, pseudo_gen):
     if idnt_map[intent] == 'N':
         return fulfillment
     elif idnt_map[intent] == 'DF':
-        process_df(intent, parameters, pseudo_gen, wc)
-        if intent != 'For Loop':
+        pc = process_df(intent, parameters, pseudo_gen, wc)
+        if intent == 'For Loop':
+            return pc
+        else:
             return fulfillment
     elif idnt_map[intent] == 'ER':
-        process_er(query_text, intent, parameters, pseudo_gen, wc)
+        pc = process_er(query_text, intent, parameters, pseudo_gen, wc)
+        return pc
 
     pprint(wc)
 
@@ -108,7 +111,7 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         return pc
 
     if intent == 'Define Class':
-        wild_cd['TARGET_CLASS'] = entities_from_er[0]
+        wild_cd['TARGET_CLASS'] = str(entities_from_er[0][0])
         pc = 'define variable target_class and assign TARGET_CLASS'
         print(pc)
         return pc

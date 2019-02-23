@@ -2,11 +2,12 @@ from __future__ import absolute_import
 from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for, send_file
-from detect_intent_texts import detect_intent_texts, line_manipulator, PseudoGen
+from detect_intent_texts import detect_intent_texts, line_manipulator
 from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
 from API_manager import enter_new_entity
 import DB_Manager
+from entities import create_attribute_dict
 
 app = Flask(__name__)
 
@@ -109,6 +110,7 @@ def upload_file():
             filename = secure_filename(file.filename)
             global data_set_name
             data_set_name = filename
+            create_attribute_dict.find_filename(data_set_name)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             columns = get_columns(UPLOAD_FOLDER + '/' + filename)
             file_names = get_file_name(filename)
@@ -129,11 +131,11 @@ def generate_intermediate_code():
     #     pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
     #     full_pc = full_pc + '\n' + pc
 
-    print(full_pc)
+    print(full_pc[0])
     f = open("ipc.txt", "w+")
-    f.write(full_pc)
+    f.write(full_pc[0])
     DB_Manager.delete_all_documents("pseudocodes_temp")
-    return render_template('result1.html', statements=lines)
+    return render_template('result1.html', statements=full_pc[1])
 
 
 @app.route('/sc', methods=['GET'])
