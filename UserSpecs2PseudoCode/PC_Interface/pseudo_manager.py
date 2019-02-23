@@ -7,8 +7,7 @@ from entities import entity_extraction_app
 ds_name = ''
 
 
-def get_response(response, pseudo_gen):
-    parm_map = pseudo_gen.parm_map
+def generate_pseudo_code(response, pseudo_gen):
     idnt_map = pseudo_gen.idnt_map
     query_text = response.query_result.query_text
     intent = response.query_result.intent.display_name
@@ -23,12 +22,12 @@ def get_response(response, pseudo_gen):
     wc = pseudo_gen.wildcard
 
     if idnt_map[intent] == 'N':
-        print('No entities involved')
+        return fulfillment
     elif idnt_map[intent] == 'DF':
-        print('Entities handle by DF')
-        process_df(query_text, intent, parameters, pseudo_gen, wc)
+        process_df(intent, parameters, pseudo_gen, wc)
+        if intent != 'For Loop':
+            return fulfillment
     elif idnt_map[intent] == 'ER':
-        print('Entities handle by ER')
         process_er(query_text, intent, parameters, pseudo_gen, wc)
 
     pprint(wc)
@@ -51,8 +50,10 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
-                                                                                        'assign VAR_VALUE'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
+                                                                                       'assign VAR_VALUE')
+        print(pc)
+        return pc
 
     if intent == 'Define a variable':
         var_name = 'VAR' + str(len(pseudo_gen.varn))
@@ -67,8 +68,11 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
-                                                                                        'assign VAR_VALUE'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and assign '
+                                                                                       'VAR_VALUE')
+        print(pc)
+        return pc
+
     if intent == 'Define an array':
         st_arr = 'STRING_ARRAY' + str(len(pseudo_gen.st_array))
         pseudo_gen.st_array.append(st_arr)
@@ -80,8 +84,11 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define empty array '
-                                                                                        'STRING_ARRAY'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define empty array '
+                                                                                       'STRING_ARRAY')
+        print(pc)
+        return pc
+
     if intent == 'Append elements to a list':
         st_arr = 'STRING_ARRAY' + str(len(pseudo_gen.st_array))
         st_val = 'STRING_VALUES' + str(len(pseudo_gen.st_values))
@@ -95,27 +102,37 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define array STRING_ARRAY '
-                                                                                        'with values STRING_VALUES'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define array STRING_ARRAY '
+                                                                                       'with values STRING_VALUES')
+        print(pc)
+        return pc
 
     if intent == 'Define Class':
         wild_cd['TARGET_CLASS'] = entities_from_er[0]
-        print('define variable target_class and assign TARGET_CLASS')
+        pc = 'define variable target_class and assign TARGET_CLASS'
+        print(pc)
+        return pc
 
     if intent == 'Define features':
         wild_cd['FEATURE_SET'] = entities_from_er[0]
-        print('define array features and assign FEATURE_SET')
+        pc = 'define array features and assign FEATURE_SET'
+        print(pc)
+        return pc
 
     if intent == 'Drop columns' or intent == 'Drop columns - Range':
         wild_cd['ATTRIBUTES'] = entities_from_er[0]
-        print('drop attributes ATTRIBUTES from dataframe')
+        pc = 'drop attributes ATTRIBUTES from dataframe'
+        print(pc)
+        return pc
 
     if intent == 'SplitDataset-Test' or intent == 'SplitDataset-Train':
         if intent == 'SplitDataset-Test':
-            wild_cd['SPLIT_RATIO'] = 1-float(entities_from_er[0])
+            wild_cd['SPLIT_RATIO'] = 1 - float(entities_from_er[0])
         else:
             wild_cd['SPLIT_RATIO'] = entities_from_er[0]
-        print('define variable split and assign SPLIT_RATIO')
+        pc = 'define variable split and assign SPLIT_RATIO'
+        print(pc)
+        return pc
 
     if intent == 'ForEach Loop':
         ele = 'ELEMENT' + str(len(pseudo_gen.element))
@@ -130,8 +147,10 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'iterate for each ELEMENT in '
-                                                                                        'RANDOM_LIST'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'iterate for each ELEMENT in '
+                                                                                       'RANDOM_LIST')
+        print(pc)
+        return pc
 
     if intent == 'Assign Class instance to variable':
         vn = entities_from_er[0]
@@ -142,8 +161,10 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         def replace(match):
             return replacements[match.group(0)]
 
-        print(re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
-                                                                                        'assign INSTANCE class'))
+        pc = re.sub('|'.join(r'\b%s\b' % re.escape(s) for s in replacements), replace, 'define variable VAR and '
+                                                                                       'assign INSTANCE class')
+        print(pc)
+        return pc
 
     if intent == 'Normalization-Specific':
         wild_cd['NORMALIZE'] = entities_from_er[0]
@@ -155,7 +176,7 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
         wild_cd['PREDICT'] = entities_from_er[0]
 
 
-def process_df(query, intent, parameters, pseudo_gen, wild_cd):
+def process_df(intent, parameters, pseudo_gen, wild_cd):
     if intent == 'Define K in KNN':
         wild_cd['NEIGHBOURS'] = int(parameters['number-integer'])
 
@@ -163,7 +184,7 @@ def process_df(query, intent, parameters, pseudo_gen, wild_cd):
         num = 'RANDOM_NUMBER' + str(len(pseudo_gen.rn_num))
         pseudo_gen.rn_num.append(num)
         wild_cd[num] = int(parameters['number-integer'])
+        return 'iterate for ' + num + 'times'
 
-    elif intent == 'Load dataset':
-        ds = wild_cd['DATASET']
-        print('define variable df and read dataset {} csv file'.format(ds))
+    # elif intent == 'Load dataset':
+    #     ds = wild_cd['DATASET']
