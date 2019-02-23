@@ -3,19 +3,32 @@ import numpy as np
 import re
 from sklearn import preprocessing
 from sklearn.preprocessing import Imputer
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import MinMaxScaler
 import nltk
 from nltk.stem import WordNetLemmatizer
 # nltk.download('wordnet')
 from scipy import stats
+import os
+import time
 
 wnl = WordNetLemmatizer()
 
-allNumeric_df = pd.read_csv('E:/Campus/FYP/NEW/DataSet/Full numerical/heart.csv',encoding='iso-8859-1')
-numANDcat_df = pd.read_csv('E:/Campus/FYP/NEW/DataSet/Nu & Cat/googleplaystore.csv',encoding = "iso-8859-1")
+datasetName = 'zomato'
+classVarible = 'Rating color'
+path = "Feature_Engineering_output/"+datasetName+"/"
 
-#Find multivaled attributs
-pluralColumns = []
-multValueColumns = []
+numANDcat_df = pd.read_csv('E:/Campus/FYP/NEW/DataSet/Nu & Cat/'+datasetName+'.csv',encoding = "iso-8859-1")
+
+try:
+    os.mkdir(path)
+except OSError:
+    print ("Creation of the directory %s failed" % path)
+    print()
+else:
+    print ("Successfully created the directory %s " % path)
+    print()
+
 
 def isplural(word):
     lemma = wnl.lemmatize(word, 'n')
@@ -31,8 +44,24 @@ def binarizing(df,col_name,separator):
     dummies = dummies.groupby(dummies.columns, axis=1).sum()
     df = df.drop([col_name], axis=1)
     buinarized_df = pd.concat([df, dummies], axis=1, join_axes=[df.index])
-    # buinarized_df.to_csv("dummy.csv", index=False, encoding="iso-8859-1" )
     return buinarized_df
+
+def convertDateTime(col):
+    notDateCount = 0
+    notDateElement = []
+    for i,val in enumerate(numANDcat_df[col]):
+        # print(str(i)+' '+str(val))
+        try:
+            pd.to_datetime(val)
+        except:
+            notDateCount = notDateCount+1
+            notDateElement.append(i)
+
+    persentage = (notDateCount/numANDcat_df[col].count())*100
+    if persentage<5:
+        for no in notDateElement:
+            numANDcat_df.at[no, col] = np.nan
+        numANDcat_df[col] = pd.to_datetime(numANDcat_df[col])
 
 def numerization(col):
     strElementCount = 0
@@ -47,7 +76,10 @@ def numerization(col):
     if persentage<5:
         for no in strElement:
             numANDcat_df.at[no, col] = re.sub('[^0-9.]+','',numANDcat_df[col][no])
-        numANDcat_df[col] = pd.to_numeric(numANDcat_df[col])
+        try:
+            numANDcat_df[col] = pd.to_numeric(numANDcat_df[col])
+        except:
+            pass
 
 def removePlusOfNumber(col):
     plusCount = 0
@@ -60,139 +92,258 @@ def removePlusOfNumber(col):
     persentage = (plusCount/numANDcat_df[col].count())*100
     if persentage>95:
         for i,val in enumerate(numANDcat_df[col]):
-            numANDcat_df.at[i, col] = re.sub('((?<=\d)\+)|(,)|(\D)','',numANDcat_df[col][i])
+            try:
+                numANDcat_df.at[i, col] = re.sub('((?<=\d)\+)|(,)|(\D)','',numANDcat_df[col][i])
+            except:
+                break
         try:
             numANDcat_df[col] = pd.to_numeric(numANDcat_df[col])
         except:
-            print('can not removePlusOfNumber')
+            pass
 
 def lebleEncorder(column):
     le = preprocessing.LabelEncoder()
     le.fit(numANDcat_df[column].astype(str))
     numANDcat_df[column] = le.transform(numANDcat_df[column].astype(str))
 
+print("Start feature engineering")
+
+#Remove columns unique value is 1
+uniques = numANDcat_df.apply(lambda x: x.nunique())
+numANDcat_df = numANDcat_df.drop(uniques[uniques==1].index, axis=1)
+print("Uniqueness 1 columns")
+print(uniques[uniques==1].index)
+print()
+
+#Find multivaled attributs
+print("Finding multiValued attributes")
+start = time.clock()
+pluralColumns = []
+multValueColumns = []
+
 for nn in numANDcat_df.columns.values:
     plural = isplural(nn.lower())
     if(plural==True):
         pluralColumns.append(nn)
 
-separator = None
+separator = []
 for pluralCol in pluralColumns:
     for val in numANDcat_df[pluralCol]:
         if(type(val)==str):
             if(val.count(';')>0):
                 multValueColumns.append(pluralCol)
-                separator = ","
+                separator.append(";")
                 break
             if (val.count(',') > 0):
                 multValueColumns.append(pluralCol)
-                separator = ";"
+                separator.append(",")
                 break
 
-# for mul_col in multValueColumns:
-#     numANDcat_df = binarizing(numANDcat_df,mul_col,separator)
-#
-# numANDcat_df.to_csv("dummy.csv", index=False, encoding="iso-8859-1" )
-
-#get colomn data type
-for col in numANDcat_df.columns:
-    if numANDcat_df[col].dtype == 'object':
-        try:
-            numANDcat_df[col] = pd.to_datetime(numANDcat_df[col])
-        except ValueError:
-            pass
+if(len(multValueColumns)!=0):
+    print("Multivalued attribte founded!  Colomn names="+str(multValueColumns)+"  separators="+str(separator))
+    for i,mul_col in enumerate(multValueColumns):
+        numANDcat_df = binarizing(numANDcat_df,mul_col,separator[i])
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/1_dummy.csv", index=False, encoding="iso-8859-1" )
+print(round((time.clock() - start)/60,4))
+print()
 
 #numarize data set
+print("numerizing")
+start = time.clock()
 for col in numANDcat_df.columns:
     numerization(col)
+print(round((time.clock() - start)/60,4))
+print()
 
 #plus remove
+print("Removing plus charcters")
+start = time.clock()
 for col in numANDcat_df.columns:
     removePlusOfNumber(col)
+print(round((time.clock() - start)/60,4))
+print()
+
+#covenvert date time colomns to relavant format
+# print("identifing date columns")
+# start = time.clock()
+# isTemporal = False
+# for col in numANDcat_df.columns:
+#     if numANDcat_df[col].dtype == 'object':
+#         try:
+#             numANDcat_df[col] = pd.to_datetime(numANDcat_df[col])
+#             isTemporal = True
+#         except ValueError:
+#             pass
+# if(isTemporal==False):
+#     for col,type in enumerate(numANDcat_df.dtypes):
+#         if(type==object):
+#             convertDateTime(numANDcat_df.columns[col])
+# print(round((time.clock() - start)/60,4))
+# print()
 
 colomnDataTypes = numANDcat_df.dtypes
+# print(colomnDataTypes)
 
-# print(numANDcat_df.columns[0])
-
+numCol = []
+catCol = []
+for col in numANDcat_df.columns:
+    if (numANDcat_df[col].dtype == 'float64')or(numANDcat_df[col].dtype == 'int64'):
+        numCol.append(col)
+for col in numANDcat_df.columns:
+    if (numANDcat_df[col].dtype == 'object'):
+        catCol.append(col)
 
 #use label encoder
-for col,type in enumerate(colomnDataTypes):
-    if (type == object):
+print("LableEncording")
+start = time.clock()
+encordedCol = []
+for col,type in enumerate(numANDcat_df.dtypes):
+    if ((type == object) or (type == bool)):
         lebleEncorder(numANDcat_df.columns[col])
-
+        encordedCol.append(numANDcat_df.columns[col])
+if(len(encordedCol)>0):
+    print("Encorded Columns")
+    print(encordedCol)
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/2_encorded.csv", index=False, encoding="iso-8859-1" )
+print(round((time.clock() - start)/60,4))
+print()
 
 
 #find duplicate rows
+print('Finding & deleting duplicate rows')
+start = time.clock()
 dup_temp = numANDcat_df.duplicated()
 duplicate_row = []
 for i,val in enumerate(dup_temp):
     if(val==True):
         duplicate_row.append(i)
-
 numANDcat_df = numANDcat_df.drop(duplicate_row)
 numANDcat_df = numANDcat_df.reset_index(drop=True)
 
-
-
-#Find empty cells , colomn wise
-# empty_tp = np.where(pd.isnull(numANDcat_df))
-# empty=[]
-# for i in numANDcat_df.columns:
-#     empty.append([])
-# for i,val in enumerate(empty_tp[1]):
-#     empty[val].append(empty_tp[0][i])
-
-#fix empty cell
-catCol = []
-for col,type in enumerate(colomnDataTypes):
-    if (type == object):
-        catCol.append(numANDcat_df.columns[col])
-
-numANDcat_df = numANDcat_df.dropna(subset=catCol)
-numANDcat_df = numANDcat_df.reset_index(drop=True)
+#delete date colomns
+dateColumns = []
+for col,type in enumerate(numANDcat_df.dtypes):
+    if re.search('datetime',str(type)):
+        dateColumns.append(numANDcat_df.columns[col])
+numANDcat_df = numANDcat_df.drop(dateColumns, axis=1)
+print(round((time.clock() - start)/60,4))
+print()
 
 temporal = False
 
-for type in colomnDataTypes:
+for type in numANDcat_df.dtypes:
     if re.search('datetime',str(type)):
         temporal = True
         break
 
+if(temporal==True):
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/3_encordedWithoutDateCol.csv", index=False, encoding="iso-8859-1" )
+
+# Find empty cells , colomn wise
+print("Finding & filling empty cells")
+start = time.clock()
+empty_tp = np.where(pd.isnull(numANDcat_df))
+empty=[]
+emptyAll =[]
+for i in numANDcat_df.columns:
+    empty.append([])
+for i,val in enumerate(empty_tp[1]):
+    empty[val].append(empty_tp[0][i])
+    emptyAll.append(empty_tp[0][i])
+
+#fix empty cell
+numANDcat_df = numANDcat_df.dropna(subset=catCol)
+numANDcat_df = numANDcat_df.reset_index(drop=True)
+
 if (temporal):
     numANDcat_df = numANDcat_df.fillna(method='ffill')
 else:
-    fill_NaN = Imputer(missing_values=np.nan, strategy='mean', axis=1)
-    imputed_DF = pd.DataFrame(fill_NaN.fit_transform(numANDcat_df))
-    imputed_DF.columns = numANDcat_df.columns
+    fill_NaN = SimpleImputer(missing_values=np.nan, strategy='mean')
+    imputed_DF = pd.DataFrame(fill_NaN.fit_transform(numANDcat_df), columns=numANDcat_df.columns)
     imputed_DF.index = numANDcat_df.index
     numANDcat_df = imputed_DF
-
-
+numANDcat_df = numANDcat_df.round(2)
+if (len(emptyAll)>0):
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/4_emptyValueFilled.csv", index=False, encoding="iso-8859-1" )
+print(round((time.clock() - start)/60,4))
+print("empty cells")
+print(empty)
+print()
 
 #identify outliers(only apply numerical values)
+print("identifing outliers")
+start = time.clock()
 z = np.abs(stats.zscore(numANDcat_df))
-# outliers_tp = np.where(z >= 3)
+outliers_tp = np.where(z >= 5)
 numANDcat_df = numANDcat_df[(z < 5).all(axis=1)]  #delete outliers
 
-# outliers=[]
-# for i in allNumeric_df.columns:
-#     outliers.append([])
-# for i,val in enumerate(outliers_tp[1]):
-#     outliers[val].append(outliers_tp[0][i])
+outliers=[]
+outliersAll=[]
+for i in numANDcat_df.columns:
+    outliers.append([])
+for i,val in enumerate(outliers_tp[1]):
+    outliers[val].append(outliers_tp[0][i])
+    outliersAll.append(outliers_tp[0][i])
+
+if(len(outliersAll)>0):
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/5_outlierRemoved.csv", index=False, encoding="iso-8859-1" )
+print(round((time.clock() - start)/60,4))
+print("Outliers")
+print(outliers)
+print()
 
 
 #Find corelated attribute
+print("identifing coralated attributes")
+start = time.clock()
 corr_matrix=numANDcat_df.corr().abs()  #Compute pairwise correlation of columns (pearson : standard correlation coefficient)
 upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(np.bool)) # Select upper triangle of correlation matrix
 to_drop = [column for column in upper.columns if any(upper[column] > 0.95)] # Find index of feature columns with correlation greater than 0.95
+try:
+    to_drop.remove(classVarible)
+except:
+    pass
 
-numANDcat_df.drop(to_drop, axis=1)
+numANDcat_df = numANDcat_df.drop(to_drop, axis=1)
+print(round((time.clock() - start)/60,4))
+print('Corelated attributes')
+print(to_drop)
+print()
+if(len(to_drop)>0):
+    numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/6_corelatedAttributeRemoved.csv", index=False, encoding="iso-8859-1" )
 
-# #Normalize data set
-x = numANDcat_df.values #returns a numpy array
-min_max_scaler = preprocessing.MinMaxScaler()
-x_scaled = min_max_scaler.fit_transform(x)
-numANDcat_df = pd.DataFrame(x_scaled, columns=numANDcat_df.columns)
-numANDcat_df = numANDcat_df.round(3)
+#Normalize data set
+print("Normalizing")
+start = time.clock()
+try:
+    numCol.remove(classVarible)
+except:
+    pass
+for col in to_drop:
+    try:
+        numCol.remove(col)
+    except:
+        pass
+normalizedCol = []
+for col in numANDcat_df.columns:
+    normalizedCol.append(col)
+try:
+    normalizedCol.remove(classVarible)
+except:
+    pass
+for col in to_drop:
+    try:
+        normalizedCol.remove(col)
+    except:
+        pass
 
-numANDcat_df.to_csv("processed.csv", index=False, encoding="utf-8")
+scaler = MinMaxScaler()
+numANDcat_df[normalizedCol] = scaler.fit_transform(numANDcat_df[normalizedCol])
+numANDcat_df = numANDcat_df.round(2)
+print(round((time.clock() - start)/60,4))
+print("Columns normalize")
+print(normalizedCol)
+print()
+
+print("PreProccessing Finished")
+numANDcat_df.to_csv("Feature_Engineering_output/"+datasetName+"/7_normerlized.csv", index=False, encoding="utf-8")
