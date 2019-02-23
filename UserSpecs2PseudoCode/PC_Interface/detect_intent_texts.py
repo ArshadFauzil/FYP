@@ -19,6 +19,7 @@ class PseudoGen:
     parm_map = {}
     idnt_map = {}
     wildcard = {"NEIGHBORS": '', 'RANDOM_NUMBER': '', 'DATASET': ''}
+    st_array, st_values, varn, var_value = ([] for i in range(4))
 
     for i, line in enumerate(df_entity.split("\n")):
         try:
@@ -84,8 +85,8 @@ def detect_intent_texts(project_id, session_id, text, language_code, pseudo_gen)
 
 
 if __name__ == '__main__':
-    lines = ['initialize an empty integer variable named F',
-             'obtain the predicted classes for my_list by using the model', 'assign 6 to variable rt',
+    lines = ['initialize integer variable named F with value 90',
+             'obtain the predicted classes for my_list by using the model', 'assign 89.6 to variable rt',
              'find accuracy of model']
     # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
     # lines = [line for line in full_corpus.readlines() if line.strip()]
