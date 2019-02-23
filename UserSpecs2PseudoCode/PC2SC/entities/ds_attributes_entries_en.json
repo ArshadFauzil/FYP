@@ -6,155 +6,87 @@
     ]
   },
   {
-    "value": "0",
+    "value": "street",
     "synonyms": [
-      "0",
+      "street",
       "column1"
     ]
   },
   {
-    "value": "requesting accuracy",
+    "value": "city",
     "synonyms": [
-      "requesting_accuracy",
+      "city",
       "column2"
     ]
   },
   {
-    "value": "runs",
+    "value": "zip",
     "synonyms": [
-      "runs"
-    ]
-  },
-  {
-    "value": "\u0027Milan\u0027",
-    "synonyms": [
-      "\u0027Milan\u0027"
-    ]
-  },
-  {
-    "value": "\u0027Madusha\u0027",
-    "synonyms": [
-      "\u0027Madusha\u0027"
-    ]
-  },
-  {
-    "value": "flowers",
-    "synonyms": [
-      "flowers"
-    ]
-  },
-  {
-    "value": "computer",
-    "synonyms": [
-      "computer"
-    ]
-  },
-  {
-    "value": "phone",
-    "synonyms": [
-      "phone"
-    ]
-  },
-  {
-    "value": "findex2",
-    "synonyms": [
-      "findex2"
-    ]
-  },
-  {
-    "value": "weight",
-    "synonyms": [
-      "weight"
-    ]
-  },
-  {
-    "value": "length",
-    "synonyms": [
-      "length"
-    ]
-  },
-  {
-    "value": "feature 1",
-    "synonyms": [
-      "feature 1"
-    ]
-  },
-  {
-    "value": "feature 5",
-    "synonyms": [
-      "feature 5"
-    ]
-  },
-  {
-    "value": "column 1",
-    "synonyms": [
-      "column 1"
-    ]
-  },
-  {
-    "value": "column 7",
-    "synonyms": [
-      "column 7"
-    ]
-  },
-  {
-    "value": "9999",
-    "synonyms": [
-      "9999"
-    ]
-  },
-  {
-    "value": "column5",
-    "synonyms": [
-      "column5"
-    ]
-  },
-  {
-    "value": "feature 10",
-    "synonyms": [
-      "feature 10"
-    ]
-  },
-  {
-    "value": "attribute1",
-    "synonyms": [
-      "attribute1"
-    ]
-  },
-  {
-    "value": "attribute7",
-    "synonyms": [
-      "attribute7"
-    ]
-  },
-  {
-    "value": "column3",
-    "synonyms": [
+      "zip",
       "column3"
     ]
   },
   {
-    "value": "distance",
+    "value": "state",
     "synonyms": [
-      "distance"
+      "state",
+      "column4"
     ]
   },
   {
-    "value": "velocity",
+    "value": "beds",
     "synonyms": [
-      "velocity"
+      "beds",
+      "column5"
     ]
   },
   {
-    "value": "name",
+    "value": "baths",
     "synonyms": [
-      "name"
+      "baths",
+      "column6"
     ]
   },
   {
-    "value": "sales",
+    "value": "sq__ft",
     "synonyms": [
-      "sales"
+      "sq__ft",
+      "column7"
+    ]
+  },
+  {
+    "value": "type",
+    "synonyms": [
+      "type",
+      "column8"
+    ]
+  },
+  {
+    "value": "sale_date",
+    "synonyms": [
+      "sale_date",
+      "column9"
+    ]
+  },
+  {
+    "value": "price",
+    "synonyms": [
+      "price",
+      "column10"
+    ]
+  },
+  {
+    "value": "latitude",
+    "synonyms": [
+      "latitude",
+      "column11"
+    ]
+  },
+  {
+    "value": "longitude",
+    "synonyms": [
+      "longitude",
+      "column12"
     ]
   }
 ]

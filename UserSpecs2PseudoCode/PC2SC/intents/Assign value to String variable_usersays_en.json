@@ -1,5 +1,29 @@
 [
   {
+    "id": "5f1ab9e9-8bf2-4760-9053-48546bd3e339",
+    "data": [
+      {
+        "text": "add \u0027Tom is a man\u0027 to variable mal",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550901238
+  },
+  {
+    "id": "b57d4472-6070-4241-9514-f3612d3b7a0b",
+    "data": [
+      {
+        "text": "initialize string variable named FUZ with \u0027Fuz is my name\u0027",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550898922
+  },
+  {
     "id": "d73bc163-9f24-4a00-889f-3ebd380bb4d6",
     "data": [
       {

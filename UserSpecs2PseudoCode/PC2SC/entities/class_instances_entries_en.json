@@ -1,23 +1,20 @@
 [
   {
-    "value": "standard scaler class",
+    "value": "standard scaler",
     "synonyms": [
-      "standard scaler class",
+      "Standard Scaler",
       "standard_scaler_class",
-      "standard scaler"
+      "standard_scaler",
+      "StandardScaler"
     ]
   },
   {
-    "value": "label encoder class",
+    "value": "label encoder",
     "synonyms": [
       "label encoder class",
-      "label_encoder_class"
-    ]
-  },
-  {
-    "value": "label encoder class",
-    "synonyms": [
-      "label encoder"
+      "label_encoder_class",
+      "Label Encoder",
+      "LabelEncoder"
     ]
   },
   {

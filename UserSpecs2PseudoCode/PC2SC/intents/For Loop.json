@@ -21,29 +21,13 @@
           "name": "number-integer",
           "value": "$number-integer",
           "isList": false
-        },
-        {
-          "id": "f8c9f99f-bfc6-4276-83b0-46a4caefaf15",
-          "required": false,
-          "dataType": "@sys.number-integer",
-          "name": "number-integer1",
-          "value": "$number-integer1",
-          "isList": false
-        },
-        {
-          "id": "eec3df4d-5bea-484f-a230-58a1e7bb83c8",
-          "required": false,
-          "dataType": "@sys.any",
-          "name": "any",
-          "value": "$any",
-          "isList": false
         }
       ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "iterate for $number-integer times"
+          "speech": "iterate for RANDOM_NUMBER times"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -53,7 +37,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549302981,
+  "lastUpdate": 1550910185,
   "fallbackIntent": false,
   "events": []
 }

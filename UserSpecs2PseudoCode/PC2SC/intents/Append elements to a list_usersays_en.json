@@ -1,6 +1,37 @@
 [
   {
-    "id": "5d55d720-d92d-4c3d-a8fb-d14be0bec269",
+    "id": "6238c9dd-9626-4177-b6fe-94962130d018",
+    "data": [
+      {
+        "text": "create a ",
+        "userDefined": false
+      },
+      {
+        "text": "list",
+        "alias": "syn_list",
+        "meta": "@syn_list",
+        "userDefined": true
+      },
+      {
+        "text": " named ",
+        "userDefined": false
+      },
+      {
+        "text": "stu_records",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " with values \u0027Arshad\u0027, \u002724\u0027, \u0027male\u0027, \u0027student\u0027",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550928870
+  },
+  {
+    "id": "fa71f9ce-6ba9-4ba2-85d0-3f8b3c1af1fb",
     "data": [
       {
         "text": "fill empty ",
@@ -18,8 +49,7 @@
       },
       {
         "text": "temp",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -28,8 +58,7 @@
       },
       {
         "text": "name",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -38,8 +67,7 @@
       },
       {
         "text": "age",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -48,17 +76,16 @@
       },
       {
         "text": "weight",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 1550769674
+    "updated": 1550928870
   },
   {
-    "id": "f6efb127-ebb3-45e2-bdd6-93df36cea997",
+    "id": "5d55d720-d92d-4c3d-a8fb-d14be0bec269",
     "data": [
       {
         "text": "add ",
@@ -66,8 +93,7 @@
       },
       {
         "text": "49",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -76,8 +102,7 @@
       },
       {
         "text": "45",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -86,7 +111,7 @@
       },
       {
         "text": "array",
-        "alias": "syn_list1",
+        "alias": "syn_list",
         "meta": "@syn_list",
         "userDefined": true
       },
@@ -96,22 +121,20 @@
       },
       {
         "text": "iop",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
     "isTemplate": false,
-    "count": 0,
-    "updated": 1550236028
+    "count": 1,
+    "updated": 1550769674
   },
   {
     "id": "4a170463-9589-40ae-a235-f805763d73ba",
     "data": [
       {
         "text": "ruplef",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -130,8 +153,7 @@
       },
       {
         "text": "computer",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -140,8 +162,7 @@
       },
       {
         "text": "phone",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -150,8 +171,7 @@
       },
       {
         "text": "book",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -160,8 +180,7 @@
       },
       {
         "text": "465",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -170,8 +189,7 @@
       },
       {
         "text": "244.43",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
@@ -198,8 +216,7 @@
       },
       {
         "text": "str_array",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -208,8 +225,7 @@
       },
       {
         "text": "flowers",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -218,8 +234,7 @@
       },
       {
         "text": "guitars",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -228,8 +243,7 @@
       },
       {
         "text": "elephants",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -238,8 +252,7 @@
       },
       {
         "text": "drums",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -260,8 +273,7 @@
       },
       {
         "text": "Arshad",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -270,8 +282,7 @@
       },
       {
         "text": "Milan",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
@@ -298,8 +309,7 @@
       },
       {
         "text": "temp_list",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -308,8 +318,7 @@
       },
       {
         "text": "Milan",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -318,8 +327,7 @@
       },
       {
         "text": "Madusha",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -328,8 +336,7 @@
       },
       {
         "text": "Dinusha",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -338,8 +345,7 @@
       },
       {
         "text": "Arshad",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -348,8 +354,7 @@
       },
       {
         "text": "Ruchira",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -370,8 +375,7 @@
       },
       {
         "text": "45",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -380,8 +384,7 @@
       },
       {
         "text": "89",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -390,8 +393,7 @@
       },
       {
         "text": "45",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -400,8 +402,7 @@
       },
       {
         "text": "12",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -419,8 +420,7 @@
       },
       {
         "text": "number_array",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
@@ -433,8 +433,7 @@
     "data": [
       {
         "text": "my_list",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -443,8 +442,7 @@
       },
       {
         "text": "runs",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -453,8 +451,7 @@
       },
       {
         "text": "wickets",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -463,8 +460,7 @@
       },
       {
         "text": "total",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -473,8 +469,7 @@
       },
       {
         "text": "strike_rate",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -495,8 +490,7 @@
       },
       {
         "text": "element1",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -505,8 +499,7 @@
       },
       {
         "text": "element_list",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
@@ -523,8 +516,7 @@
       },
       {
         "text": "age",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -533,8 +525,7 @@
       },
       {
         "text": "height",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -543,8 +534,7 @@
       },
       {
         "text": "skills",
-        "alias": "array_elements",
-        "meta": "@array_elements",
+        "meta": "@sys.ignore",
         "userDefined": true
       },
       {
@@ -563,8 +553,7 @@
       },
       {
         "text": "my_list",
-        "alias": "list_variable",
-        "meta": "@list_variable",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],

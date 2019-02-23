@@ -1,5 +1,45 @@
 [
   {
+    "id": "6d3de06b-91c2-4575-b82e-c55ad9b18ae1",
+    "data": [
+      {
+        "text": "create a variable named training and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "0.67",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      },
+      {
+        "text": " to train",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550913379
+  },
+  {
+    "id": "ee8b3efb-c973-4ca9-810e-d67758eb99a9",
+    "data": [
+      {
+        "text": "split size for training \u003d ",
+        "userDefined": false
+      },
+      {
+        "text": "0.85",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550913379
+  },
+  {
     "id": "41c1b441-4695-4e69-acbe-9e1b10f00ee9",
     "data": [
       {

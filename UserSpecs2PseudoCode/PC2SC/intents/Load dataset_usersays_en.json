@@ -1,5 +1,27 @@
 [
   {
+    "id": "ef3e3f6e-daf4-4d0d-964f-49dffa57c6fa",
+    "data": [
+      {
+        "text": "define variable df and read ",
+        "userDefined": false
+      },
+      {
+        "text": "data set",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
+      },
+      {
+        "text": " file",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550852746
+  },
+  {
     "id": "100f54dc-3d94-4647-8990-49b4159b94e1",
     "data": [
       {
@@ -21,7 +43,17 @@
     "id": "49d7fbf2-a29e-4bf6-9bc8-349e9bf5909c",
     "data": [
       {
-        "text": "by using the given CSV file as the data set",
+        "text": "by using the given ",
+        "userDefined": false
+      },
+      {
+        "text": "CSV file",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
+      },
+      {
+        "text": " as the data set",
         "userDefined": false
       }
     ],
@@ -51,7 +83,17 @@
     "id": "7b87e6ab-8f0d-419b-918c-a841b6518479",
     "data": [
       {
-        "text": "using the given csv file",
+        "text": "using the given ",
+        "userDefined": false
+      },
+      {
+        "text": "csv",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
+      },
+      {
+        "text": " file",
         "userDefined": false
       }
     ],
@@ -103,8 +145,14 @@
     "id": "06984cb4-e12c-4d6d-b6aa-d1726bd421d7",
     "data": [
       {
-        "text": "read dataset",
+        "text": "read ",
         "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
       }
     ],
     "isTemplate": false,
@@ -151,8 +199,14 @@
     "id": "b6fb1748-23dc-4cb3-8da8-ee3aa60f2838",
     "data": [
       {
-        "text": "Build the model by using the dataset",
+        "text": "Build the model by using the ",
         "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "alias": "Dataset_Name",
+        "meta": "@Dataset_Name",
+        "userDefined": true
       }
     ],
     "isTemplate": false,

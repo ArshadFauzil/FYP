@@ -63,27 +63,31 @@
       "geoplotlib",
       "Gleam",
       "missingno",
-      "Leather"
+      "Leather",
+      "Data Visualization"
     ]
   },
   {
-    "value": "TrainTestSplit",
+    "value": "MLlibrary TrainTestSplit",
     "synonyms": [
       "TrainTestSplit",
       "Train Test Split",
       "Train-Test Split",
       "train_test split",
-      "train_test_split"
+      "train_test_split",
+      "Train-Test Split"
     ]
   },
   {
-    "value": "Preprocessing Scaler",
+    "value": "MLlibrary Preprocessing Scaler",
     "synonyms": [
       "Preprocessing Scaler",
       "PreprocessingScaler",
       "preprocessing_scaler",
       "preprocessing.scale",
-      "preprocessing.Scale"
+      "preprocessing.Scale",
+      "StandardScaler",
+      "preprocessing.StandardScaler"
     ]
   },
   {
@@ -94,7 +98,7 @@
     ]
   },
   {
-    "value": "Confusion Matrix",
+    "value": "MLlibrary Confusion Matrix",
     "synonyms": [
       "Confusion Matrix",
       "ConfusionMatrix",
@@ -103,7 +107,7 @@
     ]
   },
   {
-    "value": "Label Encoder",
+    "value": "MLlibrary Label Encoder",
     "synonyms": [
       "Label Encoder",
       "label encoder",
@@ -111,24 +115,29 @@
       "labelencoder",
       "label_encoder",
       "LE",
-      "le"
+      "le",
+      "LabelEncoder"
     ]
   },
   {
-    "value": "CountVectorizer",
+    "value": "MLlibrary CountVectorizer",
     "synonyms": [
       "CountVectorizer",
       "Count Vectorizer",
       "count_vectorizer",
-      "count vectorizer"
+      "count vectorizer",
+      "feature_extraction.CountVectorizer"
     ]
   },
   {
-    "value": "tfidf feature extractor",
+    "value": "MLlibrary tfidf feature extractor",
     "synonyms": [
       "tfidf feature extractor",
       "TFIDF Feature Extractor",
-      "TFIDF_Feature_Extractor"
+      "TFIDF_Feature_Extractor",
+      "TfidfVectorizer",
+      "Tfidf Vectorizer",
+      "TFIDF Vectorizer"
     ]
   },
   {

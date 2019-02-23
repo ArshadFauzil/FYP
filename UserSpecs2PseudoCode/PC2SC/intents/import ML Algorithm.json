@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "import library MLlibrary $Algorithms\nimport library MLlibrary"
+          "speech": "import library MLlibrary $Algorithms\nimport library MLLibrary"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550836580,
+  "lastUpdate": 1550849624,
   "fallbackIntent": false,
   "events": []
 }

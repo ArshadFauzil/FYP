@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "numerize dataframe column and reassign dataframe column"
+          "speech": "numerize daf attribute and reassign daf attribute"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550495546,
+  "lastUpdate": 1550858124,
   "fallbackIntent": false,
   "events": []
 }

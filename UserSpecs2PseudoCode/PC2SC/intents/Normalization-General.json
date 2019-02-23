@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "normalize X_train using scaler and reassign X_train."
+          "speech": "normalize X_train using scaler and reassign X_train"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550492045,
+  "lastUpdate": 1550858051,
   "fallbackIntent": false,
   "events": []
 }

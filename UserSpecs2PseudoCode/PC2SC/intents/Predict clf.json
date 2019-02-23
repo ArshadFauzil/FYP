@@ -21,10 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": [
-            "predict clf for LIST_VARIABLE",
-            "predict clf for $list_variable."
-          ]
+          "speech": "predict clf for LIST_VARIABLE"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -34,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550748414,
+  "lastUpdate": 1550928259,
   "fallbackIntent": false,
   "events": []
 }

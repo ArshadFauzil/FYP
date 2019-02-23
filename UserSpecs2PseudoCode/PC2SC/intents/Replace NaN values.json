@@ -23,20 +23,13 @@
           "name": "ds_attributes",
           "value": "$ds_attributes",
           "isList": false
-        },
-        {
-          "id": "a6e6947e-0a34-4a58-b763-1a937ee50522",
-          "dataType": "@DataManipulationLibrary",
-          "name": "DataManipulationLibrary",
-          "value": "$DataManipulationLibrary",
-          "isList": false
         }
       ],
       "messages": [
         {
           "type": 0,
           "lang": "en",
-          "speech": "replace NaN values with the $NaN_Filling and reassign dataframe"
+          "speech": "replace NaN values with $NaN_Filling and reassign dataframe"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -46,7 +39,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550498219,
+  "lastUpdate": 1550854101,
   "fallbackIntent": false,
   "events": []
 }

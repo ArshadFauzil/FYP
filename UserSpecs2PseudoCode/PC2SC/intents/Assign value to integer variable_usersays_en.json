@@ -1,5 +1,65 @@
 [
   {
+    "id": "0360a590-6742-475f-9ce8-2d947e8421a9",
+    "data": [
+      {
+        "text": "create a variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "x",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      },
+      {
+        "text": " to it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550928935
+  },
+  {
+    "id": "5db07e70-aa23-484f-a528-f85fb8ab1ef0",
+    "data": [
+      {
+        "text": "initialize int variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "FUZ",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " with value ",
+        "userDefined": false
+      },
+      {
+        "text": "909",
+        "alias": "number-integer",
+        "meta": "@sys.number-integer",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550898867
+  },
+  {
     "id": "8ea5378f-6b41-4f93-bc2b-31026f5f23ff",
     "data": [
       {

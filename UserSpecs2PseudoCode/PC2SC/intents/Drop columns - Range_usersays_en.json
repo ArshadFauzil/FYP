@@ -1,5 +1,45 @@
 [
   {
+    "id": "92df4574-4a94-4127-b29f-a83767b548f8",
+    "data": [
+      {
+        "text": "drop data in column10 and column15",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550922399
+  },
+  {
+    "id": "4955021b-8257-43f2-a5de-b965019fbafd",
+    "data": [
+      {
+        "text": " ignore data points between ",
+        "userDefined": false
+      },
+      {
+        "text": "2 nd column",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " and ",
+        "userDefined": false
+      },
+      {
+        "text": "5 th column",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550922399
+  },
+  {
     "id": "a55690c2-1569-45b3-8405-1ec1c64ea913",
     "data": [
       {

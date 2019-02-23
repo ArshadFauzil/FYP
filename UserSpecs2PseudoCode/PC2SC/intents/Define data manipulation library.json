@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "import library dataframe."
+          "speech": "import library dataframe"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549529098,
+  "lastUpdate": 1550846489,
   "fallbackIntent": false,
   "events": []
 }

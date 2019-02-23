@@ -9,14 +9,6 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "5544206a-7d9c-4a91-939b-8e9366aa895a",
-          "required": false,
-          "dataType": "@list_variable",
-          "name": "list_variable",
-          "value": "$list_variable",
-          "isList": false
-        },
-        {
           "id": "1ea0b47e-6c3a-4bce-b209-adfd75942118",
           "required": false,
           "dataType": "@syn_list",
@@ -25,20 +17,11 @@
           "isList": false
         },
         {
-          "id": "c827630a-f979-49e3-81e9-45758f903768",
-          "required": false,
-          "dataType": "@syn_list",
-          "name": "syn_list1",
-          "value": "$syn_list1",
+          "id": "77285172-d39a-441e-8d2c-787fb5383e68",
+          "dataType": "@list_variable",
+          "name": "list_variable",
+          "value": "$list_variable",
           "isList": false
-        },
-        {
-          "id": "1d984e35-be4d-4da4-9004-1f968a2a30ef",
-          "required": false,
-          "dataType": "@array_elements",
-          "name": "array_elements",
-          "value": "$array_elements",
-          "isList": true
         }
       ],
       "messages": [
@@ -55,7 +38,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550770064,
+  "lastUpdate": 1550928870,
   "fallbackIntent": false,
   "events": []
 }

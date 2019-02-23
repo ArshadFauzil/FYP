@@ -35,10 +35,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": [
-            "train split ratio \u003d $number",
-            "train split ratio \u003d $percentage"
-          ]
+          "speech": "define variable split and assign SPLIT_RATIO"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -48,7 +45,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550563009,
+  "lastUpdate": 1550913379,
   "fallbackIntent": false,
   "events": []
 }

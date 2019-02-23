@@ -21,10 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": [
-            "define target class",
-            "define variable target_class and assign $ds_attributes"
-          ]
+          "speech": "define variable target_class and assign TARGET_CLASS"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -34,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550586385,
+  "lastUpdate": 1550906948,
   "fallbackIntent": false,
   "events": []
 }

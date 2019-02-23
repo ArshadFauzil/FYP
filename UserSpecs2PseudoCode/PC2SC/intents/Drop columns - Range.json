@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "drop attributes \u003d $ds_attributes to $ds_attributes"
+          "speech": "drop attributes ATTRIBUTES from dataframe"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550828499,
+  "lastUpdate": 1550922399,
   "fallbackIntent": false,
   "events": []
 }

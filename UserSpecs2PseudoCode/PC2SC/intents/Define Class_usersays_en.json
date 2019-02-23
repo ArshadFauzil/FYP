@@ -1,5 +1,71 @@
 [
   {
+    "id": "a25b30aa-5c99-4afc-8dc9-1891a971c971",
+    "data": [
+      {
+        "text": "use ",
+        "userDefined": false
+      },
+      {
+        "text": "column3",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " as the class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550906948
+  },
+  {
+    "id": "75fb3a26-bd6c-4e1d-b207-bb01dcdd561a",
+    "data": [
+      {
+        "text": "define variable target class and assign ",
+        "userDefined": false
+      },
+      {
+        "text": "price",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": " as class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550906948
+  },
+  {
+    "id": "9376faf3-362c-45c3-8fc1-8550604e01ec",
+    "data": [
+      {
+        "text": "define variable cls with value ",
+        "userDefined": false
+      },
+      {
+        "text": "Price",
+        "alias": "ds_attributes",
+        "meta": "@ds_attributes",
+        "userDefined": true
+      },
+      {
+        "text": ", use cls as the class",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550906484
+  },
+  {
     "id": "a75ef89a-8de7-4747-b2c2-34cb18b27a6d",
     "data": [
       {

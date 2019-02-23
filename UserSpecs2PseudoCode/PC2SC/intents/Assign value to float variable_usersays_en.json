@@ -1,5 +1,33 @@
 [
   {
+    "id": "2eab4a3b-b67c-4538-a0b2-44c389ff32db",
+    "data": [
+      {
+        "text": "initialize float variable named ",
+        "userDefined": false
+      },
+      {
+        "text": "FUZ",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " with value ",
+        "userDefined": false
+      },
+      {
+        "text": "909.56",
+        "alias": "number",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550898879
+  },
+  {
     "id": "28bef11b-98a6-4711-9623-8dcb2ea05414",
     "data": [
       {

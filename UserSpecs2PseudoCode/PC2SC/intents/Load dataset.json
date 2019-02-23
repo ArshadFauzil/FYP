@@ -21,7 +21,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "define variable df and read dataset $Dataset_Name csv file"
+          "speech": "define variable df and read dataset DATASET csv file"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -31,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550472880,
+  "lastUpdate": 1550852746,
   "fallbackIntent": false,
   "events": []
 }

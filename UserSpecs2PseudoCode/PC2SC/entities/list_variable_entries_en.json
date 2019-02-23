@@ -124,5 +124,11 @@
     "synonyms": [
       "iop"
     ]
+  },
+  {
+    "value": "stu_records",
+    "synonyms": [
+      "stu_records"
+    ]
   }
 ]
