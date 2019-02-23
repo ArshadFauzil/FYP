@@ -34,16 +34,16 @@ goodness is a variable with value 4
 value of tip is 8
 assign 3 to integer variable happiness
 declare Integer variable named as number, 294,549,560 as value of the variable
-substitute string nice to variable str
-assign hello df to string variable hello
-goodness is a variable with value any string
-equity name is equals to some name
-define variable phase and assign hello world.
-define a string variable called some string and assign 'your name' as value
-assign Usha to string variable long_string
-value of string variable name is Yilokyr
-create a string variable named str and append "My Name" to str
-my_string = my name is R
+substitute string 'nice' to variable str
+assign 'hello df' to string variable hello
+goodness is a variable with value 'any string'
+equity_name is equals to 'some name'
+define variable phase and assign 'hello world'.
+define a string variable called some_string and assign 'your name' as value
+assign 'Usha' to string variable long_string
+value of string variable name is 'Yilokyr'
+create a string variable named str and append 'My Name' to str
+my_string = 'my name is R'
 define variable pepper
 allocate memory to variable length
 define a variable named uft
@@ -359,7 +359,7 @@ goodness is a variable with class instance goody
 create variable named rainfall and assign rain to it
 lemmatizer is lemmatizer () in NLTK
 depth = depthclass()
-define a variable called burnable and initiate burn class as value
+define a variable called burnable and initiate burny_class as value
 assign some_class instance to variable def
 declare a variable named tfidf_transformer, and assign tfidf transformer()
 define variable le and instantiate label encoder
@@ -407,7 +407,7 @@ columns to be numerized = 3, 4
 use learned model to predict feature for my_list
 predict relevant class for dp
 apply sample_data to the model and obtain class
-find class for given data point
+find class for given data points in array employees
 predict clf for new_datapoint
 parse list_values to model and obtain predicted classes
 drop data points which do not contain value for class

@@ -48,8 +48,8 @@
       },
       {
         "text": "words",
-        "alias": "temp_variable",
-        "meta": "@temp_variable",
+        "alias": "any",
+        "meta": "@sys.any",
         "userDefined": true
       }
     ],
@@ -66,8 +66,8 @@
       },
       {
         "text": "text",
-        "alias": "temp_variable",
-        "meta": "@temp_variable",
+        "alias": "any",
+        "meta": "@sys.any",
         "userDefined": true
       }
     ],
@@ -84,8 +84,8 @@
       },
       {
         "text": "some word pharse",
-        "alias": "temp_variable",
-        "meta": "@temp_variable",
+        "alias": "any",
+        "meta": "@sys.any",
         "userDefined": true
       },
       {
@@ -118,8 +118,8 @@
       },
       {
         "text": "something",
-        "alias": "temp_variable",
-        "meta": "@temp_variable",
+        "alias": "any",
+        "meta": "@sys.any",
         "userDefined": true
       }
     ],

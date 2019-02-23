@@ -6,9 +6,9 @@
     ]
   },
   {
-    "value": "salesjan2009.csv",
+    "value": "intents.csv",
     "synonyms": [
-      "SalesJan2009.csv",
+      "intents.csv",
       "dataset"
     ]
   }

@@ -32,7 +32,7 @@ SplitDataset-Test,value_n
 SplitDataset-Train,value_n
 Start Algorithm,N
 While_Loop,N
-Assign Class instance to variable,var_name
+Assign Class instance to variable,var_name,instance
 Confusion Matrix,N
 Define features,mul_values
 import ML Algorithm,def_value
@@ -42,4 +42,4 @@ Predict clf,var_name_clf
 Remove Null Target Classes,N
 Replace NaN values,def_value
 SplitDataset,N
-Append elements to a list,var_name
+Append elements to a list,var_name,values

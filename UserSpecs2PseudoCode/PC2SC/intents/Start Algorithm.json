@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "create model"
+          "speech": "define variable clf and classify X_train, y_train using ALGORITHM"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549038521,
+  "lastUpdate": 1550592234,
   "fallbackIntent": false,
   "events": []
 }

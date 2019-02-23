@@ -1,7 +1,7 @@
 import os
 from google.oauth2 import service_account
 # from DB_Manager import insert_intents_into_db
-from test_spaCy import find_similar_intent
+from Similarity_engine import find_similar_intent
 
 credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 credentials = service_account.Credentials.from_service_account_file(credentials_path)
@@ -52,10 +52,3 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
         return intent
 
 
-if __name__ == '__main__':
-    lines = ['use data manipulation library\r', 'using multidimensional array operator\r', 'use Random Forrest \r',
-             'loading dataset ds1\r', 'test size = 0.3\r', 'class = last_login\r', 'classify ds1\r',
-             'calculate accuracy\r', 'end']
-
-    for l in lines:
-        detect_intent_texts(PROJECT_ID, 'fake', [l], language_code='en')

@@ -1,6 +1,6 @@
 {
-  "id": "4e4920d0-b5d2-4125-b043-2b5f39323df0",
-  "name": "Normalization",
+  "id": "8a24ac6b-fa10-49d3-87e4-d42ac412e7e7",
+  "name": "Normalization-Specific",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -9,23 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "de918a24-d4e8-4341-b329-def30991db7d",
-          "required": false,
-          "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
-          "isList": false
-        },
-        {
-          "id": "cafc1a7f-ceea-4861-b404-c5abe001c429",
-          "required": false,
-          "dataType": "@sys.number",
-          "name": "number1",
-          "value": "$number1",
-          "isList": false
-        },
-        {
-          "id": "3cbe6c09-fe7a-4f96-ba85-92b96b28d391",
+          "id": "783e171d-5ab5-4e83-80d6-4472a48319a4",
           "required": false,
           "dataType": "@ds_attributes",
           "name": "ds_attributes",
@@ -47,7 +31,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549693584,
+  "lastUpdate": 1550493552,
   "fallbackIntent": false,
   "events": []
 }

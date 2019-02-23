@@ -1,5 +1,51 @@
 [
   {
+    "id": "cbecd391-2e8e-4462-a4b7-621b356c1a29",
+    "data": [
+      {
+        "text": "apply numerization for required ",
+        "userDefined": false
+      },
+      {
+        "text": "columns",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550495546
+  },
+  {
+    "id": "4df6fae6-21ca-47a4-85cc-81d9a19f384a",
+    "data": [
+      {
+        "text": "numerize uploaded ",
+        "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550495546
+  },
+  {
+    "id": "f6da0823-5dfb-458e-a9bd-b39ea5a0530f",
+    "data": [
+      {
+        "text": "encode object type attributes as numeric",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 1550494309
+  },
+  {
     "id": "9d1250bc-1ee9-4031-98e8-0bee6bb5b00f",
     "data": [
       {
@@ -12,89 +58,10 @@
     "updated": 1549724226
   },
   {
-    "id": "2bb57c8b-fb5f-49fe-8237-55126e1f39e3",
-    "data": [
-      {
-        "text": "numerize attribute 1, attribute 2, attribute 3 and attribute 5",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "updated": 1549724226
-  },
-  {
-    "id": "28a83179-d6da-4342-b230-a1f05fc4db02",
-    "data": [
-      {
-        "text": "features to be numerized \u003d name, age, place",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549724226
-  },
-  {
-    "id": "0e519854-0a2f-42bc-af92-be0026bda31c",
-    "data": [
-      {
-        "text": "apply numerization to column1 and column2",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549724226
-  },
-  {
     "id": "99edf65f-ce27-4993-a0b6-411a1940ec5b",
     "data": [
       {
         "text": "numerize dataset",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549724226
-  },
-  {
-    "id": "f814a061-bf25-45a1-9d28-cfff382116c2",
-    "data": [
-      {
-        "text": "numerize column1 to column 5",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 1549724226
-  },
-  {
-    "id": "dc30fbfc-9570-4579-bc59-b43963bfadbe",
-    "data": [
-      {
-        "text": "columns",
-        "meta": "@sys.ignore",
-        "userDefined": false
-      },
-      {
-        "text": " to be numerized \u003d ",
-        "userDefined": false
-      },
-      {
-        "text": "3",
-        "meta": "@sys.ignore",
-        "userDefined": false
-      },
-      {
-        "text": ", ",
-        "userDefined": false
-      },
-      {
-        "text": "4",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

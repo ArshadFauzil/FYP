@@ -1,6 +1,6 @@
 {
-  "id": "79af917d-a27a-46d4-9e73-810bf46447ad",
-  "name": "Numerization",
+  "id": "011e4ab1-abfb-4c9e-a808-952a176d7da7",
+  "name": "End of while loop",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "numerize dataframe column and reassign dataframe column"
+          "speech": "end of while"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1549724226,
+  "lastUpdate": 1550840794,
   "fallbackIntent": false,
   "events": []
 }

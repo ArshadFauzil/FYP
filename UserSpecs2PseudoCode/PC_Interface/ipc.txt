@@ -1,4 +1,14 @@
 
-define variable features and assign FEATURE_SET
-define variable target_class and assign price
-define variable clf and classify X_train y_train using SVM
+define variable df and read dataset DATASET csv file
+normalize X_train using scaler and reassign X_train
+define variable clf and classify X_train y_train using Decision Tree Classification
+define variable target_class and assign TARGET_CLASS
+drop attributes ATTRIBUTES from dataframe
+define variable VAR0 and assign VAR_VALUE0
+define variable VAR1 and assign VAR_VALUE1
+define variable VAR2 and assign VAR_VALUE2
+define variable split and assign SPLIT_RATIO
+define variable clf and classify X_train, y_train using ALGORITHM
+define empty array STRING_ARRAY0
+define empty array STRING_ARRAY1
+End of the Pseudocode

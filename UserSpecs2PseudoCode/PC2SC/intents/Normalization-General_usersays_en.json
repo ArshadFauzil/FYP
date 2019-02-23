@@ -1,0 +1,108 @@
+[
+  {
+    "id": "30b310a0-308e-4fb1-8efe-3bda0c046f51",
+    "data": [
+      {
+        "text": "apply normalization for required ",
+        "userDefined": false
+      },
+      {
+        "text": "columns",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491752
+  },
+  {
+    "id": "397dfbb3-0a07-492e-969d-85da97b0fd0b",
+    "data": [
+      {
+        "text": "normalize uploaded ",
+        "userDefined": false
+      },
+      {
+        "text": "dataset",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491752
+  },
+  {
+    "id": "44bc8347-a09c-4af0-bff9-f352cc877a5a",
+    "data": [
+      {
+        "text": "use scaler to normalize attribute values",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693584
+  },
+  {
+    "id": "32c748b8-c79b-4909-9e40-2a7f58f2870f",
+    "data": [
+      {
+        "text": "normalize by using scale",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1550491752
+  },
+  {
+    "id": "4feedbbb-6bb7-4cf3-81d9-c38070d1c08a",
+    "data": [
+      {
+        "text": "normalize feature set",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1549693584
+  },
+  {
+    "id": "a815ba23-35a4-49d4-a138-3a30473bb602",
+    "data": [
+      {
+        "text": "normalize if necessary",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "3f5179a6-c025-42b1-a29a-aa2931e2c20a",
+    "data": [
+      {
+        "text": "apply normalization",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  },
+  {
+    "id": "1b3f3070-6d9e-4cdb-a227-db1ad077b6c6",
+    "data": [
+      {
+        "text": "normalize dataset",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1547625592
+  }
+]

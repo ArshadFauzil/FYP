@@ -1,0 +1,28 @@
+{
+  "id": "a1908c98-bc66-475a-b3cb-660d53b095e0",
+  "name": "End of for loop",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "for loop ends"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550840814,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -18,7 +18,7 @@
       },
       {
         "text": "feature 5",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
@@ -50,7 +50,7 @@
       },
       {
         "text": "velocity",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
@@ -82,12 +82,21 @@
       },
       {
         "text": "column2",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       },
       {
-        "text": " from data set",
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "from",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " data set",
         "userDefined": false
       }
     ],
@@ -114,7 +123,7 @@
       },
       {
         "text": "length",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -142,7 +151,7 @@
       },
       {
         "text": "feature 10",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -170,7 +179,7 @@
       },
       {
         "text": "column5",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -198,7 +207,7 @@
       },
       {
         "text": "sales",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -226,7 +235,7 @@
       },
       {
         "text": "4444",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -254,7 +263,7 @@
       },
       {
         "text": "column 7",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -282,7 +291,7 @@
       },
       {
         "text": "attribute7",
-        "alias": "ds_attributes1",
+        "alias": "ds_attributes",
         "meta": "@ds_attributes",
         "userDefined": true
       }
@@ -310,8 +319,7 @@
       },
       {
         "text": "column5",
-        "alias": "ds_attributes1",
-        "meta": "@ds_attributes",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],
@@ -338,8 +346,7 @@
       },
       {
         "text": "findex9",
-        "alias": "ds_attributes1",
-        "meta": "@ds_attributes",
+        "meta": "@sys.ignore",
         "userDefined": true
       }
     ],

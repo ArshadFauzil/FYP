@@ -150,6 +150,36 @@ class Extractor:
         return result
 
     @staticmethod
+    def word_combination_percetages(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for numbers"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""
+                EN: {<CD>|<NN>}
+                """
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
+    def word_combination_clf(pos_tagged_sentence, tag_set='ptb'):
+        """Chunking of a part of speech tagged sentence based on specific grammar for numbers"""
+        if tag_set == 'ptb':
+            # Entity grammar used for the Penn Tree Bank Tagset
+            grammar = r"""
+                    EN: {<IN|VB><NN|NNS|UH|FW|SYM|NNP><NN|NNS|UH|FW|SYM|NNP>?|<NN|NNS|UH|FW|SYM|NNP><TO>}
+                    """
+        else:
+            raise SyntaxError
+
+        cp = RegexpParser(grammar)
+        result = cp.parse(pos_tagged_sentence)
+        return result
+
+    @staticmethod
     def calculate_symbol_ratio(word):
         """Calculating the symbol ratio of an element"""
         symbol_ratio = float(len(re.findall(r'[^A-Za-z\s]', word))) / len(word)
@@ -211,7 +241,7 @@ class Extractor:
                 tokens = self.tokenize_words(sentence)
                 # POS tagging using the Stanford POS tagger
                 pos_tagged_sentence = self.pos_tag_obj.pos_tag(' '.join(tokens))
-                print(pos_tagged_sentence)
+                # print(pos_tagged_sentence)
                 if wc is None:
                     result = self.word_combination(pos_tagged_sentence)
                 elif wc is 'foreach':
@@ -222,6 +252,10 @@ class Extractor:
                     result = self.word_combination_varname(pos_tagged_sentence)
                 elif wc is 'numbers':
                     result = self.word_combination_numbers(pos_tagged_sentence)
+                elif wc is 'clf':
+                    result = self.word_combination_clf(pos_tagged_sentence)
+                elif wc is 'percetages':
+                    result = self.word_combination_percetages(pos_tagged_sentence)
                 entities += [en for en in list(self.entity_generation(result))]
         return iter(entities)
 

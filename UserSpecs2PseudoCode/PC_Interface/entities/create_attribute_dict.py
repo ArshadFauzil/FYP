@@ -2,10 +2,19 @@ from pprint import pprint
 import read_attributes
 from collections import defaultdict
 
+
 data_dict = defaultdict(list)
+file_path = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources/'
+file_name = ''
+
+
+def find_filename(fn):
+    global file_name
+    file_name = fn
+
 
 def create_dict():
-    att = read_attributes.get_only_columns('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/SalesJan2009.csv')
+    att = read_attributes.get_only_columns(file_path+file_name)
 
     att_dict = {}
 
@@ -19,12 +28,11 @@ def create_dict():
         att_dict[att[a].replace('_', ' ')] = att[a]
         att_dict[att[a].replace(' ', '_')] = att[a]
 
-    # pprint(att_dict)
     return att_dict
 
 
 def create_indexed_dict():
-    att = read_attributes.get_only_columns('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/SalesJan2009.csv')
+    att = read_attributes.get_only_columns(file_path+file_name)
 
     att_dict = {}
 
@@ -37,31 +45,6 @@ def create_indexed_dict():
         att_dict[att[a].lower()] = a+1
         att_dict[att[a].replace('_', ' ')] = a+1
         att_dict[att[a].replace(' ', '_')] = a+1
-        # data_dict[a + 1].append('column' + str(a + 1))
-        # data_dict[a + 1].append('attribute' + str(a + 1))
-        # data_dict[a + 1].append('feature' + str(a + 1))
-        # data_dict[a + 1].append(str(a + 1))
-        # data_dict[a + 1].append(att[a])
-        # data_dict[a + 1].append(att[a].lower())
-        # data_dict[a + 1].append(att[a].replace('_', ' '))
-        # data_dict[a + 1].append(att[a].replace(' ', '_'))
-
-        # att_dict[a + 1] = 'column' + str(a + 1)
-        # att_dict[a + 1] = 'attribute' + str(a + 1)
-        # att_dict[a + 1] = 'feature' + str(a + 1)
-        # att_dict[a + 1] = str(a + 1)
-        # att_dict[a + 1] = att[a]
-        # att_dict[a + 1] = att[a].lower()
-        # att_dict[a + 1] = att[a].replace('_', ' ')
-        # att_dict[a + 1] = att[a].replace(' ', '_')
-
-    # pprint(att_dict)
     return att_dict
 
 
-# d = create_indexed_dict()
-# pprint(d)
-# # print(d[10])
-#
-# for key in d:
-#     print(key)

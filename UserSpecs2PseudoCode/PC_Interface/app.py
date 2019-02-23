@@ -2,11 +2,12 @@ from __future__ import absolute_import
 from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for, send_file
-from detect_intent_texts import detect_intent_texts
+from detect_intent_texts import detect_intent_texts, line_manipulator
 from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
 from API_manager import enter_new_entity
 import DB_Manager
+from entities import create_attribute_dict
 
 app = Flask(__name__)
 
@@ -20,6 +21,7 @@ ALLOWED_EXTENSIONS = set(['csv', 'txt'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 url_ds_attributes = 'https://api.dialogflow.com/v1/entities/ds_attributes'
 url_ds_name = 'https://api.dialogflow.com/v1/entities/Dataset_Name'
+data_set_name = ''
 
 
 @app.route('/payload', methods=['POST'])
@@ -39,13 +41,6 @@ def payload():
         print("JSON not found")
 
     return 'none'
-
-
-def test_detect_intent_texts(capsys):
-    detect_intent_texts(PROJECT_ID, SESSION_ID, TEXTS, 'en-US')
-    out, _ = capsys.readouterr()
-
-    assert 'Fulfillment text: All set!' in out
 
 
 @app.route('/send_message', methods=['POST'])
@@ -82,12 +77,12 @@ def search():
 def receive_pseudo_code():
     try:
         pseudocode = request.form['pcode']
-        lines = pseudocode.split('\n')
+        lines_raw = pseudocode.split('\n')
+        lines = []
+        for l in lines_raw:
+            if l is not '' and l is not '\r':
+                lines.append(l)
         DB_Manager.insert_pseudocode_into_db(lines)
-        # print(lines)
-        # detect_intent_texts(PROJECT_ID, SESSION_ID, lines, 'en-US')
-
-        # return render_template('result1.html')
         return render_template('result1.html', statements=lines)
     except:
         return render_template('input_form1.html')
@@ -113,6 +108,9 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            global data_set_name
+            data_set_name = filename
+            create_attribute_dict.find_filename(data_set_name)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             columns = get_columns(UPLOAD_FOLDER + '/' + filename)
             file_names = get_file_name(filename)
@@ -127,45 +125,23 @@ def upload_file():
 @app.route('/intermediate', methods=['GET', 'POST'])
 def generate_intermediate_code():
     lines = DB_Manager.get_pseudocode_from_db()[0]
-    full_pc = ""
-    # try:
-    #     for line in lines:
-    #         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, [line], 'en-US')
-    #         full_pc = full_pc + '\n' + pc
-    #
-    #     print(full_pc)
-    #     # f = open(os.path.join(app.config['DOWNLOAD_FOLDER']) + '/ipc.txt', "w+")
-    #     f = open("ipc.txt", "w+")
-    #     f.write(full_pc)
-    #     DB_Manager.delete_all_documents("pseudocodes_temp")
-    #     # path = "ipc.txt"
-    #     # return send_file(path, as_attachment=True)
-    #     return render_template('result1.html', statements=lines)
-    # except:
-    #     print("An Exception occurred")
-    #     return render_template('result1.html', statements=lines)
+    # full_pc = ""
+    full_pc = line_manipulator(lines, data_set_name)
+    # for line in lines:
+    #     pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
+    #     full_pc = full_pc + '\n' + pc
 
-    for line in lines:
-        pc = detect_intent_texts(PROJECT_ID, SESSION_ID, [line], 'en-US')
-        full_pc = full_pc + '\n' + pc
-
-    print(full_pc)
-    # f = open(os.path.join(app.config['DOWNLOAD_FOLDER']) + '/ipc.txt', "w+")
+    print(full_pc[0])
     f = open("ipc.txt", "w+")
-    f.write(full_pc)
+    f.write(full_pc[0])
     DB_Manager.delete_all_documents("pseudocodes_temp")
-    # path = "ipc.txt"
-    # return send_file(path, as_attachment=True)
-    return render_template('result1.html', statements=lines)
+    return render_template('result1.html', statements=full_pc[1])
 
 
 @app.route('/sc', methods=['GET'])
 def generate_source_code():
     try:
         pseudocode = request.form['pcode']
-        # chipset = request.form['cs']
-
-        # phones = RecommendOnChipset(chipset)
         print(pseudocode)
         return render_template('result2.html', name=user_name, phone_cs_list=set(phones))
     except:
