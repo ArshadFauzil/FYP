@@ -19,7 +19,7 @@ class PseudoGen:
     parm_map = {}
     idnt_map = {}
     wildcard = {"TARGET_CLASS": '', 'DATASET': ''}
-    st_array, st_values, varn, var_value, rn_array, element = ([] for i in range(6))
+    st_array, st_values, varn, var_value, rn_array, element, rn_num = ([] for i in range(7))
 
     for i, line in enumerate(df_entity.split("\n")):
         try:
@@ -38,8 +38,9 @@ class PseudoGen:
             print("Unable to locate identification map")
 
 
-def line_manipulator(pc_lines):
+def line_manipulator(pc_lines, ds_name):
     pg = PseudoGen()
+    pg.wildcard['DATASET'] = ds_name
     full_pc = ''
     for l in pc_lines:
         pc = detect_intent_texts(PROJECT_ID, SESSION_ID, l, 'en-US', pg)

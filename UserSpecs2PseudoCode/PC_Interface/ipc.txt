@@ -1,5 +1,4 @@
 
-import library dataframe
-define variable df and read dataset DATASET csv file
-define variable target_class and assign Price
 define variable clf and classify X_train y_train using SVM
+define variable target_class and assign TARGET_CLASS
+split size for testing is a float variable with value 0.25

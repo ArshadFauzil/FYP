@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from pprint import pprint
 import os
 from flask import Flask, render_template, request, session, abort, flash, url_for, send_file
-from detect_intent_texts import detect_intent_texts, line_manipulator
+from detect_intent_texts import detect_intent_texts, line_manipulator, PseudoGen
 from read_attributes import get_columns, get_file_name
 from werkzeug.utils import secure_filename, redirect
 from API_manager import enter_new_entity
@@ -20,6 +20,7 @@ ALLOWED_EXTENSIONS = set(['csv', 'txt'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 url_ds_attributes = 'https://api.dialogflow.com/v1/entities/ds_attributes'
 url_ds_name = 'https://api.dialogflow.com/v1/entities/Dataset_Name'
+data_set_name = ''
 
 
 @app.route('/payload', methods=['POST'])
@@ -106,6 +107,8 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            global data_set_name
+            data_set_name = filename
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             columns = get_columns(UPLOAD_FOLDER + '/' + filename)
             file_names = get_file_name(filename)
@@ -121,7 +124,7 @@ def upload_file():
 def generate_intermediate_code():
     lines = DB_Manager.get_pseudocode_from_db()[0]
     # full_pc = ""
-    full_pc = line_manipulator(lines)
+    full_pc = line_manipulator(lines, data_set_name)
     # for line in lines:
     #     pc = detect_intent_texts(PROJECT_ID, SESSION_ID, line, 'en-US')
     #     full_pc = full_pc + '\n' + pc

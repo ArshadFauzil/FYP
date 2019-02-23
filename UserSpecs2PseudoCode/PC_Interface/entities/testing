@@ -1,20 +1,9 @@
-numerize 4444 and 9999 in data set
-numerize column1 and column 5 in uploaded dataset
-numerize attribute 1, attribute 2, attribute 3 and attribute 5
-features to be numerized = name, age, place
-apply numerization to column1 and column2
-numerize column1 to column 5
-columns to be numerized = 3, 4
-use learned model to predict feature for my_list
-predict relevant class for dp
-apply sample_data to the model and obtain class
-find class for given data points in array employees
-predict clf for new_datapoint
-parse list_values to model and obtain predicted classes
-apply normalization to col1, col2 by using scaler
-normalize feature 1, feature 2 and feature 3 by using scale of 0 to 10
-normalize column1 and column 5 in uploaded dataset
-columns to be normalized = 3, 4
-apply normalization to column1 and column2
-features to be normalized = name, age, place
-normalize attribute 1, attribute 2, attribute 3 and attribute 5
+k value in KNN is 45
+value of k = 4
+assign 5 to K
+K = 2
+k is 3
+N is 7
+N = 4
+consider 10 neighbors
+No of neighbors = 5

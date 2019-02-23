@@ -4,6 +4,8 @@ import re
 
 from entities import entity_extraction_app
 
+ds_name = ''
+
 
 def get_response(response, pseudo_gen):
     parm_map = pseudo_gen.parm_map
@@ -24,6 +26,7 @@ def get_response(response, pseudo_gen):
         print('No entities involved')
     elif idnt_map[intent] == 'DF':
         print('Entities handle by DF')
+        process_df(query_text, intent, parameters, pseudo_gen, wc)
     elif idnt_map[intent] == 'ER':
         print('Entities handle by ER')
         process_er(query_text, intent, parameters, pseudo_gen, wc)
@@ -150,3 +153,17 @@ def process_er(query, intent, parameters, pseudo_gen, wild_cd):
 
     if intent == 'Predict clf':
         wild_cd['PREDICT'] = entities_from_er[0]
+
+
+def process_df(query, intent, parameters, pseudo_gen, wild_cd):
+    if intent == 'Define K in KNN':
+        wild_cd['NEIGHBOURS'] = int(parameters['number-integer'])
+
+    elif intent == 'For Loop':
+        num = 'RANDOM_NUMBER' + str(len(pseudo_gen.rn_num))
+        pseudo_gen.rn_num.append(num)
+        wild_cd[num] = int(parameters['number-integer'])
+
+    elif intent == 'Load dataset':
+        ds = wild_cd['DATASET']
+        print('define variable df and read dataset {} csv file'.format(ds))
