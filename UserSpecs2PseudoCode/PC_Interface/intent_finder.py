@@ -5,7 +5,7 @@ import pandas as pd, xgboost, numpy as np, textblob, string
 import statistics
 
 predicted_vector = []
-classes_csv = open('/media/madusha/DA0838CA0838A781/PC_Interface/pc_corpus/classes.csv').read()
+classes_csv = open('/home/arshad/Documents/FYP99/FYP/UserSpecs2PseudoCode/PC_Interface/pc_corpus/classes.csv').read()
 classes = {}
 
 for k, line in enumerate(classes_csv.split("\n")):
