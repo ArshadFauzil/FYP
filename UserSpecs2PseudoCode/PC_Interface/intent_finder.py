@@ -46,12 +46,13 @@ def train_model(classifier, feature_vector_train, label, feature_vector_valid, i
 
 
 # load the dataset
-data = open('pc_corpus/corpus').read()
+# data = open('pc_corpus/corpus').read()
+data = open('pc_corpus/user_entered').read()
 labels, texts = [], []
 
 # load the dataset (testing 1by1)
-# data_testing = open('pc_corpus/pred')
-data_testing = open('pc_corpus/users_entered_lines')
+data_testing = open('pc_corpus/pred')
+# data_testing = open('pc_corpus/users_entered_lines')
 texts_testing = [line for line in data_testing.readlines() if line.strip()]
 
 # load the dataset (filling 1by1)

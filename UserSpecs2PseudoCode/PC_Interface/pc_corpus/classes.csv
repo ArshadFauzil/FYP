@@ -35,7 +35,7 @@ __label__34,Assign Class instance to variable
 __label__35,Confusion Matrix
 __label__36,Define features
 __label__37,import ML Algorithm
-__label__38,Numerization
+__label__38,Numerization-General
 __label__39,Predict clf
 __label__40,Remove Null Target Classes
 __label__41,Replace NaN values
