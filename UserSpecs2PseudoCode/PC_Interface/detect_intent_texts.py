@@ -17,7 +17,7 @@ class PseudoGen:
     extract = entity_extractor.Extractor()
     identification = open('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/identification').read()
     idnt_map = {}
-    wildcard = {"TARGET_CLASS": '', 'DATASET': ''}
+    wildcard = {"TARGET_CLASS": '', 'DATASET': '',  'ALGORITHM': 'SVM'}
     st_array, st_values, varn, var_value, rn_array, element, rn_num = ([] for i in range(7))
 
     for k, line in enumerate(identification.split("\n")):

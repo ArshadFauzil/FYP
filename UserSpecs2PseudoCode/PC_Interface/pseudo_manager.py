@@ -189,5 +189,8 @@ def process_df(intent, parameters, pseudo_gen, wild_cd):
         wild_cd[num] = int(parameters['number-integer'])
         return 'iterate for ' + num + 'times'
 
+    if intent == 'Define Algorithm':
+        wild_cd['ALGORITHM'] = int(parameters['Algorithms'])
+
     # elif intent == 'Load dataset':
     #     ds = wild_cd['DATASET']
