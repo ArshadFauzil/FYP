@@ -5,17 +5,15 @@ from sklearn import preprocessing
 from sklearn.preprocessing import Imputer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import MinMaxScaler
-import nltk
-from nltk.stem import WordNetLemmatizer
-# nltk.download('wordnet')
 from scipy import stats
 import os
 import time
+import spacy
 
-wnl = WordNetLemmatizer()
+pd.set_option('display.max_columns', None)
 
-datasetName = 'zomato'
-classVarible = 'Rating color'
+datasetName = 'who_suicide_statistics'
+classVarible = 'sex'
 path = "Feature_Engineering_output/"+datasetName+"/"
 
 numANDcat_df = pd.read_csv('E:/Campus/FYP/NEW/DataSet/Nu & Cat/'+datasetName+'.csv',encoding = "iso-8859-1")
@@ -29,10 +27,13 @@ else:
     print ("Successfully created the directory %s " % path)
     print()
 
+nlp = spacy.load('en')
 
 def isplural(word):
-    lemma = wnl.lemmatize(word, 'n')
-    plural = True if word is not lemma else False #check it can be plural or not
+    nlp_word = nlp(word)
+    plural = False
+    if nlp_word[0].tag_=='NNS':
+        plural = True
     return plural
 
 def binarizing(df,col_name,separator):
@@ -134,7 +135,8 @@ for pluralCol in pluralColumns:
                 multValueColumns.append(pluralCol)
                 separator.append(";")
                 break
-            if (val.count(',') > 0):
+            if ((val.count(',')>0) and (re.search('(\,\d{3})', str(val))==None)):
+            # if (val.count(',') > 0):
                 multValueColumns.append(pluralCol)
                 separator.append(",")
                 break
@@ -307,6 +309,7 @@ except:
 numANDcat_df = numANDcat_df.drop(to_drop, axis=1)
 print(round((time.clock() - start)/60,4))
 print('Corelated attributes')
+# print(upper)
 print(to_drop)
 print()
 if(len(to_drop)>0):
